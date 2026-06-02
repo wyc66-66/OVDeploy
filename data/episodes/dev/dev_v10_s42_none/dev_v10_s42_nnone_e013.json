@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nnone_e013",
+  "image_ids": [
+    270883,
+    573943,
+    182417,
+    47571,
+    391722,
+    185802,
+    222317,
+    74209,
+    32817,
+    522156
+  ],
+  "vocab": {
+    "cat_ids": [
+      386,
+      1027,
+      645,
+      264,
+      271,
+      1039,
+      790,
+      1050,
+      160,
+      161
+    ],
+    "prompts": {
+      "386": [
+        "doormat"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "264": [
+        "cleansing agent"
+      ],
+      "271": [
+        "clock"
+      ],
+      "1039": [
+        "mop"
+      ],
+      "790": [
+        "pepper mill"
+      ],
+      "1050": [
+        "table"
+      ],
+      "160": [
+        "bucket"
+      ],
+      "161": [
+        "horse buggy"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 55,
+  "meta": {
+    "n_images": 10
+  }
+}

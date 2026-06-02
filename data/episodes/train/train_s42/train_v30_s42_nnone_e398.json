@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e398",
+  "image_ids": [
+    279730,
+    140640,
+    497599,
+    471991,
+    463730
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      194,
+      1026,
+      642,
+      715,
+      589,
+      207,
+      912,
+      592,
+      959,
+      347,
+      411,
+      670,
+      1122,
+      173,
+      621,
+      626,
+      885,
+      183,
+      442,
+      703,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "194": [
+        "candle"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "207": [
+        "car"
+      ],
+      "912": [
+        "sandwich"
+      ],
+      "592": [
+        "jean"
+      ],
+      "959": [
+        "signboard"
+      ],
+      "347": [
+        "cupcake"
+      ],
+      "411": [
+        "earring"
+      ],
+      "670": [
+        "marker"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "173": [
+        "bus"
+      ],
+      "621": [
+        "ladder"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "885": [
+        "ring"
+      ],
+      "183": [
+        "cake"
+      ],
+      "442": [
+        "fire extinguisher"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 440,
+  "meta": {
+    "n_images": 5
+  }
+}

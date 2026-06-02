@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e019",
+  "image_ids": [
+    383606,
+    84241,
+    524456,
+    363207,
+    127660,
+    382030,
+    186296,
+    264535,
+    117525,
+    298994
+  ],
+  "vocab": {
+    "cat_ids": [
+      898,
+      137,
+      139,
+      1164,
+      911,
+      1042,
+      23,
+      1175,
+      152,
+      154
+    ],
+    "prompts": {
+      "898": [
+        "plastic bag"
+      ],
+      "137": [
+        "bow"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "1164": [
+        "water faucet"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1175": [
+        "wedding cake"
+      ],
+      "152": [
+        "bridal gown"
+      ],
+      "154": [
+        "broccoli"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 63,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nsynonym_e003",
+  "image_ids": [
+    227898,
+    150638,
+    168883,
+    319935,
+    514797,
+    46378,
+    63047,
+    189475,
+    222559,
+    521509
+  ],
+  "vocab": {
+    "cat_ids": [
+      2,
+      386,
+      898,
+      5,
+      133,
+      392,
+      1161,
+      1035,
+      146,
+      19,
+      23,
+      411,
+      540,
+      161,
+      547,
+      804,
+      1191,
+      305,
+      947,
+      1077,
+      569,
+      59,
+      189,
+      837,
+      715,
+      77,
+      469,
+      602,
+      348,
+      350
+    ],
+    "prompts": {
+      "2": [
+        "air conditioner"
+      ],
+      "386": [
+        "doormat"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "133": [
+        "glass bottle"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "411": [
+        "earring"
+      ],
+      "540": [
+        "handle"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "547": [
+        "headband"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "1191": [
+        "blinder"
+      ],
+      "305": [
+        "cooler"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "569": [
+        "horse"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "189": [
+        "camera"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "77": [
+        "bed"
+      ],
+      "469": [
+        "fork"
+      ],
+      "602": [
+        "keg"
+      ],
+      "348": [
+        "hair curler"
+      ],
+      "350": [
+        "curtain"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 47,
+  "meta": {
+    "n_images": 10
+  }
+}

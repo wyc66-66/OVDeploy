@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s42_nsynonym_e000",
+  "image_ids": [
+    121497,
+    62025,
+    478136,
+    298994,
+    267940,
+    278705,
+    182417,
+    366141,
+    67180,
+    532481
+  ],
+  "vocab": {
+    "cat_ids": [
+      1153,
+      898,
+      1155,
+      771,
+      387,
+      1026,
+      1037,
+      655,
+      278,
+      23,
+      790,
+      154,
+      1050,
+      540,
+      285,
+      1060,
+      935,
+      811,
+      430,
+      177,
+      818,
+      1077,
+      694,
+      962,
+      707,
+      68,
+      1097,
+      1098,
+      715,
+      982
+    ],
+    "prompts": {
+      "1153": [
+        "walking stick"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "771": [
+        "pastry"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "278": [
+        "coat hanger"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "790": [
+        "pepper mill"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "1050": [
+        "table"
+      ],
+      "540": [
+        "handle"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "1060": [
+        "tank top"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "177": [
+        "button"
+      ],
+      "818": [
+        "plate"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "707": [
+        "muffin"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "982": [
+        "sofa"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 42,
+  "meta": {
+    "n_images": 10
+  }
+}

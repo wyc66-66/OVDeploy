@@ -1,0 +1,105 @@
+{
+  "status": "gpu_glip_native_main",
+  "backbone": "glip_native",
+  "timestamp": "2026-05-28T15:51:14.215150+00:00",
+  "git": "unknown",
+  "metrics_version": "v2",
+  "rows": [
+    {
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 16.381002824514805,
+      "OOV_FP_mean": 0.9676767994066499,
+      "text_ms_per_image": 0.059967060087728896,
+      "mode": "gpu",
+      "n_episodes": 20
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 27.29509642980374,
+      "OOV_FP_mean": 0.9676767994066499,
+      "text_ms_per_image": 742.8166206049445,
+      "mode": "gpu",
+      "n_episodes": 20
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B1_oracle",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 54.79086973600014,
+      "OOV_FP_mean": 0.9676767994066499,
+      "text_ms_per_image": 728.0794604250696,
+      "mode": "gpu",
+      "n_episodes": 20
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 17.495427509434112,
+      "OOV_FP_mean": 0.8849974477455014,
+      "text_ms_per_image": 0.059098434931001975,
+      "mode": "gpu",
+      "n_episodes": 20
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 43.94280505342636,
+      "OOV_FP_mean": 0.8849974477455014,
+      "text_ms_per_image": 702.6125881700682,
+      "mode": "gpu",
+      "n_episodes": 20
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B1_oracle",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 47.521095748386614,
+      "OOV_FP_mean": 0.8849974477455014,
+      "text_ms_per_image": 723.9845522550513,
+      "mode": "gpu",
+      "n_episodes": 20
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B0_full",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 16.751104770108483,
+      "OOV_FP_mean": 0.75495975164457,
+      "text_ms_per_image": 0.04763421498864773,
+      "mode": "gpu",
+      "n_episodes": 20
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B5_subset",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 32.3551608439655,
+      "OOV_FP_mean": 0.75495975164457,
+      "text_ms_per_image": 2759.760616584863,
+      "mode": "gpu",
+      "n_episodes": 20
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B1_oracle",
+      "backbone": "glip_native",
+      "EpisodicAP_mean": 32.6225743078835,
+      "OOV_FP_mean": 0.75495975164457,
+      "text_ms_per_image": 2765.8585921851773,
+      "mode": "gpu",
+      "n_episodes": 20
+    }
+  ],
+  "summary": {
+    "B5_aggregate_EpisodicAP": 34.53102077573187,
+    "B0_aggregate_EpisodicAP": 16.8758450346858,
+    "OOV_FP_at_V10": 0.9676767994066499,
+    "B5_ge_B0": true
+  }
+}

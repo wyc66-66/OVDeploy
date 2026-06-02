@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e005",
+  "image_ids": [
+    348481,
+    88265,
+    429761,
+    541664,
+    350488,
+    478136,
+    552371,
+    130826,
+    463618,
+    410510
+  ],
+  "vocab": {
+    "cat_ids": [
+      771,
+      387,
+      132,
+      136,
+      1041,
+      288,
+      160,
+      544,
+      547
+    ],
+    "prompts": {
+      "771": [
+        "pastry"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "132": [
+        "boot"
+      ],
+      "136": [
+        "bow"
+      ],
+      "1041": [
+        "sweatband"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "288": [
+        "coin"
+      ],
+      "160": [
+        "bucket"
+      ],
+      "544": [
+        "hat"
+      ],
+      "547": [
+        "headband"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 47,
+  "meta": {
+    "n_images": 10
+  }
+}

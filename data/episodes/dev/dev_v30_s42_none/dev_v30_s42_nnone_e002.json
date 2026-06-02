@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s42_nnone_e002",
+  "image_ids": [
+    89648,
+    148620,
+    300659,
+    112626,
+    370486,
+    338718,
+    49761,
+    429598,
+    123213,
+    230362
+  ],
+  "vocab": {
+    "cat_ids": [
+      1026,
+      1155,
+      643,
+      133,
+      1161,
+      913,
+      921,
+      285,
+      35,
+      36,
+      421,
+      676,
+      296,
+      43,
+      556,
+      1202,
+      563,
+      436,
+      181,
+      442,
+      698,
+      58,
+      60,
+      453,
+      464,
+      981,
+      982,
+      88,
+      991,
+      609
+    ],
+    "prompts": {
+      "1026": [
+        "street sign"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "643": [
+        "life buoy"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "913": [
+        "satchel"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "676": [
+        "mast"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "1202": [
+        "zebra"
+      ],
+      "563": [
+        "home plate"
+      ],
+      "436": [
+        "fighter jet"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "442": [
+        "fire extinguisher"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "453": [
+        "flamingo"
+      ],
+      "464": [
+        "folding chair"
+      ],
+      "981": [
+        "sock"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "88": [
+        "belt"
+      ],
+      "991": [
+        "space shuttle"
+      ],
+      "609": [
+        "kitchen sink"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 44,
+  "meta": {
+    "n_images": 10
+  }
+}

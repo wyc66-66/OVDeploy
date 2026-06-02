@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e006",
+  "image_ids": [
+    328238,
+    40083,
+    379453,
+    522007,
+    344621,
+    251537,
+    579655,
+    531135,
+    89648,
+    298994
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      642,
+      898,
+      390,
+      1161,
+      1035,
+      139,
+      911,
+      1021,
+      19,
+      154,
+      1050,
+      544,
+      1056,
+      804,
+      421,
+      550,
+      429,
+      687,
+      1072,
+      181,
+      56,
+      58,
+      836,
+      1099,
+      464,
+      981,
+      217,
+      474
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "1050": [
+        "table"
+      ],
+      "544": [
+        "hat"
+      ],
+      "1056": [
+        "taillight"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "550": [
+        "headscarf"
+      ],
+      "429": [
+        "fan"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "836": [
+        "pot"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "464": [
+        "folding chair"
+      ],
+      "981": [
+        "sock"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "474": [
+        "frisbee"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

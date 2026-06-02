@@ -1,0 +1,530 @@
+{
+  "status": "ok",
+  "timestamp": "2026-05-27T15:12:38.456559+00:00",
+  "git": "unknown",
+  "gpu_used": true,
+  "metrics_version": "v2",
+  "note": "Roboflow ODinW-13 native COCO (GLIPv1_Open mirror)",
+  "rows": [
+    {
+      "domain": "Aquarium",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 27.39117324449568,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Aquarium",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 27.39117324449568,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Aquarium",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 27.39117324449568,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Aquarium",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 27.39117324449568,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "AerialMaritimeDrone",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 4.166666666666666,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "AerialMaritimeDrone",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 4.166666666666666,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "AerialMaritimeDrone",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 4.166666666666666,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "AerialMaritimeDrone",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 4.166666666666666,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "CottontailRabbits",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 49.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "CottontailRabbits",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 49.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "CottontailRabbits",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 49.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "CottontailRabbits",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 49.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "EgoHands",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 49.59444444444444,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "EgoHands",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 49.59444444444444,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "EgoHands",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 49.59444444444444,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "EgoHands",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 49.59444444444444,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "NorthAmericaMushrooms",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 0.2,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "NorthAmericaMushrooms",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 0.2,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "NorthAmericaMushrooms",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 0.2,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "NorthAmericaMushrooms",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 0.2,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Packages",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 4.2105263157894735,
+      "OOV_FP_mean": 0.0,
+      "n_images": 95,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Packages",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 4.2105263157894735,
+      "OOV_FP_mean": 0.0,
+      "n_images": 95,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Packages",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 4.2105263157894735,
+      "OOV_FP_mean": 0.0,
+      "n_images": 95,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Packages",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 4.2105263157894735,
+      "OOV_FP_mean": 0.0,
+      "n_images": 95,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "PascalVOC",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 32.727380952380955,
+      "OOV_FP_mean": 0.6936111111111112,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "PascalVOC",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 32.11111111111111,
+      "OOV_FP_mean": 0.6936111111111112,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "PascalVOC",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 75.934425609506,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "PascalVOC",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 75.934425609506,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "pistols",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "pistols",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "pistols",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "pistols",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Raccoon",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 72.83333333333334,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Raccoon",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 72.83333333333334,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Raccoon",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 72.83333333333334,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Raccoon",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 72.83333333333334,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "ThermalDogsAndPeople",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 30.805555555555554,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "ThermalDogsAndPeople",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 30.805555555555554,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "ThermalDogsAndPeople",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 30.805555555555554,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "ThermalDogsAndPeople",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 30.805555555555554,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Pothole",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Pothole",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Pothole",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "Pothole",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "ShellfishOpenImages",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 1.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "ShellfishOpenImages",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 1.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "ShellfishOpenImages",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 1.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "ShellfishOpenImages",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 1.0,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "VehiclesOpenImages",
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 68.64261904761905,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "VehiclesOpenImages",
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 68.64261904761905,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "VehiclesOpenImages",
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 68.64261904761905,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    },
+    {
+      "domain": "VehiclesOpenImages",
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 68.64261904761905,
+      "OOV_FP_mean": 0.0,
+      "n_images": 100,
+      "mode": "gpu",
+      "source": "roboflow_native"
+    }
+  ]
+}

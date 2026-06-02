@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e013",
+  "image_ids": [
+    246968,
+    39951,
+    119516,
+    110638,
+    439623,
+    173183,
+    157756,
+    148999,
+    449190,
+    173302
+  ],
+  "vocab": {
+    "cat_ids": [
+      1152,
+      898,
+      1027,
+      836,
+      133,
+      837,
+      5,
+      645,
+      653
+    ],
+    "prompts": {
+      "1152": [
+        "wagon wheel"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "836": [
+        "pot"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "653": [
+        "log"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 55,
+  "meta": {
+    "n_images": 10
+  }
+}

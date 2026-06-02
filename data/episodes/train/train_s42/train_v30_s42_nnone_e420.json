@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e420",
+  "image_ids": [
+    578500,
+    355325,
+    196141,
+    177714,
+    74646
+  ],
+  "vocab": {
+    "cat_ids": [
+      390,
+      647,
+      838,
+      461,
+      19,
+      595,
+      469,
+      982,
+      88,
+      217,
+      798,
+      94,
+      160,
+      611,
+      358,
+      1066,
+      235,
+      748,
+      556,
+      816,
+      626,
+      1139,
+      628,
+      306,
+      56,
+      58,
+      60,
+      2,
+      3,
+      4
+    ],
+    "prompts": {
+      "390": [
+        "drawer"
+      ],
+      "647": [
+        "lime"
+      ],
+      "838": [
+        "potato"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "469": [
+        "fork"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "88": [
+        "belt"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "798": [
+        "piano"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "160": [
+        "bucket"
+      ],
+      "611": [
+        "kite"
+      ],
+      "358": [
+        "deck chair"
+      ],
+      "1066": [
+        "tassel"
+      ],
+      "235": [
+        "chandelier"
+      ],
+      "748": [
+        "painting"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "628": [
+        "lampshade"
+      ],
+      "306": [
+        "cork"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 462,
+  "meta": {
+    "n_images": 5
+  }
+}

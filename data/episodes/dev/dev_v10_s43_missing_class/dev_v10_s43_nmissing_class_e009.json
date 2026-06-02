@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e009",
+  "image_ids": [
+    467511,
+    356498,
+    227898,
+    271471,
+    222317,
+    480944,
+    520077,
+    193884,
+    157756,
+    214869
+  ],
+  "vocab": {
+    "cat_ids": [
+      512,
+      705,
+      1027,
+      1161,
+      15,
+      272,
+      658,
+      921,
+      154
+    ],
+    "prompts": {
+      "512": [
+        "gravestone"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "15": [
+        "apron"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "154": [
+        "broccoli"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 52,
+  "meta": {
+    "n_images": 10
+  }
+}

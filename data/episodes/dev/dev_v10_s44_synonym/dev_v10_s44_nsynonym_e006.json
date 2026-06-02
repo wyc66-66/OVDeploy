@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e006",
+  "image_ids": [
+    263068,
+    271471,
+    347456,
+    338718,
+    186637,
+    546826,
+    24144,
+    532481,
+    290293,
+    203864
+  ],
+  "vocab": {
+    "cat_ids": [
+      962,
+      1026,
+      1035,
+      1037,
+      15,
+      271,
+      725,
+      981,
+      923,
+      1115
+    ],
+    "prompts": {
+      "962": [
+        "skateboard"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "15": [
+        "apron"
+      ],
+      "271": [
+        "clock"
+      ],
+      "725": [
+        "notepad"
+      ],
+      "981": [
+        "sock"
+      ],
+      "923": [
+        "scissors"
+      ],
+      "1115": [
+        "train"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 50,
+  "meta": {
+    "n_images": 10
+  }
+}

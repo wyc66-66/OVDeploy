@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s42_nmissing_class_e000",
+  "image_ids": [
+    453302,
+    445846,
+    500211,
+    214192,
+    187249,
+    21167,
+    199236,
+    466416,
+    173044,
+    100582
+  ],
+  "vocab": {
+    "cat_ids": [
+      133,
+      1095,
+      392,
+      1162,
+      910,
+      271,
+      272,
+      145,
+      21,
+      790,
+      1113,
+      540,
+      350,
+      671,
+      421,
+      486,
+      746,
+      811,
+      556,
+      1133,
+      687,
+      1008,
+      433,
+      500,
+      181,
+      569,
+      1021,
+      2,
+      3
+    ],
+    "prompts": {
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "1095": [
+        "toaster"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "145": [
+        "suspenders"
+      ],
+      "21": [
+        "armor"
+      ],
+      "790": [
+        "pepper mill"
+      ],
+      "1113": [
+        "dirt bike"
+      ],
+      "540": [
+        "handle"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "671": [
+        "martini"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "486": [
+        "gargoyle"
+      ],
+      "746": [
+        "padlock"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "1133": [
+        "umbrella"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1008": [
+        "statue"
+      ],
+      "433": [
+        "Ferris wheel"
+      ],
+      "500": [
+        "glove"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "569": [
+        "horse"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 42,
+  "meta": {
+    "n_images": 10
+  }
+}

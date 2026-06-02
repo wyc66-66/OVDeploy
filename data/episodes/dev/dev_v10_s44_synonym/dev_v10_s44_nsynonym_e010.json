@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e010",
+  "image_ids": [
+    441286,
+    314709,
+    102707,
+    555972,
+    578236,
+    24144,
+    49761,
+    47571,
+    299720,
+    570782
+  ],
+  "vocab": {
+    "cat_ids": [
+      960,
+      705,
+      964,
+      453,
+      1162,
+      652,
+      461,
+      655,
+      1177,
+      479
+    ],
+    "prompts": {
+      "960": [
+        "silo"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "964": [
+        "ski"
+      ],
+      "453": [
+        "flamingo"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "652": [
+        "lizard"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "1177": [
+        "wet suit"
+      ],
+      "479": [
+        "funnel"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

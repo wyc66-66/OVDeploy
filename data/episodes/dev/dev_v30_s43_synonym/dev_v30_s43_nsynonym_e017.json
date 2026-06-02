@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nsynonym_e017",
+  "image_ids": [
+    286553,
+    408774,
+    397303,
+    27972,
+    154425,
+    493284,
+    77595,
+    569059,
+    555972,
+    438269
+  ],
+  "vocab": {
+    "cat_ids": [
+      133,
+      521,
+      1035,
+      395,
+      655,
+      145,
+      146,
+      1043,
+      23,
+      1050,
+      411,
+      34,
+      1062,
+      422,
+      296,
+      556,
+      557,
+      1198,
+      816,
+      818,
+      50,
+      947,
+      952,
+      698,
+      59,
+      60,
+      705,
+      716,
+      589,
+      461
+    ],
+    "prompts": {
+      "133": [
+        "glass bottle"
+      ],
+      "521": [
+        "guitar"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "395": [
+        "dresser"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "145": [
+        "suspenders"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "1043": [
+        "sweatshirt"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1050": [
+        "table"
+      ],
+      "411": [
+        "earring"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "1062": [
+        "tape measure"
+      ],
+      "422": [
+        "elephant"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "557": [
+        "heron"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "818": [
+        "plate"
+      ],
+      "50": [
+        "banner"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "952": [
+        "shot glass"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "461": [
+        "flower arrangement"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 60,
+  "meta": {
+    "n_images": 10
+  }
+}

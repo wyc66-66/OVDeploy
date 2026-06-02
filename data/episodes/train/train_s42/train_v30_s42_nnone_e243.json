@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e243",
+  "image_ids": [
+    473974,
+    113867,
+    68409,
+    18150,
+    562843
+  ],
+  "vocab": {
+    "cat_ids": [
+      230,
+      617,
+      1162,
+      811,
+      716,
+      715,
+      973,
+      713,
+      272,
+      816,
+      1202,
+      1043,
+      1173,
+      981,
+      923,
+      350,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36
+    ],
+    "prompts": {
+      "230": [
+        "cellular telephone"
+      ],
+      "617": [
+        "knob"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "973": [
+        "slipper"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "1202": [
+        "zebra"
+      ],
+      "1043": [
+        "sweatshirt"
+      ],
+      "1173": [
+        "weathervane"
+      ],
+      "981": [
+        "sock"
+      ],
+      "923": [
+        "scissors"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 285,
+  "meta": {
+    "n_images": 5
+  }
+}

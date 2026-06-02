@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s44_nnone_e006",
+  "image_ids": [
+    259690,
+    377723,
+    328238,
+    190236,
+    526751,
+    332318,
+    78915,
+    347456,
+    570782,
+    182202
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      133,
+      1161,
+      1162,
+      1035,
+      911,
+      655,
+      278,
+      1178,
+      1179
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "278": [
+        "coat hanger"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "1179": [
+        "wheelchair"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 50,
+  "meta": {
+    "n_images": 10
+  }
+}

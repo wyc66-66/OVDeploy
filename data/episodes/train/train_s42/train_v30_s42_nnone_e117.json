@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e117",
+  "image_ids": [
+    527427,
+    274708,
+    70774,
+    455555,
+    368982
+  ],
+  "vocab": {
+    "cat_ids": [
+      962,
+      995,
+      260,
+      837,
+      964,
+      967,
+      584,
+      99,
+      102,
+      885,
+      631,
+      24,
+      1178,
+      923,
+      61,
+      703,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36
+    ],
+    "prompts": {
+      "962": [
+        "skateboard"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "260": [
+        "cigarette case"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "964": [
+        "ski"
+      ],
+      "967": [
+        "ski pole"
+      ],
+      "584": [
+        "igniter"
+      ],
+      "99": [
+        "bird"
+      ],
+      "102": [
+        "birdcage"
+      ],
+      "885": [
+        "ring"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "24": [
+        "ashtray"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "923": [
+        "scissors"
+      ],
+      "61": [
+        "basket"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 159,
+  "meta": {
+    "n_images": 5
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s44_nnone_e009",
+  "image_ids": [
+    148620,
+    569059,
+    129945,
+    419653,
+    157756,
+    15440,
+    229659,
+    189475,
+    295420,
+    429761
+  ],
+  "vocab": {
+    "cat_ids": [
+      1154,
+      1027,
+      133,
+      390,
+      1161,
+      655,
+      272,
+      1041,
+      23,
+      1050,
+      411,
+      547,
+      296,
+      173,
+      429,
+      687,
+      1198,
+      1074,
+      563,
+      947,
+      820,
+      181,
+      1077,
+      1079,
+      698,
+      60,
+      705,
+      713,
+      715,
+      461
+    ],
+    "prompts": {
+      "1154": [
+        "wall clock"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "1041": [
+        "sweatband"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1050": [
+        "table"
+      ],
+      "411": [
+        "earring"
+      ],
+      "547": [
+        "headband"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "173": [
+        "bus"
+      ],
+      "429": [
+        "fan"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "1074": [
+        "telephone pole"
+      ],
+      "563": [
+        "home plate"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "820": [
+        "playpen"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "461": [
+        "flower arrangement"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

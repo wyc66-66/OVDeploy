@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nnone_e002",
+  "image_ids": [
+    227898,
+    570782,
+    426203,
+    273132,
+    473219,
+    517832,
+    521509,
+    283520,
+    256868,
+    563702
+  ],
+  "vocab": {
+    "cat_ids": [
+      1027,
+      392,
+      1161,
+      1162,
+      1035,
+      655,
+      1042,
+      19,
+      277,
+      23
+    ],
+    "prompts": {
+      "1027": [
+        "streetlight"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "277": [
+        "coat"
+      ],
+      "23": [
+        "trash can"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 46,
+  "meta": {
+    "n_images": 10
+  }
+}

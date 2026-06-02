@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s42_nnone_e016",
+  "image_ids": [
+    39477,
+    135410,
+    9448,
+    438269,
+    326082,
+    402992,
+    128658,
+    477955,
+    109916,
+    153782
+  ],
+  "vocab": {
+    "cat_ids": [
+      1025,
+      2,
+      642,
+      1027,
+      1037,
+      142,
+      271,
+      272,
+      1149,
+      1180,
+      285,
+      1055,
+      933,
+      549,
+      557,
+      45,
+      303,
+      818,
+      1077,
+      183,
+      703,
+      837,
+      589,
+      592,
+      80,
+      982,
+      94,
+      350,
+      611,
+      621
+    ],
+    "prompts": {
+      "1025": [
+        "strawberry"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "142": [
+        "bowling ball"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "1149": [
+        "waffle"
+      ],
+      "1180": [
+        "whipped cream"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "1055": [
+        "tag"
+      ],
+      "933": [
+        "sewing machine"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "557": [
+        "heron"
+      ],
+      "45": [
+        "banana"
+      ],
+      "303": [
+        "cookie"
+      ],
+      "818": [
+        "plate"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "183": [
+        "cake"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "592": [
+        "jean"
+      ],
+      "80": [
+        "cow"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "611": [
+        "kite"
+      ],
+      "621": [
+        "ladder"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 58,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e018",
+  "image_ids": [
+    384527,
+    410510,
+    246968,
+    264535,
+    295420,
+    382696,
+    180101,
+    530061,
+    372466,
+    348481
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1155,
+      133,
+      5,
+      139,
+      271,
+      1042,
+      279,
+      23,
+      793,
+      1052,
+      288,
+      421,
+      296,
+      811,
+      687,
+      1072,
+      561,
+      1074,
+      176,
+      947,
+      1077,
+      1078,
+      1079,
+      184,
+      951,
+      181,
+      705,
+      194
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "271": [
+        "clock"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "279": [
+        "coatrack"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "288": [
+        "coin"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "814": [
+        "pitcher"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "561": [
+        "hockey stick"
+      ],
+      "1074": [
+        "telephone pole"
+      ],
+      "176": [
+        "butterfly"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "1078": [
+        "tennis ball"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "184": [
+        "calculator"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "194": [
+        "candle"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 61,
+  "meta": {
+    "n_images": 10
+  }
+}

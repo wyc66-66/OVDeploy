@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nnone_e016",
+  "image_ids": [
+    507575,
+    22935,
+    160556,
+    233567,
+    200961,
+    466416,
+    520077,
+    46048,
+    537241,
+    267940
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      645,
+      390,
+      271,
+      272,
+      658,
+      1174,
+      409,
+      1055,
+      547
+    ],
+    "prompts": {
+      "1155": [
+        "wall socket"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "1174": [
+        "webcam"
+      ],
+      "409": [
+        "earphone"
+      ],
+      "1055": [
+        "tag"
+      ],
+      "547": [
+        "headband"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 58,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nnone_e014",
+  "image_ids": [
+    366711,
+    62025,
+    27972,
+    530836,
+    430871,
+    182202,
+    563702,
+    85089,
+    363207,
+    162092
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      139,
+      278,
+      23,
+      1175,
+      152,
+      666,
+      1050,
+      540,
+      421
+    ],
+    "prompts": {
+      "1155": [
+        "wall socket"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "278": [
+        "coat hanger"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1175": [
+        "wedding cake"
+      ],
+      "152": [
+        "bridal gown"
+      ],
+      "666": [
+        "mandarin orange"
+      ],
+      "1050": [
+        "table"
+      ],
+      "540": [
+        "handle"
+      ],
+      "421": [
+        "refrigerator"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 56,
+  "meta": {
+    "n_images": 10
+  }
+}

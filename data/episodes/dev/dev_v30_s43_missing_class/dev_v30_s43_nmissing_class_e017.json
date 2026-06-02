@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e017",
+  "image_ids": [
+    129945,
+    214869,
+    5586,
+    270402,
+    8211,
+    447917,
+    127660,
+    235836,
+    153299,
+    118367
+  ],
+  "vocab": {
+    "cat_ids": [
+      137,
+      595,
+      980,
+      88,
+      217,
+      156,
+      734,
+      863,
+      544,
+      422,
+      169,
+      556,
+      1198,
+      239,
+      496,
+      47,
+      563,
+      947,
+      885,
+      58,
+      60,
+      701,
+      959,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15
+    ],
+    "prompts": {
+      "137": [
+        "bow"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "980": [
+        "soccer ball"
+      ],
+      "88": [
+        "belt"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "156": [
+        "broom"
+      ],
+      "734": [
+        "onion"
+      ],
+      "863": [
+        "racket"
+      ],
+      "544": [
+        "hat"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "422": [
+        "elephant"
+      ],
+      "169": [
+        "bun"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "239": [
+        "cherry"
+      ],
+      "496": [
+        "giraffe"
+      ],
+      "47": [
+        "bandage"
+      ],
+      "563": [
+        "home plate"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "885": [
+        "ring"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "701": [
+        "motor scooter"
+      ],
+      "959": [
+        "signboard"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 60,
+  "meta": {
+    "n_images": 10
+  }
+}

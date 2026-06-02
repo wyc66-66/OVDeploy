@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nmissing_class_e009",
+  "image_ids": [
+    153527,
+    246968,
+    391722,
+    419653,
+    36936,
+    102707,
+    581781,
+    401250,
+    130826,
+    105923
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1026,
+      132,
+      133,
+      5,
+      390,
+      655,
+      530,
+      1052,
+      285,
+      30,
+      544,
+      35,
+      293,
+      422,
+      680,
+      811,
+      45,
+      814,
+      1072,
+      306,
+      820,
+      181,
+      1077,
+      184,
+      952,
+      194,
+      195,
+      1092
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "132": [
+        "boot"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "530": [
+        "hammer"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "30": [
+        "ax"
+      ],
+      "544": [
+        "hat"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "293": [
+        "pacifier"
+      ],
+      "422": [
+        "elephant"
+      ],
+      "680": [
+        "measuring cup"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "45": [
+        "banana"
+      ],
+      "814": [
+        "pitcher"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "306": [
+        "cork"
+      ],
+      "820": [
+        "playpen"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "184": [
+        "calculator"
+      ],
+      "952": [
+        "shot glass"
+      ],
+      "194": [
+        "candle"
+      ],
+      "195": [
+        "candle holder"
+      ],
+      "1092": [
+        "tinsel"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

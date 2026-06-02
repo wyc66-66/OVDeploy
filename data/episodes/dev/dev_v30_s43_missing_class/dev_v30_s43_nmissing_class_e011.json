@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e011",
+  "image_ids": [
+    203294,
+    347544,
+    356498,
+    390826,
+    251537,
+    29393,
+    61658,
+    550797,
+    136355,
+    153299
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      1155,
+      132,
+      133,
+      23,
+      154,
+      540,
+      927,
+      1056,
+      1186,
+      35,
+      421,
+      554,
+      173,
+      947,
+      185,
+      837,
+      968,
+      1097,
+      713,
+      589,
+      461,
+      592,
+      1108,
+      217,
+      90,
+      735,
+      225,
+      226
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "132": [
+        "boot"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "540": [
+        "handle"
+      ],
+      "927": [
+        "scrubbing brush"
+      ],
+      "1056": [
+        "taillight"
+      ],
+      "1186": [
+        "windshield wiper"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "554": [
+        "heater"
+      ],
+      "173": [
+        "bus"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "185": [
+        "calendar"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "968": [
+        "skirt"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "592": [
+        "jean"
+      ],
+      "1108": [
+        "towel"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "90": [
+        "bench"
+      ],
+      "735": [
+        "orange"
+      ],
+      "225": [
+        "cat",
+        "feline"
+      ],
+      "226": [
+        "cauliflower"
+      ],
+      "610": [
+        "kitchen table"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

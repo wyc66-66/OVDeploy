@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e005",
+  "image_ids": [
+    579655,
+    537812,
+    410510,
+    458223,
+    231747,
+    324715,
+    142620,
+    242946,
+    153782,
+    214192
+  ],
+  "vocab": {
+    "cat_ids": [
+      641,
+      1027,
+      904,
+      1162,
+      139,
+      271,
+      272,
+      923,
+      160,
+      416
+    ],
+    "prompts": {
+      "641": [
+        "lettuce"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "904": [
+        "salad"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "923": [
+        "scissors"
+      ],
+      "160": [
+        "bucket"
+      ],
+      "416": [
+        "egg roll"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

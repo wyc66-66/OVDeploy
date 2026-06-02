@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e285",
+  "image_ids": [
+    8690,
+    374052,
+    313562,
+    65736,
+    83172
+  ],
+  "vocab": {
+    "cat_ids": [
+      802,
+      99,
+      324,
+      217,
+      547,
+      392,
+      1064,
+      45,
+      1198,
+      15,
+      501,
+      277,
+      1078,
+      377,
+      921,
+      411,
+      2,
+      3,
+      4,
+      11,
+      12,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41
+    ],
+    "prompts": {
+      "802": [
+        "pigeon"
+      ],
+      "99": [
+        "bird"
+      ],
+      "324": [
+        "crate"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "547": [
+        "headband"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1064": [
+        "tarp"
+      ],
+      "45": [
+        "banana"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "15": [
+        "apron"
+      ],
+      "501": [
+        "goat"
+      ],
+      "277": [
+        "coat"
+      ],
+      "1078": [
+        "tennis ball"
+      ],
+      "377": [
+        "Dixie cup"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "411": [
+        "earring"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 327,
+  "meta": {
+    "n_images": 5
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e360",
+  "image_ids": [
+    391648,
+    52007,
+    392722,
+    546717,
+    447465
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      642,
+      451,
+      452,
+      964,
+      965,
+      967,
+      589,
+      207,
+      272,
+      658,
+      982,
+      544,
+      34,
+      35,
+      995,
+      804,
+      173,
+      110,
+      500,
+      502,
+      637,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "451": [
+        "flag"
+      ],
+      "452": [
+        "flagpole"
+      ],
+      "964": [
+        "ski"
+      ],
+      "965": [
+        "ski boot"
+      ],
+      "967": [
+        "ski pole"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "207": [
+        "car"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "544": [
+        "hat"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "173": [
+        "bus"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "500": [
+        "glove"
+      ],
+      "502": [
+        "goggles"
+      ],
+      "637": [
+        "Lego"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 402,
+  "meta": {
+    "n_images": 5
+  }
+}

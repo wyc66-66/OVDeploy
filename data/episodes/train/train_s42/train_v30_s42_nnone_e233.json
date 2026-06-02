@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e233",
+  "image_ids": [
+    180383,
+    177357,
+    397327,
+    567011,
+    50679
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      261,
+      390,
+      1098,
+      1037,
+      80,
+      735,
+      979,
+      1077,
+      181,
+      793,
+      536,
+      1177,
+      118,
+      957,
+      927,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36
+    ],
+    "prompts": {
+      "1155": [
+        "wall socket"
+      ],
+      "261": [
+        "cistern"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "80": [
+        "cow"
+      ],
+      "735": [
+        "orange"
+      ],
+      "979": [
+        "soap"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "536": [
+        "hand towel"
+      ],
+      "1177": [
+        "wet suit"
+      ],
+      "118": [
+        "boat"
+      ],
+      "957": [
+        "shower curtain"
+      ],
+      "927": [
+        "scrubbing brush"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 275,
+  "meta": {
+    "n_images": 5
+  }
+}

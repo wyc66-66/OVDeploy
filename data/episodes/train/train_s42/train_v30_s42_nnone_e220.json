@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e220",
+  "image_ids": [
+    364102,
+    549674,
+    325483,
+    1425,
+    440475
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      706,
+      385,
+      194,
+      1161,
+      139,
+      461,
+      83,
+      19,
+      981,
+      474,
+      285,
+      296,
+      299,
+      429,
+      951,
+      626,
+      1139,
+      628,
+      181,
+      1077,
+      631,
+      698,
+      127,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "194": [
+        "candle"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "83": [
+        "beer bottle"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "981": [
+        "sock"
+      ],
+      "474": [
+        "frisbee"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "299": [
+        "control"
+      ],
+      "429": [
+        "fan"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "628": [
+        "lampshade"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 262,
+  "meta": {
+    "n_images": 5
+  }
+}

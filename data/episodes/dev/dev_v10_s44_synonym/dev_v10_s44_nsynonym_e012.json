@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e012",
+  "image_ids": [
+    314264,
+    189213,
+    39951,
+    424776,
+    265518,
+    567197,
+    379453,
+    528314,
+    397303,
+    378453
+  ],
+  "vocab": {
+    "cat_ids": [
+      3,
+      131,
+      837,
+      964,
+      967,
+      521,
+      74,
+      1035,
+      716,
+      461
+    ],
+    "prompts": {
+      "3": [
+        "airplane"
+      ],
+      "131": [
+        "boom microphone"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "964": [
+        "ski"
+      ],
+      "967": [
+        "ski pole"
+      ],
+      "521": [
+        "guitar"
+      ],
+      "74": [
+        "beanbag"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "461": [
+        "flower arrangement"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 56,
+  "meta": {
+    "n_images": 10
+  }
+}

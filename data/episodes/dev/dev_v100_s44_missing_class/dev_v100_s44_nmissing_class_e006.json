@@ -1,0 +1,431 @@
+{
+  "episode_id": "dev_v100_s44_nmissing_class_e006",
+  "image_ids": [
+    278705,
+    439290,
+    365208,
+    262682,
+    300659,
+    492878,
+    89670,
+    217425,
+    119516,
+    445846
+  ],
+  "vocab": {
+    "cat_ids": [
+      961,
+      962,
+      1026,
+      708,
+      1025,
+      1027,
+      650,
+      715,
+      1102,
+      1103,
+      272,
+      793,
+      284,
+      1180,
+      350,
+      94,
+      289,
+      609,
+      421,
+      102,
+      1194,
+      683,
+      876,
+      1133,
+      45,
+      430,
+      746,
+      687,
+      436,
+      757,
+      181,
+      694,
+      253,
+      1021,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      48,
+      50,
+      53,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      65,
+      66,
+      68,
+      75,
+      77,
+      79,
+      80,
+      81,
+      83,
+      86,
+      87,
+      88,
+      89,
+      90,
+      95,
+      96,
+      99,
+      104,
+      109,
+      110,
+      112,
+      114,
+      115,
+      116,
+      118,
+      125,
+      127,
+      132,
+      133,
+      137,
+      138,
+      139,
+      143,
+      146,
+      150,
+      152,
+      154,
+      160,
+      169,
+      171
+    ],
+    "prompts": {
+      "961": [
+        "sink"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "708": [
+        "mug"
+      ],
+      "1025": [
+        "strawberry"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "650": [
+        "lip balm"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "1102": [
+        "toothbrush"
+      ],
+      "1103": [
+        "toothpaste"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "284": [
+        "coffee maker"
+      ],
+      "1180": [
+        "whipped cream"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "289": [
+        "colander"
+      ],
+      "609": [
+        "kitchen sink"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "102": [
+        "birdcage"
+      ],
+      "1194": [
+        "wooden spoon"
+      ],
+      "683": [
+        "medicine"
+      ],
+      "876": [
+        "rearview mirror"
+      ],
+      "1133": [
+        "umbrella"
+      ],
+      "45": [
+        "banana"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "746": [
+        "padlock"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "436": [
+        "fighter jet"
+      ],
+      "757": [
+        "paper towel"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "253": [
+        "chopping board"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "57": [
+        "baseball"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "61": [
+        "basket"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "75": [
+        "beanie"
+      ],
+      "76": [
+        "bear"
+      ],
+      "77": [
+        "bed"
+      ],
+      "79": [
+        "bedspread"
+      ],
+      "80": [
+        "cow"
+      ],
+      "81": [
+        "beef"
+      ],
+      "83": [
+        "beer bottle"
+      ],
+      "86": [
+        "bell"
+      ],
+      "87": [
+        "bell pepper"
+      ],
+      "88": [
+        "belt"
+      ],
+      "89": [
+        "belt buckle"
+      ],
+      "90": [
+        "bench"
+      ],
+      "95": [
+        "visor"
+      ],
+      "96": [
+        "billboard"
+      ],
+      "99": [
+        "bird"
+      ],
+      "104": [
+        "birthday cake"
+      ],
+      "109": [
+        "blackboard"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "112": [
+        "blender"
+      ],
+      "114": [
+        "blinker"
+      ],
+      "115": [
+        "blouse"
+      ],
+      "116": [
+        "blueberry"
+      ],
+      "118": [
+        "boat"
+      ],
+      "125": [
+        "bolt"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "132": [
+        "boot"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "137": [
+        "bow"
+      ],
+      "138": [
+        "bow-tie"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "143": [
+        "box"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "150": [
+        "bread"
+      ],
+      "152": [
+        "bridal gown"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "160": [
+        "bucket"
+      ],
+      "169": [
+        "bun"
+      ],
+      "171": [
+        "buoy"
+      ]
+    }
+  },
+  "vocab_size": 99,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 50,
+  "meta": {
+    "n_images": 10
+  }
+}

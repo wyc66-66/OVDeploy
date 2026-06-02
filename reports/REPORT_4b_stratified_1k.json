@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "timestamp": "2026-05-26T18:26:48.824575+00:00",
+  "git": "unknown",
+  "gpu_used": true,
+  "n_images": 1000,
+  "rows": [
+    {
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 16.56295966093879,
+      "OOV_FP_mean": 0.6816388777888779,
+      "mode": "gpu",
+      "n_images": 1000
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 3.770915665622061,
+      "OOV_FP_mean": 0.6816388777888779,
+      "mode": "gpu",
+      "n_images": 1000
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 16.56295966093879,
+      "OOV_FP_mean": 0.6601716699966701,
+      "mode": "gpu",
+      "n_images": 1000
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 8.003160623534756,
+      "OOV_FP_mean": 0.6601716699966701,
+      "mode": "gpu",
+      "n_images": 1000
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 16.56295966093879,
+      "OOV_FP_mean": 0.5526135989010988,
+      "mode": "gpu",
+      "n_images": 1000
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 18.265525665436208,
+      "OOV_FP_mean": 0.5526135989010988,
+      "mode": "gpu",
+      "n_images": 1000
+    }
+  ]
+}

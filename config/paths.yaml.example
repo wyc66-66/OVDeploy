@@ -1,0 +1,67 @@
+# OVDeploy paths — copy to config/paths.yaml and edit.
+# Requires: LVIS minival JSON, COCO val2017, YOLO-World v2-S weights.
+# See docs/SETUP.md
+
+# OVDeploy — paths (YOLO-World / LVIS read-only from 论文1)
+project_root: "."
+project_root_wsl: "/path/to/ovdeploy"
+
+yolo_root: "/path/to/YOLO-World"
+yolo_root_wsl: "/mnt/d/path/to/YOLO-World"
+paper1_project: "/path/to/optional/assets"
+
+data:
+  lvis_minival_ann: "data/coco/lvis/lvis_v1_minival_inserted_image_name.json"
+  lvis_train_ann: "data/coco/lvis/lvis_v1_train.json"
+  val2017_dir: "data/coco/val2017"
+  class_texts: "data/texts/lvis_v1_class_texts.json"
+
+weights:
+  yolo_world_v2_s: "weights/yolo_world_v2_s_obj365v1_goldg_pretrain-55b943ea.pth"
+  yolo_world_v2_m: "weights/yolo_world_v2_m_obj365v1_goldg_pretrain-c6237d5b.pth"
+
+config:
+  eval_8gb: "configs/pretrain/yolo_world_v2_s_lvis_minival_8gb.py"
+  eval_8gb_m: "configs/pretrain/yolo_world_v2_m_lvis_minival_8gb.py"
+
+reference_ap:
+  AP: 22.7
+  AP_r: 16.3
+  AP_c: 20.8
+  AP_f: 25.5
+
+outputs:
+  dev_subset: "data/dev_image_ids.json"
+  episodes_dev: "data/episodes/dev"
+  episodes_train: "data/episodes/train"
+  episodes_eval: "data/episodes/eval"
+  checkpoints: "data/checkpoints"
+
+reports:
+  r0: "reports/REPORT_0_baseline.json"
+  r1: "reports/REPORT_1_episodes.json"
+  r2: "reports/REPORT_2_baselines_dev.json"
+  r3: "reports/REPORT_3_adapter_dev.json"
+  r4: "reports/REPORT_4_main.json"
+  r5: "reports/REPORT_5_odinw.json"
+  r6: "reports/REPORT_6_glip_main.json"
+
+glip:
+  # HF repo IDEA-Research/glip-tiny does not exist; use Grounding-DINO-tiny (same grounded API).
+  backend: "transformers"
+  glip_tiny_model_id: "IDEA-Research/grounding-dino-tiny"
+  glip_tiny_local_dir: "weights/grounding-dino-tiny"
+  native_weight: "weights/glip-native/glip_tiny_model_o365_goldg.pth"
+  native_config: "third_party/GLIP/configs/pretrain/glip_Swin_T_O365_GoldG.yaml"
+  chunk_size: 40
+  score_thresh: 0.05
+
+owlvit:
+  model_id: "google/owlvit-base-patch32"
+  local_dir: "weights/owlvit-base-patch32"
+  chunk_size: 40
+  score_thresh: 0.05
+
+second_backbone:
+  name: "owlvit"
+  label: "OWL-ViT-B/32"

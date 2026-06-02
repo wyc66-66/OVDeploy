@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s42_nsynonym_e002",
+  "image_ids": [
+    500477,
+    265816,
+    292005,
+    220732,
+    173302,
+    338532,
+    425390,
+    40083,
+    251537,
+    194940
+  ],
+  "vocab": {
+    "cat_ids": [
+      2,
+      1027,
+      642,
+      645,
+      514,
+      653,
+      793,
+      1050,
+      154,
+      1052,
+      1056,
+      161,
+      935,
+      298,
+      173,
+      942,
+      943,
+      947,
+      565,
+      185,
+      569,
+      442,
+      1082,
+      957,
+      319,
+      68,
+      837,
+      836,
+      87,
+      216
+    ],
+    "prompts": {
+      "2": [
+        "air conditioner"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "514": [
+        "green bean"
+      ],
+      "653": [
+        "log"
+      ],
+      "793": [
+        "individual"
+      ],
+      "1050": [
+        "table"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "1056": [
+        "taillight"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "298": [
+        "cone"
+      ],
+      "173": [
+        "bus"
+      ],
+      "942": [
+        "shears"
+      ],
+      "943": [
+        "sheep"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "565": [
+        "fume hood"
+      ],
+      "185": [
+        "calendar"
+      ],
+      "569": [
+        "horse"
+      ],
+      "442": [
+        "fire extinguisher"
+      ],
+      "1082": [
+        "thermos bottle"
+      ],
+      "957": [
+        "shower curtain"
+      ],
+      "319": [
+        "cowboy hat"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "836": [
+        "pot"
+      ],
+      "87": [
+        "bell pepper"
+      ],
+      "216": [
+        "horse carriage"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 44,
+  "meta": {
+    "n_images": 10
+  }
+}

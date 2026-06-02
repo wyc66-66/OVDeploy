@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e008",
+  "image_ids": [
+    2923,
+    437392,
+    49761,
+    467511,
+    20992,
+    547816,
+    148999,
+    233567,
+    128658,
+    239717
+  ],
+  "vocab": {
+    "cat_ids": [
+      1152,
+      961,
+      66,
+      385,
+      1025,
+      453,
+      390,
+      1097,
+      1039,
+      1109
+    ],
+    "prompts": {
+      "1152": [
+        "wagon wheel"
+      ],
+      "961": [
+        "sink"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "1025": [
+        "strawberry"
+      ],
+      "453": [
+        "flamingo"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1039": [
+        "mop"
+      ],
+      "1109": [
+        "towel rack"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 51,
+  "meta": {
+    "n_images": 10
+  }
+}

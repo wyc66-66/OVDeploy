@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e015",
+  "image_ids": [
+    263068,
+    502229,
+    345027,
+    331317,
+    319935,
+    2923,
+    571598,
+    289229,
+    190753,
+    472298
+  ],
+  "vocab": {
+    "cat_ids": [
+      2,
+      716,
+      77,
+      589,
+      271,
+      781,
+      19,
+      90,
+      541
+    ],
+    "prompts": {
+      "962": [
+        "skateboard"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "77": [
+        "bed"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "271": [
+        "clock"
+      ],
+      "781": [
+        "pen"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "90": [
+        "bench"
+      ],
+      "541": [
+        "handsaw"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 57,
+  "meta": {
+    "n_images": 10
+  }
+}

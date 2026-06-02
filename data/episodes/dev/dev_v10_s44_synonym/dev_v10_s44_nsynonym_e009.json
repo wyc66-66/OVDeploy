@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e009",
+  "image_ids": [
+    84674,
+    180487,
+    236721,
+    419653,
+    446117,
+    60932,
+    97924,
+    563702,
+    119516,
+    448076
+  ],
+  "vocab": {
+    "cat_ids": [
+      1154,
+      387,
+      132,
+      133,
+      390,
+      1031,
+      392,
+      1027,
+      266,
+      911
+    ],
+    "prompts": {
+      "1154": [
+        "wall clock"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "132": [
+        "boot"
+      ],
+      "133": [
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "266": [
+        "clementine"
+      ],
+      "911": [
+        "sandal"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

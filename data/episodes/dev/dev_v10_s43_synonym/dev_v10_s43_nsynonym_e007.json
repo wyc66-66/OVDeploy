@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nsynonym_e007",
+  "image_ids": [
+    379453,
+    334399,
+    338532,
+    182417,
+    569059,
+    547816,
+    95786,
+    263068,
+    298994,
+    78915
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      898,
+      3,
+      390,
+      653,
+      271,
+      655,
+      790,
+      1050,
+      154
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "653": [
+        "log"
+      ],
+      "271": [
+        "clock"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "790": [
+        "pepper mill"
+      ],
+      "1050": [
+        "table"
+      ],
+      "154": [
+        "broccoli"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 50,
+  "meta": {
+    "n_images": 10
+  }
+}

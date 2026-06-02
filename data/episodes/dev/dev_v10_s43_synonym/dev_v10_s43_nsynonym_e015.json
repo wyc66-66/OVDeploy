@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nsynonym_e015",
+  "image_ids": [
+    2149,
+    390826,
+    50844,
+    292446,
+    294855,
+    185472,
+    308193,
+    402992,
+    429598,
+    441286
+  ],
+  "vocab": {
+    "cat_ids": [
+      1091,
+      1155,
+      133,
+      139,
+      12,
+      589,
+      715,
+      271,
+      80,
+      977
+    ],
+    "prompts": {
+      "1091": [
+        "tinfoil"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "133": [
+        "container"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "12": [
+        "apple"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "271": [
+        "clock"
+      ],
+      "80": [
+        "cow"
+      ],
+      "977": [
+        "snowman"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 58,
+  "meta": {
+    "n_images": 10
+  }
+}

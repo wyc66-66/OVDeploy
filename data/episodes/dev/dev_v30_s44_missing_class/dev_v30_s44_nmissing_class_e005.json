@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s44_nmissing_class_e005",
+  "image_ids": [
+    363207,
+    175387,
+    289229,
+    54605,
+    441286,
+    60932,
+    393282,
+    560279,
+    285788,
+    273712
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      385,
+      392,
+      713,
+      1097,
+      1098,
+      716,
+      461,
+      462,
+      276,
+      1175,
+      152,
+      1177,
+      1050,
+      539,
+      1180,
+      540,
+      541,
+      375,
+      26,
+      737,
+      156,
+      421,
+      620,
+      496,
+      177,
+      818,
+      500,
+      183
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "194": [
+        "candle"
+      ],
+      "392": [
+        "dress"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "462": [
+        "flute glass"
+      ],
+      "276": [
+        "coaster"
+      ],
+      "1175": [
+        "wedding cake"
+      ],
+      "152": [
+        "bridal gown"
+      ],
+      "1177": [
+        "wet suit"
+      ],
+      "1050": [
+        "table"
+      ],
+      "539": [
+        "handkerchief"
+      ],
+      "1180": [
+        "whipped cream"
+      ],
+      "540": [
+        "handle"
+      ],
+      "541": [
+        "handsaw"
+      ],
+      "375": [
+        "dispenser"
+      ],
+      "26": [
+        "atomizer"
+      ],
+      "737": [
+        "ostrich"
+      ],
+      "156": [
+        "broom"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "620": [
+        "lab coat"
+      ],
+      "496": [
+        "giraffe"
+      ],
+      "177": [
+        "button"
+      ],
+      "818": [
+        "plate"
+      ],
+      "500": [
+        "glove"
+      ],
+      "183": [
+        "cake"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

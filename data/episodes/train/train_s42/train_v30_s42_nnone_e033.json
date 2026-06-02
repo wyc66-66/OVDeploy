@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e033",
+  "image_ids": [
+    324818,
+    214720,
+    153217,
+    212166,
+    483050
+  ],
+  "vocab": {
+    "cat_ids": [
+      4,
+      390,
+      845,
+      910,
+      77,
+      16,
+      658,
+      767,
+      724,
+      982,
+      1178,
+      1050,
+      804,
+      548,
+      615,
+      104,
+      816,
+      1072,
+      626,
+      761,
+      189,
+      703,
+      2,
+      3,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27
+    ],
+    "prompts": {
+      "4": [
+        "alarm clock"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "845": [
+        "printer"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "77": [
+        "bed"
+      ],
+      "16": [
+        "aquarium"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "767": [
+        "parrot"
+      ],
+      "724": [
+        "notebook"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "1050": [
+        "table"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "548": [
+        "headboard"
+      ],
+      "615": [
+        "knife"
+      ],
+      "104": [
+        "birthday cake"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "761": [
+        "parakeet"
+      ],
+      "189": [
+        "camera"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 75,
+  "meta": {
+    "n_images": 5
+  }
+}

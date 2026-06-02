@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e018",
+  "image_ids": [
+    426203,
+    478136,
+    273712,
+    520264,
+    175387,
+    62025,
+    445846,
+    366711,
+    376307,
+    531135
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1027,
+      771,
+      387,
+      1155,
+      12,
+      1042,
+      278,
+      23
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "771": [
+        "pastry"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "12": [
+        "apple"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "278": [
+        "coat hanger"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "919": [
+        "scale"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 62,
+  "meta": {
+    "n_images": 10
+  }
+}

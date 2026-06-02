@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nnone_e011",
+  "image_ids": [
+    278705,
+    157756,
+    156924,
+    51598,
+    391722,
+    119516,
+    263068,
+    581781,
+    114770,
+    24144
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      962,
+      1026,
+      1027,
+      961,
+      1155,
+      194,
+      3,
+      715,
+      716
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "961": [
+        "sink"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "194": [
+        "candle"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "716": [
+        "necktie"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 55,
+  "meta": {
+    "n_images": 10
+  }
+}

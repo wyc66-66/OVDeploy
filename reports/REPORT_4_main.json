@@ -1,0 +1,202 @@
+{
+  "status": "gpu_main_table",
+  "split": "dev",
+  "timestamp": "2026-05-26T17:31:37.640690+00:00",
+  "git": "unknown",
+  "metrics_version": "v2",
+  "federated_AP_reference": 22.7,
+  "rows": [
+    {
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 12.740479113462024,
+      "OOV_FP_mean": 0.6643869047619047,
+      "text_ms_per_image": 799.5777870750044,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B1_oracle",
+      "EpisodicAP_mean": 40.9259003649635,
+      "OOV_FP_mean": 0.6643869047619047,
+      "text_ms_per_image": 31.990943219975634,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B2_freq",
+      "EpisodicAP_mean": 3.4032738095238093,
+      "OOV_FP_mean": 0.6643869047619047,
+      "text_ms_per_image": 32.4600369899872,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B3_random",
+      "EpisodicAP_mean": 0.75,
+      "OOV_FP_mean": 0.6643869047619047,
+      "text_ms_per_image": 32.26148516002013,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B4_clip",
+      "EpisodicAP_mean": 3.4032738095238093,
+      "OOV_FP_mean": 0.6643869047619047,
+      "text_ms_per_image": 31.818254524969234,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 20.695462204241966,
+      "OOV_FP_mean": 0.6643869047619047,
+      "text_ms_per_image": 33.30861115996413,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 13.360396221827505,
+      "OOV_FP_mean": 0.5527077138547727,
+      "text_ms_per_image": 719.1150982300132,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B1_oracle",
+      "EpisodicAP_mean": 37.901967851598606,
+      "OOV_FP_mean": 0.5527077138547727,
+      "text_ms_per_image": 35.176641200014274,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B2_freq",
+      "EpisodicAP_mean": 8.855045952012865,
+      "OOV_FP_mean": 0.5527077138547727,
+      "text_ms_per_image": 35.31562748001761,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B3_random",
+      "EpisodicAP_mean": 3.041666666666667,
+      "OOV_FP_mean": 0.5527077138547727,
+      "text_ms_per_image": 35.53869818998919,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B4_clip",
+      "EpisodicAP_mean": 8.855045952012865,
+      "OOV_FP_mean": 0.5527077138547727,
+      "text_ms_per_image": 36.16068123003515,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 30,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 35.97033666358426,
+      "OOV_FP_mean": 0.5527077138547727,
+      "text_ms_per_image": 34.859438864991716,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 13.405206816475879,
+      "OOV_FP_mean": 0.47956845238095214,
+      "text_ms_per_image": 715.8326974449847,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B1_oracle",
+      "EpisodicAP_mean": 28.17018867028212,
+      "OOV_FP_mean": 0.47956845238095214,
+      "text_ms_per_image": 48.01429177998216,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B2_freq",
+      "EpisodicAP_mean": 14.703125785719982,
+      "OOV_FP_mean": 0.47956845238095214,
+      "text_ms_per_image": 46.79765295002653,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B3_random",
+      "EpisodicAP_mean": 5.721415504409978,
+      "OOV_FP_mean": 0.47956845238095214,
+      "text_ms_per_image": 46.15830274499331,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B4_clip",
+      "EpisodicAP_mean": 14.703125785719982,
+      "OOV_FP_mean": 0.47956845238095214,
+      "text_ms_per_image": 45.723175499997524,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 100,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 26.738475610416195,
+      "OOV_FP_mean": 0.47956845238095214,
+      "text_ms_per_image": 47.37345175500195,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 1203,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 15.269792403940574,
+      "OOV_FP_mean": 0.0,
+      "text_ms_per_image": 711.5706260649677,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 1203,
+      "baseline": "B1_oracle",
+      "EpisodicAP_mean": 15.269792403940574,
+      "OOV_FP_mean": 0.0,
+      "text_ms_per_image": 717.6914198800068,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 1203,
+      "baseline": "B2_freq",
+      "EpisodicAP_mean": 15.269792403940574,
+      "OOV_FP_mean": 0.0,
+      "text_ms_per_image": 657.1595484299996,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 1203,
+      "baseline": "B3_random",
+      "EpisodicAP_mean": 15.269792403940574,
+      "OOV_FP_mean": 0.0,
+      "text_ms_per_image": 640.045214524971,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 1203,
+      "baseline": "B4_clip",
+      "EpisodicAP_mean": 15.269781554305663,
+      "OOV_FP_mean": 0.0,
+      "text_ms_per_image": 654.2322323950111,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 1203,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 15.269781554305663,
+      "OOV_FP_mean": 0.0,
+      "text_ms_per_image": 665.2105419149848,
+      "mode": "gpu"
+    }
+  ]
+}

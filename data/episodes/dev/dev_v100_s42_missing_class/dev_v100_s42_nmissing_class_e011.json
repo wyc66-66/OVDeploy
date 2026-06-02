@@ -1,0 +1,429 @@
+{
+  "episode_id": "dev_v100_s42_nmissing_class_e011",
+  "image_ids": [
+    188439,
+    74209,
+    522007,
+    462614,
+    547816,
+    27972,
+    402346,
+    39951,
+    492878,
+    356498
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      386,
+      645,
+      390,
+      650,
+      139,
+      271,
+      531,
+      1178,
+      154,
+      1186,
+      932,
+      549,
+      421,
+      935,
+      811,
+      44,
+      45,
+      430,
+      687,
+      683,
+      947,
+      565,
+      181,
+      1079,
+      694,
+      827,
+      955,
+      61,
+      957,
+      959,
+      828,
+      65,
+      961,
+      66,
+      836,
+      708,
+      1095,
+      1097,
+      1098,
+      1099,
+      461,
+      1102,
+      1103,
+      979,
+      1109,
+      609,
+      866,
+      1123,
+      253,
+      1018,
+      1021,
+      127,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      48,
+      50,
+      53,
+      56,
+      57,
+      58,
+      59,
+      60,
+      68,
+      76,
+      77,
+      79,
+      80,
+      81,
+      83,
+      86,
+      87,
+      88,
+      89,
+      90,
+      94,
+      95,
+      96,
+      99,
+      104,
+      109,
+      110,
+      112,
+      114,
+      115
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "386": [
+        "doormat"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "650": [
+        "lip balm"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "271": [
+        "clock"
+      ],
+      "531": [
+        "hammock"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "1186": [
+        "windshield wiper"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "44": [
+        "bamboo"
+      ],
+      "45": [
+        "banana"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "683": [
+        "medicine"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "565": [
+        "fume hood"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "827": [
+        "pole"
+      ],
+      "955": [
+        "shower head"
+      ],
+      "61": [
+        "basket"
+      ],
+      "957": [
+        "shower curtain"
+      ],
+      "959": [
+        "signboard"
+      ],
+      "828": [
+        "polo shirt"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "961": [
+        "sink"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "836": [
+        "pot"
+      ],
+      "708": [
+        "mug"
+      ],
+      "1095": [
+        "toaster"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "1102": [
+        "toothbrush"
+      ],
+      "1103": [
+        "toothpaste"
+      ],
+      "979": [
+        "soap"
+      ],
+      "1109": [
+        "towel rack"
+      ],
+      "609": [
+        "kitchen sink"
+      ],
+      "866": [
+        "radio receiver"
+      ],
+      "1123": [
+        "truck"
+      ],
+      "253": [
+        "chopping board"
+      ],
+      "1018": [
+        "stool"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "57": [
+        "baseball"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "75": [
+        "beanie"
+      ],
+      "76": [
+        "bear"
+      ],
+      "77": [
+        "bed"
+      ],
+      "79": [
+        "bedspread"
+      ],
+      "80": [
+        "cow"
+      ],
+      "81": [
+        "beef"
+      ],
+      "83": [
+        "beer bottle"
+      ],
+      "86": [
+        "bell"
+      ],
+      "87": [
+        "bell pepper"
+      ],
+      "88": [
+        "belt"
+      ],
+      "89": [
+        "belt buckle"
+      ],
+      "90": [
+        "bench"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "95": [
+        "visor"
+      ],
+      "96": [
+        "billboard"
+      ],
+      "99": [
+        "bird"
+      ],
+      "104": [
+        "birthday cake"
+      ],
+      "109": [
+        "blackboard"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "112": [
+        "blender"
+      ],
+      "114": [
+        "blinker"
+      ],
+      "115": [
+        "blouse"
+      ]
+    }
+  },
+  "vocab_size": 99,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

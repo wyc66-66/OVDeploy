@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e001",
+  "image_ids": [
+    199236,
+    453302,
+    529528,
+    12670,
+    466416,
+    546826,
+    406417,
+    84241,
+    109441,
+    7386
+  ],
+  "vocab": {
+    "cat_ids": [
+      1026,
+      133,
+      138,
+      139,
+      910,
+      271,
+      272,
+      21,
+      790,
+      23
+    ],
+    "prompts": {
+      "1026": [
+        "street sign"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "138": [
+        "bow-tie"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "21": [
+        "armor"
+      ],
+      "790": [
+        "pepper mill"
+      ],
+      "23": [
+        "trash can"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 44,
+  "meta": {
+    "n_images": 10
+  }
+}

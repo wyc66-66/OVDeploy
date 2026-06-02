@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e018",
+  "image_ids": [
+    553990,
+    227898,
+    236721,
+    110784,
+    36936,
+    60855,
+    186296,
+    344621,
+    578236,
+    489305
+  ],
+  "vocab": {
+    "cat_ids": [
+      1025,
+      899,
+      1027,
+      1031,
+      1161,
+      1035,
+      12,
+      652,
+      911,
+      655
+    ],
+    "prompts": {
+      "1025": [
+        "strawberry"
+      ],
+      "899": [
+        "saddle"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "12": [
+        "apple"
+      ],
+      "652": [
+        "lizard"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "655": [
+        "speaker"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 62,
+  "meta": {
+    "n_images": 10
+  }
+}

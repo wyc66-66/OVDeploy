@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e007",
+  "image_ids": [
+    302536,
+    357816,
+    314264,
+    393282,
+    27972,
+    382030,
+    39477,
+    142092,
+    61658,
+    22705
+  ],
+  "vocab": {
+    "cat_ids": [
+      2,
+      390,
+      392,
+      1035,
+      1039,
+      146,
+      19,
+      154,
+      1182,
+      933
+    ],
+    "prompts": {
+      "2": [
+        "air conditioner"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "1039": [
+        "mop"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "1182": [
+        "wig"
+      ],
+      "933": [
+        "sewing machine"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 51,
+  "meta": {
+    "n_images": 10
+  }
+}

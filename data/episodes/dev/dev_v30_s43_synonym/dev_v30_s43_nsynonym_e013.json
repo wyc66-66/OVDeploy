@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nsynonym_e013",
+  "image_ids": [
+    46378,
+    509260,
+    112626,
+    160556,
+    449190,
+    227898,
+    341921,
+    332318,
+    273132,
+    233139
+  ],
+  "vocab": {
+    "cat_ids": [
+      256,
+      386,
+      1155,
+      898,
+      133,
+      645,
+      1154,
+      392,
+      1161,
+      11,
+      1035,
+      589,
+      80,
+      1042,
+      277,
+      982,
+      217,
+      90,
+      285,
+      1057,
+      161,
+      99,
+      36,
+      230,
+      1191,
+      296,
+      172,
+      687,
+      1071,
+      626
+    ],
+    "prompts": {
+      "256": [
+        "slide"
+      ],
+      "386": [
+        "doormat"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "133": [
+        "container"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "80": [
+        "cow"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "277": [
+        "coat"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "90": [
+        "bench"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "1057": [
+        "tambourine"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "99": [
+        "bird"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "1191": [
+        "blinder"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "172": [
+        "burrito"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "626": [
+        "lamp"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 56,
+  "meta": {
+    "n_images": 10
+  }
+}

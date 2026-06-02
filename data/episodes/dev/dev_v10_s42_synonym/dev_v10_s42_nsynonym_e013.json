@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nsynonym_e013",
+  "image_ids": [
+    12670,
+    552371,
+    199236,
+    520264,
+    347544,
+    370999,
+    408696,
+    390826,
+    153299,
+    370486
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      133,
+      1095,
+      1097,
+      715,
+      589,
+      913,
+      21,
+      23,
+      88
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "133": [
+        "container"
+      ],
+      "1095": [
+        "toaster"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "913": [
+        "satchel"
+      ],
+      "21": [
+        "armor"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "88": [
+        "belt"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 55,
+  "meta": {
+    "n_images": 10
+  }
+}

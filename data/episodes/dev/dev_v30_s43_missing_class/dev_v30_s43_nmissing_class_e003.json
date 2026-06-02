@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e003",
+  "image_ids": [
+    438269,
+    153782,
+    8629,
+    385029,
+    571804,
+    470121,
+    119452,
+    233567,
+    367228,
+    284743
+  ],
+  "vocab": {
+    "cat_ids": [
+      961,
+      1027,
+      904,
+      776,
+      456,
+      589,
+      1038,
+      271,
+      272,
+      469,
+      666,
+      1055,
+      611,
+      1188,
+      1000,
+      107,
+      557,
+      814,
+      367,
+      816,
+      45,
+      943,
+      61,
+      177,
+      189,
+      58,
+      253,
+      2,
+      4
+    ],
+    "prompts": {
+      "961": [
+        "sink"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "904": [
+        "salad"
+      ],
+      "776": [
+        "pear"
+      ],
+      "456": [
+        "flash"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "1038": [
+        "sushi"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "469": [
+        "fork"
+      ],
+      "666": [
+        "mandarin orange"
+      ],
+      "1055": [
+        "tag"
+      ],
+      "611": [
+        "kite"
+      ],
+      "1188": [
+        "wine bottle"
+      ],
+      "1000": [
+        "spoon"
+      ],
+      "107": [
+        "black sheep"
+      ],
+      "557": [
+        "heron"
+      ],
+      "814": [
+        "pitcher"
+      ],
+      "367": [
+        "dining table"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "45": [
+        "banana"
+      ],
+      "943": [
+        "sheep"
+      ],
+      "61": [
+        "basket"
+      ],
+      "177": [
+        "button"
+      ],
+      "189": [
+        "camera"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "253": [
+        "chopping board"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 46,
+  "meta": {
+    "n_images": 10
+  }
+}

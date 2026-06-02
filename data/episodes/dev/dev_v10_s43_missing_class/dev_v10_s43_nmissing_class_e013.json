@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e013",
+  "image_ids": [
+    347265,
+    347456,
+    569059,
+    273132,
+    255824,
+    562197,
+    439623,
+    547816,
+    32817,
+    233370
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      961,
+      66,
+      964,
+      965,
+      385,
+      967,
+      392,
+      1097
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "961": [
+        "sink"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "964": [
+        "ski"
+      ],
+      "965": [
+        "ski boot"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "967": [
+        "ski pole"
+      ],
+      "392": [
+        "dress"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1097": [
+        "toilet"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 56,
+  "meta": {
+    "n_images": 10
+  }
+}

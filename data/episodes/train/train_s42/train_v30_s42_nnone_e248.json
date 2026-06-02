@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e248",
+  "image_ids": [
+    119445,
+    43816,
+    445999,
+    46031,
+    374052
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      706,
+      1102,
+      655,
+      277,
+      698,
+      411,
+      350,
+      802,
+      675,
+      99,
+      361,
+      377,
+      556,
+      631,
+      56,
+      57,
+      58,
+      60,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "1102": [
+        "toothbrush"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "277": [
+        "coat"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "411": [
+        "earring"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "802": [
+        "pigeon"
+      ],
+      "675": [
+        "mask"
+      ],
+      "99": [
+        "bird"
+      ],
+      "361": [
+        "desk"
+      ],
+      "377": [
+        "Dixie cup"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "57": [
+        "baseball"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 290,
+  "meta": {
+    "n_images": 5
+  }
+}

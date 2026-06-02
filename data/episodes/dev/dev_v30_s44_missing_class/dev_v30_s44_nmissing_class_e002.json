@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nmissing_class_e002",
+  "image_ids": [
+    278463,
+    11813,
+    556193,
+    109441,
+    565391,
+    246968,
+    248334,
+    313034,
+    50844,
+    227898
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1026,
+      1154,
+      133,
+      390,
+      5,
+      1161,
+      1162,
+      1035,
+      781,
+      271,
+      145,
+      921,
+      161,
+      1186,
+      803,
+      932,
+      549,
+      1191,
+      296,
+      299,
+      1195,
+      814,
+      687,
+      1072,
+      177,
+      1071,
+      693,
+      184
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "781": [
+        "pen"
+      ],
+      "271": [
+        "clock"
+      ],
+      "145": [
+        "suspenders"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "1186": [
+        "windshield wiper"
+      ],
+      "803": [
+        "piggy bank"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "1191": [
+        "blinder"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "299": [
+        "control"
+      ],
+      "1195": [
+        "wreath"
+      ],
+      "814": [
+        "pitcher"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "177": [
+        "button"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "693": [
+        "mint candy"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "184": [
+        "calculator"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 46,
+  "meta": {
+    "n_images": 10
+  }
+}

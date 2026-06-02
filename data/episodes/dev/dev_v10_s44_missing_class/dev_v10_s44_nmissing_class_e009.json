@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e009",
+  "image_ids": [
+    463647,
+    142620,
+    273712,
+    109055,
+    537812,
+    150638,
+    7386,
+    370999,
+    73946,
+    552371
+  ],
+  "vocab": {
+    "cat_ids": [
+      708,
+      836,
+      5,
+      133,
+      1097,
+      1162,
+      1098,
+      1101,
+      589
+    ],
+    "prompts": {
+      "708": [
+        "mug"
+      ],
+      "836": [
+        "pot"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "1101": [
+        "toolbox"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "1103": [
+        "toothpaste"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

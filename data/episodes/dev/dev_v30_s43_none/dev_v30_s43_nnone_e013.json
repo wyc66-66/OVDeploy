@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nnone_e013",
+  "image_ids": [
+    501523,
+    180751,
+    235836,
+    520264,
+    365208,
+    6771,
+    302760,
+    188439,
+    328238,
+    494913
+  ],
+  "vocab": {
+    "cat_ids": [
+      1,
+      390,
+      392,
+      1162,
+      651,
+      1035,
+      911,
+      399,
+      146,
+      531,
+      921,
+      1178,
+      1182,
+      544,
+      1186,
+      675,
+      1188,
+      421,
+      549,
+      550,
+      804,
+      556,
+      44,
+      430,
+      687,
+      816,
+      817,
+      1077,
+      442,
+      58
+    ],
+    "prompts": {
+      "1": [
+        "aerosol can"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "651": [
+        "liquor"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "399": [
+        "drum"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "531": [
+        "hammock"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "1182": [
+        "wig"
+      ],
+      "544": [
+        "hat"
+      ],
+      "1186": [
+        "windshield wiper"
+      ],
+      "675": [
+        "mask"
+      ],
+      "1188": [
+        "wine bottle"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "550": [
+        "headscarf"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "44": [
+        "bamboo"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "817": [
+        "place mat"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "442": [
+        "fire extinguisher"
+      ],
+      "58": [
+        "baseball bat"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 56,
+  "meta": {
+    "n_images": 10
+  }
+}

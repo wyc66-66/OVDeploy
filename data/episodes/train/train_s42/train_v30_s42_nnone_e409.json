@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e409",
+  "image_ids": [
+    273551,
+    187243,
+    190007,
+    178028,
+    538364
+  ],
+  "vocab": {
+    "cat_ids": [
+      65,
+      1026,
+      1155,
+      642,
+      133,
+      1097,
+      1098,
+      524,
+      979,
+      1108,
+      1109,
+      534,
+      536,
+      1178,
+      90,
+      549,
+      556,
+      430,
+      694,
+      951,
+      703,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27
+    ],
+    "prompts": {
+      "65": [
+        "bath mat"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "979": [
+        "soap"
+      ],
+      "1108": [
+        "towel"
+      ],
+      "1109": [
+        "towel rack"
+      ],
+      "534": [
+        "hair dryer"
+      ],
+      "536": [
+        "hand towel"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "90": [
+        "bench"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 451,
+  "meta": {
+    "n_images": 5
+  }
+}

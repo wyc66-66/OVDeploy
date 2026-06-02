@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nnone_e019",
+  "image_ids": [
+    578236,
+    218362,
+    402992,
+    567197,
+    70158,
+    492878,
+    350488,
+    148620,
+    63047,
+    573943
+  ],
+  "vocab": {
+    "cat_ids": [
+      961,
+      898,
+      1027,
+      708,
+      650,
+      652,
+      1102,
+      271,
+      80,
+      1103,
+      23,
+      1114,
+      1055,
+      991,
+      802,
+      99,
+      1123,
+      995,
+      296,
+      361,
+      683,
+      430,
+      560,
+      1202,
+      694,
+      631,
+      698,
+      2,
+      3,
+      4
+    ],
+    "prompts": {
+      "961": [
+        "sink"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "708": [
+        "mug"
+      ],
+      "650": [
+        "lip balm"
+      ],
+      "652": [
+        "lizard"
+      ],
+      "1102": [
+        "toothbrush"
+      ],
+      "271": [
+        "clock"
+      ],
+      "80": [
+        "cow"
+      ],
+      "1103": [
+        "toothpaste"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1114": [
+        "trailer truck"
+      ],
+      "1055": [
+        "tag"
+      ],
+      "991": [
+        "space shuttle"
+      ],
+      "802": [
+        "pigeon"
+      ],
+      "99": [
+        "bird"
+      ],
+      "1123": [
+        "truck"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "361": [
+        "desk"
+      ],
+      "683": [
+        "medicine"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "560": [
+        "hippopotamus"
+      ],
+      "1202": [
+        "zebra"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 62,
+  "meta": {
+    "n_images": 10
+  }
+}

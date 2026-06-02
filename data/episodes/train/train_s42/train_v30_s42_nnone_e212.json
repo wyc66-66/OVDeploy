@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e212",
+  "image_ids": [
+    429281,
+    306733,
+    292082,
+    558114,
+    26690
+  ],
+  "vocab": {
+    "cat_ids": [
+      66,
+      962,
+      68,
+      392,
+      12,
+      461,
+      716,
+      979,
+      1109,
+      981,
+      409,
+      350,
+      735,
+      33,
+      995,
+      806,
+      556,
+      45,
+      430,
+      50,
+      885,
+      59,
+      957,
+      959,
+      2,
+      3,
+      4,
+      11,
+      15,
+      19
+    ],
+    "prompts": {
+      "66": [
+        "bath towel"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "392": [
+        "dress"
+      ],
+      "12": [
+        "apple"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "979": [
+        "soap"
+      ],
+      "1109": [
+        "towel rack"
+      ],
+      "981": [
+        "sock"
+      ],
+      "409": [
+        "earphone"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "735": [
+        "orange"
+      ],
+      "33": [
+        "basketball backboard"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "806": [
+        "pineapple"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "45": [
+        "banana"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "50": [
+        "banner"
+      ],
+      "885": [
+        "ring"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "957": [
+        "shower curtain"
+      ],
+      "959": [
+        "signboard"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 254,
+  "meta": {
+    "n_images": 5
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e016",
+  "image_ids": [
+    289229,
+    29393,
+    370486,
+    153527,
+    190236,
+    493284,
+    43581,
+    295420,
+    129945,
+    525247
+  ],
+  "vocab": {
+    "cat_ids": [
+      708,
+      133,
+      837,
+      713,
+      913,
+      530,
+      469,
+      278,
+      23,
+      88
+    ],
+    "prompts": {
+      "708": [
+        "mug"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "913": [
+        "satchel"
+      ],
+      "530": [
+        "hammer"
+      ],
+      "469": [
+        "fork"
+      ],
+      "278": [
+        "coat hanger"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "88": [
+        "belt"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 59,
+  "meta": {
+    "n_images": 10
+  }
+}

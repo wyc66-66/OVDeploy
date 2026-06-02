@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e293",
+  "image_ids": [
+    455981,
+    143931,
+    51738,
+    191471,
+    180135
+  ],
+  "vocab": {
+    "cat_ids": [
+      1026,
+      36,
+      1097,
+      1098,
+      1161,
+      173,
+      77,
+      685,
+      146,
+      19,
+      628,
+      1141,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      41,
+      43,
+      45,
+      48,
+      50,
+      53
+    ],
+    "prompts": {
+      "1026": [
+        "street sign"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "173": [
+        "bus"
+      ],
+      "77": [
+        "bed"
+      ],
+      "685": [
+        "microphone"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "628": [
+        "lampshade"
+      ],
+      "1141": [
+        "vent"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 335,
+  "meta": {
+    "n_images": 5
+  }
+}

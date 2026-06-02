@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e014",
+  "image_ids": [
+    266981,
+    180751,
+    186637,
+    438862,
+    114770,
+    463618,
+    431876,
+    507042,
+    528314,
+    278006
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      3,
+      1027,
+      899,
+      131,
+      964,
+      967,
+      1026,
+      1035
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "899": [
+        "saddle"
+      ],
+      "131": [
+        "boom microphone"
+      ],
+      "964": [
+        "ski"
+      ],
+      "967": [
+        "ski pole"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "1035": [
+        "sunglasses"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 56,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nnone_e000",
+  "image_ids": [
+    203931,
+    123585,
+    377723,
+    552371,
+    83531,
+    308193,
+    263068,
+    233567,
+    556193,
+    217425
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      451,
+      452,
+      962,
+      1027,
+      1100,
+      271,
+      592,
+      272,
+      916
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "451": [
+        "flag"
+      ],
+      "452": [
+        "flagpole"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "1100": [
+        "tongs"
+      ],
+      "271": [
+        "clock"
+      ],
+      "592": [
+        "jean"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "916": [
+        "sausage"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 44,
+  "meta": {
+    "n_images": 10
+  }
+}

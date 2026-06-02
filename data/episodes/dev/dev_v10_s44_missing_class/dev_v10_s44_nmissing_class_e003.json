@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e003",
+  "image_ids": [
+    560279,
+    347370,
+    479953,
+    119452,
+    50844,
+    508586,
+    214192,
+    563702,
+    573943,
+    227898
+  ],
+  "vocab": {
+    "cat_ids": [
+      451,
+      1027,
+      133,
+      647,
+      776,
+      1098,
+      1161,
+      1035,
+      977
+    ],
+    "prompts": {
+      "451": [
+        "flag"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "647": [
+        "lime"
+      ],
+      "776": [
+        "pear"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "977": [
+        "snowman"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 47,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e014",
+  "image_ids": [
+    447917,
+    394206,
+    470773,
+    529528,
+    347370,
+    562197,
+    366141,
+    112110,
+    426241,
+    382696
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      647,
+      1035,
+      139,
+      909,
+      655,
+      1021,
+      23,
+      153
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "647": [
+        "lime"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "909": [
+        "salsa"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "153": [
+        "briefcase"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 57,
+  "meta": {
+    "n_images": 10
+  }
+}

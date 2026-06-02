@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e037",
+  "image_ids": [
+    106281,
+    272566,
+    366611,
+    507223,
+    206218
+  ],
+  "vocab": {
+    "cat_ids": [
+      12,
+      146,
+      980,
+      88,
+      984,
+      156,
+      226,
+      1122,
+      614,
+      45,
+      177,
+      948,
+      885,
+      500,
+      58,
+      379,
+      60,
+      61,
+      959,
+      2,
+      3,
+      4,
+      11,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34
+    ],
+    "prompts": {
+      "12": [
+        "apple"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "980": [
+        "soccer ball"
+      ],
+      "88": [
+        "belt"
+      ],
+      "984": [
+        "solar array"
+      ],
+      "156": [
+        "broom"
+      ],
+      "226": [
+        "cauliflower"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "614": [
+        "knee pad"
+      ],
+      "45": [
+        "banana"
+      ],
+      "177": [
+        "button"
+      ],
+      "948": [
+        "shoe"
+      ],
+      "885": [
+        "ring"
+      ],
+      "500": [
+        "glove"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "379": [
+        "dog collar"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "61": [
+        "basket"
+      ],
+      "959": [
+        "signboard"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 79,
+  "meta": {
+    "n_images": 5
+  }
+}

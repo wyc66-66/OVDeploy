@@ -1,0 +1,146 @@
+{
+  "episode_id": "train_v30_s42_nnone_e120",
+  "image_ids": [
+    257169,
+    309938,
+    475572,
+    9769,
+    561256
+  ],
+  "vocab": {
+    "cat_ids": [
+      961,
+      392,
+      1097,
+      146,
+      1042,
+      1108,
+      534,
+      1178,
+      544,
+      865,
+      804,
+      1071,
+      626,
+      1139,
+      694,
+      189,
+      378,
+      445,
+      127,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32
+    ],
+    "prompts": {
+      "961": [
+        "sink"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "1108": [
+        "towel"
+      ],
+      "534": [
+        "hair dryer"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "544": [
+        "hat"
+      ],
+      "865": [
+        "radiator"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "189": [
+        "camera"
+      ],
+      "378": [
+        "dog",
+        "canine"
+      ],
+      "445": [
+        "fireplug"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 162,
+  "meta": {
+    "n_images": 5
+  }
+}

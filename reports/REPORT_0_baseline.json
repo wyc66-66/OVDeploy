@@ -1,0 +1,20 @@
+{
+  "baseline": "YOLO-World v2-S Full-V (B0)",
+  "dataset": "LVIS minival dev alignment",
+  "metrics": {
+    "AP": 22.7,
+    "AP_r": 16.4,
+    "AP_c": 20.8,
+    "AP_f": 25.5
+  },
+  "reference": {
+    "AP": 22.7,
+    "AP_r": 16.3,
+    "AP_c": 20.8,
+    "AP_f": 25.5
+  },
+  "gpu": "RTX 5070 / WSL",
+  "status": "ok",
+  "timestamp": "2026-05-25T09:32:34.566275+00:00",
+  "git": "unknown"
+}

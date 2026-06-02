@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e269",
+  "image_ids": [
+    481390,
+    221708,
+    566524,
+    514586,
+    318080
+  ],
+  "vocab": {
+    "cat_ids": [
+      194,
+      645,
+      519,
+      1035,
+      716,
+      461,
+      595,
+      659,
+      981,
+      88,
+      793,
+      89,
+      1115,
+      540,
+      1181,
+      350,
+      33,
+      609,
+      421,
+      556,
+      948,
+      181,
+      951,
+      58,
+      59,
+      62,
+      2,
+      3,
+      4,
+      11
+    ],
+    "prompts": {
+      "194": [
+        "candle"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "519": [
+        "grizzly"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "659": [
+        "magnet"
+      ],
+      "981": [
+        "sock"
+      ],
+      "88": [
+        "belt"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "89": [
+        "belt buckle"
+      ],
+      "1115": [
+        "train"
+      ],
+      "540": [
+        "handle"
+      ],
+      "1181": [
+        "whistle"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "33": [
+        "basketball backboard"
+      ],
+      "609": [
+        "kitchen sink"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "948": [
+        "shoe"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "62": [
+        "basketball"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 311,
+  "meta": {
+    "n_images": 5
+  }
+}

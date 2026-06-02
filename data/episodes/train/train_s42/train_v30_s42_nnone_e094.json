@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e094",
+  "image_ids": [
+    260266,
+    74733,
+    206487,
+    419408,
+    502599
+  ],
+  "vocab": {
+    "cat_ids": [
+      827,
+      962,
+      1027,
+      3,
+      1099,
+      848,
+      1112,
+      90,
+      1178,
+      1056,
+      1122,
+      230,
+      232,
+      816,
+      627,
+      436,
+      59,
+      253,
+      703,
+      2,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34
+    ],
+    "prompts": {
+      "827": [
+        "pole"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "848": [
+        "propeller"
+      ],
+      "1112": [
+        "traffic light"
+      ],
+      "90": [
+        "bench"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "1056": [
+        "taillight"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "232": [
+        "chair",
+        "seat"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "627": [
+        "lamppost"
+      ],
+      "436": [
+        "fighter jet"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "253": [
+        "chopping board"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 136,
+  "meta": {
+    "n_images": 5
+  }
+}

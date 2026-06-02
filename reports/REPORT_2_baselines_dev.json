@@ -1,0 +1,684 @@
+{
+  "status": "ok",
+  "timestamp": "2026-05-26T16:58:03.490279+00:00",
+  "git": "unknown",
+  "gpu_used": true,
+  "metrics_version": "v2",
+  "n_rows": 72,
+  "results": [
+    {
+      "episode_dir": "dev_v100_s42_none",
+      "baseline": "B0_full",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 13.405206816475879,
+      "OOV_FP_mean": 0.47956845238095214,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s42_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 28.17018867028212,
+      "OOV_FP_mean": 0.47956845238095214,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s42_none",
+      "baseline": "B2_freq",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 14.703125785719982,
+      "OOV_FP_mean": 0.47956845238095214,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s42_none",
+      "baseline": "B3_random",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 5.721415504409978,
+      "OOV_FP_mean": 0.47956845238095214,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s42_none",
+      "baseline": "B4_clip",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 14.703125785719982,
+      "OOV_FP_mean": 0.47956845238095214,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s42_none",
+      "baseline": "B5_subset",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 26.738475610416195,
+      "OOV_FP_mean": 0.47956845238095214,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s43_none",
+      "baseline": "B0_full",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 17.418335286976138,
+      "OOV_FP_mean": 0.43862500000000004,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s43_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 31.374349811847292,
+      "OOV_FP_mean": 0.43862500000000004,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s43_none",
+      "baseline": "B2_freq",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 17.153111588903975,
+      "OOV_FP_mean": 0.43862500000000004,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s43_none",
+      "baseline": "B3_random",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 6.756334479689149,
+      "OOV_FP_mean": 0.43862500000000004,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s43_none",
+      "baseline": "B4_clip",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 17.153111588903975,
+      "OOV_FP_mean": 0.43862500000000004,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s43_none",
+      "baseline": "B5_subset",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 31.686057534864613,
+      "OOV_FP_mean": 0.43862500000000004,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s44_none",
+      "baseline": "B0_full",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 13.835814348314077,
+      "OOV_FP_mean": 0.4333601953601954,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s44_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 30.21133100353621,
+      "OOV_FP_mean": 0.4333601953601954,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s44_none",
+      "baseline": "B2_freq",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 13.135371877138997,
+      "OOV_FP_mean": 0.4333601953601954,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s44_none",
+      "baseline": "B3_random",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 9.61951031079089,
+      "OOV_FP_mean": 0.4333601953601954,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s44_none",
+      "baseline": "B4_clip",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 13.135371877138997,
+      "OOV_FP_mean": 0.4333601953601954,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v100_s44_none",
+      "baseline": "B5_subset",
+      "vocab_size": 100,
+      "EpisodicAP_mean": 30.262881661844595,
+      "OOV_FP_mean": 0.4333601953601954,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s42_none",
+      "baseline": "B0_full",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 12.740479113462024,
+      "OOV_FP_mean": 0.6643869047619047,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s42_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 40.9259003649635,
+      "OOV_FP_mean": 0.6643869047619047,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s42_none",
+      "baseline": "B2_freq",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 3.4032738095238093,
+      "OOV_FP_mean": 0.6643869047619047,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s42_none",
+      "baseline": "B3_random",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 0.75,
+      "OOV_FP_mean": 0.6643869047619047,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s42_none",
+      "baseline": "B4_clip",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 3.4032738095238093,
+      "OOV_FP_mean": 0.6643869047619047,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s42_none",
+      "baseline": "B5_subset",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 20.695462204241966,
+      "OOV_FP_mean": 0.6643869047619047,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s43_none",
+      "baseline": "B0_full",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 14.554224379456688,
+      "OOV_FP_mean": 0.6377499999999998,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s43_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 38.41151265824956,
+      "OOV_FP_mean": 0.6377499999999998,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s43_none",
+      "baseline": "B2_freq",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 4.90327380952381,
+      "OOV_FP_mean": 0.6377499999999998,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s43_none",
+      "baseline": "B3_random",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 2.114583333333333,
+      "OOV_FP_mean": 0.6377499999999998,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s43_none",
+      "baseline": "B4_clip",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 4.90327380952381,
+      "OOV_FP_mean": 0.6377499999999998,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s43_none",
+      "baseline": "B5_subset",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 20.326222707048338,
+      "OOV_FP_mean": 0.6377499999999998,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s44_none",
+      "baseline": "B0_full",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 12.682610334103137,
+      "OOV_FP_mean": 0.6547380952380952,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s44_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 40.273438304237246,
+      "OOV_FP_mean": 0.6547380952380952,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s44_none",
+      "baseline": "B2_freq",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 7.02031217750258,
+      "OOV_FP_mean": 0.6547380952380952,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s44_none",
+      "baseline": "B3_random",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 2.639741970991971,
+      "OOV_FP_mean": 0.6547380952380952,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s44_none",
+      "baseline": "B4_clip",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 7.02031217750258,
+      "OOV_FP_mean": 0.6547380952380952,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v10_s44_none",
+      "baseline": "B5_subset",
+      "vocab_size": 10,
+      "EpisodicAP_mean": 21.47585533848454,
+      "OOV_FP_mean": 0.6547380952380952,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s42_none",
+      "baseline": "B0_full",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.269792403940574,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s42_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.269792403940574,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s42_none",
+      "baseline": "B2_freq",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.269792403940574,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s42_none",
+      "baseline": "B3_random",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.269792403940574,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s42_none",
+      "baseline": "B4_clip",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.269781554305663,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s42_none",
+      "baseline": "B5_subset",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.269781554305663,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s43_none",
+      "baseline": "B0_full",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.614341252628112,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s43_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.614341252628112,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s43_none",
+      "baseline": "B2_freq",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.614341252628112,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s43_none",
+      "baseline": "B3_random",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.614341252628112,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s43_none",
+      "baseline": "B4_clip",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.614333732970499,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s43_none",
+      "baseline": "B5_subset",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 15.614333732970499,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s44_none",
+      "baseline": "B0_full",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 13.459912132713708,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s44_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 13.459912132713708,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s44_none",
+      "baseline": "B2_freq",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 13.459912132713708,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s44_none",
+      "baseline": "B3_random",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 13.459912132713708,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s44_none",
+      "baseline": "B4_clip",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 13.459901283078798,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v1203_s44_none",
+      "baseline": "B5_subset",
+      "vocab_size": 1203,
+      "EpisodicAP_mean": 13.459901283078798,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s42_none",
+      "baseline": "B0_full",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 13.360396221827505,
+      "OOV_FP_mean": 0.5527077138547727,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s42_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 37.901967851598606,
+      "OOV_FP_mean": 0.5527077138547727,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s42_none",
+      "baseline": "B2_freq",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 8.855045952012865,
+      "OOV_FP_mean": 0.5527077138547727,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s42_none",
+      "baseline": "B3_random",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 3.041666666666667,
+      "OOV_FP_mean": 0.5527077138547727,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s42_none",
+      "baseline": "B4_clip",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 8.855045952012865,
+      "OOV_FP_mean": 0.5527077138547727,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s42_none",
+      "baseline": "B5_subset",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 35.97033666358426,
+      "OOV_FP_mean": 0.5527077138547727,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s43_none",
+      "baseline": "B0_full",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 13.857049903623025,
+      "OOV_FP_mean": 0.5614165140415142,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s43_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 36.13605386899606,
+      "OOV_FP_mean": 0.5614165140415142,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s43_none",
+      "baseline": "B2_freq",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 6.938208919931609,
+      "OOV_FP_mean": 0.5614165140415142,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s43_none",
+      "baseline": "B3_random",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 5.307301864801865,
+      "OOV_FP_mean": 0.5614165140415142,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s43_none",
+      "baseline": "B4_clip",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 6.938208919931609,
+      "OOV_FP_mean": 0.5614165140415142,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s43_none",
+      "baseline": "B5_subset",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 33.58177873249704,
+      "OOV_FP_mean": 0.5614165140415142,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s44_none",
+      "baseline": "B0_full",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 10.92190826915035,
+      "OOV_FP_mean": 0.5361468253968253,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s44_none",
+      "baseline": "B1_oracle",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 34.29160503107827,
+      "OOV_FP_mean": 0.5361468253968253,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s44_none",
+      "baseline": "B2_freq",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 5.180070979780802,
+      "OOV_FP_mean": 0.5361468253968253,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s44_none",
+      "baseline": "B3_random",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 3.6651785714285716,
+      "OOV_FP_mean": 0.5361468253968253,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s44_none",
+      "baseline": "B4_clip",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 5.180070979780802,
+      "OOV_FP_mean": 0.5361468253968253,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    },
+    {
+      "episode_dir": "dev_v30_s44_none",
+      "baseline": "B5_subset",
+      "vocab_size": 30,
+      "EpisodicAP_mean": 32.25279918678325,
+      "OOV_FP_mean": 0.5361468253968253,
+      "FP_nonGT_mean": 0.0,
+      "mode": "gpu"
+    }
+  ],
+  "summary_by_baseline": {
+    "B0_full": {
+      "EpisodicAP_mean": 13.926672538555932,
+      "OOV_FP_mean": 0.4132249750861883
+    },
+    "B1_oracle": {
+      "EpisodicAP_mean": 30.17003277950594,
+      "OOV_FP_mean": 0.4132249750861883
+    },
+    "B2_freq": {
+      "EpisodicAP_mean": 10.469653390776736,
+      "OOV_FP_mean": 0.4132249750861883
+    },
+    "B3_random": {
+      "EpisodicAP_mean": 6.996648207616236,
+      "OOV_FP_mean": 0.4132249750861883
+    },
+    "B4_clip": {
+      "EpisodicAP_mean": 10.469650955866117,
+      "OOV_FP_mean": 0.4132249750861883
+    },
+    "B5_subset": {
+      "EpisodicAP_mean": 24.777823850843316,
+      "OOV_FP_mean": 0.4132249750861883
+    }
+  }
+}

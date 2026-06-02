@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e458",
+  "image_ids": [
+    163057,
+    559099,
+    1818,
+    491497,
+    272364
+  ],
+  "vocab": {
+    "cat_ids": [
+      80,
+      496,
+      1202,
+      611,
+      804,
+      1077,
+      61,
+      127,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      45,
+      48,
+      50,
+      53,
+      56,
+      57
+    ],
+    "prompts": {
+      "80": [
+        "cow"
+      ],
+      "496": [
+        "giraffe"
+      ],
+      "1202": [
+        "zebra"
+      ],
+      "611": [
+        "kite"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "61": [
+        "basket"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "57": [
+        "baseball"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 500,
+  "meta": {
+    "n_images": 5
+  }
+}

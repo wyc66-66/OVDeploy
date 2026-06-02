@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e019",
+  "image_ids": [
+    157756,
+    122606,
+    479248,
+    66771,
+    382696,
+    308476,
+    348481,
+    109441,
+    530836,
+    230362
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      1026,
+      1027,
+      1155,
+      643,
+      1031,
+      139,
+      655,
+      272,
+      915,
+      23,
+      288,
+      1186,
+      676,
+      549,
+      421,
+      806,
+      41,
+      811,
+      685,
+      1077,
+      694,
+      437,
+      181,
+      445,
+      705,
+      194,
+      578,
+      836
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "643": [
+        "life buoy"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "915": [
+        "saucer"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "288": [
+        "coin"
+      ],
+      "1186": [
+        "windshield wiper"
+      ],
+      "676": [
+        "mast"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "806": [
+        "pineapple"
+      ],
+      "41": [
+        "ball"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "685": [
+        "microphone"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "437": [
+        "figurine"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "445": [
+        "fireplug"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "194": [
+        "candle"
+      ],
+      "578": [
+        "polar bear"
+      ],
+      "836": [
+        "pot"
+      ],
+      "586": [
+        "iPod"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 62,
+  "meta": {
+    "n_images": 10
+  }
+}

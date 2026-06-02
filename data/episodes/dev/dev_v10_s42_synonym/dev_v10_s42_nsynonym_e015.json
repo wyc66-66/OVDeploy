@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nsynonym_e015",
+  "image_ids": [
+    332318,
+    92177,
+    233139,
+    396274,
+    89670,
+    486046,
+    265816,
+    479953,
+    426241,
+    459634
+  ],
+  "vocab": {
+    "cat_ids": [
+      1025,
+      1154,
+      1027,
+      385,
+      837,
+      706,
+      705,
+      845,
+      655,
+      80
+    ],
+    "prompts": {
+      "1025": [
+        "strawberry"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "845": [
+        "printer"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "80": [
+        "cow"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 57,
+  "meta": {
+    "n_images": 10
+  }
+}

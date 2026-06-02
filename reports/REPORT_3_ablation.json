@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "timestamp": "2026-05-27T15:03:46.343795+00:00",
+  "git": "unknown",
+  "note": "Supplementary adapter ablation; main claims use frozen B0-B5",
+  "rows": [
+    {
+      "method": "B0_full",
+      "EpisodicAP_mean": 13.926672538555932,
+      "OOV_FP_mean": 0.4132249750861883,
+      "FP_nonGT_mean": 0.4132249750861883,
+      "source": "REPORT_2_dev"
+    },
+    {
+      "method": "B1_oracle",
+      "EpisodicAP_mean": 30.17003277950594,
+      "OOV_FP_mean": 0.4132249750861883,
+      "FP_nonGT_mean": 0.4132249750861883,
+      "source": "REPORT_2_dev"
+    },
+    {
+      "method": "B2_freq",
+      "EpisodicAP_mean": 10.469653390776736,
+      "OOV_FP_mean": 0.4132249750861883,
+      "FP_nonGT_mean": 0.4132249750861883,
+      "source": "REPORT_2_dev"
+    },
+    {
+      "method": "B3_random",
+      "EpisodicAP_mean": 6.996648207616236,
+      "OOV_FP_mean": 0.4132249750861883,
+      "FP_nonGT_mean": 0.4132249750861883,
+      "source": "REPORT_2_dev"
+    },
+    {
+      "method": "B4_clip",
+      "EpisodicAP_mean": 10.469650955866117,
+      "OOV_FP_mean": 0.4132249750861883,
+      "FP_nonGT_mean": 0.4132249750861883,
+      "source": "REPORT_2_dev"
+    },
+    {
+      "method": "B5_subset",
+      "EpisodicAP_mean": 24.777823850843316,
+      "OOV_FP_mean": 0.4132249750861883,
+      "FP_nonGT_mean": 0.4132249750861883,
+      "source": "REPORT_2_dev"
+    },
+    {
+      "method": "M1_adapter",
+      "EpisodicAP_mean": 1.61,
+      "FP_nonGT_mean": 0.0,
+      "OOV_FP_mean": 0.0,
+      "source": "gpu"
+    }
+  ],
+  "summary": {
+    "best_frozen": "B1_oracle",
+    "best_frozen_EpisodicAP": 30.17003277950594,
+    "M1_beats_frozen": false
+  }
+}

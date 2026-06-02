@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e016",
+  "image_ids": [
+    142092,
+    501523,
+    563882,
+    394940,
+    410510,
+    432553,
+    502229,
+    546826,
+    507575,
+    142620
+  ],
+  "vocab": {
+    "cat_ids": [
+      1,
+      1155,
+      1162,
+      1021,
+      19,
+      1174,
+      409,
+      923,
+      551
+    ],
+    "prompts": {
+      "1": [
+        "aerosol can"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "1174": [
+        "webcam"
+      ],
+      "409": [
+        "earphone"
+      ],
+      "923": [
+        "scissors"
+      ],
+      "551": [
+        "headset"
+      ],
+      "296": [
+        "computer keyboard"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 58,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e181",
+  "image_ids": [
+    199681,
+    162858,
+    205834,
+    83172,
+    382088
+  ],
+  "vocab": {
+    "cat_ids": [
+      1056,
+      1026,
+      139,
+      1198,
+      687,
+      1078,
+      23,
+      1112,
+      569,
+      378,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      45,
+      48,
+      50,
+      53,
+      56
+    ],
+    "prompts": {
+      "1056": [
+        "taillight"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1078": [
+        "tennis ball"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1112": [
+        "traffic light"
+      ],
+      "569": [
+        "horse"
+      ],
+      "378": [
+        "dog",
+        "canine"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ],
+      "56": [
+        "baseball base"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 223,
+  "meta": {
+    "n_images": 5
+  }
+}

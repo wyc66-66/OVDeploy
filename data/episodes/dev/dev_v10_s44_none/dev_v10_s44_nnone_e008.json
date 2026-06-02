@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nnone_e008",
+  "image_ids": [
+    278705,
+    263679,
+    97924,
+    521509,
+    235836,
+    83531,
+    146358,
+    426203,
+    292446,
+    507081
+  ],
+  "vocab": {
+    "cat_ids": [
+      1026,
+      1027,
+      132,
+      390,
+      392,
+      394,
+      916,
+      1175,
+      23,
+      1178
+    ],
+    "prompts": {
+      "1026": [
+        "street sign"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "132": [
+        "boot"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "394": [
+        "dress suit"
+      ],
+      "916": [
+        "sausage"
+      ],
+      "1175": [
+        "wedding cake"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1178": [
+        "wheel"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 52,
+  "meta": {
+    "n_images": 10
+  }
+}

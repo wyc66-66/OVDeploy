@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e017",
+  "image_ids": [
+    432553,
+    38678,
+    15440,
+    509260,
+    294783,
+    531135,
+    233139,
+    236721,
+    97924,
+    235836
+  ],
+  "vocab": {
+    "cat_ids": [
+      66,
+      1154,
+      707,
+      132,
+      1031,
+      713,
+      715,
+      77,
+      911
+    ],
+    "prompts": {
+      "66": [
+        "bath towel"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "707": [
+        "muffin"
+      ],
+      "132": [
+        "boot"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "77": [
+        "bed"
+      ],
+      "911": [
+        "sandal"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 61,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e397",
+  "image_ids": [
+    502732,
+    104424,
+    419882,
+    335800,
+    164602
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      451,
+      421,
+      68,
+      935,
+      1198,
+      430,
+      1102,
+      146,
+      947,
+      1108,
+      1115,
+      189,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      45
+    ],
+    "prompts": {
+      "1155": [
+        "wall socket"
+      ],
+      "451": [
+        "flag"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "1102": [
+        "toothbrush"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "1108": [
+        "towel"
+      ],
+      "1115": [
+        "train"
+      ],
+      "189": [
+        "camera"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 439,
+  "meta": {
+    "n_images": 5
+  }
+}

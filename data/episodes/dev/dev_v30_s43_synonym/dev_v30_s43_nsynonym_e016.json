@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nsynonym_e016",
+  "image_ids": [
+    7386,
+    301421,
+    312421,
+    507042,
+    127624,
+    447169,
+    493864,
+    415748,
+    233771,
+    186637
+  ],
+  "vocab": {
+    "cat_ids": [
+      192,
+      449,
+      706,
+      705,
+      715,
+      1037,
+      655,
+      16,
+      23,
+      984,
+      1177,
+      667,
+      540,
+      993,
+      1123,
+      35,
+      421,
+      230,
+      422,
+      361,
+      617,
+      1133,
+      496,
+      181,
+      185,
+      698,
+      828,
+      1021,
+      703,
+      2
+    ],
+    "prompts": {
+      "192": [
+        "can"
+      ],
+      "449": [
+        "fishbowl"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "16": [
+        "aquarium"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "984": [
+        "solar array"
+      ],
+      "1177": [
+        "wet suit"
+      ],
+      "667": [
+        "manger"
+      ],
+      "540": [
+        "handle"
+      ],
+      "993": [
+        "spatula"
+      ],
+      "1123": [
+        "truck"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "422": [
+        "elephant"
+      ],
+      "361": [
+        "desk"
+      ],
+      "617": [
+        "knob"
+      ],
+      "1133": [
+        "umbrella"
+      ],
+      "496": [
+        "giraffe"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "185": [
+        "calendar"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "828": [
+        "polo shirt"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "2": [
+        "air conditioner"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 59,
+  "meta": {
+    "n_images": 10
+  }
+}

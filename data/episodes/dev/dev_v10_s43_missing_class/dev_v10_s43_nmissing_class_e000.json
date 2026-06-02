@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e000",
+  "image_ids": [
+    524456,
+    47571,
+    114770,
+    364322,
+    553221,
+    553776,
+    294855,
+    460683,
+    492110,
+    154425
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      3,
+      11,
+      716,
+      915,
+      344,
+      793,
+      1050,
+      1052
+    ],
+    "prompts": {
+      "960": [
+        "silo"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "915": [
+        "saucer"
+      ],
+      "344": [
+        "cup",
+        "mug"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "1050": [
+        "table"
+      ],
+      "1052": [
+        "tablecloth"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 43,
+  "meta": {
+    "n_images": 10
+  }
+}

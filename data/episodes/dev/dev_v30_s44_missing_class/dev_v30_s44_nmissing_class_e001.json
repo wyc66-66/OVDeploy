@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nmissing_class_e001",
+  "image_ids": [
+    92660,
+    278463,
+    364322,
+    453302,
+    443969,
+    401250,
+    114770,
+    437392,
+    117525,
+    406417
+  ],
+  "vocab": {
+    "cat_ids": [
+      3,
+      133,
+      390,
+      1162,
+      139,
+      138,
+      781,
+      910,
+      1042,
+      790,
+      154,
+      540,
+      932,
+      421,
+      296,
+      811,
+      943,
+      816,
+      687,
+      693,
+      181,
+      950,
+      703,
+      964,
+      197,
+      70,
+      1095,
+      968,
+      713
+    ],
+    "prompts": {
+      "3": [
+        "airplane"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "138": [
+        "bow-tie"
+      ],
+      "781": [
+        "pen"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "1039": [
+        "mop"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "790": [
+        "pepper mill"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "540": [
+        "handle"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "943": [
+        "sheep"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "693": [
+        "mint candy"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "950": [
+        "shopping cart"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "964": [
+        "ski"
+      ],
+      "197": [
+        "candy cane"
+      ],
+      "70": [
+        "battery"
+      ],
+      "1095": [
+        "toaster"
+      ],
+      "968": [
+        "skirt"
+      ],
+      "713": [
+        "napkin"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 45,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s42_nmissing_class_e014",
+  "image_ids": [
+    270883,
+    129945,
+    185472,
+    236721,
+    278006,
+    563702,
+    43581,
+    319935,
+    284743,
+    560256
+  ],
+  "vocab": {
+    "cat_ids": [
+      1026,
+      2,
+      774,
+      1031,
+      12,
+      911,
+      19,
+      1172,
+      27,
+      804,
+      37,
+      806,
+      45,
+      814,
+      177,
+      563,
+      947,
+      1077,
+      435,
+      441,
+      58,
+      443,
+      59,
+      60,
+      189,
+      707,
+      451,
+      713,
+      201
+    ],
+    "prompts": {
+      "1026": [
+        "street sign"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "774": [
+        "peach"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "12": [
+        "apple"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "1172": [
+        "watermelon"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "37": [
+        "bagel"
+      ],
+      "806": [
+        "pineapple"
+      ],
+      "45": [
+        "banana"
+      ],
+      "814": [
+        "pitcher"
+      ],
+      "177": [
+        "button"
+      ],
+      "563": [
+        "home plate"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "435": [
+        "fig"
+      ],
+      "441": [
+        "fire engine"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "443": [
+        "fire hose"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "189": [
+        "camera"
+      ],
+      "707": [
+        "muffin"
+      ],
+      "451": [
+        "flag"
+      ],
+      "456": [
+        "flash"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "201": [
+        "cantaloup"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 56,
+  "meta": {
+    "n_images": 10
+  }
+}

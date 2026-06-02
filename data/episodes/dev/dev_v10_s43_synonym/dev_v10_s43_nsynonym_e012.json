@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nsynonym_e012",
+  "image_ids": [
+    546826,
+    537241,
+    270066,
+    331317,
+    328030,
+    524456,
+    265518,
+    246968,
+    32610,
+    135410
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      385,
+      642,
+      1093,
+      133,
+      837,
+      5,
+      142,
+      271,
+      703
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "1093": [
+        "tissue paper"
+      ],
+      "133": [
+        "container"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "142": [
+        "bowling ball"
+      ],
+      "271": [
+        "clock"
+      ],
+      "703": [
+        "motorcycle"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 55,
+  "meta": {
+    "n_images": 10
+  }
+}

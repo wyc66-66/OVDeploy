@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nnone_e012",
+  "image_ids": [
+    567197,
+    508586,
+    460683,
+    148999,
+    235836,
+    123585,
+    367228,
+    84674,
+    328238,
+    8211
+  ],
+  "vocab": {
+    "cat_ids": [
+      1152,
+      1154,
+      387,
+      701,
+      1035,
+      716,
+      589,
+      911,
+      464,
+      469
+    ],
+    "prompts": {
+      "1152": [
+        "wagon wheel"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "701": [
+        "motor scooter"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "464": [
+        "folding chair"
+      ],
+      "469": [
+        "fork"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

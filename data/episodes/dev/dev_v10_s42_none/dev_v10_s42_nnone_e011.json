@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s42_nnone_e011",
+  "image_ids": [
+    51598,
+    123633,
+    573943,
+    512657,
+    130586,
+    347265,
+    255747,
+    8629,
+    507575,
+    84674
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1154,
+      1155,
+      1027,
+      387,
+      1037,
+      271,
+      16,
+      1174,
+      793
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "271": [
+        "clock"
+      ],
+      "16": [
+        "aquarium"
+      ],
+      "1174": [
+        "webcam"
+      ],
+      "793": [
+        "person",
+        "human"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

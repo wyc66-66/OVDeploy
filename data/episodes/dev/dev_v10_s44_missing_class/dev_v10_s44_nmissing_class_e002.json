@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e002",
+  "image_ids": [
+    521509,
+    110784,
+    245311,
+    500211,
+    45550,
+    142620,
+    185802,
+    54605,
+    555972,
+    189475
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      387,
+      1162,
+      276,
+      411,
+      1180,
+      932,
+      425,
+      173
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "276": [
+        "coaster"
+      ],
+      "411": [
+        "earring"
+      ],
+      "1180": [
+        "whipped cream"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "425": [
+        "eraser"
+      ],
+      "173": [
+        "bus"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 46,
+  "meta": {
+    "n_images": 10
+  }
+}

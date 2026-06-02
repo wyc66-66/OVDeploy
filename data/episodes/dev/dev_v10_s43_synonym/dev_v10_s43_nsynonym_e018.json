@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nsynonym_e018",
+  "image_ids": [
+    284743,
+    168883,
+    571598,
+    128476,
+    570664,
+    146358,
+    512657,
+    73946,
+    410510,
+    458768
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      386,
+      771,
+      390,
+      392,
+      394,
+      781,
+      1037,
+      15,
+      16
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "386": [
+        "doormat"
+      ],
+      "771": [
+        "pastry"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "394": [
+        "dress suit"
+      ],
+      "781": [
+        "pen"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "15": [
+        "apron"
+      ],
+      "16": [
+        "aquarium"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 61,
+  "meta": {
+    "n_images": 10
+  }
+}

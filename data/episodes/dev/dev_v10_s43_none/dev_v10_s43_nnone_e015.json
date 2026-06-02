@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e015",
+  "image_ids": [
+    177861,
+    185472,
+    486046,
+    514797,
+    89670,
+    431876,
+    32610,
+    49759,
+    174018,
+    25386
+  ],
+  "vocab": {
+    "cat_ids": [
+      1025,
+      1027,
+      899,
+      137,
+      1147,
+      715,
+      1038,
+      23,
+      1050,
+      1180
+    ],
+    "prompts": {
+      "1025": [
+        "strawberry"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "899": [
+        "saddle"
+      ],
+      "137": [
+        "bow"
+      ],
+      "1147": [
+        "volleyball"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "1038": [
+        "sushi"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1050": [
+        "table"
+      ],
+      "1180": [
+        "whipped cream"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 58,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nsynonym_e006",
+  "image_ids": [
+    50844,
+    504074,
+    256868,
+    317433,
+    345027,
+    394206,
+    223182,
+    344888,
+    89648,
+    262682
+  ],
+  "vocab": {
+    "cat_ids": [
+      259,
+      133,
+      1161,
+      1162,
+      1035,
+      145,
+      146,
+      23,
+      921,
+      793
+    ],
+    "prompts": {
+      "259": [
+        "cigarette"
+      ],
+      "133": [
+        "container"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "145": [
+        "suspenders"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "793": [
+        "individual"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

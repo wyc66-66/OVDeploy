@@ -1,0 +1,7 @@
+{
+  "n_dev_images": 500,
+  "n_train_images": 1421,
+  "overlap_count": 0,
+  "overlap_sample": [],
+  "pass": true
+}

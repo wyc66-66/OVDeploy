@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s42_nmissing_class_e008",
+  "image_ids": [
+    431140,
+    229659,
+    188439,
+    118367,
+    286553,
+    32610,
+    211042,
+    300659,
+    570782,
+    498463
+  ],
+  "vocab": {
+    "cat_ids": [
+      1154,
+      133,
+      1161,
+      1162,
+      524,
+      655,
+      658,
+      531,
+      1043,
+      23,
+      1050,
+      1178,
+      540,
+      411,
+      1186,
+      549,
+      421,
+      935,
+      169,
+      44,
+      429,
+      430,
+      47,
+      816,
+      559,
+      818,
+      687,
+      436,
+      181
+    ],
+    "prompts": {
+      "1154": [
+        "wall clock"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "531": [
+        "hammock"
+      ],
+      "1043": [
+        "sweatshirt"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1050": [
+        "table"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "540": [
+        "handle"
+      ],
+      "411": [
+        "earring"
+      ],
+      "1186": [
+        "windshield wiper"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "169": [
+        "bun"
+      ],
+      "44": [
+        "bamboo"
+      ],
+      "429": [
+        "fan"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "47": [
+        "bandage"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "559": [
+        "hinge"
+      ],
+      "818": [
+        "plate"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "436": [
+        "fighter jet"
+      ],
+      "181": [
+        "cabinet"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 50,
+  "meta": {
+    "n_images": 10
+  }
+}

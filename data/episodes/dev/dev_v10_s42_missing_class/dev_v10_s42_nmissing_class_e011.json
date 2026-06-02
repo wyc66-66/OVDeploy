@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e011",
+  "image_ids": [
+    363666,
+    203294,
+    39951,
+    156278,
+    370486,
+    438269,
+    211825,
+    173383,
+    142092,
+    575970
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1154,
+      132,
+      1161,
+      1034,
+      139,
+      910,
+      913,
+      1021
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "132": [
+        "boot"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1034": [
+        "sunflower"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "913": [
+        "satchel"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "915": [
+        "saucer"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

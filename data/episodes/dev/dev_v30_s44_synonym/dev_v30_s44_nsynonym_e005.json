@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nsynonym_e005",
+  "image_ids": [
+    211042,
+    36936,
+    408774,
+    109313,
+    24144,
+    347370,
+    246968,
+    189475,
+    47571,
+    236721
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      133,
+      5,
+      647,
+      1031,
+      524,
+      655,
+      911,
+      658,
+      23,
+      411,
+      540,
+      285,
+      161,
+      37,
+      935,
+      556,
+      45,
+      814,
+      559,
+      816,
+      687,
+      1072,
+      947,
+      181,
+      1077,
+      952,
+      184,
+      569,
+      59
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "133": [
+        "container"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "647": [
+        "lime"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "411": [
+        "earring"
+      ],
+      "540": [
+        "handle"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "37": [
+        "bagel"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "45": [
+        "banana"
+      ],
+      "814": [
+        "pitcher"
+      ],
+      "559": [
+        "hinge"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "952": [
+        "shot glass"
+      ],
+      "184": [
+        "calculator"
+      ],
+      "569": [
+        "horse"
+      ],
+      "59": [
+        "baseball cap"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

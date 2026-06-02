@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nsynonym_e001",
+  "image_ids": [
+    108253,
+    278463,
+    223188,
+    383606,
+    347456,
+    319935,
+    186296,
+    470773,
+    5477,
+    572678
+  ],
+  "vocab": {
+    "cat_ids": [
+      2,
+      3,
+      133,
+      390,
+      1162,
+      1164,
+      781,
+      911,
+      19,
+      23
+    ],
+    "prompts": {
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "133": [
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1164": [
+        "water faucet"
+      ],
+      "781": [
+        "pen"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 43,
+  "meta": {
+    "n_images": 10
+  }
+}

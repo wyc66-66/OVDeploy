@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e014",
+  "image_ids": [
+    447169,
+    402346,
+    560279,
+    424776,
+    270402,
+    63047,
+    14380,
+    301421,
+    263068,
+    575970
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1034,
+      139,
+      655,
+      16,
+      23,
+      26,
+      540,
+      544,
+      421,
+      422,
+      165,
+      430,
+      436,
+      181,
+      185,
+      698,
+      192,
+      449,
+      706,
+      705,
+      962,
+      1097,
+      1098,
+      1099,
+      461,
+      993,
+      995,
+      230
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "1034": [
+        "sunflower"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "16": [
+        "aquarium"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "26": [
+        "atomizer"
+      ],
+      "540": [
+        "handle"
+      ],
+      "544": [
+        "hat"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "422": [
+        "elephant"
+      ],
+      "165": [
+        "bullet train"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "436": [
+        "fighter jet"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "185": [
+        "calendar"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "192": [
+        "can"
+      ],
+      "449": [
+        "fishbowl"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "993": [
+        "spatula"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "230": [
+        "cellular telephone"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 57,
+  "meta": {
+    "n_images": 10
+  }
+}

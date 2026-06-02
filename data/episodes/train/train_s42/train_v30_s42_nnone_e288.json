@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e288",
+  "image_ids": [
+    85195,
+    326248,
+    283318,
+    336232,
+    323355
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      451,
+      835,
+      1035,
+      173,
+      592,
+      305,
+      29,
+      595,
+      948,
+      981,
+      951,
+      183,
+      59,
+      1052,
+      445,
+      95,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      32,
+      34,
+      35,
+      36
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "451": [
+        "flag"
+      ],
+      "835": [
+        "poster"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "173": [
+        "bus"
+      ],
+      "592": [
+        "jean"
+      ],
+      "305": [
+        "cooler"
+      ],
+      "29": [
+        "awning"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "948": [
+        "shoe"
+      ],
+      "981": [
+        "sock"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "183": [
+        "cake"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "445": [
+        "fireplug"
+      ],
+      "95": [
+        "visor"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 330,
+  "meta": {
+    "n_images": 5
+  }
+}

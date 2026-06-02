@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e001",
+  "image_ids": [
+    218362,
+    521509,
+    20992,
+    293044,
+    128658,
+    370999,
+    104666,
+    285788,
+    530061,
+    119452
+  ],
+  "vocab": {
+    "cat_ids": [
+      1025,
+      707,
+      837,
+      7,
+      521,
+      139,
+      271,
+      1042,
+      1149
+    ],
+    "prompts": {
+      "1025": [
+        "strawberry"
+      ],
+      "707": [
+        "muffin"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "7": [
+        "almond"
+      ],
+      "776": [
+        "pear"
+      ],
+      "521": [
+        "guitar"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "271": [
+        "clock"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "1149": [
+        "waffle"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 45,
+  "meta": {
+    "n_images": 10
+  }
+}

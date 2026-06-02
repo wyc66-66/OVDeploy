@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e017",
+  "image_ids": [
+    308193,
+    552371,
+    458255,
+    347370,
+    317433,
+    29393,
+    454067,
+    537355,
+    256868,
+    507081
+  ],
+  "vocab": {
+    "cat_ids": [
+      129,
+      962,
+      836,
+      390,
+      77,
+      271,
+      592,
+      721,
+      146
+    ],
+    "prompts": {
+      "129": [
+        "booklet"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "836": [
+        "pot"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "647": [
+        "lime"
+      ],
+      "77": [
+        "bed"
+      ],
+      "271": [
+        "clock"
+      ],
+      "592": [
+        "jean"
+      ],
+      "721": [
+        "nightshirt"
+      ],
+      "146": [
+        "bracelet"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 60,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s42_nmissing_class_e016",
+  "image_ids": [
+    183675,
+    133244,
+    295420,
+    264535,
+    240250,
+    545007,
+    190753,
+    174018,
+    39477,
+    118367
+  ],
+  "vocab": {
+    "cat_ids": [
+      2,
+      899,
+      837,
+      713,
+      137,
+      271,
+      1042,
+      404,
+      469,
+      23,
+      217,
+      90,
+      350,
+      734,
+      32,
+      1122,
+      547,
+      995,
+      933,
+      169,
+      236,
+      110,
+      1071,
+      240,
+      47,
+      1074,
+      885,
+      1079,
+      569
+    ],
+    "prompts": {
+      "2": [
+        "air conditioner"
+      ],
+      "899": [
+        "saddle"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "137": [
+        "bow"
+      ],
+      "271": [
+        "clock"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "404": [
+        "duffel bag"
+      ],
+      "469": [
+        "fork"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "90": [
+        "bench"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "734": [
+        "onion"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "547": [
+        "headband"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "933": [
+        "sewing machine"
+      ],
+      "169": [
+        "bun"
+      ],
+      "236": [
+        "chap"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "240": [
+        "chessboard"
+      ],
+      "47": [
+        "bandage"
+      ],
+      "1074": [
+        "telephone pole"
+      ],
+      "885": [
+        "ring"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "569": [
+        "horse"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 58,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e011",
+  "image_ids": [
+    580294,
+    223182,
+    458223,
+    76211,
+    200961,
+    60855,
+    466416,
+    267940,
+    555972,
+    256868
+  ],
+  "vocab": {
+    "cat_ids": [
+      962,
+      836,
+      139,
+      12,
+      461,
+      271,
+      592,
+      272,
+      1108
+    ],
+    "prompts": {
+      "962": [
+        "skateboard"
+      ],
+      "836": [
+        "pot"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "12": [
+        "apple"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "271": [
+        "clock"
+      ],
+      "592": [
+        "jean"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "1108": [
+        "towel"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

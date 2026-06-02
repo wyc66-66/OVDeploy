@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e008",
+  "image_ids": [
+    255747,
+    386879,
+    286553,
+    142620,
+    363666,
+    492110,
+    537355,
+    571804,
+    298396,
+    394206
+  ],
+  "vocab": {
+    "cat_ids": [
+      133,
+      390,
+      392,
+      1161,
+      1162,
+      1035,
+      910,
+      915,
+      1050
+    ],
+    "prompts": {
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "1043": [
+        "sweatshirt"
+      ],
+      "915": [
+        "saucer"
+      ],
+      "1050": [
+        "table"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 50,
+  "meta": {
+    "n_images": 10
+  }
+}

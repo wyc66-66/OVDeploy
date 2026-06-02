@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e018",
+  "image_ids": [
+    514797,
+    180487,
+    367228,
+    438269,
+    530061,
+    363666,
+    270883,
+    127624,
+    9448,
+    211042
+  ],
+  "vocab": {
+    "cat_ids": [
+      1161,
+      139,
+      524,
+      910,
+      1042,
+      915,
+      658,
+      540,
+      804
+    ],
+    "prompts": {
+      "1161": [
+        "watch"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "915": [
+        "saucer"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "540": [
+        "handle"
+      ],
+      "804": [
+        "pillow"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 61,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e294",
+  "image_ids": [
+    472375,
+    512194,
+    578500,
+    364884,
+    95155
+  ],
+  "vocab": {
+    "cat_ids": [
+      194,
+      390,
+      1066,
+      235,
+      748,
+      461,
+      976,
+      626,
+      1139,
+      19,
+      628,
+      982,
+      502,
+      378,
+      798,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43
+    ],
+    "prompts": {
+      "194": [
+        "candle"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1066": [
+        "tassel"
+      ],
+      "235": [
+        "chandelier"
+      ],
+      "748": [
+        "painting"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "976": [
+        "snowboard"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "628": [
+        "lampshade"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "502": [
+        "goggles"
+      ],
+      "378": [
+        "dog",
+        "canine"
+      ],
+      "798": [
+        "piano"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 336,
+  "meta": {
+    "n_images": 5
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s42_nmissing_class_e007",
+  "image_ids": [
+    492110,
+    467511,
+    553776,
+    384651,
+    449190,
+    476258,
+    14380,
+    182021,
+    2923,
+    233567
+  ],
+  "vocab": {
+    "cat_ids": [
+      898,
+      962,
+      915,
+      344,
+      217,
+      921,
+      1050,
+      1055,
+      99,
+      804,
+      165,
+      551,
+      555,
+      556,
+      748,
+      172,
+      107,
+      1072,
+      943,
+      947,
+      694,
+      631,
+      118,
+      58,
+      703,
+      2,
+      3,
+      4,
+      12
+    ],
+    "prompts": {
+      "898": [
+        "plastic bag"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "915": [
+        "saucer"
+      ],
+      "344": [
+        "cup",
+        "mug"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "1050": [
+        "table"
+      ],
+      "1055": [
+        "tag"
+      ],
+      "99": [
+        "bird"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "165": [
+        "bullet train"
+      ],
+      "551": [
+        "headset"
+      ],
+      "555": [
+        "helicopter"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "748": [
+        "painting"
+      ],
+      "172": [
+        "burrito"
+      ],
+      "107": [
+        "black sheep"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "943": [
+        "sheep"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "118": [
+        "boat"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "12": [
+        "apple"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e006",
+  "image_ids": [
+    386134,
+    410510,
+    283520,
+    66926,
+    383606,
+    200961,
+    348481,
+    189820,
+    89648,
+    567197
+  ],
+  "vocab": {
+    "cat_ids": [
+      961,
+      387,
+      706,
+      1161,
+      586,
+      1164,
+      592,
+      724,
+      981
+    ],
+    "prompts": {
+      "961": [
+        "sink"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "586": [
+        "iPod"
+      ],
+      "1164": [
+        "water faucet"
+      ],
+      "592": [
+        "jean"
+      ],
+      "724": [
+        "notebook"
+      ],
+      "981": [
+        "sock"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

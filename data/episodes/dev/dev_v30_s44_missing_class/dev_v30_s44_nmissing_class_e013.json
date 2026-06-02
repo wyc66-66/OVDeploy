@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nmissing_class_e013",
+  "image_ids": [
+    270066,
+    342128,
+    462614,
+    378873,
+    92177,
+    22705,
+    302536,
+    222094,
+    105264,
+    231747
+  ],
+  "vocab": {
+    "cat_ids": [
+      514,
+      133,
+      390,
+      392,
+      1039,
+      146,
+      19,
+      1055,
+      800,
+      932,
+      549,
+      421,
+      936,
+      41,
+      810,
+      811,
+      299,
+      430,
+      1074,
+      181,
+      694,
+      1079,
+      58,
+      955,
+      444,
+      703,
+      831,
+      65,
+      961
+    ],
+    "prompts": {
+      "514": [
+        "green bean"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1039": [
+        "mop"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "1055": [
+        "tag"
+      ],
+      "800": [
+        "pickup truck"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "936": [
+        "shark"
+      ],
+      "41": [
+        "ball"
+      ],
+      "810": [
+        "tobacco pipe"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "299": [
+        "control"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "1074": [
+        "telephone pole"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "955": [
+        "shower head"
+      ],
+      "444": [
+        "fireplace"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "831": [
+        "pool table"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "961": [
+        "sink"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 57,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nsynonym_e014",
+  "image_ids": [
+    493864,
+    467511,
+    45550,
+    6723,
+    270883,
+    187249,
+    211042,
+    453302,
+    396274,
+    127182
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      133,
+      390,
+      1162,
+      524,
+      1037,
+      910,
+      658,
+      790,
+      23,
+      1177,
+      921,
+      540,
+      804,
+      421,
+      935,
+      811,
+      173,
+      559,
+      687,
+      181,
+      957,
+      703,
+      961,
+      65,
+      453,
+      1095,
+      329,
+      1098,
+      979
+    ],
+    "prompts": {
+      "1155": [
+        "wall socket"
+      ],
+      "133": [
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "790": [
+        "pepper mill"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1177": [
+        "wet suit"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "540": [
+        "handle"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "173": [
+        "bus"
+      ],
+      "559": [
+        "hinge"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "957": [
+        "shower curtain"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "961": [
+        "sink"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "453": [
+        "flamingo"
+      ],
+      "1095": [
+        "toaster"
+      ],
+      "329": [
+        "crock pot"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "979": [
+        "soap"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 58,
+  "meta": {
+    "n_images": 10
+  }
+}

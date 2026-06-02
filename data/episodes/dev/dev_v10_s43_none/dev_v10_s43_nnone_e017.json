@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e017",
+  "image_ids": [
+    110784,
+    6723,
+    412240,
+    245311,
+    393282,
+    456559,
+    217425,
+    7784,
+    233567,
+    233139
+  ],
+  "vocab": {
+    "cat_ids": [
+      1154,
+      1027,
+      387,
+      1035,
+      107,
+      173,
+      110,
+      589,
+      496,
+      305
+    ],
+    "prompts": {
+      "1154": [
+        "wall clock"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "107": [
+        "black sheep"
+      ],
+      "173": [
+        "bus"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "496": [
+        "giraffe"
+      ],
+      "305": [
+        "cooler"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 60,
+  "meta": {
+    "n_images": 10
+  }
+}

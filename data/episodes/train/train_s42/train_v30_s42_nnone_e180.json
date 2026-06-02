@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e180",
+  "image_ids": [
+    578489,
+    481390,
+    435081,
+    314177,
+    325838
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      66,
+      1097,
+      1162,
+      1099,
+      716,
+      1098,
+      83,
+      595,
+      981,
+      982,
+      469,
+      217,
+      183,
+      347,
+      1181,
+      33,
+      615,
+      232,
+      631,
+      296,
+      361,
+      1070,
+      881,
+      948,
+      951,
+      633,
+      59,
+      828,
+      189
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "83": [
+        "beer bottle"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "981": [
+        "sock"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "469": [
+        "fork"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "183": [
+        "cake"
+      ],
+      "347": [
+        "cupcake"
+      ],
+      "1181": [
+        "whistle"
+      ],
+      "33": [
+        "basketball backboard"
+      ],
+      "615": [
+        "knife"
+      ],
+      "232": [
+        "chair",
+        "seat"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "361": [
+        "desk"
+      ],
+      "1070": [
+        "teapot"
+      ],
+      "881": [
+        "remote control"
+      ],
+      "948": [
+        "shoe"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "633": [
+        "latch"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "828": [
+        "polo shirt"
+      ],
+      "189": [
+        "camera"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 222,
+  "meta": {
+    "n_images": 5
+  }
+}

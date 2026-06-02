@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Data & caches (download separately)
+weights/
+data/b0_cache/
+data/predictions/
+data/checkpoints/*.pt
+third_party/
+
+# Large / local
+*.pth
+*.pt
+paper/*.pdf
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.bbl
+release/*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config (use paths.yaml.example)
+config/paths.yaml

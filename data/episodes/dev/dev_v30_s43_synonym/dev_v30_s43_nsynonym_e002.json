@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nsynonym_e002",
+  "image_ids": [
+    156924,
+    556193,
+    5586,
+    278705,
+    315257,
+    384651,
+    14380,
+    386134,
+    344888,
+    570664
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      962,
+      1026,
+      715,
+      589,
+      592,
+      863,
+      544,
+      803,
+      99,
+      804,
+      165,
+      299,
+      876,
+      748,
+      1198,
+      1008,
+      1072,
+      1012,
+      1141,
+      569,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "592": [
+        "jean"
+      ],
+      "863": [
+        "racket"
+      ],
+      "544": [
+        "hat"
+      ],
+      "803": [
+        "piggy bank"
+      ],
+      "99": [
+        "bird"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "165": [
+        "bullet train"
+      ],
+      "299": [
+        "control"
+      ],
+      "876": [
+        "rearview mirror"
+      ],
+      "748": [
+        "painting"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "1008": [
+        "statue"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "1012": [
+        "stepladder"
+      ],
+      "1141": [
+        "vent"
+      ],
+      "569": [
+        "horse"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 45,
+  "meta": {
+    "n_images": 10
+  }
+}

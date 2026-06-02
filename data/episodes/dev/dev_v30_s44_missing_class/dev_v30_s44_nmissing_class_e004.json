@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s44_nmissing_class_e004",
+  "image_ids": [
+    163640,
+    46378,
+    580294,
+    476770,
+    239537,
+    537241,
+    526751,
+    211042,
+    577976,
+    347544
+  ],
+  "vocab": {
+    "cat_ids": [
+      386,
+      642,
+      139,
+      524,
+      658,
+      917,
+      919,
+      23,
+      540,
+      544,
+      1056,
+      547,
+      935,
+      298,
+      171,
+      556,
+      1198,
+      818,
+      1074,
+      181,
+      1078,
+      1079,
+      59,
+      60,
+      957,
+      827,
+      961,
+      65,
+      836
+    ],
+    "prompts": {
+      "386": [
+        "doormat"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "917": [
+        "sawhorse"
+      ],
+      "919": [
+        "scale"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "540": [
+        "handle"
+      ],
+      "544": [
+        "hat"
+      ],
+      "1056": [
+        "taillight"
+      ],
+      "547": [
+        "headband"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "298": [
+        "cone"
+      ],
+      "171": [
+        "buoy"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "559": [
+        "hinge"
+      ],
+      "818": [
+        "plate"
+      ],
+      "1074": [
+        "telephone pole"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1078": [
+        "tennis ball"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "957": [
+        "shower curtain"
+      ],
+      "827": [
+        "pole"
+      ],
+      "961": [
+        "sink"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "836": [
+        "pot"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 48,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "episode_id": "dev_v100_s43_nmissing_class_e004",
+  "image_ids": [
+    77595,
+    239347,
+    211042,
+    524456,
+    508586,
+    239537,
+    231339,
+    222094,
+    233771,
+    135410
+  ],
+  "vocab": {
+    "cat_ids": [
+      898,
+      1026,
+      642,
+      395,
+      524,
+      139,
+      142,
+      658,
+      23,
+      152,
+      540,
+      415,
+      800,
+      35,
+      547,
+      421,
+      549,
+      935,
+      1198,
+      559,
+      1200,
+      1202,
+      1074,
+      181,
+      1078,
+      1079,
+      828,
+      957,
+      703,
+      832,
+      961,
+      65,
+      705,
+      192,
+      453,
+      1098,
+      715,
+      979,
+      981,
+      605,
+      94,
+      225,
+      1133,
+      110,
+      621,
+      631,
+      766,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      27,
+      29,
+      32,
+      34,
+      36,
+      41,
+      43,
+      45,
+      48,
+      50,
+      53,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      66,
+      68,
+      75,
+      76,
+      77,
+      79,
+      80,
+      81,
+      83,
+      86,
+      87,
+      88,
+      89,
+      90,
+      95,
+      96,
+      99,
+      104,
+      109,
+      112,
+      114,
+      115,
+      116,
+      118,
+      125,
+      127,
+      132,
+      133
+    ],
+    "prompts": {
+      "898": [
+        "plastic bag"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "395": [
+        "dresser"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "142": [
+        "bowling ball"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "152": [
+        "bridal gown"
+      ],
+      "540": [
+        "handle"
+      ],
+      "415": [
+        "egg"
+      ],
+      "800": [
+        "pickup truck"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "547": [
+        "headband"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "559": [
+        "hinge"
+      ],
+      "1200": [
+        "yogurt"
+      ],
+      "1202": [
+        "zebra"
+      ],
+      "1074": [
+        "telephone pole"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1078": [
+        "tennis ball"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "828": [
+        "polo shirt"
+      ],
+      "957": [
+        "shower curtain"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "832": [
+        "pop"
+      ],
+      "961": [
+        "sink"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "192": [
+        "can"
+      ],
+      "453": [
+        "flamingo"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "979": [
+        "soap"
+      ],
+      "981": [
+        "sock"
+      ],
+      "605": [
+        "key"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "225": [
+        "cat",
+        "feline"
+      ],
+      "1133": [
+        "umbrella"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "621": [
+        "ladder"
+      ],
+      "368": [
+        "tux"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "766": [
+        "parking meter"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "57": [
+        "baseball"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "61": [
+        "basket"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "75": [
+        "beanie"
+      ],
+      "76": [
+        "bear"
+      ],
+      "77": [
+        "bed"
+      ],
+      "79": [
+        "bedspread"
+      ],
+      "80": [
+        "cow"
+      ],
+      "81": [
+        "beef"
+      ],
+      "83": [
+        "beer bottle"
+      ],
+      "86": [
+        "bell"
+      ],
+      "87": [
+        "bell pepper"
+      ],
+      "88": [
+        "belt"
+      ],
+      "89": [
+        "belt buckle"
+      ],
+      "90": [
+        "bench"
+      ],
+      "95": [
+        "visor"
+      ],
+      "96": [
+        "billboard"
+      ],
+      "99": [
+        "bird"
+      ],
+      "104": [
+        "birthday cake"
+      ],
+      "109": [
+        "blackboard"
+      ],
+      "112": [
+        "blender"
+      ],
+      "114": [
+        "blinker"
+      ],
+      "115": [
+        "blouse"
+      ],
+      "116": [
+        "blueberry"
+      ],
+      "118": [
+        "boat"
+      ],
+      "125": [
+        "bolt"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "132": [
+        "boot"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ]
+    }
+  },
+  "vocab_size": 99,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 47,
+  "meta": {
+    "n_images": 10
+  }
+}

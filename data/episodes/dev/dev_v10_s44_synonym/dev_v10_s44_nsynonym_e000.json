@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e000",
+  "image_ids": [
+    222317,
+    570782,
+    271471,
+    429761,
+    153782,
+    550797,
+    47571,
+    136355,
+    556158,
+    455157
+  ],
+  "vocab": {
+    "cat_ids": [
+      1027,
+      1155,
+      1162,
+      655,
+      15,
+      1041,
+      272,
+      271,
+      23,
+      540
+    ],
+    "prompts": {
+      "1027": [
+        "streetlight"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "15": [
+        "apron"
+      ],
+      "1041": [
+        "sweatband"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "271": [
+        "clock"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "540": [
+        "handle"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 44,
+  "meta": {
+    "n_images": 10
+  }
+}

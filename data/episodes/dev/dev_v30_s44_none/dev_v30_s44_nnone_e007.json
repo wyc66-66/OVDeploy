@@ -1,0 +1,151 @@
+{
+  "episode_id": "dev_v30_s44_nnone_e007",
+  "image_ids": [
+    384527,
+    535253,
+    571598,
+    429598,
+    572678,
+    151657,
+    562197,
+    226903,
+    460683,
+    522156
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      133,
+      390,
+      392,
+      781,
+      909,
+      271,
+      658,
+      279,
+      793,
+      154,
+      1052,
+      157,
+      804,
+      421,
+      1190,
+      299,
+      45,
+      561,
+      689,
+      50,
+      1077,
+      181,
+      442,
+      194,
+      835,
+      195,
+      322,
+      713,
+      716
+    ],
+    "prompts": {
+      "1155": [
+        "wall socket"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "781": [
+        "pen"
+      ],
+      "909": [
+        "salsa"
+      ],
+      "271": [
+        "clock"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "279": [
+        "coatrack"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "157": [
+        "brownie"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "1190": [
+        "wineglass"
+      ],
+      "299": [
+        "control"
+      ],
+      "45": [
+        "banana"
+      ],
+      "561": [
+        "hockey stick"
+      ],
+      "689": [
+        "milk"
+      ],
+      "50": [
+        "banner"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "442": [
+        "fire extinguisher"
+      ],
+      "194": [
+        "candle"
+      ],
+      "835": [
+        "poster"
+      ],
+      "195": [
+        "candle holder"
+      ],
+      "322": [
+        "cracker"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "716": [
+        "necktie"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 51,
+  "meta": {
+    "n_images": 10
+  }
+}

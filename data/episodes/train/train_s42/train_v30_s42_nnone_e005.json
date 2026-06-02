@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e005",
+  "image_ids": [
+    44195,
+    430286,
+    221708,
+    255536,
+    547886
+  ],
+  "vocab": {
+    "cat_ids": [
+      194,
+      899,
+      645,
+      1035,
+      461,
+      589,
+      976,
+      659,
+      540,
+      350,
+      1055,
+      609,
+      421,
+      679,
+      1133,
+      881,
+      181,
+      502,
+      569,
+      703,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29
+    ],
+    "prompts": {
+      "194": [
+        "candle"
+      ],
+      "899": [
+        "saddle"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "976": [
+        "snowboard"
+      ],
+      "659": [
+        "magnet"
+      ],
+      "540": [
+        "handle"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "1055": [
+        "tag"
+      ],
+      "609": [
+        "kitchen sink"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "679": [
+        "mattress"
+      ],
+      "1133": [
+        "umbrella"
+      ],
+      "881": [
+        "remote control"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "502": [
+        "goggles"
+      ],
+      "569": [
+        "horse"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 47,
+  "meta": {
+    "n_images": 5
+  }
+}

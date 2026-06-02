@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nsynonym_e004",
+  "image_ids": [
+    110638,
+    217425,
+    460683,
+    22935,
+    132408,
+    85665,
+    514797,
+    9448,
+    16598,
+    556193
+  ],
+  "vocab": {
+    "cat_ids": [
+      1027,
+      716,
+      653,
+      589,
+      272,
+      592,
+      980,
+      23,
+      793,
+      411
+    ],
+    "prompts": {
+      "1027": [
+        "streetlight"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "653": [
+        "log"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "592": [
+        "jean"
+      ],
+      "980": [
+        "soccer ball"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "793": [
+        "human"
+      ],
+      "411": [
+        "earring"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 46,
+  "meta": {
+    "n_images": 10
+  }
+}

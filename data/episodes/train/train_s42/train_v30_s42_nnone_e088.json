@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e088",
+  "image_ids": [
+    507223,
+    532058,
+    90284,
+    167486,
+    284282
+  ],
+  "vocab": {
+    "cat_ids": [
+      133,
+      392,
+      845,
+      655,
+      399,
+      981,
+      88,
+      411,
+      804,
+      548,
+      614,
+      1060,
+      685,
+      1072,
+      881,
+      112,
+      948,
+      500,
+      1079,
+      951,
+      58,
+      59,
+      60,
+      959,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15
+    ],
+    "prompts": {
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "392": [
+        "dress"
+      ],
+      "845": [
+        "printer"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "399": [
+        "drum"
+      ],
+      "981": [
+        "sock"
+      ],
+      "88": [
+        "belt"
+      ],
+      "411": [
+        "earring"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "548": [
+        "headboard"
+      ],
+      "614": [
+        "knee pad"
+      ],
+      "1060": [
+        "tank top"
+      ],
+      "685": [
+        "microphone"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "881": [
+        "remote control"
+      ],
+      "112": [
+        "blender"
+      ],
+      "948": [
+        "shoe"
+      ],
+      "500": [
+        "glove"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "959": [
+        "signboard"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 130,
+  "meta": {
+    "n_images": 5
+  }
+}

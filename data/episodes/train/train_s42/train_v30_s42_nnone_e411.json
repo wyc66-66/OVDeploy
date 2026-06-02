@@ -1,0 +1,146 @@
+{
+  "episode_id": "train_v30_s42_nnone_e411",
+  "image_ids": [
+    36861,
+    134882,
+    9769,
+    339823,
+    329456
+  ],
+  "vocab": {
+    "cat_ids": [
+      544,
+      225,
+      1122,
+      35,
+      392,
+      1133,
+      110,
+      1071,
+      592,
+      595,
+      1178,
+      411,
+      445,
+      766,
+      127,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      36,
+      41,
+      43
+    ],
+    "prompts": {
+      "544": [
+        "hat"
+      ],
+      "225": [
+        "cat",
+        "feline"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1133": [
+        "umbrella"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "592": [
+        "jean"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "411": [
+        "earring"
+      ],
+      "445": [
+        "fireplug"
+      ],
+      "766": [
+        "parking meter"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 453,
+  "meta": {
+    "n_images": 5
+  }
+}

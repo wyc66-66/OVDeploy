@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nsynonym_e019",
+  "image_ids": [
+    565391,
+    278463,
+    472298,
+    553990,
+    270386,
+    502229,
+    480944,
+    189213,
+    28452,
+    508586
+  ],
+  "vocab": {
+    "cat_ids": [
+      899,
+      1028,
+      133,
+      390,
+      70,
+      645,
+      1162,
+      74,
+      781,
+      589
+    ],
+    "prompts": {
+      "899": [
+        "saddle"
+      ],
+      "1028": [
+        "string cheese"
+      ],
+      "133": [
+        "glass bottle"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "70": [
+        "battery"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "74": [
+        "beanbag"
+      ],
+      "781": [
+        "pen"
+      ],
+      "589": [
+        "jacket"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 61,
+  "meta": {
+    "n_images": 10
+  }
+}

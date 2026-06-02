@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e010",
+  "image_ids": [
+    35963,
+    134856,
+    449190,
+    359219,
+    385029,
+    347265,
+    182417,
+    347456,
+    302760,
+    552371
+  ],
+  "vocab": {
+    "cat_ids": [
+      512,
+      961,
+      898,
+      836,
+      964,
+      965,
+      967,
+      904,
+      390
+    ],
+    "prompts": {
+      "512": [
+        "gravestone"
+      ],
+      "961": [
+        "sink"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "836": [
+        "pot"
+      ],
+      "964": [
+        "ski"
+      ],
+      "965": [
+        "ski boot"
+      ],
+      "967": [
+        "ski pole"
+      ],
+      "904": [
+        "salad"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1162": [
+        "water bottle"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

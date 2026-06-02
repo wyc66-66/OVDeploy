@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e004",
+  "image_ids": [
+    347544,
+    438269,
+    470773,
+    50844,
+    292446,
+    535253,
+    522156,
+    441286,
+    543528,
+    135410
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      1091,
+      322,
+      133,
+      3,
+      327,
+      715,
+      1100,
+      142,
+      977
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "1091": [
+        "tinfoil"
+      ],
+      "322": [
+        "cracker"
+      ],
+      "133": [
+        "glass bottle"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "327": [
+        "crescent roll"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "1100": [
+        "tongs"
+      ],
+      "142": [
+        "bowling ball"
+      ],
+      "977": [
+        "snowman"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 48,
+  "meta": {
+    "n_images": 10
+  }
+}

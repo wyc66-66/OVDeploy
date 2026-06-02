@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e495",
+  "image_ids": [
+    429011,
+    304812,
+    101420,
+    406611,
+    431727
+  ],
+  "vocab": {
+    "cat_ids": [
+      1027,
+      804,
+      964,
+      76,
+      110,
+      1073,
+      277,
+      1112,
+      793,
+      252,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      45,
+      48,
+      50,
+      53
+    ],
+    "prompts": {
+      "1027": [
+        "streetlight"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "964": [
+        "ski"
+      ],
+      "76": [
+        "bear"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "1073": [
+        "telephone booth"
+      ],
+      "277": [
+        "coat"
+      ],
+      "1112": [
+        "traffic light"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "252": [
+        "choker"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 537,
+  "meta": {
+    "n_images": 5
+  }
+}

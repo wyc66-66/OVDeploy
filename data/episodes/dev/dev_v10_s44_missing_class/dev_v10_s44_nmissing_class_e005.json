@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e005",
+  "image_ids": [
+    8629,
+    157756,
+    223182,
+    121497,
+    156924,
+    108253,
+    569059,
+    563702,
+    259690,
+    153229
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      451,
+      1161,
+      1162,
+      655,
+      272,
+      1104,
+      18,
+      83
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "451": [
+        "flag"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "1104": [
+        "toothpick"
+      ],
+      "18": [
+        "armband"
+      ],
+      "83": [
+        "beer bottle"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

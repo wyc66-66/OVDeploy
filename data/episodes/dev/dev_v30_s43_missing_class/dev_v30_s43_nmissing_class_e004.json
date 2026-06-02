@@ -1,0 +1,148 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e004",
+  "image_ids": [
+    131431,
+    299720,
+    182202,
+    85665,
+    133244,
+    147338,
+    18519,
+    185802,
+    104119,
+    156924
+  ],
+  "vocab": {
+    "cat_ids": [
+      271,
+      272,
+      404,
+      800,
+      611,
+      547,
+      932,
+      614,
+      425,
+      299,
+      556,
+      496,
+      241,
+      1008,
+      502,
+      1079,
+      891,
+      445,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32
+    ],
+    "prompts": {
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "404": [
+        "duffel bag"
+      ],
+      "800": [
+        "pickup truck"
+      ],
+      "611": [
+        "kite"
+      ],
+      "547": [
+        "headband"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "614": [
+        "knee pad"
+      ],
+      "425": [
+        "eraser"
+      ],
+      "299": [
+        "control"
+      ],
+      "556": [
+        "helmet"
+      ],
+      "45": [
+        "banana"
+      ],
+      "496": [
+        "giraffe"
+      ],
+      "241": [
+        "chicken"
+      ],
+      "1008": [
+        "statue"
+      ],
+      "502": [
+        "goggles"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "891": [
+        "roller skate"
+      ],
+      "445": [
+        "fireplug"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 47,
+  "meta": {
+    "n_images": 10
+  }
+}

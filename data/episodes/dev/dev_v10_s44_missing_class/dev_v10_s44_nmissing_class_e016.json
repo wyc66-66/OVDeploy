@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e016",
+  "image_ids": [
+    222559,
+    242946,
+    239717,
+    453981,
+    350488,
+    389315,
+    122606,
+    366711,
+    568290,
+    248111
+  ],
+  "vocab": {
+    "cat_ids": [
+      641,
+      385,
+      1155,
+      904,
+      406,
+      666,
+      540,
+      416,
+      160
+    ],
+    "prompts": {
+      "641": [
+        "lettuce"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "904": [
+        "salad"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "406": [
+        "dumpster"
+      ],
+      "666": [
+        "mandarin orange"
+      ],
+      "540": [
+        "handle"
+      ],
+      "416": [
+        "egg roll"
+      ],
+      "160": [
+        "bucket"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 60,
+  "meta": {
+    "n_images": 10
+  }
+}

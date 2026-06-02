@@ -1,0 +1,146 @@
+{
+  "episode_id": "train_v30_s42_nnone_e449",
+  "image_ids": [
+    511321,
+    333772,
+    293625,
+    325483,
+    23666
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      386,
+      451,
+      708,
+      385,
+      68,
+      645,
+      1161,
+      1097,
+      655,
+      272,
+      83,
+      982,
+      285,
+      350,
+      225,
+      296,
+      232,
+      555,
+      299,
+      811,
+      430,
+      433,
+      626,
+      947,
+      118,
+      631,
+      2,
+      3,
+      4
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "386": [
+        "doormat"
+      ],
+      "451": [
+        "flag"
+      ],
+      "708": [
+        "mug"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "83": [
+        "beer bottle"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "225": [
+        "cat",
+        "feline"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "232": [
+        "chair",
+        "seat"
+      ],
+      "555": [
+        "helicopter"
+      ],
+      "299": [
+        "control"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "433": [
+        "Ferris wheel"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "118": [
+        "boat"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 491,
+  "meta": {
+    "n_images": 5
+  }
+}

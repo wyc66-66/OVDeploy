@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nsynonym_e010",
+  "image_ids": [
+    39951,
+    214192,
+    365208,
+    240250,
+    92177,
+    340175,
+    127135,
+    180101,
+    439623,
+    308476
+  ],
+  "vocab": {
+    "cat_ids": [
+      194,
+      578,
+      713,
+      12,
+      595,
+      468,
+      469,
+      1113,
+      793,
+      1052
+    ],
+    "prompts": {
+      "194": [
+        "candle"
+      ],
+      "578": [
+        "polar bear"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "12": [
+        "apple"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "468": [
+        "footstool"
+      ],
+      "469": [
+        "fork"
+      ],
+      "1113": [
+        "dirt bike"
+      ],
+      "793": [
+        "human"
+      ],
+      "1052": [
+        "tablecloth"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

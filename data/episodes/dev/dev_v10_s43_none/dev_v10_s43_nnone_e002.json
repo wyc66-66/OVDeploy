@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e002",
+  "image_ids": [
+    173044,
+    203931,
+    498463,
+    219283,
+    332318,
+    379453,
+    214869,
+    77595,
+    263068,
+    156924
+  ],
+  "vocab": {
+    "cat_ids": [
+      962,
+      3,
+      201,
+      395,
+      272,
+      80,
+      88,
+      540,
+      544,
+      421
+    ],
+    "prompts": {
+      "962": [
+        "skateboard"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "201": [
+        "cantaloup"
+      ],
+      "395": [
+        "dresser"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "80": [
+        "cow"
+      ],
+      "88": [
+        "belt"
+      ],
+      "540": [
+        "handle"
+      ],
+      "544": [
+        "hat"
+      ],
+      "421": [
+        "refrigerator"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 45,
+  "meta": {
+    "n_images": 10
+  }
+}

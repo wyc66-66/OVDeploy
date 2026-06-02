@@ -1,0 +1,432 @@
+{
+  "episode_id": "dev_v100_s44_nmissing_class_e015",
+  "image_ids": [
+    572678,
+    259097,
+    422998,
+    454067,
+    314264,
+    200961,
+    286553,
+    460683,
+    160556,
+    313034
+  ],
+  "vocab": {
+    "cat_ids": [
+      129,
+      1154,
+      133,
+      645,
+      271,
+      912,
+      1043,
+      790,
+      793,
+      1050,
+      411,
+      1052,
+      804,
+      1190,
+      296,
+      938,
+      299,
+      1195,
+      687,
+      816,
+      1071,
+      818,
+      947,
+      177,
+      1077,
+      952,
+      698,
+      191,
+      195,
+      837,
+      713,
+      1099,
+      716,
+      461,
+      592,
+      469,
+      982,
+      344,
+      474,
+      350,
+      1122,
+      228,
+      230,
+      615,
+      1000,
+      748,
+      498,
+      626,
+      1139,
+      885,
+      127,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      45,
+      48,
+      50,
+      53,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      65,
+      66,
+      68,
+      75,
+      76,
+      77,
+      79,
+      80,
+      81,
+      83,
+      86,
+      87,
+      88,
+      89,
+      90,
+      94,
+      95,
+      96,
+      99,
+      104,
+      109,
+      110
+    ],
+    "prompts": {
+      "129": [
+        "booklet"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "271": [
+        "clock"
+      ],
+      "912": [
+        "sandwich"
+      ],
+      "1043": [
+        "sweatshirt"
+      ],
+      "790": [
+        "pepper mill"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "1050": [
+        "table"
+      ],
+      "411": [
+        "earring"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "1190": [
+        "wineglass"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "938": [
+        "Sharpie"
+      ],
+      "299": [
+        "control"
+      ],
+      "1195": [
+        "wreath"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "818": [
+        "plate"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "177": [
+        "button"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "952": [
+        "shot glass"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "191": [
+        "camper"
+      ],
+      "194": [
+        "candle"
+      ],
+      "195": [
+        "candle holder"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "592": [
+        "jean"
+      ],
+      "469": [
+        "fork"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "344": [
+        "cup",
+        "mug"
+      ],
+      "474": [
+        "frisbee"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "228": [
+        "CD player"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "615": [
+        "knife"
+      ],
+      "1000": [
+        "spoon"
+      ],
+      "748": [
+        "painting"
+      ],
+      "498": [
+        "glass"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "885": [
+        "ring"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "57": [
+        "baseball"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "61": [
+        "basket"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "75": [
+        "beanie"
+      ],
+      "76": [
+        "bear"
+      ],
+      "77": [
+        "bed"
+      ],
+      "79": [
+        "bedspread"
+      ],
+      "80": [
+        "cow"
+      ],
+      "81": [
+        "beef"
+      ],
+      "83": [
+        "beer bottle"
+      ],
+      "86": [
+        "bell"
+      ],
+      "87": [
+        "bell pepper"
+      ],
+      "88": [
+        "belt"
+      ],
+      "89": [
+        "belt buckle"
+      ],
+      "90": [
+        "bench"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "95": [
+        "visor"
+      ],
+      "96": [
+        "billboard"
+      ],
+      "99": [
+        "bird"
+      ],
+      "104": [
+        "birthday cake"
+      ],
+      "109": [
+        "blackboard"
+      ],
+      "110": [
+        "blanket"
+      ]
+    }
+  },
+  "vocab_size": 99,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 59,
+  "meta": {
+    "n_images": 10
+  }
+}

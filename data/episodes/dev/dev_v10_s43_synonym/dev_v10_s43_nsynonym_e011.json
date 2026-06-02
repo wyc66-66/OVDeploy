@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nsynonym_e011",
+  "image_ids": [
+    563882,
+    350488,
+    270402,
+    44652,
+    394206,
+    519491,
+    109441,
+    453302,
+    283520,
+    259625
+  ],
+  "vocab": {
+    "cat_ids": [
+      1026,
+      3,
+      133,
+      1095,
+      968,
+      1035,
+      910,
+      271,
+      848,
+      272
+    ],
+    "prompts": {
+      "1026": [
+        "street sign"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "133": [
+        "container"
+      ],
+      "1095": [
+        "toaster"
+      ],
+      "968": [
+        "skirt"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "271": [
+        "clock"
+      ],
+      "848": [
+        "propeller"
+      ],
+      "272": [
+        "clock tower"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e006",
+  "image_ids": [
+    486046,
+    63552,
+    259625,
+    275791,
+    462614,
+    419653,
+    350488,
+    368752,
+    89648,
+    579655
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      65,
+      1026,
+      961,
+      133,
+      390,
+      1097,
+      1098,
+      713,
+      1161
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "961": [
+        "sink"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "1161": [
+        "watch"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 49,
+  "meta": {
+    "n_images": 10
+  }
+}

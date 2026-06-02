@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e006",
+  "image_ids": [
+    47571,
+    565391,
+    532481,
+    501523,
+    317433,
+    366884,
+    441286,
+    408696,
+    110784,
+    118367
+  ],
+  "vocab": {
+    "cat_ids": [
+      960,
+      961,
+      1,
+      385,
+      1027,
+      1097,
+      1098,
+      1103,
+      593
+    ],
+    "prompts": {
+      "960": [
+        "silo"
+      ],
+      "961": [
+        "sink"
+      ],
+      "1": [
+        "aerosol can"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "1103": [
+        "toothpaste"
+      ],
+      "593": [
+        "jeep"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 50,
+  "meta": {
+    "n_images": 10
+  }
+}

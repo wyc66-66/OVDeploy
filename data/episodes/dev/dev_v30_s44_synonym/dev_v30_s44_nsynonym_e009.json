@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nsynonym_e009",
+  "image_ids": [
+    173302,
+    239347,
+    331352,
+    109055,
+    470121,
+    259097,
+    177861,
+    560279,
+    314264,
+    366141
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      836,
+      645,
+      837,
+      1097,
+      1098,
+      461,
+      1038,
+      655,
+      592,
+      982,
+      152,
+      1050,
+      474,
+      1052,
+      540,
+      94,
+      26,
+      285,
+      161,
+      1122,
+      225,
+      748,
+      1133,
+      430,
+      367,
+      368,
+      878,
+      881,
+      626
+    ],
+    "prompts": {
+      "1155": [
+        "wall socket"
+      ],
+      "836": [
+        "pot"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "1038": [
+        "sushi"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "592": [
+        "jean"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "152": [
+        "bridal gown"
+      ],
+      "1050": [
+        "table"
+      ],
+      "474": [
+        "frisbee"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "540": [
+        "handle"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "26": [
+        "atomizer"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "225": [
+        "feline"
+      ],
+      "748": [
+        "painting"
+      ],
+      "1133": [
+        "umbrella"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "367": [
+        "dining table"
+      ],
+      "368": [
+        "tux"
+      ],
+      "878": [
+        "recliner"
+      ],
+      "881": [
+        "remote control"
+      ],
+      "626": [
+        "lamp"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e018",
+  "image_ids": [
+    222317,
+    528314,
+    12670,
+    507081,
+    135410,
+    112626,
+    182021,
+    156924,
+    504074,
+    263679
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      131,
+      1155,
+      133,
+      390,
+      259,
+      142,
+      23,
+      921,
+      285
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "131": [
+        "boom microphone"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "259": [
+        "cigarette"
+      ],
+      "142": [
+        "bowling ball"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "285": [
+        "coffee table"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 61,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e008",
+  "image_ids": [
+    67180,
+    532129,
+    7386,
+    218362,
+    21167,
+    153782,
+    384651,
+    441553,
+    578236,
+    200961
+  ],
+  "vocab": {
+    "cat_ids": [
+      1153,
+      1026,
+      1027,
+      392,
+      652,
+      271,
+      272,
+      145,
+      592,
+      1050
+    ],
+    "prompts": {
+      "1153": [
+        "walking stick"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "392": [
+        "dress"
+      ],
+      "652": [
+        "lizard"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "145": [
+        "suspenders"
+      ],
+      "592": [
+        "jean"
+      ],
+      "1050": [
+        "table"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 52,
+  "meta": {
+    "n_images": 10
+  }
+}

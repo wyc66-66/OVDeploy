@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e005",
+  "image_ids": [
+    462614,
+    173302,
+    51598,
+    173044,
+    22479,
+    390826,
+    146358,
+    458768,
+    347456,
+    32610
+  ],
+  "vocab": {
+    "cat_ids": [
+      256,
+      385,
+      386,
+      1155,
+      645,
+      133,
+      390,
+      392,
+      394,
+      272
+    ],
+    "prompts": {
+      "256": [
+        "slide"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "386": [
+        "doormat"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "394": [
+        "dress suit"
+      ],
+      "272": [
+        "clock tower"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 48,
+  "meta": {
+    "n_images": 10
+  }
+}

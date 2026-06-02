@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e019",
+  "image_ids": [
+    112626,
+    467511,
+    521719,
+    89670,
+    215259,
+    570664,
+    445846,
+    412240,
+    315257,
+    264441
+  ],
+  "vocab": {
+    "cat_ids": [
+      1025,
+      385,
+      1155,
+      898,
+      133,
+      973,
+      589,
+      921,
+      857
+    ],
+    "prompts": {
+      "1025": [
+        "strawberry"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "898": [
+        "plastic bag"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "973": [
+        "slipper"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "857": [
+        "puppy"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 63,
+  "meta": {
+    "n_images": 10
+  }
+}

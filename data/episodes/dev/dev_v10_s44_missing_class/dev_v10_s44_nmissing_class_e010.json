@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e010",
+  "image_ids": [
+    579655,
+    49761,
+    357816,
+    132408,
+    376307,
+    441286,
+    502229,
+    285788,
+    235836,
+    290293
+  ],
+  "vocab": {
+    "cat_ids": [
+      1018,
+      453,
+      1035,
+      12,
+      207,
+      271,
+      1042,
+      595,
+      342
+    ],
+    "prompts": {
+      "1018": [
+        "stool"
+      ],
+      "453": [
+        "flamingo"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "12": [
+        "apple"
+      ],
+      "207": [
+        "car"
+      ],
+      "271": [
+        "clock"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "342": [
+        "cucumber"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

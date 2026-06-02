@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nsynonym_e011",
+  "image_ids": [
+    396274,
+    382030,
+    314264,
+    185472,
+    402346,
+    292005,
+    142092,
+    537812,
+    379453,
+    555972
+  ],
+  "vocab": {
+    "cat_ids": [
+      3,
+      68,
+      837,
+      1097,
+      1098,
+      1099,
+      139,
+      461,
+      957,
+      1103,
+      473,
+      1182,
+      160,
+      1122,
+      484,
+      935,
+      41,
+      811,
+      816,
+      1139,
+      570,
+      1018,
+      59,
+      1021,
+      254,
+      127,
+      2,
+      4,
+      11,
+      12
+    ],
+    "prompts": {
+      "3": [
+        "airplane"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "957": [
+        "shower curtain"
+      ],
+      "1103": [
+        "toothpaste"
+      ],
+      "473": [
+        "freshener"
+      ],
+      "1182": [
+        "wig"
+      ],
+      "160": [
+        "bucket"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "484": [
+        "garden hose"
+      ],
+      "935": [
+        "shampoo"
+      ],
+      "41": [
+        "ball"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "570": [
+        "hose"
+      ],
+      "1018": [
+        "stool"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "254": [
+        "chopstick"
+      ],
+      "127": [
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

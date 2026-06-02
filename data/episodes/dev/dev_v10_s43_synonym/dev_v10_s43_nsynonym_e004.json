@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nsynonym_e004",
+  "image_ids": [
+    579970,
+    15440,
+    66771,
+    422998,
+    239717,
+    326082,
+    366141,
+    5586,
+    308193,
+    173044
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      1031,
+      715,
+      1099,
+      1198,
+      271,
+      912,
+      655,
+      272,
+      19
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "1198": [
+        "wristlet"
+      ],
+      "271": [
+        "clock"
+      ],
+      "912": [
+        "sandwich"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "19": [
+        "armchair"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 47,
+  "meta": {
+    "n_images": 10
+  }
+}

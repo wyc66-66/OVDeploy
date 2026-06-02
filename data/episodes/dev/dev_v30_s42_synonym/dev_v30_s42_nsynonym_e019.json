@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s42_nsynonym_e019",
+  "image_ids": [
+    203931,
+    363666,
+    419653,
+    66771,
+    525286,
+    190753,
+    514797,
+    448076,
+    104666,
+    312421
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      133,
+      390,
+      1031,
+      1161,
+      521,
+      910,
+      271,
+      915,
+      405,
+      23,
+      1050,
+      412,
+      544,
+      32,
+      36,
+      37,
+      687,
+      820,
+      181,
+      1077,
+      58,
+      59,
+      703,
+      713,
+      74,
+      715,
+      461,
+      469,
+      982
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "133": [
+        "glass bottle"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "521": [
+        "guitar"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "271": [
+        "clock"
+      ],
+      "915": [
+        "saucer"
+      ],
+      "405": [
+        "dumbbell"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "1050": [
+        "table"
+      ],
+      "412": [
+        "easel"
+      ],
+      "544": [
+        "hat"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "37": [
+        "bagel"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "820": [
+        "playpen"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "703": [
+        "motorcycle"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "74": [
+        "beanbag"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "469": [
+        "fork"
+      ],
+      "982": [
+        "sofa"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 61,
+  "meta": {
+    "n_images": 10
+  }
+}

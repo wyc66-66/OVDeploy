@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e012",
+  "image_ids": [
+    328238,
+    298396,
+    290081,
+    577976,
+    300659,
+    222094,
+    175387,
+    575970,
+    122606,
+    283520
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1026,
+      1034,
+      1035,
+      139,
+      911,
+      917,
+      923,
+      1052
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1034": [
+        "sunflower"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "911": [
+        "sandal"
+      ],
+      "917": [
+        "sawhorse"
+      ],
+      "923": [
+        "scissors"
+      ],
+      "1052": [
+        "tablecloth"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nsynonym_e016",
+  "image_ids": [
+    426241,
+    182021,
+    154425,
+    70158,
+    344888,
+    292005,
+    112110,
+    344621,
+    389315,
+    308476
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      706,
+      705,
+      68,
+      578,
+      845,
+      655,
+      592,
+      19,
+      344
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "578": [
+        "polar bear"
+      ],
+      "845": [
+        "printer"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "592": [
+        "jean"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "344": [
+        "drinking cup"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 60,
+  "meta": {
+    "n_images": 10
+  }
+}

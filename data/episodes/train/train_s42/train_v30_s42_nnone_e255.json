@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e255",
+  "image_ids": [
+    483999,
+    186980,
+    250758,
+    406611,
+    272364
+  ],
+  "vocab": {
+    "cat_ids": [
+      827,
+      194,
+      195,
+      964,
+      390,
+      277,
+      344,
+      284,
+      351,
+      609,
+      421,
+      1190,
+      1000,
+      235,
+      367,
+      112,
+      817,
+      818,
+      1202,
+      496,
+      757,
+      59,
+      61,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19
+    ],
+    "prompts": {
+      "827": [
+        "pole"
+      ],
+      "194": [
+        "candle"
+      ],
+      "195": [
+        "candle holder"
+      ],
+      "964": [
+        "ski"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "277": [
+        "coat"
+      ],
+      "344": [
+        "cup",
+        "mug"
+      ],
+      "284": [
+        "coffee maker"
+      ],
+      "351": [
+        "cushion"
+      ],
+      "609": [
+        "kitchen sink"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "1190": [
+        "wineglass"
+      ],
+      "1000": [
+        "spoon"
+      ],
+      "235": [
+        "chandelier"
+      ],
+      "367": [
+        "dining table"
+      ],
+      "112": [
+        "blender"
+      ],
+      "817": [
+        "place mat"
+      ],
+      "818": [
+        "plate"
+      ],
+      "1202": [
+        "zebra"
+      ],
+      "496": [
+        "giraffe"
+      ],
+      "757": [
+        "paper towel"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "61": [
+        "basket"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 297,
+  "meta": {
+    "n_images": 5
+  }
+}

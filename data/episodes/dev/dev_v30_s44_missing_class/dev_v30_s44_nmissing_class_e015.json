@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s44_nmissing_class_e015",
+  "image_ids": [
+    130586,
+    60932,
+    396526,
+    278463,
+    119516,
+    363207,
+    233139,
+    22479,
+    462614,
+    54605
+  ],
+  "vocab": {
+    "cat_ids": [
+      256,
+      1024,
+      1154,
+      1027,
+      133,
+      390,
+      392,
+      781,
+      276,
+      1175,
+      152,
+      793,
+      1050,
+      539,
+      1052,
+      409,
+      1180,
+      932,
+      296,
+      811,
+      430,
+      818,
+      693,
+      181,
+      183,
+      955,
+      65,
+      194,
+      961
+    ],
+    "prompts": {
+      "256": [
+        "slide"
+      ],
+      "1024": [
+        "straw"
+      ],
+      "1154": [
+        "wall clock"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "781": [
+        "pen"
+      ],
+      "276": [
+        "coaster"
+      ],
+      "1175": [
+        "wedding cake"
+      ],
+      "152": [
+        "bridal gown"
+      ],
+      "793": [
+        "person",
+        "human"
+      ],
+      "1050": [
+        "table"
+      ],
+      "539": [
+        "handkerchief"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "409": [
+        "earphone"
+      ],
+      "1180": [
+        "whipped cream"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "818": [
+        "plate"
+      ],
+      "693": [
+        "mint candy"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "183": [
+        "cake"
+      ],
+      "955": [
+        "shower head"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "194": [
+        "candle"
+      ],
+      "961": [
+        "sink"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 59,
+  "meta": {
+    "n_images": 10
+  }
+}

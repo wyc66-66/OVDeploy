@@ -1,0 +1,147 @@
+{
+  "episode_id": "train_v30_s42_nnone_e047",
+  "image_ids": [
+    516871,
+    313130,
+    553094,
+    498286,
+    56344
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      1155,
+      133,
+      390,
+      1099,
+      344,
+      154,
+      1052,
+      421,
+      230,
+      296,
+      617,
+      361,
+      687,
+      881,
+      436,
+      694,
+      698,
+      378,
+      187,
+      252,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "344": [
+        "cup",
+        "mug"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "617": [
+        "knob"
+      ],
+      "361": [
+        "desk"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "881": [
+        "remote control"
+      ],
+      "436": [
+        "fighter jet"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "378": [
+        "dog",
+        "canine"
+      ],
+      "187": [
+        "camcorder"
+      ],
+      "252": [
+        "choker"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 89,
+  "meta": {
+    "n_images": 5
+  }
+}

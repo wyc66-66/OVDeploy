@@ -1,0 +1,146 @@
+{
+  "episode_id": "train_v30_s42_nnone_e477",
+  "image_ids": [
+    35279,
+    493799,
+    409211,
+    551215,
+    461405
+  ],
+  "vocab": {
+    "cat_ids": [
+      838,
+      1162,
+      724,
+      469,
+      217,
+      409,
+      1052,
+      605,
+      734,
+      158,
+      924,
+      230,
+      232,
+      943,
+      624,
+      817,
+      1009,
+      951,
+      1078,
+      1079,
+      185,
+      828,
+      190,
+      127,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15
+    ],
+    "prompts": {
+      "838": [
+        "potato"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "724": [
+        "notebook"
+      ],
+      "469": [
+        "fork"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "409": [
+        "earphone"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "605": [
+        "key"
+      ],
+      "734": [
+        "onion"
+      ],
+      "158": [
+        "brussels sprouts"
+      ],
+      "924": [
+        "scoreboard"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "232": [
+        "chair",
+        "seat"
+      ],
+      "943": [
+        "sheep"
+      ],
+      "624": [
+        "lamb"
+      ],
+      "817": [
+        "place mat"
+      ],
+      "1009": [
+        "steak"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "1078": [
+        "tennis ball"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "185": [
+        "calendar"
+      ],
+      "828": [
+        "polo shirt"
+      ],
+      "190": [
+        "camera lens"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 519,
+  "meta": {
+    "n_images": 5
+  }
+}

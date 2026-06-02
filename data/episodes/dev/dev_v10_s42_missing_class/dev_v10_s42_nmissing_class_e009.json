@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e009",
+  "image_ids": [
+    575970,
+    9448,
+    294783,
+    267940,
+    336209,
+    525247,
+    166287,
+    270386,
+    46378,
+    263679
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      66,
+      962,
+      1034,
+      461,
+      589,
+      77,
+      592,
+      80
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "386": [
+        "doormat"
+      ],
+      "1034": [
+        "sunflower"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "77": [
+        "bed"
+      ],
+      "592": [
+        "jean"
+      ],
+      "80": [
+        "cow"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 51,
+  "meta": {
+    "n_images": 10
+  }
+}

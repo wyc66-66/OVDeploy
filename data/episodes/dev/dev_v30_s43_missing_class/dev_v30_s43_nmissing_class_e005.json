@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e005",
+  "image_ids": [
+    344621,
+    458223,
+    504074,
+    73946,
+    424776,
+    571804,
+    265518,
+    382030,
+    200421,
+    104119
+  ],
+  "vocab": {
+    "cat_ids": [
+      961,
+      259,
+      715,
+      1037,
+      589,
+      77,
+      19,
+      469,
+      214,
+      94,
+      1182,
+      995,
+      804,
+      1060,
+      232,
+      936,
+      41,
+      238,
+      814,
+      110,
+      241,
+      626,
+      818,
+      436,
+      1079,
+      254,
+      127,
+      2,
+      3
+    ],
+    "prompts": {
+      "961": [
+        "sink"
+      ],
+      "259": [
+        "cigarette"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "77": [
+        "bed"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "469": [
+        "fork"
+      ],
+      "214": [
+        "cargo ship"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "1182": [
+        "wig"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "1060": [
+        "tank top"
+      ],
+      "232": [
+        "chair",
+        "seat"
+      ],
+      "936": [
+        "shark"
+      ],
+      "41": [
+        "ball"
+      ],
+      "429": [
+        "fan"
+      ],
+      "238": [
+        "checkerboard"
+      ],
+      "814": [
+        "pitcher"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "241": [
+        "chicken"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "818": [
+        "plate"
+      ],
+      "436": [
+        "fighter jet"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "254": [
+        "chopstick"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 48,
+  "meta": {
+    "n_images": 10
+  }
+}

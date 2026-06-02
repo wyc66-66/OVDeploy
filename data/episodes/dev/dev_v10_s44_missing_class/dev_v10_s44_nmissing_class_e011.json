@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e011",
+  "image_ids": [
+    525247,
+    36936,
+    24144,
+    397133,
+    6723,
+    295420,
+    285788,
+    165257,
+    521719,
+    579655
+  ],
+  "vocab": {
+    "cat_ids": [
+      1155,
+      139,
+      655,
+      15,
+      145,
+      914,
+      1021,
+      23,
+      156
+    ],
+    "prompts": {
+      "1155": [
+        "wall socket"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "15": [
+        "apron"
+      ],
+      "145": [
+        "suspenders"
+      ],
+      "914": [
+        "saucepan"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "156": [
+        "broom"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 55,
+  "meta": {
+    "n_images": 10
+  }
+}

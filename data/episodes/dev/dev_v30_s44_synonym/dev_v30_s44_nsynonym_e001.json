@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s44_nsynonym_e001",
+  "image_ids": [
+    278463,
+    185802,
+    379453,
+    447917,
+    74209,
+    560279,
+    32610,
+    239717,
+    229997,
+    319935
+  ],
+  "vocab": {
+    "cat_ids": [
+      386,
+      3,
+      2,
+      133,
+      390,
+      645,
+      1162,
+      781,
+      653,
+      271,
+      19,
+      26,
+      1050,
+      34,
+      932,
+      804,
+      296,
+      425,
+      45,
+      430,
+      177,
+      693,
+      565,
+      1077,
+      61,
+      70,
+      1095,
+      1097,
+      1098,
+      76
+    ],
+    "prompts": {
+      "386": [
+        "doormat"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "133": [
+        "glass bottle"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "781": [
+        "pen"
+      ],
+      "653": [
+        "log"
+      ],
+      "271": [
+        "clock"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "26": [
+        "atomizer"
+      ],
+      "1050": [
+        "table"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "425": [
+        "eraser"
+      ],
+      "45": [
+        "banana"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "177": [
+        "button"
+      ],
+      "693": [
+        "mint candy"
+      ],
+      "565": [
+        "fume hood"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "61": [
+        "basket"
+      ],
+      "70": [
+        "battery"
+      ],
+      "1095": [
+        "toaster"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "76": [
+        "bear"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 45,
+  "meta": {
+    "n_images": 10
+  }
+}

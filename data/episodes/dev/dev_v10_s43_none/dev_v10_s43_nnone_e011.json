@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e011",
+  "image_ids": [
+    7386,
+    211042,
+    27972,
+    8629,
+    419653,
+    424776,
+    522156,
+    123633,
+    256868,
+    233567
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      133,
+      390,
+      524,
+      658,
+      23,
+      923,
+      540,
+      155,
+      1055
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "923": [
+        "scissors"
+      ],
+      "540": [
+        "handle"
+      ],
+      "155": [
+        "broach"
+      ],
+      "1055": [
+        "tag"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 54,
+  "meta": {
+    "n_images": 10
+  }
+}

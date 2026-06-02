@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nsynonym_e005",
+  "image_ids": [
+    430871,
+    270402,
+    63552,
+    156924,
+    406417,
+    441286,
+    382696,
+    348481,
+    121497,
+    129945
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      1155,
+      138,
+      586,
+      716,
+      23,
+      88,
+      1177,
+      605,
+      288,
+      996,
+      421,
+      422,
+      230,
+      1060,
+      299,
+      811,
+      365,
+      1008,
+      112,
+      627,
+      563,
+      947,
+      694,
+      60,
+      1021,
+      766,
+      2,
+      3,
+      4
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "138": [
+        "bow-tie"
+      ],
+      "586": [
+        "iPod"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "88": [
+        "belt"
+      ],
+      "1177": [
+        "wet suit"
+      ],
+      "605": [
+        "key"
+      ],
+      "288": [
+        "coin"
+      ],
+      "996": [
+        "spice rack"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "422": [
+        "elephant"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "1060": [
+        "tank top"
+      ],
+      "299": [
+        "control"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "365": [
+        "die"
+      ],
+      "1008": [
+        "statue"
+      ],
+      "112": [
+        "blender"
+      ],
+      "627": [
+        "lamppost"
+      ],
+      "563": [
+        "home plate"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "1021": [
+        "stove"
+      ],
+      "766": [
+        "parking meter"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 48,
+  "meta": {
+    "n_images": 10
+  }
+}

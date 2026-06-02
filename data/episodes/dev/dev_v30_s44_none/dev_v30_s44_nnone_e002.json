@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s44_nnone_e002",
+  "image_ids": [
+    218362,
+    520264,
+    14380,
+    342128,
+    377723,
+    569059,
+    278463,
+    530836,
+    132408,
+    560279
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      133,
+      390,
+      392,
+      1162,
+      139,
+      781,
+      271,
+      655,
+      26,
+      29,
+      1188,
+      165,
+      549,
+      932,
+      296,
+      421,
+      810,
+      806,
+      687,
+      816,
+      693,
+      181,
+      1079,
+      822,
+      569,
+      698,
+      442,
+      705,
+      451
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "781": [
+        "pen"
+      ],
+      "271": [
+        "clock"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "26": [
+        "atomizer"
+      ],
+      "29": [
+        "awning"
+      ],
+      "1188": [
+        "wine bottle"
+      ],
+      "165": [
+        "bullet train"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "810": [
+        "tobacco pipe"
+      ],
+      "806": [
+        "pineapple"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "816": [
+        "pizza"
+      ],
+      "693": [
+        "mint candy"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1079": [
+        "tennis racket"
+      ],
+      "822": [
+        "plow"
+      ],
+      "569": [
+        "horse"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "442": [
+        "fire extinguisher"
+      ],
+      "705": [
+        "mouse"
+      ],
+      "451": [
+        "flag"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 46,
+  "meta": {
+    "n_images": 10
+  }
+}

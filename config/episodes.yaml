@@ -1,0 +1,24 @@
+seeds: [42, 43, 44]
+vocab_sizes: [10, 30, 100, 1203]
+noise_types: [none, synonym, missing_class]
+
+dev:
+  n_images: 500
+  n_episodes_per_config: 20
+
+train:
+  n_images_pool: 2000
+  n_episodes: 500
+
+eval:
+  n_episodes_per_config: 50
+
+baselines:
+  - B0_full
+  - B1_oracle
+  - B2_freq
+  - B3_random
+  - B4_clip
+  - B5_subset
+
+oracle_delta: 3

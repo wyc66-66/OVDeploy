@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e441",
+  "image_ids": [
+    226147,
+    494759,
+    199681,
+    341058,
+    334555
+  ],
+  "vocab": {
+    "cat_ids": [
+      641,
+      1161,
+      713,
+      715,
+      461,
+      910,
+      589,
+      80,
+      207,
+      344,
+      959,
+      1052,
+      735,
+      35,
+      611,
+      230,
+      615,
+      1133,
+      687,
+      1139,
+      627,
+      827,
+      1023,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19
+    ],
+    "prompts": {
+      "641": [
+        "lettuce"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "80": [
+        "cow"
+      ],
+      "207": [
+        "car"
+      ],
+      "344": [
+        "cup",
+        "mug"
+      ],
+      "959": [
+        "signboard"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "735": [
+        "orange"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "611": [
+        "kite"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "615": [
+        "knife"
+      ],
+      "1133": [
+        "umbrella"
+      ],
+      "687": [
+        "microwave oven"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "627": [
+        "lamppost"
+      ],
+      "827": [
+        "pole"
+      ],
+      "1023": [
+        "strap"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 483,
+  "meta": {
+    "n_images": 5
+  }
+}

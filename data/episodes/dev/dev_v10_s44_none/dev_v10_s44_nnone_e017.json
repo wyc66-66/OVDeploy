@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nnone_e017",
+  "image_ids": [
+    331352,
+    480944,
+    60932,
+    378873,
+    175387,
+    2923,
+    432553,
+    153229,
+    389315,
+    29393
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      514,
+      1155,
+      392,
+      716,
+      461,
+      18,
+      595,
+      342,
+      87
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "514": [
+        "green bean"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "392": [
+        "dress"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "18": [
+        "armband"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "342": [
+        "cucumber"
+      ],
+      "87": [
+        "bell pepper"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 61,
+  "meta": {
+    "n_images": 10
+  }
+}

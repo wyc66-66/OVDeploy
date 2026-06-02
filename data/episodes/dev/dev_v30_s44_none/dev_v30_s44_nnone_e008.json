@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s44_nnone_e008",
+  "image_ids": [
+    203294,
+    347456,
+    177861,
+    278463,
+    345027,
+    263068,
+    190753,
+    14380,
+    537241,
+    40083
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      132,
+      133,
+      390,
+      1162,
+      781,
+      1050,
+      544,
+      161,
+      1186,
+      35,
+      932,
+      32,
+      422,
+      36,
+      296,
+      165,
+      173,
+      693,
+      59,
+      701,
+      962,
+      1056,
+      1093,
+      70,
+      968,
+      592,
+      724,
+      90,
+      94
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "132": [
+        "boot"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "781": [
+        "pen"
+      ],
+      "1050": [
+        "table"
+      ],
+      "544": [
+        "hat"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "1186": [
+        "windshield wiper"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "932": [
+        "seashell"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "422": [
+        "elephant"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "165": [
+        "bullet train"
+      ],
+      "173": [
+        "bus"
+      ],
+      "693": [
+        "mint candy"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "701": [
+        "motor scooter"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "1056": [
+        "taillight"
+      ],
+      "1093": [
+        "tissue paper"
+      ],
+      "70": [
+        "battery"
+      ],
+      "968": [
+        "skirt"
+      ],
+      "592": [
+        "jean"
+      ],
+      "724": [
+        "notebook"
+      ],
+      "90": [
+        "bench"
+      ],
+      "94": [
+        "bicycle"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 52,
+  "meta": {
+    "n_images": 10
+  }
+}

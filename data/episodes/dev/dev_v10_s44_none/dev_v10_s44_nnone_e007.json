@@ -1,0 +1,71 @@
+{
+  "episode_id": "dev_v10_s44_nnone_e007",
+  "image_ids": [
+    368752,
+    102707,
+    295420,
+    246968,
+    130586,
+    265816,
+    464089,
+    251537,
+    22479,
+    302760
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      385,
+      256,
+      1027,
+      133,
+      5,
+      390,
+      1162,
+      23,
+      793
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "256": [
+        "slide"
+      ],
+      "1027": [
+        "streetlight"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "793": [
+        "person",
+        "human"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 51,
+  "meta": {
+    "n_images": 10
+  }
+}

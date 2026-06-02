@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e019",
+  "image_ids": [
+    405249,
+    246968,
+    49759,
+    262682,
+    363666,
+    429598,
+    211042,
+    507575,
+    227898,
+    477118
+  ],
+  "vocab": {
+    "cat_ids": [
+      385,
+      1155,
+      133,
+      5,
+      637,
+      1161,
+      1035,
+      524,
+      910
+    ],
+    "prompts": {
+      "385": [
+        "doorknob"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "637": [
+        "Lego"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "524": [
+        "hairbrush"
+      ],
+      "910": [
+        "saltshaker"
+      ],
+      "1021": [
+        "stove"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 62,
+  "meta": {
+    "n_images": 10
+  }
+}

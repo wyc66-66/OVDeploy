@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e021",
+  "image_ids": [
+    360661,
+    27982,
+    570736,
+    534601,
+    263796
+  ],
+  "vocab": {
+    "cat_ids": [
+      961,
+      899,
+      1155,
+      261,
+      68,
+      645,
+      1097,
+      1098,
+      536,
+      811,
+      430,
+      1071,
+      177,
+      181,
+      1141,
+      694,
+      569,
+      955,
+      189,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32
+    ],
+    "prompts": {
+      "961": [
+        "sink"
+      ],
+      "899": [
+        "saddle"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "261": [
+        "cistern"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "645": [
+        "lightbulb"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "1098": [
+        "toilet tissue"
+      ],
+      "536": [
+        "hand towel"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "177": [
+        "button"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "1141": [
+        "vent"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "569": [
+        "horse"
+      ],
+      "955": [
+        "shower head"
+      ],
+      "189": [
+        "camera"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 63,
+  "meta": {
+    "n_images": 5
+  }
+}

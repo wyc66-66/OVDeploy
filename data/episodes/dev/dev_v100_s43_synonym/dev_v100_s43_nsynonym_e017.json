@@ -1,0 +1,429 @@
+{
+  "episode_id": "dev_v100_s43_nsynonym_e017",
+  "image_ids": [
+    579970,
+    544565,
+    47571,
+    226903,
+    265816,
+    203931,
+    50844,
+    146358,
+    136355,
+    264535
+  ],
+  "vocab": {
+    "cat_ids": [
+      1027,
+      1155,
+      133,
+      390,
+      392,
+      394,
+      145,
+      1042,
+      19,
+      1175,
+      921,
+      411,
+      1180,
+      285,
+      157,
+      1052,
+      544,
+      161,
+      540,
+      421,
+      429,
+      1071,
+      817,
+      947,
+      1077,
+      694,
+      569,
+      58,
+      185,
+      319,
+      960,
+      194,
+      323,
+      837,
+      713,
+      715,
+      1100,
+      716,
+      461,
+      1104,
+      977,
+      982,
+      216,
+      88,
+      90,
+      94,
+      735,
+      350,
+      993,
+      610,
+      1122,
+      995,
+      615,
+      232,
+      626,
+      1139,
+      253,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      45,
+      48,
+      50,
+      53,
+      56,
+      57,
+      59,
+      60,
+      61,
+      65,
+      66,
+      68,
+      75,
+      76,
+      77,
+      79,
+      80,
+      81,
+      83,
+      86,
+      87,
+      89,
+      95,
+      96,
+      99,
+      104,
+      109,
+      110
+    ],
+    "prompts": {
+      "1027": [
+        "streetlight"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "133": [
+        "glass bottle"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "394": [
+        "dress suit"
+      ],
+      "145": [
+        "suspenders"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "1175": [
+        "wedding cake"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "411": [
+        "earring"
+      ],
+      "1180": [
+        "whipped cream"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "157": [
+        "brownie"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "544": [
+        "hat"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "540": [
+        "handle"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "429": [
+        "fan"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "817": [
+        "place mat"
+      ],
+      "947": [
+        "shirt"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "569": [
+        "horse"
+      ],
+      "58": [
+        "baseball bat"
+      ],
+      "185": [
+        "calendar"
+      ],
+      "319": [
+        "cowboy hat"
+      ],
+      "960": [
+        "silo"
+      ],
+      "194": [
+        "candle"
+      ],
+      "323": [
+        "crape"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "1100": [
+        "tongs"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "1104": [
+        "toothpick"
+      ],
+      "977": [
+        "snowman"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "216": [
+        "horse carriage"
+      ],
+      "88": [
+        "belt"
+      ],
+      "90": [
+        "bench"
+      ],
+      "94": [
+        "bicycle"
+      ],
+      "735": [
+        "orange"
+      ],
+      "350": [
+        "curtain"
+      ],
+      "993": [
+        "spatula"
+      ],
+      "610": [
+        "kitchen table"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "615": [
+        "knife"
+      ],
+      "232": [
+        "armchair"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "253": [
+        "chopping board"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ],
+      "53": [
+        "barrel"
+      ],
+      "56": [
+        "baseball base"
+      ],
+      "57": [
+        "baseball"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "61": [
+        "basket"
+      ],
+      "65": [
+        "bath mat"
+      ],
+      "66": [
+        "bath towel"
+      ],
+      "68": [
+        "bathtub"
+      ],
+      "75": [
+        "beanie"
+      ],
+      "76": [
+        "bear"
+      ],
+      "77": [
+        "bed"
+      ],
+      "79": [
+        "bedspread"
+      ],
+      "80": [
+        "cow"
+      ],
+      "81": [
+        "beef"
+      ],
+      "83": [
+        "beer bottle"
+      ],
+      "86": [
+        "bell"
+      ],
+      "87": [
+        "bell pepper"
+      ],
+      "89": [
+        "belt buckle"
+      ],
+      "95": [
+        "visor"
+      ],
+      "96": [
+        "billboard"
+      ],
+      "99": [
+        "bird"
+      ],
+      "104": [
+        "birthday cake"
+      ],
+      "109": [
+        "blackboard"
+      ],
+      "110": [
+        "blanket"
+      ]
+    }
+  },
+  "vocab_size": 100,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 60,
+  "meta": {
+    "n_images": 10
+  }
+}

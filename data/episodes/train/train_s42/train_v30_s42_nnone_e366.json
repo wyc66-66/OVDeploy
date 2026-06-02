@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e366",
+  "image_ids": [
+    508917,
+    511760,
+    369757,
+    441468,
+    322959
+  ],
+  "vocab": {
+    "cat_ids": [
+      835,
+      139,
+      12,
+      337,
+      469,
+      1050,
+      1115,
+      253,
+      735,
+      800,
+      611,
+      45,
+      175,
+      819,
+      697,
+      445,
+      2,
+      3,
+      4,
+      11,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41
+    ],
+    "prompts": {
+      "835": [
+        "poster"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "12": [
+        "apple"
+      ],
+      "337": [
+        "police cruiser"
+      ],
+      "469": [
+        "fork"
+      ],
+      "1050": [
+        "table"
+      ],
+      "1115": [
+        "train"
+      ],
+      "253": [
+        "chopping board"
+      ],
+      "735": [
+        "orange"
+      ],
+      "800": [
+        "pickup truck"
+      ],
+      "611": [
+        "kite"
+      ],
+      "45": [
+        "banana"
+      ],
+      "175": [
+        "butter"
+      ],
+      "819": [
+        "platter"
+      ],
+      "697": [
+        "money"
+      ],
+      "445": [
+        "fireplug"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 408,
+  "meta": {
+    "n_images": 5
+  }
+}

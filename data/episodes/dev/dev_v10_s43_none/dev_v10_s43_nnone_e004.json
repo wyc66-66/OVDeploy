@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e004",
+  "image_ids": [
+    104119,
+    278006,
+    489305,
+    278463,
+    150638,
+    221017,
+    214869,
+    397303,
+    32610,
+    370486
+  ],
+  "vocab": {
+    "cat_ids": [
+      1025,
+      1026,
+      2,
+      133,
+      390,
+      5,
+      521,
+      1162,
+      1035,
+      781
+    ],
+    "prompts": {
+      "1025": [
+        "strawberry"
+      ],
+      "1026": [
+        "street sign"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "521": [
+        "guitar"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "781": [
+        "pen"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 47,
+  "meta": {
+    "n_images": 10
+  }
+}

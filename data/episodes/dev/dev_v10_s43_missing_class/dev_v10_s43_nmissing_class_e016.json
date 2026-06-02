@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e016",
+  "image_ids": [
+    520077,
+    493284,
+    570782,
+    571598,
+    156924,
+    301421,
+    132408,
+    478136,
+    579970,
+    186296
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      449,
+      706,
+      387,
+      707,
+      1162,
+      716,
+      589,
+      781
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "449": [
+        "fishbowl"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "771": [
+        "pastry"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "707": [
+        "muffin"
+      ],
+      "1162": [
+        "water bottle"
+      ],
+      "716": [
+        "necktie"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "781": [
+        "pen"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 59,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s43_nmissing_class_e001",
+  "image_ids": [
+    60932,
+    438862,
+    406417,
+    367228,
+    142092,
+    494913,
+    519491,
+    562197,
+    36936,
+    580294
+  ],
+  "vocab": {
+    "cat_ids": [
+      392,
+      138,
+      139,
+      909,
+      399,
+      272,
+      655,
+      919,
+      1050
+    ],
+    "prompts": {
+      "392": [
+        "dress"
+      ],
+      "138": [
+        "bow-tie"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "909": [
+        "salsa"
+      ],
+      "399": [
+        "drum"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "271": [
+        "clock"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "919": [
+        "scale"
+      ],
+      "1050": [
+        "table"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 44,
+  "meta": {
+    "n_images": 10
+  }
+}

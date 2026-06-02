@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e259",
+  "image_ids": [
+    52996,
+    303818,
+    575357,
+    59044,
+    377882
+  ],
+  "vocab": {
+    "cat_ids": [
+      836,
+      421,
+      615,
+      1161,
+      299,
+      173,
+      378,
+      1037,
+      411,
+      725,
+      474,
+      379,
+      253,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      45
+    ],
+    "prompts": {
+      "836": [
+        "pot"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "615": [
+        "knife"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "299": [
+        "control"
+      ],
+      "173": [
+        "bus"
+      ],
+      "378": [
+        "dog",
+        "canine"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "411": [
+        "earring"
+      ],
+      "725": [
+        "notepad"
+      ],
+      "474": [
+        "frisbee"
+      ],
+      "379": [
+        "dog collar"
+      ],
+      "253": [
+        "chopping board"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 301,
+  "meta": {
+    "n_images": 5
+  }
+}

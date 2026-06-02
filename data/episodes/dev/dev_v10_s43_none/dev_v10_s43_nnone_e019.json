@@ -1,0 +1,70 @@
+{
+  "episode_id": "dev_v10_s43_nnone_e019",
+  "image_ids": [
+    508586,
+    507042,
+    130826,
+    347544,
+    112626,
+    270386,
+    263679,
+    300659,
+    562197,
+    117908
+  ],
+  "vocab": {
+    "cat_ids": [
+      642,
+      1155,
+      132,
+      133,
+      909,
+      592,
+      595,
+      659,
+      982,
+      154
+    ],
+    "prompts": {
+      "642": [
+        "license plate"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "132": [
+        "boot"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "909": [
+        "salsa"
+      ],
+      "592": [
+        "jean"
+      ],
+      "595": [
+        "jersey"
+      ],
+      "659": [
+        "magnet"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "154": [
+        "broccoli"
+      ]
+    }
+  },
+  "vocab_size": 10,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 62,
+  "meta": {
+    "n_images": 10
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e078",
+  "image_ids": [
+    402473,
+    229216,
+    6818,
+    334719,
+    513484
+  ],
+  "vocab": {
+    "cat_ids": [
+      160,
+      225,
+      995,
+      955,
+      968,
+      1097,
+      811,
+      76,
+      474,
+      146,
+      979,
+      570,
+      411,
+      927,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43
+    ],
+    "prompts": {
+      "160": [
+        "bucket"
+      ],
+      "225": [
+        "cat",
+        "feline"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "955": [
+        "shower head"
+      ],
+      "968": [
+        "skirt"
+      ],
+      "1097": [
+        "toilet"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "76": [
+        "bear"
+      ],
+      "474": [
+        "frisbee"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "979": [
+        "soap"
+      ],
+      "570": [
+        "hose"
+      ],
+      "411": [
+        "earring"
+      ],
+      "927": [
+        "scrubbing brush"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 120,
+  "meta": {
+    "n_images": 5
+  }
+}

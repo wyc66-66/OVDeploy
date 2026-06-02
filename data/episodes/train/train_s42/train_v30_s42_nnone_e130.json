@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e130",
+  "image_ids": [
+    42628,
+    343706,
+    187144,
+    486438,
+    308165
+  ],
+  "vocab": {
+    "cat_ids": [
+      1056,
+      256,
+      1122,
+      387,
+      132,
+      962,
+      230,
+      393,
+      298,
+      173,
+      146,
+      951,
+      760,
+      1178,
+      1115,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41
+    ],
+    "prompts": {
+      "1056": [
+        "taillight"
+      ],
+      "256": [
+        "slide"
+      ],
+      "1122": [
+        "trousers"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "132": [
+        "boot"
+      ],
+      "962": [
+        "skateboard"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "393": [
+        "dress hat"
+      ],
+      "298": [
+        "cone"
+      ],
+      "173": [
+        "bus"
+      ],
+      "146": [
+        "bracelet"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "760": [
+        "parachute"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "1115": [
+        "train"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 172,
+  "meta": {
+    "n_images": 5
+  }
+}

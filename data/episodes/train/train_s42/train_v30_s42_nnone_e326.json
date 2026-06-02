@@ -1,0 +1,145 @@
+{
+  "episode_id": "train_v30_s42_nnone_e326",
+  "image_ids": [
+    527215,
+    380706,
+    509824,
+    177015,
+    549136
+  ],
+  "vocab": {
+    "cat_ids": [
+      611,
+      804,
+      1083,
+      139,
+      173,
+      1071,
+      951,
+      626,
+      1139,
+      276,
+      885,
+      982,
+      23,
+      24,
+      827,
+      285,
+      127,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36
+    ],
+    "prompts": {
+      "611": [
+        "kite"
+      ],
+      "804": [
+        "pillow"
+      ],
+      "1083": [
+        "thermostat"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "173": [
+        "bus"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "951": [
+        "short pants"
+      ],
+      "626": [
+        "lamp"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "276": [
+        "coaster"
+      ],
+      "885": [
+        "ring"
+      ],
+      "982": [
+        "sofa"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "24": [
+        "ashtray"
+      ],
+      "827": [
+        "pole"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 368,
+  "meta": {
+    "n_images": 5
+  }
+}

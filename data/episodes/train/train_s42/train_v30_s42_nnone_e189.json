@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e189",
+  "image_ids": [
+    149222,
+    573258,
+    410612,
+    378605,
+    375278
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      706,
+      34,
+      995,
+      964,
+      965,
+      967,
+      296,
+      713,
+      387,
+      171,
+      708,
+      36,
+      658,
+      500,
+      118,
+      698,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      35,
+      41
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "995": [
+        "spectacles"
+      ],
+      "964": [
+        "ski"
+      ],
+      "965": [
+        "ski boot"
+      ],
+      "967": [
+        "ski pole"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "387": [
+        "doughnut"
+      ],
+      "171": [
+        "buoy"
+      ],
+      "708": [
+        "mug"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "658": [
+        "magazine"
+      ],
+      "500": [
+        "glove"
+      ],
+      "118": [
+        "boat"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "41": [
+        "ball"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 231,
+  "meta": {
+    "n_images": 5
+  }
+}

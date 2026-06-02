@@ -1,0 +1,146 @@
+{
+  "episode_id": "train_v30_s42_nnone_e333",
+  "image_ids": [
+    371677,
+    290771,
+    330554,
+    226147,
+    70254
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      385,
+      1155,
+      708,
+      641,
+      1161,
+      713,
+      715,
+      461,
+      655,
+      19,
+      344,
+      90,
+      1023,
+      1052,
+      735,
+      544,
+      35,
+      165,
+      230,
+      615,
+      296,
+      110,
+      1071,
+      112,
+      498,
+      1139,
+      948,
+      698,
+      127
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "1155": [
+        "wall socket"
+      ],
+      "708": [
+        "mug"
+      ],
+      "641": [
+        "lettuce"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "461": [
+        "flower arrangement"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "344": [
+        "cup",
+        "mug"
+      ],
+      "90": [
+        "bench"
+      ],
+      "1023": [
+        "strap"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "735": [
+        "orange"
+      ],
+      "544": [
+        "hat"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "165": [
+        "bullet train"
+      ],
+      "230": [
+        "cellular telephone"
+      ],
+      "615": [
+        "knife"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "110": [
+        "blanket"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "112": [
+        "blender"
+      ],
+      "498": [
+        "glass"
+      ],
+      "1139": [
+        "vase"
+      ],
+      "948": [
+        "shoe"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "127": [
+        "book",
+        "volume"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 375,
+  "meta": {
+    "n_images": 5
+  }
+}

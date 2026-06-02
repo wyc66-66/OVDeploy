@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e457",
+  "image_ids": [
+    184978,
+    340894,
+    186980,
+    296224,
+    560312
+  ],
+  "vocab": {
+    "cat_ids": [
+      705,
+      706,
+      194,
+      195,
+      642,
+      390,
+      976,
+      409,
+      284,
+      351,
+      609,
+      421,
+      1190,
+      296,
+      1000,
+      235,
+      173,
+      621,
+      367,
+      112,
+      500,
+      757,
+      502,
+      631,
+      694,
+      1077,
+      698,
+      61,
+      2,
+      3
+    ],
+    "prompts": {
+      "705": [
+        "mouse"
+      ],
+      "706": [
+        "mousepad"
+      ],
+      "194": [
+        "candle"
+      ],
+      "195": [
+        "candle holder"
+      ],
+      "642": [
+        "license plate"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "976": [
+        "snowboard"
+      ],
+      "409": [
+        "earphone"
+      ],
+      "284": [
+        "coffee maker"
+      ],
+      "351": [
+        "cushion"
+      ],
+      "609": [
+        "kitchen sink"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "1190": [
+        "wineglass"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "1000": [
+        "spoon"
+      ],
+      "235": [
+        "chandelier"
+      ],
+      "173": [
+        "bus"
+      ],
+      "621": [
+        "ladder"
+      ],
+      "367": [
+        "dining table"
+      ],
+      "112": [
+        "blender"
+      ],
+      "500": [
+        "glove"
+      ],
+      "757": [
+        "paper towel"
+      ],
+      "502": [
+        "goggles"
+      ],
+      "631": [
+        "laptop computer"
+      ],
+      "694": [
+        "mirror"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "698": [
+        "monitor"
+      ],
+      "61": [
+        "basket"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 499,
+  "meta": {
+    "n_images": 5
+  }
+}

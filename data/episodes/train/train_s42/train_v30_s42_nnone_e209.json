@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e209",
+  "image_ids": [
+    260266,
+    460160,
+    375763,
+    104669,
+    162415
+  ],
+  "vocab": {
+    "cat_ids": [
+      99,
+      838,
+      615,
+      713,
+      60,
+      943,
+      1009,
+      469,
+      54,
+      1112,
+      217,
+      154,
+      411,
+      1052,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      23,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43
+    ],
+    "prompts": {
+      "99": [
+        "bird"
+      ],
+      "838": [
+        "potato"
+      ],
+      "615": [
+        "knife"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "60": [
+        "baseball glove"
+      ],
+      "943": [
+        "sheep"
+      ],
+      "1009": [
+        "steak"
+      ],
+      "469": [
+        "fork"
+      ],
+      "54": [
+        "barrette"
+      ],
+      "1112": [
+        "traffic light"
+      ],
+      "217": [
+        "carrot"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "411": [
+        "earring"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 251,
+  "meta": {
+    "n_images": 5
+  }
+}

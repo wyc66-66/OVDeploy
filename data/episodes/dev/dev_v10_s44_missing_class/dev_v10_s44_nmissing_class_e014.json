@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e014",
+  "image_ids": [
+    215259,
+    580294,
+    473219,
+    391722,
+    308476,
+    507081,
+    8629,
+    275791,
+    153527,
+    14473
+  ],
+  "vocab": {
+    "cat_ids": [
+      1026,
+      133,
+      390,
+      392,
+      139,
+      653,
+      530,
+      919,
+      152
+    ],
+    "prompts": {
+      "1026": [
+        "street sign"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "392": [
+        "dress"
+      ],
+      "139": [
+        "bowl"
+      ],
+      "653": [
+        "log"
+      ],
+      "530": [
+        "hammer"
+      ],
+      "919": [
+        "scale"
+      ],
+      "152": [
+        "bridal gown"
+      ],
+      "30": [
+        "ax"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 58,
+  "meta": {
+    "n_images": 10
+  }
+}

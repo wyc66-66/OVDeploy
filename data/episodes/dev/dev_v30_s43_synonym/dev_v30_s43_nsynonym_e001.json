@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s43_nsynonym_e001",
+  "image_ids": [
+    222559,
+    550797,
+    519491,
+    437392,
+    526751,
+    464251,
+    456559,
+    227898,
+    61658,
+    396274
+  ],
+  "vocab": {
+    "cat_ids": [
+      1097,
+      1161,
+      1035,
+      589,
+      271,
+      272,
+      1039,
+      1108,
+      23,
+      154,
+      927,
+      161,
+      226,
+      99,
+      484,
+      1191,
+      554,
+      171,
+      118,
+      569,
+      59,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      27,
+      29
+    ],
+    "prompts": {
+      "1097": [
+        "toilet"
+      ],
+      "1161": [
+        "watch"
+      ],
+      "1035": [
+        "sunglasses"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "1039": [
+        "mop"
+      ],
+      "1108": [
+        "towel"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "154": [
+        "broccoli"
+      ],
+      "927": [
+        "scrubbing brush"
+      ],
+      "161": [
+        "horse buggy"
+      ],
+      "226": [
+        "cauliflower"
+      ],
+      "99": [
+        "bird"
+      ],
+      "484": [
+        "garden hose"
+      ],
+      "1191": [
+        "blinder"
+      ],
+      "554": [
+        "heater"
+      ],
+      "171": [
+        "buoy"
+      ],
+      "118": [
+        "boat"
+      ],
+      "569": [
+        "horse"
+      ],
+      "59": [
+        "baseball cap"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "synonym",
+  "split": "dev",
+  "baseline": "",
+  "seed": 44,
+  "meta": {
+    "n_images": 10
+  }
+}

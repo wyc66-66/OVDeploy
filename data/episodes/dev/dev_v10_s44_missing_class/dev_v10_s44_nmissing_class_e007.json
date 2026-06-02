@@ -1,0 +1,68 @@
+{
+  "episode_id": "dev_v10_s44_nmissing_class_e007",
+  "image_ids": [
+    66771,
+    466416,
+    130826,
+    134856,
+    267940,
+    570664,
+    459634,
+    127624,
+    422998,
+    147338
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      385,
+      132,
+      715,
+      1099,
+      589,
+      271,
+      272,
+      592
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "385": [
+        "doorknob"
+      ],
+      "132": [
+        "boot"
+      ],
+      "1031": [
+        "sugar bowl"
+      ],
+      "715": [
+        "necklace"
+      ],
+      "1099": [
+        "tomato"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "271": [
+        "clock"
+      ],
+      "272": [
+        "clock tower"
+      ],
+      "592": [
+        "jean"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 51,
+  "meta": {
+    "n_images": 10
+  }
+}

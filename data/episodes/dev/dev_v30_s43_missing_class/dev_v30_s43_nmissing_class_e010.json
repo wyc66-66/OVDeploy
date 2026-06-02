@@ -1,0 +1,150 @@
+{
+  "episode_id": "dev_v30_s43_nmissing_class_e010",
+  "image_ids": [
+    528314,
+    347370,
+    12667,
+    219283,
+    308193,
+    255747,
+    298396,
+    189213,
+    140840,
+    214869
+  ],
+  "vocab": {
+    "cat_ids": [
+      131,
+      964,
+      390,
+      967,
+      647,
+      1096,
+      74,
+      589,
+      271,
+      1170,
+      344,
+      923,
+      1052,
+      609,
+      610,
+      611,
+      421,
+      615,
+      232,
+      617,
+      748,
+      45,
+      430,
+      367,
+      1072,
+      751,
+      818,
+      817,
+      373
+    ],
+    "prompts": {
+      "131": [
+        "boom microphone"
+      ],
+      "964": [
+        "ski"
+      ],
+      "390": [
+        "drawer"
+      ],
+      "967": [
+        "ski pole"
+      ],
+      "647": [
+        "lime"
+      ],
+      "1096": [
+        "toaster oven"
+      ],
+      "74": [
+        "beanbag"
+      ],
+      "589": [
+        "jacket"
+      ],
+      "271": [
+        "clock"
+      ],
+      "1170": [
+        "water tower"
+      ],
+      "344": [
+        "cup",
+        "mug"
+      ],
+      "923": [
+        "scissors"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "609": [
+        "kitchen sink"
+      ],
+      "610": [
+        "kitchen table"
+      ],
+      "611": [
+        "kite"
+      ],
+      "421": [
+        "refrigerator"
+      ],
+      "615": [
+        "knife"
+      ],
+      "232": [
+        "chair",
+        "seat"
+      ],
+      "361": [
+        "desk"
+      ],
+      "617": [
+        "knob"
+      ],
+      "748": [
+        "painting"
+      ],
+      "45": [
+        "banana"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "367": [
+        "dining table"
+      ],
+      "1072": [
+        "telephone"
+      ],
+      "751": [
+        "pan"
+      ],
+      "818": [
+        "plate"
+      ],
+      "817": [
+        "place mat"
+      ],
+      "373": [
+        "dishwasher"
+      ]
+    }
+  },
+  "vocab_size": 29,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 53,
+  "meta": {
+    "n_images": 10
+  }
+}

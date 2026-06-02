@@ -1,0 +1,144 @@
+{
+  "episode_id": "train_v30_s42_nnone_e494",
+  "image_ids": [
+    561366,
+    236914,
+    260106,
+    79144,
+    184338
+  ],
+  "vocab": {
+    "cat_ids": [
+      899,
+      549,
+      296,
+      76,
+      653,
+      1071,
+      1042,
+      564,
+      23,
+      184,
+      569,
+      1052,
+      2,
+      3,
+      4,
+      11,
+      12,
+      15,
+      19,
+      27,
+      29,
+      32,
+      34,
+      35,
+      36,
+      41,
+      43,
+      45,
+      48,
+      50
+    ],
+    "prompts": {
+      "899": [
+        "saddle"
+      ],
+      "549": [
+        "headlight"
+      ],
+      "296": [
+        "computer keyboard"
+      ],
+      "76": [
+        "bear"
+      ],
+      "653": [
+        "log"
+      ],
+      "1071": [
+        "teddy bear"
+      ],
+      "1042": [
+        "sweater"
+      ],
+      "564": [
+        "honey"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "184": [
+        "calculator"
+      ],
+      "569": [
+        "horse"
+      ],
+      "1052": [
+        "tablecloth"
+      ],
+      "2": [
+        "air conditioner"
+      ],
+      "3": [
+        "airplane"
+      ],
+      "4": [
+        "alarm clock"
+      ],
+      "11": [
+        "antenna"
+      ],
+      "12": [
+        "apple"
+      ],
+      "15": [
+        "apron"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "27": [
+        "avocado"
+      ],
+      "29": [
+        "awning"
+      ],
+      "32": [
+        "baby buggy"
+      ],
+      "34": [
+        "backpack"
+      ],
+      "35": [
+        "handbag"
+      ],
+      "36": [
+        "suitcase"
+      ],
+      "41": [
+        "ball"
+      ],
+      "43": [
+        "balloon"
+      ],
+      "45": [
+        "banana"
+      ],
+      "48": [
+        "bandanna"
+      ],
+      "50": [
+        "banner"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "train",
+  "baseline": "",
+  "seed": 536,
+  "meta": {
+    "n_images": 5
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "episode_id": "dev_v10_s42_nmissing_class_e004",
+  "image_ids": [
+    389315,
+    223188,
+    259625,
+    377670,
+    563882,
+    150638,
+    188439,
+    46378,
+    581781,
+    7386
+  ],
+  "vocab": {
+    "cat_ids": [
+      386,
+      133,
+      968,
+      19,
+      531,
+      959,
+      602,
+      1178,
+      540
+    ],
+    "prompts": {
+      "386": [
+        "doormat"
+      ],
+      "5": [
+        "alcohol"
+      ],
+      "133": [
+        "bottle",
+        "container"
+      ],
+      "968": [
+        "skirt"
+      ],
+      "19": [
+        "armchair"
+      ],
+      "531": [
+        "hammock"
+      ],
+      "959": [
+        "signboard"
+      ],
+      "602": [
+        "keg"
+      ],
+      "1178": [
+        "wheel"
+      ],
+      "540": [
+        "handle"
+      ]
+    }
+  },
+  "vocab_size": 9,
+  "noise": "missing_class",
+  "split": "dev",
+  "baseline": "",
+  "seed": 46,
+  "meta": {
+    "n_images": 10
+  }
+}

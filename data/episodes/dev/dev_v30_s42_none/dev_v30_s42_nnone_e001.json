@@ -1,0 +1,149 @@
+{
+  "episode_id": "dev_v30_s42_nnone_e001",
+  "image_ids": [
+    332318,
+    443969,
+    512657,
+    36936,
+    477118,
+    396274,
+    383606,
+    54605,
+    20992,
+    119452
+  ],
+  "vocab": {
+    "cat_ids": [
+      1024,
+      776,
+      1164,
+      1037,
+      271,
+      16,
+      655,
+      276,
+      23,
+      921,
+      666,
+      1180,
+      285,
+      811,
+      45,
+      430,
+      818,
+      1077,
+      950,
+      181,
+      952,
+      183,
+      961,
+      194,
+      195,
+      1092,
+      837,
+      968,
+      713,
+      461
+    ],
+    "prompts": {
+      "1024": [
+        "straw"
+      ],
+      "776": [
+        "pear"
+      ],
+      "1164": [
+        "water faucet"
+      ],
+      "1037": [
+        "surfboard"
+      ],
+      "271": [
+        "clock"
+      ],
+      "16": [
+        "aquarium"
+      ],
+      "655": [
+        "speaker"
+      ],
+      "276": [
+        "coaster"
+      ],
+      "23": [
+        "trash can"
+      ],
+      "921": [
+        "scarf"
+      ],
+      "666": [
+        "mandarin orange"
+      ],
+      "1180": [
+        "whipped cream"
+      ],
+      "285": [
+        "coffee table"
+      ],
+      "811": [
+        "pipe"
+      ],
+      "45": [
+        "banana"
+      ],
+      "430": [
+        "faucet"
+      ],
+      "818": [
+        "plate"
+      ],
+      "1077": [
+        "television set"
+      ],
+      "950": [
+        "shopping cart"
+      ],
+      "181": [
+        "cabinet"
+      ],
+      "952": [
+        "shot glass"
+      ],
+      "183": [
+        "cake"
+      ],
+      "961": [
+        "sink"
+      ],
+      "194": [
+        "candle"
+      ],
+      "195": [
+        "candle holder"
+      ],
+      "1092": [
+        "tinsel"
+      ],
+      "837": [
+        "flowerpot"
+      ],
+      "968": [
+        "skirt"
+      ],
+      "713": [
+        "napkin"
+      ],
+      "461": [
+        "flower arrangement"
+      ]
+    }
+  },
+  "vocab_size": 30,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 43,
+  "meta": {
+    "n_images": 10
+  }
+}
