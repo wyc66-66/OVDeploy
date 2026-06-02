@@ -25,16 +25,31 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 $vis = if ($Public) { "--public" } else { "--private" }
-$existing = gh repo view $RepoName 2>$null
-if ($LASTEXITCODE -eq 0) {
-    Write-Host "Remote repo exists; adding origin and pushing..."
-    $user = (gh api user -q .login)
-    git remote remove origin 2>$null
-    git remote add origin "https://github.com/$user/$RepoName.git"
-    git push -u origin main
-} else {
-    gh repo create $RepoName $vis --source=. --remote=origin --push
+$user = gh api user -q .login
+$fullName = "$user/$RepoName"
+
+$prevEap = $ErrorActionPreference
+$ErrorActionPreference = "SilentlyContinue"
+gh repo view $fullName 2>$null | Out-Null
+$repoExists = ($LASTEXITCODE -eq 0)
+$ErrorActionPreference = $prevEap
+
+$git = "git"
+if (Test-Path "C:\Program Files (x86)\Git\cmd\git.exe") {
+    $git = "C:\Program Files (x86)\Git\cmd\git.exe"
 }
 
-$url = gh repo view --json url -q .url
+if ($repoExists) {
+    Write-Host "Remote repo exists; adding origin and pushing..."
+    & $git remote remove origin 2>$null
+    & $git remote add origin "https://github.com/$fullName.git"
+    & $git push -u origin main
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+} else {
+    Write-Host "Creating public repo $fullName ..."
+    gh repo create $RepoName $vis --source=. --remote=origin --push
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+}
+
+$url = gh repo view $fullName --json url -q .url
 Write-Host "Done: $url"
