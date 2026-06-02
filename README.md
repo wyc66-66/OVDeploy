@@ -1,5 +1,7 @@
 # OVDeploy
 
+**中文导读（推荐组内阅读）：** [README_zh.md](README_zh.md) · [5 分钟摘要](docs/5MIN_SUMMARY_zh.md)
+
 **OVDeploy: Realistic Evaluation of Open-Vocabulary Detection under User Vocabulary Constraints**
 
 Benchmark and protocol for deployment-style open-vocabulary object detection (OVD): episodic evaluation with user vocabulary size |V| << 1203, **EpisodicAP v2**, and **OOV-FP** (out-of-vocabulary false positive rate).
