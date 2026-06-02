@@ -85,8 +85,15 @@ python scripts/package_github.py --clean
 
 ## Push to GitHub
 
-1. Create an empty repository on GitHub (e.g. `OVDeploy`).
-2. From this folder:
+See **[docs/GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md)** — account, `gh auth login`, repo name (default **OVDeploy** public), and hosts/proxy fixes.
+
+After login:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/push_to_github.ps1
+```
+
+Manual push:
 
 ```bash
 cd ovdeploy-public
