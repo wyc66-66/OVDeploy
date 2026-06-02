@@ -4,6 +4,8 @@
 
 Benchmark and protocol for deployment-style open-vocabulary object detection (OVD): episodic evaluation with user vocabulary size |V| << 1203, **EpisodicAP v2**, and **OOV-FP** (out-of-vocabulary false positive rate).
 
+**Live repository:** https://github.com/wyc66-66/OVDeploy
+
 ## Highlights
 
 | Setting | YOLO-World v2-S (frozen) |
@@ -85,27 +87,30 @@ python scripts/package_github.py --clean
 
 ## Push to GitHub
 
-See **[docs/GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md)** — account, `gh auth login`, repo name (default **OVDeploy** public), and hosts/proxy fixes.
+**This repo is already live:** https://github.com/wyc66-66/OVDeploy
 
-After login:
+To publish updates:
+
+```powershell
+git add .
+git commit -m "Your message"
+git push origin main
+```
+
+First-time upload instructions: **[docs/GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md)**.
+
+After `gh auth login`:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/push_to_github.ps1
 ```
 
-Manual push:
+Manual setup (new fork only):
 
 ```bash
-cd ovdeploy-public
-git init
-git add .
-git commit -m "Initial public release: OVDeploy-Bench"
-git branch -M main
-git remote add origin https://github.com/YOUR_USER/OVDeploy.git
+git remote add origin https://github.com/wyc66-66/OVDeploy.git
 git push -u origin main
 ```
-
-Alternatively, copy all contents of `ovdeploy-public/` into your repo root and push from there.
 
 ## License
 

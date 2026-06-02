@@ -1,6 +1,18 @@
 # Upload to GitHub
 
-Local repo is ready: `git init`, commit on `main`, ~1336 files in `ovdeploy-public/`.
+**Live repo:** https://github.com/wyc66-66/OVDeploy — already published on `main`.
+
+If you only need to **update** this repository:
+
+```powershell
+git add .
+git commit -m "Your message"
+git push origin main
+```
+
+---
+
+First-time upload from a fresh clone (reference):
 
 ## What you must provide
 
@@ -56,7 +68,7 @@ Or manually:
 gh repo create OVDeploy --public --source=. --remote=origin --push
 ```
 
-Result: `https://github.com/YOUR_USERNAME/OVDeploy`
+Result: https://github.com/wyc66-66/OVDeploy
 
 ## Step 3 (optional): Set commit author
 
