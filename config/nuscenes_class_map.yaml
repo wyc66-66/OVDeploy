@@ -1,0 +1,82 @@
+# nuScenes 23 detection classes → YOLO-World / OVDeploy text prompts
+# Used by scripts/build_nuscenes_episodes.py (see NUSCENES_PILOT_PLAN.md)
+
+version: "nuscenes-v1.0-mini"
+num_classes: 23
+
+classes:
+  - id: 0
+    nuscenes_name: car
+    prompt: "car"
+  - id: 1
+    nuscenes_name: truck
+    prompt: "truck"
+  - id: 2
+    nuscenes_name: bus
+    prompt: "bus"
+  - id: 3
+    nuscenes_name: trailer
+    prompt: "trailer"
+  - id: 4
+    nuscenes_name: construction_vehicle
+    prompt: "construction vehicle"
+  - id: 5
+    nuscenes_name: pedestrian
+    prompt: "pedestrian"
+  - id: 6
+    nuscenes_name: motorcycle
+    prompt: "motorcycle"
+  - id: 7
+    nuscenes_name: bicycle
+    prompt: "bicycle"
+  - id: 8
+    nuscenes_name: traffic_cone
+    prompt: "traffic cone"
+  - id: 9
+    nuscenes_name: barrier
+    prompt: "barrier"
+  - id: 10
+    nuscenes_name: driveable_surface
+    prompt: "driveable surface"
+  - id: 11
+    nuscenes_name: other_flat
+    prompt: "flat surface"
+  - id: 12
+    nuscenes_name: sidewalk
+    prompt: "sidewalk"
+  - id: 13
+    nuscenes_name: terrain
+    prompt: "terrain"
+  - id: 14
+    nuscenes_name: manmade
+    prompt: "building"
+  - id: 15
+    nuscenes_name: vegetation
+    prompt: "vegetation"
+  - id: 16
+    nuscenes_name: ego_vehicle
+    prompt: "ego vehicle"
+  - id: 17
+    nuscenes_name: ambulance
+    prompt: "ambulance"
+  - id: 18
+    nuscenes_name: police
+    prompt: "police car"
+  - id: 19
+    nuscenes_name: pushable_pullable
+    prompt: "pushable object"
+  - id: 20
+    nuscenes_name: debris
+    prompt: "debris"
+  - id: 21
+    nuscenes_name: bicycle_rack
+    prompt: "bicycle rack"
+  - id: 22
+    nuscenes_name: animal
+    prompt: "animal"
+
+# Episode vocabulary sizes for pilot
+vocab_sizes: [5, 10, 23]
+camera: CAM_FRONT
+frames_per_episode: 10
+seeds: [42, 43, 44]

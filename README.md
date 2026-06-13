@@ -1,12 +1,17 @@
 # OVDeploy
 
-**中文导读（推荐组内阅读）：** [README_zh.md](README_zh.md) · [5 分钟摘要](docs/5MIN_SUMMARY_zh.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-pending-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+<!-- After arXiv acceptance, replace XXXX.XXXXX with real ID -->
 
 **OVDeploy: Realistic Evaluation of Open-Vocabulary Detection under User Vocabulary Constraints**
 
 Benchmark and protocol for deployment-style open-vocabulary object detection (OVD): episodic evaluation with user vocabulary size |V| << 1203, **EpisodicAP v2**, and **OOV-FP** (out-of-vocabulary false positive rate).
 
+**Paper (arXiv):** [arxiv.org/abs/XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX) *(update after submission)*  
 **Live repository:** https://github.com/wyc66-66/OVDeploy
+
+**中文导读：** [README_zh.md](README_zh.md) · [5 分钟摘要](docs/5MIN_SUMMARY_zh.md)
 
 ## Highlights
 
@@ -68,16 +73,39 @@ Details: [`paper/PROTOCOL.md`](paper/PROTOCOL.md).
 
 ## Citation
 
+**arXiv (recommended until CVPR decision):**
+
 ```bibtex
-@inproceedings{{ovdeploy2026,
-  title={{OVDeploy: Realistic Evaluation of Open-Vocabulary Detection under User Vocabulary Constraints}},
-  author={{Anonymous}},
-  booktitle={{CVPR}},
-  year={{2026}}
-}}
+@article{ovdeploy2026arxiv,
+  title={OVDeploy: Realistic Evaluation of Open-Vocabulary Detection under User Vocabulary Constraints},
+  author={[Author Names]},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2026}
+}
 ```
 
-Update author fields when de-anonymized.
+**CVPR submission (if accepted):**
+
+```bibtex
+@inproceedings{ovdeploy2026,
+  title={OVDeploy: Realistic Evaluation of Open-Vocabulary Detection under User Vocabulary Constraints},
+  author={[Author Names]},
+  booktitle={CVPR},
+  year={2026}
+}
+```
+
+Replace `[Author Names]` and arXiv ID before citing publicly.
+
+## Related deployment research
+
+Follow-up work (VocabGuard, RobustVocab) extends OVDeploy with detector-native routing and deployment-strict recovery; contact authors for collaboration. For **vision-centric autonomous driving**, we pilot **nuScenes-OVDeploy** (branch `nuscenes-pilot`): episodic EpisodicAP + OOV-FP on nuScenes mini (CAM_FRONT, |V| ∈ {5,10,23}). Summary: [`docs/NUSCENES_PILOT_SUMMARY.md`](docs/NUSCENES_PILOT_SUMMARY.md) after sync; full application pack in project materials.
+
+```bash
+# nuScenes pilot (requires v1.0-mini + YOLO-World weights)
+bash scripts/wsl_run_nuscenes_pilot.sh
+bash scripts/wsl_run_nuscenes_sweep.sh   # optional |V| sweep
+```
 
 ## Regenerate this folder
 

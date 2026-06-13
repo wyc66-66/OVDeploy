@@ -1,0 +1,65 @@
+{
+  "status": "gpu_nuscenes_pilot",
+  "dataset": "nuscenes-mini",
+  "camera": "CAM_FRONT",
+  "timestamp": "2026-06-11T15:49:52.899081+00:00",
+  "git": "unknown",
+  "metrics_version": "v2",
+  "episodes_dir": "/mnt/d/ccfa/\u8bba\u65876/mars_lab_application/pilot/data/episodes_nuscenes/dev/dev_v23_s42_none",
+  "rows": [
+    {
+      "vocab_size": 10,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 30.082284217782007,
+      "OOV_FP_mean": 0.14771455233139652,
+      "text_ms_per_image": 0.009841268117428548,
+      "n_episodes": 69,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 10,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 30.958454710067475,
+      "OOV_FP_mean": 0.14771455233139652,
+      "text_ms_per_image": 57.97672680145086,
+      "n_episodes": 69,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 5,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 30.082284217782007,
+      "OOV_FP_mean": 0.22894224896560889,
+      "text_ms_per_image": 0.011495959420166355,
+      "n_episodes": 69,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 5,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 31.86852300049429,
+      "OOV_FP_mean": 0.22894224896560889,
+      "text_ms_per_image": 56.00244328840586,
+      "n_episodes": 69,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 23,
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 30.082284217782007,
+      "OOV_FP_mean": 0.0,
+      "text_ms_per_image": 0.012437744927259095,
+      "n_episodes": 69,
+      "mode": "gpu"
+    },
+    {
+      "vocab_size": 23,
+      "baseline": "B5_subset",
+      "EpisodicAP_mean": 30.082284217782007,
+      "OOV_FP_mean": 0.0,
+      "text_ms_per_image": 59.85439647971049,
+      "n_episodes": 69,
+      "mode": "gpu"
+    }
+  ]
+}
