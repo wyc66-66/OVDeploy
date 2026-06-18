@@ -14,12 +14,6 @@ third_party/
 # Large / local
 *.pth
 *.pt
-paper/*.pdf
-paper/*.aux
-paper/*.log
-paper/*.out
-paper/*.blg
-paper/*.bbl
 release/*.zip
 
 # OS

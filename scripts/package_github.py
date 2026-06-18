@@ -139,24 +139,14 @@ VG_SCRIPT_FILES = [
     "merge_seed_reports.py",
 ]
 
-VG_PAPER_FILES = [
-    "main_cvpr.tex",
-    "COMPILE.md",
-    "references.bib",
-    "cvpr.sty",
-    "cvpr_local.sty",
-    "00README.txt",
-]
+VG_PAPER_FILES: list[str] = []  # papers not published in public repo
 
-PAPER_FILES = [
-    "main_cvpr.tex",
+PROTOCOL_DOCS = [
     "PROTOCOL.md",
     "EXPERIMENT_TABLE.md",
-    "COMPILE.md",
-    "cvpr.sty",
-    "cvpr_local.sty",
-    "ieeenat_fullname.bst",
 ]
+
+PAPER_FILES: list[str] = []  # LaTeX/PDF omitted from public repo
 
 FORBIDDEN_NAMES = {
     "MOCK_REVIEW.md",
@@ -213,12 +203,6 @@ third_party/
 # Large / local
 *.pth
 *.pt
-paper/*.pdf
-paper/*.aux
-paper/*.log
-paper/*.out
-paper/*.blg
-paper/*.bbl
 release/*.zip
 
 # OS
@@ -248,7 +232,7 @@ Benchmark and protocol for deployment-style open-vocabulary object detection (OV
 | EpisodicAP aggregate, B5 (subset-prompt deployment) | **~28** |
 | OOV-FP @ \\|V\\|=10, stratified 1k held-out | **68%** |
 
-Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `paper/EXPERIMENT_TABLE.md` and `reports/`).
+Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `docs/EXPERIMENT_TABLE.md` and `reports/`).
 
 ## VocabGuard (Submission B, same repo)
 
@@ -276,7 +260,7 @@ python scripts/run_vocabguard_eval.py --proxy --max-episodes 2
 python scripts/rv/run_robustvocab_eval.py --proxy --max-episodes 2
 ```
 
-Paper source: `paper/vocabguard/main_cvpr.tex`. Do **not** over-claim +15% missing recovery or ODinW beat B5.
+Do **not** over-claim +15% missing recovery or ODinW beat B5.
 
 ## Repository layout
 
@@ -290,8 +274,8 @@ Paper source: `paper/vocabguard/main_cvpr.tex`. Do **not** over-claim +15% missi
 | `config/` | `paths.yaml.example`, `episodes.yaml`, nuScenes pilot yaml |
 | `scripts/` | GPU reproduction (OVDeploy + VocabGuard + nuScenes pilot) |
 | `reports/` | Frozen GPU report JSON (OVDeploy + VG + RV) |
-| `paper/` | OVDeploy CVPR draft, protocol, experiment table |
-| `paper/vocabguard/` | VocabGuard merged paper source |
+| `docs/PROTOCOL.md` | Evaluation protocol and baseline definitions |
+| `docs/EXPERIMENT_TABLE.md` | Experiment table numbers (markdown) |
 | `docs/SETUP.md` | Data, weights, conda setup |
 
 ## Quick start
@@ -315,7 +299,7 @@ bash scripts/wsl_rerun_v2.sh
 - **EpisodicAP v2**: AP on GT in `V` with greedy IoU@0.5 (predictions in `V`, score >= 0.05).
 - **OOV-FP**: Fraction of B0 full-vocab detections (score >= 0.5) whose class is **not** in `V`.
 
-Details: [`paper/PROTOCOL.md`](paper/PROTOCOL.md).
+Details: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 
 ## Baselines (frozen, prompt-only)
 
@@ -424,14 +408,7 @@ bash scripts/wsl_rerun_v2.sh
 
 Outputs land in `reports/REPORT_*.json` with `gpu_used: true` and `metrics_version: v2`.
 
-## 6. Compile paper (optional)
-
-```bash
-python scripts/generate_paper_tables.py
-# Then compile paper/main_cvpr.tex with cvpr.sty (see paper/COMPILE.md)
-```
-
-## 7. Troubleshooting
+## 6. Troubleshooting
 
 - **AP not ~22.7**: check COCO xywh bbox format and checkpoint path.
 - **GLIP native fails**: rebuild CUDA extension (`scripts/wsl_rebuild_native_glip_cuda.sh`).
@@ -589,21 +566,12 @@ def package_vocabguard(out: Path) -> None:
     for name in VG_REPORT_FILES:
         _copy_file(SUBMISSION_B / "reports" / name, out / "reports" / name, out)
 
-    print("paper/vocabguard/")
-    vg_paper_out = out / "paper" / "vocabguard"
-    vg_paper_out.mkdir(parents=True, exist_ok=True)
-    for name in VG_PAPER_FILES:
-        _copy_file(SUBMISSION_B / "paper" / name, vg_paper_out / name, out)
-    for sub in ("figures", "tables"):
-        src_dir = SUBMISSION_B / "paper" / sub
-        if src_dir.is_dir():
-            shutil.copytree(
-                src_dir,
-                vg_paper_out / sub,
-                ignore=COPY_IGNORE,
-                dirs_exist_ok=True,
-            )
-            print(f"  paper/vocabguard/{sub}/")
+
+def copy_protocol_docs(out: Path) -> None:
+    print("docs/ (protocol, no LaTeX papers)")
+    (out / "docs").mkdir(parents=True, exist_ok=True)
+    for name in PROTOCOL_DOCS:
+        _copy_file(ROOT / "paper" / name, out / "docs" / name, out)
 
 
 def package(out: Path, clean: bool) -> None:
@@ -671,21 +639,7 @@ def package(out: Path, clean: bool) -> None:
             continue
         _copy_file(ROOT / "reports" / name, out / "reports" / name, out)
 
-    print("paper/")
-    paper_out = out / "paper"
-    paper_out.mkdir(parents=True, exist_ok=True)
-    for name in PAPER_FILES:
-        _copy_file(ROOT / "paper" / name, paper_out / name, out)
-    for sub in ("figures", "tables"):
-        src_dir = ROOT / "paper" / sub
-        if src_dir.is_dir():
-            shutil.copytree(
-                src_dir,
-                paper_out / sub,
-                ignore=COPY_IGNORE,
-                dirs_exist_ok=True,
-            )
-            print(f"  paper/{sub}/")
+    copy_protocol_docs(out)
 
     _merge_requirements(out)
     package_vocabguard(out)
@@ -757,9 +711,8 @@ def validate(out: Path) -> None:
         out / "config" / "nuscenes_pilot.yaml",
         out / "data" / "stratified_1k.json",
         out / "data" / "cooccur_prior.json",
-        out / "paper" / "PROTOCOL.md",
-        out / "paper" / "EXPERIMENT_TABLE.md",
-        out / "paper" / "vocabguard" / "main_cvpr.tex",
+        out / "docs" / "PROTOCOL.md",
+        out / "docs" / "EXPERIMENT_TABLE.md",
         out / "reports" / "REPORT_4_main.json",
         out / "reports" / "REPORT_6e_native_glip_main.json",
         out / "reports" / "REPORT_VG_gonogo.json",

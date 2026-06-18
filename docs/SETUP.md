@@ -52,14 +52,7 @@ bash scripts/wsl_rerun_v2.sh
 
 Outputs land in `reports/REPORT_*.json` with `gpu_used: true` and `metrics_version: v2`.
 
-## 6. Compile paper (optional)
-
-```bash
-python scripts/generate_paper_tables.py
-# Then compile paper/main_cvpr.tex with cvpr.sty (see paper/COMPILE.md)
-```
-
-## 7. Troubleshooting
+## 6. Troubleshooting
 
 - **AP not ~22.7**: check COCO xywh bbox format and checkpoint path.
 - **GLIP native fails**: rebuild CUDA extension (`scripts/wsl_rebuild_native_glip_cuda.sh`).

@@ -17,7 +17,7 @@ Benchmark and protocol for deployment-style open-vocabulary object detection (OV
 | EpisodicAP aggregate, B5 (subset-prompt deployment) | **~28** |
 | OOV-FP @ \|V\|=10, stratified 1k held-out | **68%** |
 
-Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `paper/EXPERIMENT_TABLE.md` and `reports/`).
+Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `docs/EXPERIMENT_TABLE.md` and `reports/`).
 
 ## VocabGuard (Submission B, same repo)
 
@@ -45,7 +45,7 @@ python scripts/run_vocabguard_eval.py --proxy --max-episodes 2
 python scripts/rv/run_robustvocab_eval.py --proxy --max-episodes 2
 ```
 
-Paper source: `paper/vocabguard/main_cvpr.tex`. Do **not** over-claim +15% missing recovery or ODinW beat B5.
+Do **not** over-claim +15% missing recovery or ODinW beat B5.
 
 ## Repository layout
 
@@ -59,8 +59,8 @@ Paper source: `paper/vocabguard/main_cvpr.tex`. Do **not** over-claim +15% missi
 | `config/` | `paths.yaml.example`, `episodes.yaml`, nuScenes pilot yaml |
 | `scripts/` | GPU reproduction (OVDeploy + VocabGuard + nuScenes pilot) |
 | `reports/` | Frozen GPU report JSON (OVDeploy + VG + RV) |
-| `paper/` | OVDeploy CVPR draft, protocol, experiment table |
-| `paper/vocabguard/` | VocabGuard merged paper source |
+| `docs/PROTOCOL.md` | Evaluation protocol and baseline definitions |
+| `docs/EXPERIMENT_TABLE.md` | Experiment table numbers (markdown) |
 | `docs/SETUP.md` | Data, weights, conda setup |
 
 ## Quick start
@@ -84,7 +84,7 @@ bash scripts/wsl_rerun_v2.sh
 - **EpisodicAP v2**: AP on GT in `V` with greedy IoU@0.5 (predictions in `V`, score >= 0.05).
 - **OOV-FP**: Fraction of B0 full-vocab detections (score >= 0.5) whose class is **not** in `V`.
 
-Details: [`paper/PROTOCOL.md`](paper/PROTOCOL.md).
+Details: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 
 ## Baselines (frozen, prompt-only)
 

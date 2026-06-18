@@ -23,12 +23,12 @@
 | 顺序 | 文件 | 时间 | 看什么 |
 |------|------|------|--------|
 | 1 | [docs/5MIN_SUMMARY_zh.md](docs/5MIN_SUMMARY_zh.md) | 2 分钟 | 问题、主数字、贡献、局限 |
-| 2 | [paper/PROTOCOL.md](paper/PROTOCOL.md) | 2 分钟 | 指标与 baseline 定义 |
-| 3 | [paper/EXPERIMENT_TABLE.md](paper/EXPERIMENT_TABLE.md) | 可选 | 全部表格数字 |
+| 2 | [docs/PROTOCOL.md](docs/PROTOCOL.md) | 2 分钟 | 指标与 baseline 定义 |
+| 3 | [docs/EXPERIMENT_TABLE.md](docs/EXPERIMENT_TABLE.md) | 可选 | 全部表格数字 |
 | 4 | [reports/REPORT_4_main.json](reports/REPORT_4_main.json) | 可选 | 主表 JSON 来源 |
 
 ```
-docs/5MIN_SUMMARY_zh  →  paper/PROTOCOL  →  paper/EXPERIMENT_TABLE  →  reports/
+docs/5MIN_SUMMARY_zh  →  docs/PROTOCOL  →  docs/EXPERIMENT_TABLE  →  reports/
 ```
 
 ---
@@ -42,7 +42,7 @@ docs/5MIN_SUMMARY_zh  →  paper/PROTOCOL  →  paper/EXPERIMENT_TABLE  →  rep
 | B5 EpisodicAP 聚合 | **~28** |
 | OOV-FP @ \|V\|=10 (held-out 1k) | **68%** |
 
-三骨干（OWL-ViT、GLIP-T）见 [paper/EXPERIMENT_TABLE.md](paper/EXPERIMENT_TABLE.md)。
+三骨干（OWL-ViT、GLIP-T）见 [docs/EXPERIMENT_TABLE.md](docs/EXPERIMENT_TABLE.md)。
 
 ---
 
@@ -53,11 +53,11 @@ docs/5MIN_SUMMARY_zh  →  paper/PROTOCOL  →  paper/EXPERIMENT_TABLE  →  rep
 | `ovdeploy/` | 指标与推理代码 |
 | `data/episodes/` | 1220 个 episode JSON |
 | `reports/` | GPU 实验 JSON |
-| `paper/` | 论文 tex、协议、图 |
+| `docs/PROTOCOL.md` | 评测协议与 baseline 定义 |
+| `docs/EXPERIMENT_TABLE.md` | 实验表数字 |
 | `docs/SETUP.md` | 环境/权重配置 |
 | `docs/GITHUB_UPLOAD.md` | 上传与更新说明 |
 | `vocabguard/`, `robustvocab/` | VocabGuard 五模块（同仓 B 侧） |
-| `paper/vocabguard/` | VocabGuard 论文 tex |
 | `reports/REPORT_VG_gonogo.json` | 主 claim 门控 |
 
 ---
@@ -106,7 +106,7 @@ python scripts/check_episode_leakage.py
 
 ## Release
 
-稳定快照见 [Releases](https://github.com/wyc66-66/OVDeploy/releases)（v1.0.0）。
+稳定快照见 [Releases](https://github.com/wyc66-66/OVDeploy/releases)（v1.1.0）。
 
 ## 许可证
 
