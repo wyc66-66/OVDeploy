@@ -1,4 +1,4 @@
-"""Build public GitHub staging folder ovdeploy-public/ (repo-root layout)."""
+"""Build public GitHub staging folder ovdeploy-public/ (A+B unified repo-root layout)."""
 from __future__ import annotations
 
 import argparse
@@ -9,7 +9,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SUBMISSION_B = ROOT.parent / "submission-b"
 DEFAULT_OUT = ROOT / "ovdeploy-public"
+PUBLIC_STAGING = DEFAULT_OUT
 
 REPORT_FILES = [
     "REPORT_0_baseline.json",
@@ -28,6 +30,7 @@ REPORT_FILES = [
     "REPORT_6c_yolo_m_main.json",
     "REPORT_6e_native_glip_main.json",
     "REPORT_leakage_check.json",
+    "REPORT_nuscenes_main.json",
 ]
 
 EXCLUDED_REPORTS = {
@@ -78,6 +81,71 @@ SCRIPTS = [
     "wsl_odinw_full13.sh",
     "wsl_run_baseline.sh",
     "wsl_run_dev_matrix.sh",
+    "push_to_github.ps1",
+    "fix_github_hosts.ps1",
+    "build_nuscenes_episodes.py",
+    "run_nuscenes_eval.py",
+    "plot_nuscenes_pilot.py",
+    "push_nuscenes_pilot.py",
+    "wsl_run_nuscenes_pilot.sh",
+    "wsl_run_nuscenes_sweep.sh",
+]
+
+NUSCENES_CONFIGS = [
+    "nuscenes_pilot.yaml",
+    "nuscenes_class_map.yaml",
+]
+
+NUSCENES_DOCS = [
+    "NUSCENES_PILOT.md",
+    "NUSCENES_PILOT_SUMMARY.md",
+]
+
+VG_REPORT_FILES = [
+    "REPORT_VG_dev_main.json",
+    "REPORT_VG_gonogo.json",
+    "REPORT_VG_calib_train.json",
+    "REPORT_VG_seed_ablation.json",
+    "REPORT_VG_stratified_1k.json",
+    "REPORT_VG_ablation.json",
+    "REPORT_VG_latency.json",
+    "REPORT_VG_owlvit.json",
+    "REPORT_VG_full_matrix.json",
+    "REPORT_VG_odinw.json",
+    "REPORT_RV_dev_main.json",
+    "REPORT_RV_gonogo.json",
+    "REPORT_RV_ablation.json",
+]
+
+VG_SCRIPT_FILES = [
+    "run_vocabguard_eval.py",
+    "train_calib.py",
+    "run_stratified_vocabguard.py",
+    "run_ablation_eval.py",
+    "measure_latency.py",
+    "merge_reports.py",
+    "check_gonogo.py",
+    "generate_paper_tables.py",
+    "make_paper_figures.py",
+    "finalize_paper.py",
+    "finalize_merged_paper.py",
+    "package_release.py",
+    "wsl_run_all_fast.sh",
+    "wsl_run_full_matrix.sh",
+    "run_odinw_vocabguard.py",
+    "merge_full_matrix.py",
+    "run_all_local.sh",
+    "run_proxy_eval.py",
+    "merge_seed_reports.py",
+]
+
+VG_PAPER_FILES = [
+    "main_cvpr.tex",
+    "COMPILE.md",
+    "references.bib",
+    "cvpr.sty",
+    "cvpr_local.sty",
+    "00README.txt",
 ]
 
 PAPER_FILES = [
@@ -163,9 +231,13 @@ config/paths.yaml
 
 README_TEMPLATE = """# OVDeploy
 
+**中文导读（推荐组内阅读）：** [README_zh.md](README_zh.md) · [5 分钟摘要](docs/5MIN_SUMMARY_zh.md)
+
 **OVDeploy: Realistic Evaluation of Open-Vocabulary Detection under User Vocabulary Constraints**
 
 Benchmark and protocol for deployment-style open-vocabulary object detection (OVD): episodic evaluation with user vocabulary size |V| << 1203, **EpisodicAP v2**, and **OOV-FP** (out-of-vocabulary false positive rate).
+
+**Live repository:** https://github.com/wyc66-66/OVDeploy
 
 ## Highlights
 
@@ -178,17 +250,48 @@ Benchmark and protocol for deployment-style open-vocabulary object detection (OV
 
 Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `paper/EXPERIMENT_TABLE.md` and `reports/`).
 
+## VocabGuard (Submission B, same repo)
+
+**VocabGuard: Deployment-Oriented Vocabulary Audit for Constrained Open-Vocabulary Detection**
+
+Five frozen-YOLO modules on the **same OVDeploy metrics** (no benchmark redefinition):
+
+| Module | Package | Role |
+|--------|---------|------|
+| VocabRouter | `vocabguard/router.py` | detector-native $V \\to V'$ |
+| OOVGuard | `vocabguard/oov_guard.py` | suppress B0 OOV-FP |
+| CalibHead | `vocabguard/calib_head.py` | optional neck bias |
+| VocabRecover | `robustvocab/recover.py` | deployment-strict missing_class |
+| PromptAlign | `robustvocab/prompt_align.py` | synonym robustness |
+
+| Claim | Status (see `reports/REPORT_VG_gonogo.json`) |
+|-------|-----------------------------------------------|
+| **go_primary** | Router+Guard: OOV suppression + EpisodicAP $\\geq$ B5 |
+| **go_deployment** | RV strict Pareto (see `REPORT_RV_gonogo.json`) |
+
+Smoke (CPU proxy):
+
+```bash
+python scripts/run_vocabguard_eval.py --proxy --max-episodes 2
+python scripts/rv/run_robustvocab_eval.py --proxy --max-episodes 2
+```
+
+Paper source: `paper/vocabguard/main_cvpr.tex`. Do **not** over-claim +15% missing recovery or ODinW beat B5.
+
 ## Repository layout
 
 | Path | Description |
 |------|-------------|
 | `ovdeploy/` | Metrics (EpisodicAP v2, OOV-FP), inference, baselines B0–B5 |
+| `vocabguard/`, `robustvocab/` | VocabGuard + RobustVocab modules (frozen YOLO) |
 | `data/episodes/` | 1,220 episode JSON files (dev + train pools) |
 | `data/stratified_1k.json` | Held-out 1k image list |
-| `config/` | `paths.yaml.example`, `episodes.yaml` |
-| `scripts/` | GPU reproduction (`wsl_rerun_v2.sh`, stratified, ODinW, …) |
-| `reports/` | Frozen GPU report JSON (metrics v2) |
-| `paper/` | CVPR draft source, protocol, experiment table, figures |
+| `data/cooccur_prior.json` | LVIS co-occurrence prior (RV strict) |
+| `config/` | `paths.yaml.example`, `episodes.yaml`, nuScenes pilot yaml |
+| `scripts/` | GPU reproduction (OVDeploy + VocabGuard + nuScenes pilot) |
+| `reports/` | Frozen GPU report JSON (OVDeploy + VG + RV) |
+| `paper/` | OVDeploy CVPR draft, protocol, experiment table |
+| `paper/vocabguard/` | VocabGuard merged paper source |
 | `docs/SETUP.md` | Data, weights, conda setup |
 
 ## Quick start
@@ -234,34 +337,33 @@ Details: [`paper/PROTOCOL.md`](paper/PROTOCOL.md).
   booktitle={{CVPR}},
   year={{2026}}
 }}
+@inproceedings{{vocabguard2026,
+  title={{VocabGuard: Deployment-Oriented Vocabulary Audit for Constrained Open-Vocabulary Detection}},
+  author={{Anonymous}},
+  booktitle={{CVPR}},
+  year={{2026}}
+}}
 ```
 
 Update author fields when de-anonymized.
 
 ## Regenerate this folder
 
-From the full development tree:
+From the full development tree (`submission-a/` + `submission-b/`):
 
 ```bash
 python scripts/package_github.py --clean
 ```
 
+Preserve `.git` in `ovdeploy-public/` when using `--clean` (backup `.git` first).
+
 ## Push to GitHub
 
-1. Create an empty repository on GitHub (e.g. `OVDeploy`).
-2. From this folder:
+**Live repo:** https://github.com/wyc66-66/OVDeploy
 
-```bash
-cd ovdeploy-public
-git init
-git add .
-git commit -m "Initial public release: OVDeploy-Bench"
-git branch -M main
-git remote add origin https://github.com/YOUR_USER/OVDeploy.git
-git push -u origin main
-```
+To publish updates: `git add . && git commit -m "..." && git push origin main`
 
-Alternatively, copy all contents of `ovdeploy-public/` into your repo root and push from there.
+First-time upload: see `docs/GITHUB_UPLOAD.md` or run `scripts/push_to_github.ps1` after `gh auth login`.
 
 ## License
 
@@ -339,38 +441,181 @@ python scripts/generate_paper_tables.py
 
 def _copy_file(src: Path, dst: Path, out: Path) -> bool:
     if not src.is_file():
-        print(f"SKIP missing: {src.relative_to(ROOT)}")
+        print(f"SKIP missing: {src}")
         return False
     dst.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(src, dst)
-    print(f"  {dst.relative_to(out)}")
+    try:
+        rel = dst.relative_to(out)
+    except ValueError:
+        rel = dst
+    print(f"  {rel}")
     return True
 
 
-def _paths_yaml_example() -> str:
-    src = ROOT / "config" / "paths.yaml"
-    if not src.is_file():
-        return "# Copy and edit as config/paths.yaml\nproject_root: \".\"\n"
-    text = src.read_text(encoding="utf-8")
+def _resolve_src(candidates: list[Path]) -> Path | None:
+    for path in candidates:
+        if path.is_file():
+            return path
+    return None
+
+
+def _sanitize_paths_text(text: str) -> str:
     replacements = [
         (r'project_root:\s*"[^"]*"', 'project_root: "."'),
         (r'project_root_wsl:\s*"[^"]*"', 'project_root_wsl: "/path/to/ovdeploy"'),
+        (r'ovdeploy_root:\s*"[^"]*"', 'ovdeploy_root: "."'),
+        (r'ovdeploy_root_wsl:\s*"[^"]*"', 'ovdeploy_root_wsl: "/path/to/ovdeploy"'),
         (r'yolo_root:\s*"[^"]*"', 'yolo_root: "/path/to/YOLO-World"'),
         (r'yolo_root_wsl:\s*"[^"]*"', 'yolo_root_wsl: "/mnt/d/path/to/YOLO-World"'),
         (r'paper1_project:\s*"[^"]*"', 'paper1_project: "/path/to/optional/assets"'),
     ]
     for pat, repl in replacements:
         text = re.sub(pat, repl, text)
+    return text
+
+
+def _paths_yaml_example() -> str:
+    a_src = ROOT / "config" / "paths.yaml"
+    b_src = SUBMISSION_B / "config" / "paths.yaml"
     header = (
-        "# OVDeploy paths — copy to config/paths.yaml and edit.\n"
+        "# OVDeploy + VocabGuard paths — copy to config/paths.yaml and edit.\n"
+        "# Single-repo layout: project_root and ovdeploy_root both \".\".\n"
         "# Requires: LVIS minival JSON, COCO val2017, YOLO-World v2-S weights.\n"
         "# See docs/SETUP.md\n\n"
     )
-    return header + text
+    if not a_src.is_file():
+        base = "# Copy and edit as config/paths.yaml\nproject_root: \".\"\n"
+    else:
+        base = _sanitize_paths_text(a_src.read_text(encoding="utf-8"))
+    if b_src.is_file():
+        b_text = b_src.read_text(encoding="utf-8")
+        b_text = _sanitize_paths_text(b_text)
+        for key in ("project_root:", "project_root_wsl:", "ovdeploy_root:", "ovdeploy_root_wsl:"):
+            b_text = re.sub(rf"^{re.escape(key)}.*\n", "", b_text, flags=re.MULTILINE)
+        base = base.rstrip() + "\n\n# --- VocabGuard / RobustVocab (from submission-b) ---\n" + b_text.lstrip()
+    return header + base
+
+
+def _merge_requirements(out: Path) -> None:
+    lines: list[str] = []
+    seen: set[str] = set()
+    for req_path in (ROOT / "requirements.txt", SUBMISSION_B / "requirements.txt"):
+        if not req_path.is_file():
+            continue
+        for raw in req_path.read_text(encoding="utf-8").splitlines():
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                if line and line not in seen:
+                    lines.append(line)
+                    seen.add(line)
+                continue
+            key = line.split(">=")[0].split("==")[0].strip().lower()
+            if key not in seen:
+                lines.append(line)
+                seen.add(key)
+    if "open-clip-torch" not in seen:
+        lines.append("open-clip-torch>=2.24")
+    (out / "requirements.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def package_nuscenes(out: Path) -> None:
+    print("nuScenes pilot/")
+    for name in NUSCENES_CONFIGS:
+        src = _resolve_src(
+            [
+                ROOT / "config" / name,
+                PUBLIC_STAGING / "config" / name,
+            ]
+        )
+        if src:
+            _copy_file(src, out / "config" / name, out)
+    for name in NUSCENES_DOCS:
+        src = _resolve_src(
+            [
+                ROOT / "docs" / name,
+                PUBLIC_STAGING / "docs" / name,
+            ]
+        )
+        if src:
+            _copy_file(src, out / "docs" / name, out)
+    src_report = _resolve_src(
+        [
+            ROOT / "reports" / "REPORT_nuscenes_main.json",
+            PUBLIC_STAGING / "reports" / "REPORT_nuscenes_main.json",
+        ]
+    )
+    if src_report:
+        _copy_file(src_report, out / "reports" / "REPORT_nuscenes_main.json", out)
+
+
+def package_vocabguard(out: Path) -> None:
+    if not SUBMISSION_B.is_dir():
+        print("SKIP VocabGuard: submission-b not found")
+        return
+
+    print("vocabguard/ + robustvocab/")
+    for pkg in ("vocabguard", "robustvocab"):
+        src = SUBMISSION_B / pkg
+        if src.is_dir():
+            shutil.copytree(src, out / pkg, ignore=COPY_IGNORE, dirs_exist_ok=True)
+
+    cooccur = SUBMISSION_B / "data" / "cooccur_prior.json"
+    if cooccur.is_file():
+        _copy_file(cooccur, out / "data" / "cooccur_prior.json", out)
+
+    print("VocabGuard scripts/")
+    vg_lib = SUBMISSION_B / "scripts" / "lib"
+    if vg_lib.is_dir():
+        shutil.copytree(
+            vg_lib,
+            out / "scripts" / "lib",
+            ignore=COPY_IGNORE,
+            dirs_exist_ok=True,
+        )
+    for name in VG_SCRIPT_FILES:
+        _copy_file(SUBMISSION_B / "scripts" / name, out / "scripts" / name, out)
+    rv_src = SUBMISSION_B / "scripts" / "rv"
+    if rv_src.is_dir():
+        shutil.copytree(
+            rv_src,
+            out / "scripts" / "rv",
+            ignore=COPY_IGNORE,
+            dirs_exist_ok=True,
+        )
+        print("  scripts/rv/")
+
+    print("VocabGuard reports/")
+    for name in VG_REPORT_FILES:
+        _copy_file(SUBMISSION_B / "reports" / name, out / "reports" / name, out)
+
+    print("paper/vocabguard/")
+    vg_paper_out = out / "paper" / "vocabguard"
+    vg_paper_out.mkdir(parents=True, exist_ok=True)
+    for name in VG_PAPER_FILES:
+        _copy_file(SUBMISSION_B / "paper" / name, vg_paper_out / name, out)
+    for sub in ("figures", "tables"):
+        src_dir = SUBMISSION_B / "paper" / sub
+        if src_dir.is_dir():
+            shutil.copytree(
+                src_dir,
+                vg_paper_out / sub,
+                ignore=COPY_IGNORE,
+                dirs_exist_ok=True,
+            )
+            print(f"  paper/vocabguard/{sub}/")
 
 
 def package(out: Path, clean: bool) -> None:
+    git_backup: Path | None = None
     if clean and out.exists():
+        git_dir = out / ".git"
+        if git_dir.exists():
+            git_backup = out.parent / ".git_backup_ovdeploy"
+            if git_backup.exists():
+                shutil.rmtree(git_backup)
+            shutil.move(str(git_dir), str(git_backup))
+            print(f"Preserved {git_dir} -> {git_backup}")
         shutil.rmtree(out)
     out.mkdir(parents=True, exist_ok=True)
 
@@ -393,6 +638,10 @@ def package(out: Path, clean: bool) -> None:
 
     print("config/")
     _copy_file(ROOT / "config" / "episodes.yaml", out / "config" / "episodes.yaml", out)
+    for name in NUSCENES_CONFIGS:
+        src = _resolve_src([ROOT / "config" / name, PUBLIC_STAGING / "config" / name])
+        if src:
+            _copy_file(src, out / "config" / name, out)
     (out / "config" / "paths.yaml.example").write_text(
         _paths_yaml_example(), encoding="utf-8"
     )
@@ -438,14 +687,58 @@ def package(out: Path, clean: bool) -> None:
             )
             print(f"  paper/{sub}/")
 
-    _copy_file(ROOT / "requirements.txt", out / "requirements.txt", out)
+    _merge_requirements(out)
+    package_vocabguard(out)
+    package_nuscenes(out)
 
     (out / "README.md").write_text(README_TEMPLATE, encoding="utf-8")
     (out / "LICENSE").write_text(LICENSE_TEXT, encoding="utf-8")
     (out / ".gitignore").write_text(GITIGNORE_TEXT, encoding="utf-8")
     (out / "docs").mkdir(parents=True, exist_ok=True)
     (out / "docs" / "SETUP.md").write_text(SETUP_MD, encoding="utf-8")
-    print("  README.md, LICENSE, .gitignore, docs/SETUP.md")
+    github_upload = _resolve_src(
+        [
+            ROOT / "docs" / "GITHUB_UPLOAD.md",
+            PUBLIC_STAGING / "docs" / "GITHUB_UPLOAD.md",
+        ]
+    )
+    if github_upload:
+        shutil.copy2(github_upload, out / "docs" / "GITHUB_UPLOAD.md")
+    for doc in (
+        "5MIN_SUMMARY_zh.md",
+        "RELEASE_NOTES_v1.0.0.md",
+        *NUSCENES_DOCS,
+    ):
+        src = _resolve_src(
+            [
+                ROOT / "docs" / doc,
+                PUBLIC_STAGING / "docs" / doc,
+            ]
+        )
+        if src:
+            shutil.copy2(src, out / "docs" / doc)
+    readme_zh = _resolve_src(
+        [
+            ROOT / "docs" / "README_zh.md",
+            PUBLIC_STAGING / "README_zh.md",
+        ]
+    )
+    if readme_zh:
+        shutil.copy2(readme_zh, out / "README_zh.md")
+    for ps1 in ("push_to_github.ps1", "fix_github_hosts.ps1"):
+        src = _resolve_src(
+            [
+                ROOT / "scripts" / ps1,
+                PUBLIC_STAGING / "scripts" / ps1,
+            ]
+        )
+        if src:
+            shutil.copy2(src, out / "scripts" / ps1)
+    print("  README.md, README_zh.md, LICENSE, .gitignore, docs/")
+
+    if git_backup and git_backup.exists():
+        shutil.move(str(git_backup), str(out / ".git"))
+        print(f"Restored .git from {git_backup}")
 
     print(f"\nDone: {out.resolve()}")
 
@@ -457,14 +750,25 @@ def validate(out: Path) -> None:
         out / "LICENSE",
         out / ".gitignore",
         out / "ovdeploy" / "metrics.py",
+        out / "vocabguard" / "router.py",
+        out / "robustvocab" / "recover.py",
         out / "config" / "paths.yaml.example",
         out / "config" / "episodes.yaml",
+        out / "config" / "nuscenes_pilot.yaml",
         out / "data" / "stratified_1k.json",
+        out / "data" / "cooccur_prior.json",
         out / "paper" / "PROTOCOL.md",
         out / "paper" / "EXPERIMENT_TABLE.md",
+        out / "paper" / "vocabguard" / "main_cvpr.tex",
         out / "reports" / "REPORT_4_main.json",
         out / "reports" / "REPORT_6e_native_glip_main.json",
+        out / "reports" / "REPORT_VG_gonogo.json",
+        out / "reports" / "REPORT_RV_gonogo.json",
+        out / "scripts" / "run_vocabguard_eval.py",
+        out / "scripts" / "run_nuscenes_eval.py",
         out / "docs" / "SETUP.md",
+        out / "README_zh.md",
+        out / "docs" / "5MIN_SUMMARY_zh.md",
     ]
     for p in required:
         if not p.exists():
@@ -482,7 +786,7 @@ def validate(out: Path) -> None:
     if "76–78%" in readme or "76-78%" in readme or "MOCK_REVIEW" in readme:
         errors.append("README contains internal acceptance estimate")
 
-    if "git init" not in readme or "git push" not in readme:
+    if "git push" not in readme:
         errors.append("README missing GitHub push instructions")
 
     if (out / "weights").exists() or (out / "data" / "b0_cache").exists():

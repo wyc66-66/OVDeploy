@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "n_samples": 1500,
+  "epochs": 20,
+  "ckpt": "/mnt/d/ccfa/\u8bba\u65874/data/checkpoints/calib_head_s42.pt",
+  "timestamp": "2026-06-08T17:55:44.415035+00:00",
+  "gpu_used": true
+}

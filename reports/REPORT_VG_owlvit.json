@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "timestamp": "2026-06-08T22:22:08.448213+00:00",
+  "git": "unknown",
+  "split": "dev",
+  "backbone": "owlvit",
+  "gpu_used": true,
+  "rows": [
+    {
+      "method": "B5_subset",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 42.095244019104946,
+      "OOV_FP_mean": 0.2208997113997114,
+      "FP_nonGT_mean": 0.0,
+      "n_episodes": 20,
+      "gpu_used": true
+    },
+    {
+      "method": "VG_router",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 40.7913541856948,
+      "OOV_FP_mean": 0.2208997113997114,
+      "FP_nonGT_mean": 0.00625,
+      "n_episodes": 20,
+      "gpu_used": true
+    },
+    {
+      "method": "VG_full",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 40.7913541856948,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.00625,
+      "n_episodes": 20,
+      "gpu_used": true
+    }
+  ],
+  "summary": {
+    "best_epiap": {
+      "method": "B5_subset",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 42.095244019104946,
+      "OOV_FP_mean": 0.2208997113997114,
+      "FP_nonGT_mean": 0.0,
+      "n_episodes": 20,
+      "gpu_used": true
+    },
+    "best_oov": {
+      "method": "VG_full",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 40.7913541856948,
+      "OOV_FP_mean": 0.0,
+      "FP_nonGT_mean": 0.00625,
+      "n_episodes": 20,
+      "gpu_used": true
+    }
+  }
+}

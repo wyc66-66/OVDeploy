@@ -19,17 +19,48 @@ Benchmark and protocol for deployment-style open-vocabulary object detection (OV
 
 Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `paper/EXPERIMENT_TABLE.md` and `reports/`).
 
+## VocabGuard (Submission B, same repo)
+
+**VocabGuard: Deployment-Oriented Vocabulary Audit for Constrained Open-Vocabulary Detection**
+
+Five frozen-YOLO modules on the **same OVDeploy metrics** (no benchmark redefinition):
+
+| Module | Package | Role |
+|--------|---------|------|
+| VocabRouter | `vocabguard/router.py` | detector-native $V \to V'$ |
+| OOVGuard | `vocabguard/oov_guard.py` | suppress B0 OOV-FP |
+| CalibHead | `vocabguard/calib_head.py` | optional neck bias |
+| VocabRecover | `robustvocab/recover.py` | deployment-strict missing_class |
+| PromptAlign | `robustvocab/prompt_align.py` | synonym robustness |
+
+| Claim | Status (see `reports/REPORT_VG_gonogo.json`) |
+|-------|-----------------------------------------------|
+| **go_primary** | Router+Guard: OOV suppression + EpisodicAP $\geq$ B5 |
+| **go_deployment** | RV strict Pareto (see `REPORT_RV_gonogo.json`) |
+
+Smoke (CPU proxy):
+
+```bash
+python scripts/run_vocabguard_eval.py --proxy --max-episodes 2
+python scripts/rv/run_robustvocab_eval.py --proxy --max-episodes 2
+```
+
+Paper source: `paper/vocabguard/main_cvpr.tex`. Do **not** over-claim +15% missing recovery or ODinW beat B5.
+
 ## Repository layout
 
 | Path | Description |
 |------|-------------|
 | `ovdeploy/` | Metrics (EpisodicAP v2, OOV-FP), inference, baselines B0–B5 |
+| `vocabguard/`, `robustvocab/` | VocabGuard + RobustVocab modules (frozen YOLO) |
 | `data/episodes/` | 1,220 episode JSON files (dev + train pools) |
 | `data/stratified_1k.json` | Held-out 1k image list |
-| `config/` | `paths.yaml.example`, `episodes.yaml` |
-| `scripts/` | GPU reproduction (`wsl_rerun_v2.sh`, stratified, ODinW, …) |
-| `reports/` | Frozen GPU report JSON (metrics v2) |
-| `paper/` | CVPR draft source, protocol, experiment table, figures |
+| `data/cooccur_prior.json` | LVIS co-occurrence prior (RV strict) |
+| `config/` | `paths.yaml.example`, `episodes.yaml`, nuScenes pilot yaml |
+| `scripts/` | GPU reproduction (OVDeploy + VocabGuard + nuScenes pilot) |
+| `reports/` | Frozen GPU report JSON (OVDeploy + VG + RV) |
+| `paper/` | OVDeploy CVPR draft, protocol, experiment table |
+| `paper/vocabguard/` | VocabGuard merged paper source |
 | `docs/SETUP.md` | Data, weights, conda setup |
 
 ## Quick start
@@ -75,44 +106,33 @@ Details: [`paper/PROTOCOL.md`](paper/PROTOCOL.md).
   booktitle={{CVPR}},
   year={{2026}}
 }}
+@inproceedings{{vocabguard2026,
+  title={{VocabGuard: Deployment-Oriented Vocabulary Audit for Constrained Open-Vocabulary Detection}},
+  author={{Anonymous}},
+  booktitle={{CVPR}},
+  year={{2026}}
+}}
 ```
 
 Update author fields when de-anonymized.
 
 ## Regenerate this folder
 
-From the full development tree:
+From the full development tree (`submission-a/` + `submission-b/`):
 
 ```bash
 python scripts/package_github.py --clean
 ```
 
+Preserve `.git` in `ovdeploy-public/` when using `--clean` (backup `.git` first).
+
 ## Push to GitHub
 
-**This repo is already live:** https://github.com/wyc66-66/OVDeploy
+**Live repo:** https://github.com/wyc66-66/OVDeploy
 
-To publish updates:
+To publish updates: `git add . && git commit -m "..." && git push origin main`
 
-```powershell
-git add .
-git commit -m "Your message"
-git push origin main
-```
-
-First-time upload instructions: **[docs/GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md)**.
-
-After `gh auth login`:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/push_to_github.ps1
-```
-
-Manual setup (new fork only):
-
-```bash
-git remote add origin https://github.com/wyc66-66/OVDeploy.git
-git push -u origin main
-```
+First-time upload: see `docs/GITHUB_UPLOAD.md` or run `scripts/push_to_github.ps1` after `gh auth login`.
 
 ## License
 

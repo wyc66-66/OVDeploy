@@ -1,0 +1,26 @@
+# nuScenes-OVDeploy pilot (MARS Lab VCAD bridge)
+version: "v1.0-mini"
+camera: CAM_FRONT
+frames_per_episode: 10
+frame_stride: 5
+
+nuscenes_root: "d:/data/nuscenes"
+nuscenes_root_wsl: "/mnt/d/data/nuscenes"
+
+# Relative to submission-a project root
+class_map: "../outreach-mars/pilot/config/nuscenes_class_map.yaml"
+
+episodes_out: "../outreach-mars/pilot/data/episodes_nuscenes/dev"
+episodes_out_wsl: "/mnt/d/ccfa/outreach-mars/pilot/data/episodes_nuscenes/dev"
+
+report_out: "../outreach-mars/pilot/reports/REPORT_nuscenes_main.json"
+report_out_wsl: "/mnt/d/ccfa/outreach-mars/pilot/reports/REPORT_nuscenes_main.json"
+
+vocab_sizes: [5, 10, 23]
+seeds: [42]
+noise: "none"
+split: "dev"
+max_episodes: 100
+baselines: ["B0_full", "B5_subset"]
+
+score_thresh_oov: 0.05

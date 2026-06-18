@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "C1_strict_missing_class_rel_gain_ge_15pct": false,
+    "C2_synonym_v10_epi_ge_b5_and_oov_le_5pct": true,
+    "C3_aggregate_rv_ge_vg_strict": true,
+    "C4_odinw_domains_beat_b5_ge_8": false,
+    "C5_glip_native_oov_le_5pct": true,
+    "deployment_missing_v10_epi_ge_98pct_b5_and_oov_le_5pct": true
+  },
+  "metrics": {
+    "B5_missing_v10_EpisodicAP": 18.94,
+    "RV_recover_missing_v10_EpisodicAP": 19.32,
+    "RV_full_missing_v10_OOV_FP": 0.005,
+    "C1_rel_gain_v10": 0.02,
+    "B5_synonym_v10_EpisodicAP": 24.02,
+    "RV_full_synonym_v10_EpisodicAP": 24.02,
+    "RV_full_synonym_v10_OOV_FP": 0.0,
+    "VG_strict_agg_EpisodicAP": 29.71,
+    "RV_full_agg_EpisodicAP": 29.71,
+    "odinw_domains_beat_b5": 0,
+    "glip_oov_v10": 0.0225
+  },
+  "gpu_used": true,
+  "go_deployment": true,
+  "go_primary": true,
+  "go": false,
+  "timestamp": "2026-06-17T17:47:24.227239+00:00",
+  "git": "unknown"
+}

@@ -14,7 +14,7 @@
 - 提供 **EpisodicAP v2**（词表内精度）与 **OOV-FP**（词表外误检率）
 - 发布 **1,220 个 episode**、六基线 B0–B5、三骨干 GPU 报告
 
-英文说明见 [README.md](README.md)。
+同仓库另含 **VocabGuard**（B 侧）：在 OVDeploy 尺子上用 Router+Guard 压 OOV。英文说明见 [README.md](README.md)。
 
 ---
 
@@ -56,6 +56,28 @@ docs/5MIN_SUMMARY_zh  →  paper/PROTOCOL  →  paper/EXPERIMENT_TABLE  →  rep
 | `paper/` | 论文 tex、协议、图 |
 | `docs/SETUP.md` | 环境/权重配置 |
 | `docs/GITHUB_UPLOAD.md` | 上传与更新说明 |
+| `vocabguard/`, `robustvocab/` | VocabGuard 五模块（同仓 B 侧） |
+| `paper/vocabguard/` | VocabGuard 论文 tex |
+| `reports/REPORT_VG_gonogo.json` | 主 claim 门控 |
+
+---
+
+## VocabGuard（同仓库 B 侧）
+
+在同一 GitHub 仓库内提供 **VocabGuard** 复现代码（不重新定义 OVDeploy 指标）：
+
+| 模块 | 作用 |
+|------|------|
+| VocabRouter | detector-native 扩词表 |
+| OOVGuard | 压 OOV-FP（主 claim 核心） |
+| CalibHead | 可选校准 |
+| VocabRecover / PromptAlign | deployment-strict 支线 |
+
+主数字：OOV @\|V\|=10 约 **66%→0.5%**，EpiAP ≥ B5（见 `reports/REPORT_VG_gonogo.json` 的 `go_primary`）。
+
+```bash
+python scripts/run_vocabguard_eval.py --proxy --max-episodes 2
+```
 
 ---
 
@@ -88,4 +110,4 @@ python scripts/check_episode_leakage.py
 
 ## 许可证
 
-MIT — 见 [LICENSE](LICENSE)。
+MIT — 见 [LICENSE](LICENSE).

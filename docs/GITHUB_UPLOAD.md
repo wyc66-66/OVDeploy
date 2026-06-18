@@ -23,7 +23,17 @@ First-time upload from a fresh clone (reference):
 | Repository name | Yes | Default: **OVDeploy** (public) |
 | Author name/email | Optional | Amend commit before push if you want your profile shown |
 
-You do **not** need: weights, tokens (if using browser login), or the full `论文2/` tree.
+You do **not** need: weights, tokens (if using browser login), or the full development tree.
+
+## Regenerate public package (A + B + nuScenes)
+
+From `submission-a/`:
+
+```powershell
+python scripts/package_github.py --clean
+```
+
+`--clean` auto-preserves `ovdeploy-public/.git`.
 
 ## Step 0: Fix GitHub network (important on this machine)
 

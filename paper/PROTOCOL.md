@@ -50,6 +50,15 @@ EpisodeAdapter (M1) is **not** a main-paper baseline (supplementary code only).
 | stratified_1k | 1000 held-out minival |
 | train episodes | adapter code only; excluded from eval |
 
+## Split construction (do not cross-compare |V| across splits)
+
+| Split | How $V_e$ is built | Primary use |
+|-------|-------------------|-------------|
+| **dev** | GT-aligned: classes present in episode images plus fill to $|V|$ from LVIS frequency | EpisodicAP(B5 vs B0); main deployment reference |
+| **stratified_1k** | Frequency-top-$|V|$ on held-out minival (same $|V|$ label, different construction) | OOV-FP confirmation; cross-backbone audit |
+
+**Important:** $|V|{=}10$ on **dev** and $|V|{=}10$ on **stratified_1k** are **not directly comparable** numerically. Always cite the split when reporting EpisodicAP or OOV-FP.
+
 ## Reproducibility
 
 Seeds 42/43/44; frozen YOLO-World v2-S checkpoint `55b943ea`.

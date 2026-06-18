@@ -13,9 +13,14 @@ ROOT = Path(__file__).resolve().parents[1]
 def load_paths() -> dict[str, Any]:
     with open(ROOT / "config" / "paths.yaml", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
-    yolo = Path(cfg["yolo_root"])
-    if not yolo.exists():
+    import sys
+
+    if sys.platform != "win32" and cfg.get("yolo_root_wsl"):
         yolo = Path(cfg["yolo_root_wsl"])
+    else:
+        yolo = Path(cfg["yolo_root"])
+        if not yolo.is_dir() and cfg.get("yolo_root_wsl"):
+            yolo = Path(cfg["yolo_root_wsl"])
     cfg["_yolo"] = yolo
     cfg["_root"] = ROOT
     return cfg

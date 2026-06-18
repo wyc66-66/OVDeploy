@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd /mnt/d/ccfa/论文2
+cd /mnt/d/ccfa/submission-a
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate yoloworld5070
 export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"

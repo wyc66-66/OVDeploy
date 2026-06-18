@@ -1,0 +1,248 @@
+{
+  "status": "ok",
+  "timestamp": "2026-06-17T18:27:28.488132+00:00",
+  "mode": "proxy",
+  "note": "Derived from Paper2 REPORT_2/4/4c; rerun with --gpu for measured numbers",
+  "rows": [
+    {
+      "method": "B4_clip",
+      "config": "dev_v10_s42_none",
+      "EpisodicAP_mean": 3.4032738095238093,
+      "OOV_FP_mean": 0.6294285714285714,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B5_subset",
+      "config": "dev_v10_s42_none",
+      "EpisodicAP_mean": 21.78644609358895,
+      "OOV_FP_mean": 0.6294285714285714,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B1_oracle",
+      "config": "dev_v10_s42_none",
+      "EpisodicAP_mean": 40.9259003649635,
+      "OOV_FP_mean": 0.6294285714285714,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_router",
+      "config": "dev_v10_s42_none",
+      "EpisodicAP_mean": 22.88,
+      "OOV_FP_mean": 0.6294,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_full",
+      "config": "dev_v10_s42_none",
+      "EpisodicAP_mean": 22.88,
+      "OOV_FP_mean": 0.2203,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "M2_calib",
+      "config": "dev_v10_s42_none",
+      "EpisodicAP_mean": 24.71,
+      "OOV_FP_mean": 0.1983,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B4_clip",
+      "config": "dev_v10_s42_missing_class",
+      "EpisodicAP_mean": 3.4032738095238093,
+      "OOV_FP_mean": 0.6466666666666667,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B5_subset",
+      "config": "dev_v10_s42_missing_class",
+      "EpisodicAP_mean": 13.977722025449296,
+      "OOV_FP_mean": 0.6466666666666667,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B1_oracle",
+      "config": "dev_v10_s42_missing_class",
+      "EpisodicAP_mean": 40.9259003649635,
+      "OOV_FP_mean": 0.6466666666666667,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_router",
+      "config": "dev_v10_s42_missing_class",
+      "EpisodicAP_mean": 20.91,
+      "OOV_FP_mean": 0.6467,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_full",
+      "config": "dev_v10_s42_missing_class",
+      "EpisodicAP_mean": 20.91,
+      "OOV_FP_mean": 0.2263,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "M2_calib",
+      "config": "dev_v10_s42_missing_class",
+      "EpisodicAP_mean": 22.59,
+      "OOV_FP_mean": 0.2037,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B4_clip",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 8.855045952012865,
+      "OOV_FP_mean": 0.5135,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B5_subset",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 42.96943967083662,
+      "OOV_FP_mean": 0.5135,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B1_oracle",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 37.901967851598606,
+      "OOV_FP_mean": 0.5135,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_router",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 45.12,
+      "OOV_FP_mean": 0.5135,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_full",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 45.12,
+      "OOV_FP_mean": 0.1797,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "M2_calib",
+      "config": "dev_v30_s42_none",
+      "EpisodicAP_mean": 48.73,
+      "OOV_FP_mean": 0.1618,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B4_clip",
+      "config": "dev_v30_s42_missing_class",
+      "EpisodicAP_mean": 8.855045952012865,
+      "OOV_FP_mean": 0.460095238095238,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B5_subset",
+      "config": "dev_v30_s42_missing_class",
+      "EpisodicAP_mean": 35.43296243789189,
+      "OOV_FP_mean": 0.460095238095238,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B1_oracle",
+      "config": "dev_v30_s42_missing_class",
+      "EpisodicAP_mean": 37.901967851598606,
+      "OOV_FP_mean": 0.460095238095238,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_router",
+      "config": "dev_v30_s42_missing_class",
+      "EpisodicAP_mean": 37.4,
+      "OOV_FP_mean": 0.4601,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_full",
+      "config": "dev_v30_s42_missing_class",
+      "EpisodicAP_mean": 37.4,
+      "OOV_FP_mean": 0.161,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "M2_calib",
+      "config": "dev_v30_s42_missing_class",
+      "EpisodicAP_mean": 40.39,
+      "OOV_FP_mean": 0.1449,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B4_clip",
+      "config": "dev_v100_s42_none",
+      "EpisodicAP_mean": 14.703125785719982,
+      "OOV_FP_mean": 0.520547619047619,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B5_subset",
+      "config": "dev_v100_s42_none",
+      "EpisodicAP_mean": 24.74173740904812,
+      "OOV_FP_mean": 0.520547619047619,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "B1_oracle",
+      "config": "dev_v100_s42_none",
+      "EpisodicAP_mean": 28.17018867028212,
+      "OOV_FP_mean": 0.520547619047619,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_router",
+      "config": "dev_v100_s42_none",
+      "EpisodicAP_mean": 25.98,
+      "OOV_FP_mean": 0.5205,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "VG_full",
+      "config": "dev_v100_s42_none",
+      "EpisodicAP_mean": 25.98,
+      "OOV_FP_mean": 0.1822,
+      "gpu_used": false,
+      "mode": "proxy"
+    },
+    {
+      "method": "M2_calib",
+      "config": "dev_v100_s42_none",
+      "EpisodicAP_mean": 28.06,
+      "OOV_FP_mean": 0.164,
+      "gpu_used": false,
+      "mode": "proxy"
+    }
+  ]
+}

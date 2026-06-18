@@ -26,7 +26,7 @@ Open-vocabulary object detection (OVD) is typically benchmarked on LVIS with \em
 Deployed systems instead operate on a \emph{user vocabulary} $V$ with $|V| \ll 1203$.
 We introduce \textbf{OVDeploy}, an episodic benchmark with two complementary metrics: \textbf{EpisodicAP} (greedy IoU AP on $V$) measures in-vocabulary deployment accuracy, while \textbf{OOV-FP} audits full-vocabulary inference (B0) by reporting high-confidence detections outside $V$.
 On 1,220 episodes and six frozen baselines, B0 \textbf{OOV-FP} reaches 45--66\% for small $|V|$---errors invisible to federated AP---while subset-prompt deployment (\textbf{B5}) improves \emph{aggregate} EpisodicAP over B0 (28 vs 13 on $|V|{\in}\{10,30,100\}$).
-Cross-architecture validation with frozen \textbf{OWL-ViT-B/32} and native \textbf{Microsoft GLIP-T} on the same episodes, plus held-out stratified \textbf{OOV-FP} on 1k images (YOLO 68\% / OWL 30\% / GLIP-T $\sim$98\% at $|V|{=}10$), confirms the deployment gap is not architecture-specific; all thirteen native \textbf{ODinW-13} domains span high-to-low EpisodicAP.
+Cross-architecture validation with frozen \textbf{OWL-ViT-B/32} and native \textbf{Microsoft GLIP-T} on the same episodes, plus held-out stratified \textbf{OOV-FP} on 1k images (YOLO 68\% / OWL 30\% / GLIP-T $\sim$98\% at $|V|{=}10$), confirms the deployment gap is not architecture-specific; all thirteen native \textbf{ODinW-13} domains are reported as a \emph{diagnostic} cross-domain suite (high-to-low EpisodicAP; Pothole/Shellfish remain $\sim$0--1, not SOTA claims).
 We release episodes, metrics code, and GPU logs for reproducible deployment-oriented OVD research.
 \end{abstract}
 
@@ -452,7 +452,7 @@ Grounded OVD main-table cross-check uses native \textbf{Microsoft GLIP-T} (\text
 Stratified held-out OOV-FP additionally reports native GLIP-T (\texttt{REPORT\_4b\_native\_glip}, Tab.~\ref{tab:strat_three}) alongside YOLO-S and OWL-ViT.
 Native GLIP-T weights (\texttt{GLIPModel/GLIP}) and \texttt{maskrcnn\_benchmark} CUDA ops were rebuilt on WSL (PyTorch 2.11 + CUDA 12.8; \texttt{scripts/wsl\_rebuild\_native\_glip\_cuda.sh}).
 OWL-ViT uses locally cached HuggingFace weights; absolute EpisodicAP differs across architectures and should not be compared to federated LVIS AP.
-Lightweight episode adapters were explored in supplementary code (\texttt{REPORT\_3}) but are excluded from main baselines.
+Lightweight episode adapters were explored in supplementary code (\texttt{REPORT\_3}) but are excluded from main baselines (M1 EpisodicAP $\approx$1.6 vs B5 $\approx$25 on dev aggregates).
 
 \textbf{Conclusion.} Federated LVIS AP alone is insufficient for OVD deployment analysis.
 OVDeploy provides episodic metrics, 1,220 episodes, and frozen baselines showing that \textbf{OOV-FP} from full-vocabulary inference is severe under small user vocabularies, while subset-prompt deployment (B5) improves aggregate EpisodicAP over B0 under strict greedy matching.

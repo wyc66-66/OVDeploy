@@ -1,4 +1,5 @@
-# OVDeploy paths — copy to config/paths.yaml and edit.
+# OVDeploy + VocabGuard paths — copy to config/paths.yaml and edit.
+# Single-repo layout: project_root and ovdeploy_root both ".".
 # Requires: LVIS minival JSON, COCO val2017, YOLO-World v2-S weights.
 # See docs/SETUP.md
 
@@ -65,3 +66,64 @@ owlvit:
 second_backbone:
   name: "owlvit"
   label: "OWL-ViT-B/32"
+
+# --- VocabGuard / RobustVocab (from submission-b) ---
+# VocabGuard (Paper 4) — read-only reuse of OVDeploy (Paper 2)
+
+
+yolo_root: "/path/to/YOLO-World"
+yolo_root_wsl: "/mnt/d/path/to/YOLO-World"
+
+data:
+  episodes_dev: "data/episodes/dev"
+  episodes_train: "data/episodes/train"
+  episodes_eval: "data/episodes/eval"
+  b0_cache: "data/b0_cache"
+  cooccur_cache: "data/cooccur_prior.json"
+
+outputs:
+  checkpoints: "data/checkpoints"
+  reports: "reports"
+
+vocabguard:
+  router_delta: 5
+  missing_class_extra_delta: 15
+  router_cand_pool: 128
+  router_cand_pool_missing: 256
+  b0_hint_score_thr: 0.10
+  guard_alpha: 2.0
+  guard_beta: 0.3
+  guard_tau: 0.5
+  calib_feat_dim: 256
+  calib_hidden: 128
+  calib_max_classes: 64
+
+robustvocab:
+  deployment_strict: true
+  b0_score_thr: 0.12
+  b0_top_k: 48
+  recover_delta: 8
+  recover_delta_missing: 30
+  cooccur_weight: 0.5
+  use_cooccur: true
+  two_round_probe: true
+  round2_top: 12
+  dual_prompt_fusion: true
+  synonym_dual_prompt: false
+  router_delta: 5
+  missing_class_extra_delta: 15
+  router_cand_pool: 128
+  router_cand_pool_missing: 256
+  b0_hint_score_thr: 0.10
+  guard_alpha: 2.0
+  guard_beta: 0.3
+  guard_tau: 0.5
+  glip_guard_tau: 0.42
+
+methods:
+  - VG_router
+  - VG_full
+  - M2_calib
+  - VG_full_strict
+  - RV_recover
+  - RV_full

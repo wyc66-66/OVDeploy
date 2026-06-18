@@ -1,0 +1,22 @@
+{
+  "status": "ok",
+  "timestamp": "2026-06-08T22:27:36.638967+00:00",
+  "git": "unknown",
+  "gpu_used": true,
+  "rows": [
+    {
+      "method": "B5_subset",
+      "n_images": 10,
+      "total_sec": 71.988,
+      "ms_per_image": 7198.8,
+      "gpu_used": true
+    },
+    {
+      "method": "VG_router",
+      "n_images": 10,
+      "total_sec": 68.19,
+      "ms_per_image": 6819.0,
+      "gpu_used": true
+    }
+  ]
+}

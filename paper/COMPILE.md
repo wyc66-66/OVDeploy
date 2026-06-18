@@ -3,7 +3,7 @@
 ## One command (official CVPR 2026 template)
 
 ```powershell
-cd d:\ccfa\论文2
+cd d:\ccfa\submission-a
 powershell -ExecutionPolicy Bypass -File scripts\compile_paper.ps1
 ```
 

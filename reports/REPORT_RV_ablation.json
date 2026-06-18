@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "timestamp": "2026-06-09T15:26:02.994243+00:00",
+  "git": "unknown",
+  "gpu_used": true,
+  "rows": [
+    {
+      "variant": "B5_baseline",
+      "method": "B5_subset",
+      "config": "dev_v10_s42_missing_class",
+      "deployment_strict": true,
+      "recover_overrides": {},
+      "EpisodicAP_mean": 17.416058814922447,
+      "OOV_FP_mean": 0.6636309523809525,
+      "n_episodes": 10,
+      "gpu_used": true
+    },
+    {
+      "variant": "RV_full",
+      "method": "RV_full",
+      "config": "dev_v10_s42_missing_class",
+      "deployment_strict": true,
+      "recover_overrides": {},
+      "EpisodicAP_mean": 18.15370612077134,
+      "OOV_FP_mean": 0.01,
+      "n_episodes": 10,
+      "gpu_used": true
+    },
+    {
+      "variant": "w/o_CoOccur",
+      "method": "RV_full",
+      "config": "dev_v10_s42_missing_class",
+      "deployment_strict": true,
+      "recover_overrides": {
+        "use_cooccur": false
+      },
+      "EpisodicAP_mean": 18.16316980523502,
+      "OOV_FP_mean": 0.01,
+      "n_episodes": 10,
+      "gpu_used": true
+    },
+    {
+      "variant": "w/o_TwoRound",
+      "method": "RV_full",
+      "config": "dev_v10_s42_missing_class",
+      "deployment_strict": true,
+      "recover_overrides": {
+        "two_round_probe": false
+      },
+      "EpisodicAP_mean": 18.15370612077134,
+      "OOV_FP_mean": 0.01,
+      "n_episodes": 10,
+      "gpu_used": true
+    },
+    {
+      "variant": "oracle_hint",
+      "method": "RV_full",
+      "config": "dev_v10_s42_missing_class",
+      "deployment_strict": false,
+      "recover_overrides": {},
+      "EpisodicAP_mean": 18.15370612077134,
+      "OOV_FP_mean": 0.01,
+      "n_episodes": 10,
+      "gpu_used": true
+    }
+  ]
+}

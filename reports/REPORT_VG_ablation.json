@@ -1,0 +1,72 @@
+{
+  "status": "ok",
+  "timestamp": "2026-06-13T12:27:15.725597+00:00",
+  "git": "unknown",
+  "gpu_used": true,
+  "rows": [
+    {
+      "variant": "B5_baseline",
+      "method": "B5_subset",
+      "EpisodicAP_mean": 37.32062241246294,
+      "OOV_FP_mean": 0.5558333333333333,
+      "n_episodes": 3,
+      "gpu_used": true
+    },
+    {
+      "variant": "VG_full",
+      "method": "VG_full",
+      "EpisodicAP_mean": 37.528264772813394,
+      "OOV_FP_mean": 0.0,
+      "n_episodes": 3,
+      "gpu_used": true
+    },
+    {
+      "variant": "w/o_Guard",
+      "method": "VG_router",
+      "EpisodicAP_mean": 37.528264772813394,
+      "OOV_FP_mean": 0.5558333333333333,
+      "n_episodes": 3,
+      "gpu_used": true
+    },
+    {
+      "variant": "w/o_Router",
+      "method": "VG_router",
+      "EpisodicAP_mean": 37.32062241246294,
+      "OOV_FP_mean": 0.5558333333333333,
+      "n_episodes": 3,
+      "gpu_used": true
+    },
+    {
+      "variant": "CLIP_router",
+      "method": "VG_router",
+      "EpisodicAP_mean": 37.318805109306346,
+      "OOV_FP_mean": 0.5558333333333333,
+      "n_episodes": 3,
+      "gpu_used": true
+    },
+    {
+      "variant": "hard_mask",
+      "method": "VG_full_hard",
+      "EpisodicAP_mean": 37.528264772813394,
+      "OOV_FP_mean": 0.0,
+      "n_episodes": 3,
+      "gpu_used": true
+    },
+    {
+      "variant": "delta_0",
+      "method": "VG_router",
+      "EpisodicAP_mean": 37.32062241246294,
+      "OOV_FP_mean": 0.5558333333333333,
+      "n_episodes": 3,
+      "gpu_used": true
+    },
+    {
+      "variant": "delta_10",
+      "method": "VG_router",
+      "EpisodicAP_mean": 37.77554417236067,
+      "OOV_FP_mean": 0.5558333333333333,
+      "n_episodes": 3,
+      "gpu_used": true
+    }
+  ]
+}

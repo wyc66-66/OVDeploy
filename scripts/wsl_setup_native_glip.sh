@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Clone/install microsoft/GLIP for native GLIP-T (.pth) inference.
 set -euo pipefail
-ROOT=/mnt/d/ccfa/论文2
+ROOT=/mnt/d/ccfa/submission-a
 cd "$ROOT"
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate yoloworld5070
