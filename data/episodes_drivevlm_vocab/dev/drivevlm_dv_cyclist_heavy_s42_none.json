@@ -1,0 +1,86 @@
+{
+  "episode_id": "drivevlm_dv_cyclist_heavy_s42_none",
+  "image_ids": [
+    613581075,
+    161724663,
+    816784539,
+    842256865,
+    116643694,
+    190365225,
+    293960028,
+    402460985,
+    336873084,
+    994688370
+  ],
+  "vocab": {
+    "cat_ids": [
+      1,
+      6,
+      8,
+      9,
+      10,
+      12,
+      22
+    ],
+    "prompts": {
+      "1": [
+        "car",
+        "automobile"
+      ],
+      "6": [
+        "pedestrian"
+      ],
+      "8": [
+        "bicycle"
+      ],
+      "9": [
+        "traffic cone"
+      ],
+      "10": [
+        "barrier"
+      ],
+      "12": [
+        "flat surface"
+      ],
+      "22": [
+        "bicycle rack"
+      ]
+    }
+  },
+  "vocab_size": 7,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 42,
+  "meta": {
+    "n_images": 10,
+    "scene": "scene-0655",
+    "sample_tokens": [
+      "5991fad3280c4f84b331536c32001a04",
+      "2578329fc3ae484bb23ef766808f4be5",
+      "8057958576034e51bac9bdc5740128d5",
+      "23799328f65843fc9e0c71f2bfbe90ef",
+      "6af01b48aec7475eac1f8e9add0276ff",
+      "df7066fa5f0d4b708982747cc3feed14",
+      "5f6cc6483988439a824cec99e28bb5b9",
+      "c9304cf98aad4ff0bb5b0cff0aab65d2",
+      "79937d5eae1d450499677a0dcffa210c",
+      "5c85640c10d9485c86bf6eb44778c002"
+    ],
+    "file_paths": [
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385092112404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385092662404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385093162404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385093612404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385094112404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385094512404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385094912404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385095412404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385095912404.jpg",
+      "n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385096362404.jpg"
+    ],
+    "camera": "CAM_FRONT",
+    "drivevlm_prompt": "Cyclist-heavy scene: bicycles, bicycle racks, pedestrians, cars",
+    "prototype": "drivevlm_vocab_smoke"
+  }
+}

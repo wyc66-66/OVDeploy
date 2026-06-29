@@ -19,6 +19,20 @@ Benchmark and protocol for deployment-style open-vocabulary object detection (OV
 
 Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `docs/EXPERIMENT_TABLE.md` and `reports/`).
 
+## nuScenes pilot (VCAD bridge) — branch `nuscenes-pilot`
+
+Episodic **EpisodicAP + OOV-FP** on nuScenes mini; six-camera mean B0 EpisodicAP **5.2** vs CAM_FRONT **30.1** @ |V|=10.
+
+| Extension | Highlight |
+|-----------|-----------|
+| CAM_FRONT sweep | OOV **14.8%** @ |V|=10 |
+| DriveVLM 20 scenes | mean OOV **~27.9%** |
+| Occ3D subset proxy | `dynamic_agents` OOV **16.1%** @ |V|=8 |
+
+![Deployment gap portability](docs/assets/deployment_gap_portability.png)
+
+Details: [`docs/NUSCENES_PILOT.md`](docs/NUSCENES_PILOT.md) · Branch: https://github.com/wyc66-66/OVDeploy/tree/nuscenes-pilot
+
 ## VocabGuard (Submission B, same repo)
 
 **VocabGuard: Deployment-Oriented Vocabulary Audit for Constrained Open-Vocabulary Detection**

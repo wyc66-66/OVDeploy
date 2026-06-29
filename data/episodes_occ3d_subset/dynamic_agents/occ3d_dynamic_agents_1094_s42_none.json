@@ -1,0 +1,91 @@
+{
+  "episode_id": "occ3d_dynamic_agents_1094_s42_none",
+  "image_ids": [
+    990513199,
+    256310745,
+    277479601,
+    705715108,
+    216282547,
+    838854629,
+    965008607,
+    761990192,
+    623184345,
+    109866985
+  ],
+  "vocab": {
+    "cat_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "prompts": {
+      "1": [
+        "car",
+        "automobile"
+      ],
+      "2": [
+        "truck"
+      ],
+      "3": [
+        "bus"
+      ],
+      "4": [
+        "trailer"
+      ],
+      "5": [
+        "construction vehicle"
+      ],
+      "6": [
+        "pedestrian"
+      ],
+      "7": [
+        "motorcycle"
+      ],
+      "8": [
+        "bicycle"
+      ]
+    }
+  },
+  "vocab_size": 8,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 42,
+  "meta": {
+    "n_images": 10,
+    "scene": "scene-1094",
+    "sample_tokens": [
+      "e6b0b282aa174a978272dc2d0a89d560",
+      "f77ef1c17cbf432587d705c88ce76b3b",
+      "77fc24547ab34182a945eecb825b6576",
+      "648fe1aeca944fb793b334cb6ee01854",
+      "1e0d1b76ea134c7db0592c4510f5e737",
+      "fb61d590dd1143ccb12ea56fbe9d9d07",
+      "3b594831ff7f4e27a9889c7b7d0d8e92",
+      "8178cfbc864e4cb0b6e35746b32bed9f",
+      "07c29094cb6144aa889c16c52f762d79",
+      "a43568a562a043f38af0ec0b71520af7"
+    ],
+    "file_paths": [
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800847912460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800848412460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800848912460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800849412460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800849912460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800850412460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800850912460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800851412460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800851912460.jpg",
+      "n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800852412460.jpg"
+    ],
+    "camera": "CAM_FRONT",
+    "occ3d_subset": "dynamic_agents",
+    "occ3d_description": "Occ3D dynamic traffic participants (detection proxy)",
+    "prototype": "occ3d_semantic_subset"
+  }
+}

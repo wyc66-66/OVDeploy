@@ -1,0 +1,111 @@
+# DriveVLM-style scene vocabulary prototype (smoke eval)
+# Maps implicit scene-level vocabularies to nuScenes mini episodes (CAM_FRONT).
+# Inspired by DriveVLM hierarchical scene understanding (CoRL 2024).
+# cat_ids use OVDeploy nuScenes pilot taxonomy (1..23).
+
+version: drivevlm-vocab-smoke-v1
+camera: CAM_FRONT
+frames_per_episode: 10
+frame_stride: 5
+seed: 42
+
+episodes:
+  - id: dv_highway_merge
+    scene: scene-0061
+    drivevlm_prompt: "Highway merge: multiple lanes, cars and trucks ahead, traffic cones near construction"
+    cat_ids: [1, 2, 3, 5, 6, 9, 10]  # car, truck, bus, construction, ped, cone, barrier
+
+  - id: dv_urban_intersection
+    scene: scene-0103
+    drivevlm_prompt: "Urban intersection: pedestrians crossing, cars waiting, bicycles and motorcycles"
+    cat_ids: [1, 6, 7, 8, 9, 10, 12]  # car, ped, motorcycle, bicycle, cone, barrier, sidewalk
+
+  - id: dv_construction_zone
+    scene: scene-0553
+    drivevlm_prompt: "Construction zone: construction vehicles, barriers, traffic cones, workers"
+    cat_ids: [1, 2, 5, 6, 9, 10, 20]  # car, truck, construction veh, ped, cone, barrier, pushable
+
+  - id: dv_parking_lot
+    scene: scene-0655
+    drivevlm_prompt: "Parking area: parked cars, pedestrians, bicycles, pushable objects"
+    cat_ids: [1, 6, 8, 20, 22, 12, 14]  # car, ped, bicycle, pushable, bike rack, sidewalk, building
+
+  - id: dv_bus_stop
+    scene: scene-0757
+    drivevlm_prompt: "Bus stop: bus, pedestrians boarding, cars passing, traffic cones"
+    cat_ids: [1, 3, 6, 9, 10, 12, 15]  # car, bus, ped, cone, barrier, sidewalk, vegetation
+
+  - id: dv_night_urban
+    scene: scene-0796
+    drivevlm_prompt: "Night urban drive: cars and trucks, street barriers, pedestrians near curb"
+    cat_ids: [1, 2, 6, 10, 14, 12, 15]
+
+  - id: dv_residential
+    scene: scene-0916
+    drivevlm_prompt: "Residential street: cars, pedestrians, bicycles, vegetation and buildings"
+    cat_ids: [1, 6, 8, 12, 14, 15, 23]  # includes animal slot
+
+  - id: dv_emergency_lane
+    scene: scene-1077
+    drivevlm_prompt: "Road with emergency vehicles: police or ambulance, cars yielding, barriers"
+    cat_ids: [1, 2, 18, 19, 10, 6, 9]  # car, truck, ambulance, police, barrier, ped, cone
+
+  - id: dv_debris_hazard
+    scene: scene-1094
+    drivevlm_prompt: "Road hazard: debris on driveable surface, cars avoiding obstacles"
+    cat_ids: [1, 2, 21, 10, 9, 11, 13]  # car, truck, debris, barrier, cone, flat, terrain
+
+  - id: dv_multi_vehicle
+    scene: scene-1100
+    drivevlm_prompt: "Dense traffic: cars, trucks, trailers, buses in mixed flow"
+    cat_ids: [1, 2, 3, 4, 7, 8, 6]
+
+  - id: dv_cyclist_heavy
+    scene: scene-0655
+    drivevlm_prompt: "Cyclist-heavy scene: bicycles, bicycle racks, pedestrians, cars"
+    cat_ids: [8, 22, 6, 1, 12, 9, 10]
+
+  - id: dv_ped_crossing
+    scene: scene-0103
+    drivevlm_prompt: "Pedestrian crossing: many pedestrians, cars stopped, traffic cones"
+    cat_ids: [6, 1, 9, 10, 12, 2, 5]
+
+  - id: dv_highway_trailer
+    scene: scene-0061
+    drivevlm_prompt: "Highway with large vehicles: trucks, trailers, construction vehicles"
+    cat_ids: [2, 4, 5, 1, 3, 9, 10]
+
+  - id: dv_sidewalk_activity
+    scene: scene-0916
+    drivevlm_prompt: "Sidewalk activity: pedestrians, strollers, bicycles, parked cars"
+    cat_ids: [6, 8, 1, 12, 20, 14, 15]
+
+  - id: dv_barrier_corridor
+    scene: scene-0553
+    drivevlm_prompt: "Narrow corridor: barriers channeling traffic, cones, construction"
+    cat_ids: [10, 9, 5, 1, 2, 11, 13]
+
+  - id: dv_traffic_jam
+    scene: scene-1100
+    drivevlm_prompt: "Slow traffic jam: cars and buses queued, pedestrians on sidewalk, cones"
+    cat_ids: [1, 3, 6, 9, 12, 14, 15]
+
+  - id: dv_wet_night
+    scene: scene-0796
+    drivevlm_prompt: "Wet night road: cars and trucks, barriers, reduced visibility, pedestrians"
+    cat_ids: [1, 2, 6, 10, 11, 14, 15]
+
+  - id: dv_school_zone
+    scene: scene-0757
+    drivevlm_prompt: "School zone: bus, children pedestrians, bicycles, parked cars"
+    cat_ids: [3, 6, 8, 1, 9, 12, 22]
+
+  - id: dv_loading_dock
+    scene: scene-1077
+    drivevlm_prompt: "Loading area: trucks, workers, barriers, pushable carts"
+    cat_ids: [2, 6, 10, 20, 1, 9, 11]
+
+  - id: dv_animal_crossing
+    scene: scene-1094
+    drivevlm_prompt: "Suburban road: animal on road, cars braking, vegetation, debris"
+    cat_ids: [1, 23, 21, 15, 13, 10, 6]

@@ -1,0 +1,82 @@
+{
+  "episode_id": "occ3d_scene_layout_0553_s42_none",
+  "image_ids": [
+    977969629,
+    86389611,
+    706027529,
+    132679436,
+    902426382,
+    567583325,
+    738271783,
+    208047342,
+    769696450,
+    321880819
+  ],
+  "vocab": {
+    "cat_ids": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "prompts": {
+      "11": [
+        "driveable surface"
+      ],
+      "12": [
+        "flat surface"
+      ],
+      "13": [
+        "sidewalk"
+      ],
+      "14": [
+        "terrain"
+      ],
+      "15": [
+        "building"
+      ],
+      "16": [
+        "vegetation"
+      ]
+    }
+  },
+  "vocab_size": 6,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 42,
+  "meta": {
+    "n_images": 10,
+    "scene": "scene-0553",
+    "sample_tokens": [
+      "8687ba92abd3406aa797115b874ebeba",
+      "5bbeb4e68d51413f81a370cb33ef27fb",
+      "e9a1c915c0d641d0b0a3019112a1ee90",
+      "f5b8088835f247b8a5434a9f0daadc20",
+      "2021b6b367984ad7b18464a550d0ae8d",
+      "7315022fc89147a6afc7f978601f8f38",
+      "dc03fe4e0a374592af7701c66d5276c4",
+      "b7f64f73e8a548488e6d85d9b0e13242",
+      "6dabc0fb1df045558f802246dd186b3f",
+      "82597244941b4e79aa3e1e9cc6386f8b"
+    ],
+    "file_paths": [
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489296012404.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489296512409.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489297012404.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489297512404.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489298012404.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489298512404.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489299012404.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489299512404.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489300012404.jpg",
+      "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489300512404.jpg"
+    ],
+    "camera": "CAM_FRONT",
+    "occ3d_subset": "scene_layout",
+    "occ3d_description": "Occ3D scene geometry classes (sparse in box GT; OOV audit still valid)",
+    "prototype": "occ3d_semantic_subset"
+  }
+}

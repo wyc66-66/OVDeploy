@@ -1,0 +1,366 @@
+{
+  "status": "occ3d_semantic_subset",
+  "dataset": "nuscenes-mini",
+  "prototype": "occ3d_detection_gt_proxy",
+  "camera": "CAM_FRONT",
+  "timestamp": "2026-06-29T17:21:26.093998+00:00",
+  "git": "unknown",
+  "metrics_version": "v2",
+  "data_dir": "D:\\ccfa\\outreach-mars\\pilot\\data\\episodes_occ3d_subset",
+  "rows": [
+    {
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 29.46083774001429,
+      "OOV_FP_mean": 0.16149487510826518,
+      "n_episodes": 10,
+      "mode": "b0_cache",
+      "subset_id": "dynamic_agents",
+      "vocab_size": 8
+    },
+    {
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 27.991733501865234,
+      "OOV_FP_mean": 0.0,
+      "n_episodes": 10,
+      "mode": "b0_cache",
+      "subset_id": "occ3d_full_proxy",
+      "vocab_size": 22
+    },
+    {
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 0.0,
+      "OOV_FP_mean": 0.9479396373549624,
+      "n_episodes": 10,
+      "mode": "b0_cache",
+      "subset_id": "scene_layout",
+      "vocab_size": 6
+    },
+    {
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 3.0,
+      "OOV_FP_mean": 0.9737020202020202,
+      "n_episodes": 5,
+      "mode": "b0_cache",
+      "subset_id": "traffic_obstacles",
+      "vocab_size": 6
+    }
+  ],
+  "episodes": [
+    {
+      "episode_id": "occ3d_dynamic_agents_0061_s42_none",
+      "scene": "scene-0061",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 9.29253160419827,
+      "B0_OOV_FP": 0.15257783882783885,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_0103_s42_none",
+      "scene": "scene-0103",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 40.70931047450781,
+      "B0_OOV_FP": 0.1432116387224746,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_0553_s42_none",
+      "scene": "scene-0553",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 5.591269841269841,
+      "B0_OOV_FP": 0.155,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_0655_s42_none",
+      "scene": "scene-0655",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 14.636144284556968,
+      "B0_OOV_FP": 0.1996473555684082,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_0757_s42_none",
+      "scene": "scene-0757",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 50.0,
+      "B0_OOV_FP": 0.305511988011988,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_0796_s42_none",
+      "scene": "scene-0796",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 37.84285714285714,
+      "B0_OOV_FP": 0.11782467532467533,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_0916_s42_none",
+      "scene": "scene-0916",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 22.19246882818663,
+      "B0_OOV_FP": 0.17415768871651224,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_1077_s42_none",
+      "scene": "scene-1077",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 30.979978354978357,
+      "B0_OOV_FP": 0.1627491806439175,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_1094_s42_none",
+      "scene": "scene-1094",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 22.671908567191952,
+      "B0_OOV_FP": 0.1312169312169312,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_dynamic_agents_1100_s42_none",
+      "scene": "scene-1100",
+      "occ3d_subset": "dynamic_agents",
+      "vocab_size": 8,
+      "B0_EpisodicAP": 60.691908302395916,
+      "B0_OOV_FP": 0.07305145404990607,
+      "subset_id": "dynamic_agents"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_0061_s42_none",
+      "scene": "scene-0061",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 5.625885893750082,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_0103_s42_none",
+      "scene": "scene-0103",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 37.05969025786652,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_0553_s42_none",
+      "scene": "scene-0553",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 3.4743589743589745,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_0655_s42_none",
+      "scene": "scene-0655",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 14.209284634427746,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_0757_s42_none",
+      "scene": "scene-0757",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 54.33333333333333,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_0796_s42_none",
+      "scene": "scene-0796",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 35.8,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_0916_s42_none",
+      "scene": "scene-0916",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 19.178237771614597,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_1077_s42_none",
+      "scene": "scene-1077",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 27.629231879231877,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_1094_s42_none",
+      "scene": "scene-1094",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 22.13339310113691,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_occ3d_full_proxy_1100_s42_none",
+      "scene": "scene-1100",
+      "occ3d_subset": "occ3d_full_proxy",
+      "vocab_size": 22,
+      "B0_EpisodicAP": 60.47391917293233,
+      "B0_OOV_FP": 0.0,
+      "subset_id": "occ3d_full_proxy"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_0061_s42_none",
+      "scene": "scene-0061",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.970260989010989,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_0103_s42_none",
+      "scene": "scene-0103",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9168860207559899,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_0553_s42_none",
+      "scene": "scene-0553",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 1.0,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_0655_s42_none",
+      "scene": "scene-0655",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9077202621939463,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_0757_s42_none",
+      "scene": "scene-0757",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.831552614052614,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_0796_s42_none",
+      "scene": "scene-0796",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9857142857142858,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_0916_s42_none",
+      "scene": "scene-0916",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9456410256410257,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_1077_s42_none",
+      "scene": "scene-1077",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9870445344129555,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_1094_s42_none",
+      "scene": "scene-1094",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9467089947089947,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_scene_layout_1100_s42_none",
+      "scene": "scene-1100",
+      "occ3d_subset": "scene_layout",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9878676470588236,
+      "subset_id": "scene_layout"
+    },
+    {
+      "episode_id": "occ3d_traffic_obstacles_0061_s42_none",
+      "scene": "scene-0061",
+      "occ3d_subset": "traffic_obstacles",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9594047619047619,
+      "subset_id": "traffic_obstacles"
+    },
+    {
+      "episode_id": "occ3d_traffic_obstacles_0103_s42_none",
+      "scene": "scene-0103",
+      "occ3d_subset": "traffic_obstacles",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9906926406926407,
+      "subset_id": "traffic_obstacles"
+    },
+    {
+      "episode_id": "occ3d_traffic_obstacles_0553_s42_none",
+      "scene": "scene-0553",
+      "occ3d_subset": "traffic_obstacles",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 1.0,
+      "subset_id": "traffic_obstacles"
+    },
+    {
+      "episode_id": "occ3d_traffic_obstacles_0655_s42_none",
+      "scene": "scene-0655",
+      "occ3d_subset": "traffic_obstacles",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 0.0,
+      "B0_OOV_FP": 0.9838888888888888,
+      "subset_id": "traffic_obstacles"
+    },
+    {
+      "episode_id": "occ3d_traffic_obstacles_0757_s42_none",
+      "scene": "scene-0757",
+      "occ3d_subset": "traffic_obstacles",
+      "vocab_size": 6,
+      "B0_EpisodicAP": 15.0,
+      "B0_OOV_FP": 0.9345238095238095,
+      "subset_id": "traffic_obstacles"
+    }
+  ],
+  "note": "Occ3D semantic subsets on nuScenes detection GT proxy \u2014 not voxel Occ3D mAP."
+}

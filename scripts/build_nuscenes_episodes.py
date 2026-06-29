@@ -55,6 +55,10 @@ def _build_vocab(
     return vocab[:vocab_size]
 
 
+def _camera_suffix(camera: str) -> str:
+    return camera.replace("CAM_", "").lower()
+
+
 def generate_episodes(
     gt: NuScenesGT,
     taxonomy,
@@ -145,6 +149,12 @@ def main() -> None:
     parser.add_argument("--max-episodes", type=int, default=None)
     parser.add_argument("--vocab-size", type=int, default=None)
     parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument("--camera", type=str, default=None, help="nuScenes camera channel (e.g. CAM_FRONT)")
+    parser.add_argument(
+        "--all-cameras",
+        action="store_true",
+        help="Build for all cameras in config cameras_all (multi-view VCAD pilot)",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Validate paths only")
     args = parser.parse_args()
 
@@ -156,6 +166,11 @@ def main() -> None:
     seed = args.seed if args.seed is not None else cfg["seeds"][0]
     max_ep = args.max_episodes or cfg.get("max_episodes", 100)
 
+    if args.all_cameras:
+        cameras = list(cfg.get("cameras_all") or [cfg["camera"]])
+    else:
+        cameras = [args.camera or cfg["camera"]]
+
     if not nusc_root.is_dir():
         raise SystemExit(
             f"nuScenes root not found: {nusc_root}\n"
@@ -164,26 +179,34 @@ def main() -> None:
 
     taxonomy = load_taxonomy(class_map)
     if args.dry_run:
-        print(f"OK: root={nusc_root}, out={out_dir}, |V|={vocab_size}, max={max_ep}")
+        print(f"OK: root={nusc_root}, out={out_dir}, |V|={vocab_size}, max={max_ep}, cameras={cameras}")
         return
 
-    gt = NuScenesGT(nusc_root, version=cfg.get("version", "v1.0-mini"), camera=cfg["camera"])
-    sub = out_dir / f"dev_v{vocab_size}_s{seed}_{cfg.get('noise', 'none')}"
-    eps = generate_episodes(
-        gt,
-        taxonomy,
-        sub,
-        vocab_size=vocab_size,
-        seed=seed,
-        noise=cfg.get("noise", "none"),
-        split=cfg.get("split", "dev"),
-        frames_per_episode=int(cfg.get("frames_per_episode", 10)),
-        frame_stride=int(cfg.get("frame_stride", 5)),
-        max_episodes=max_ep,
-    )
-    print(f"Wrote {len(eps)} episodes to {sub}")
-    if len(eps) < max_ep:
-        print(f"Note: only {len(eps)} episodes (mini split); reduce --max-episodes or use full nuScenes.")
+    total = 0
+    for camera in cameras:
+        gt = NuScenesGT(
+            nusc_root, version=cfg.get("version", "v1.0-mini"), camera=camera, taxonomy=taxonomy
+        )
+        cam_tag = _camera_suffix(camera)
+        sub = out_dir / f"dev_v{vocab_size}_s{seed}_{cfg.get('noise', 'none')}__{cam_tag}"
+        eps = generate_episodes(
+            gt,
+            taxonomy,
+            sub,
+            vocab_size=vocab_size,
+            seed=seed,
+            noise=cfg.get("noise", "none"),
+            split=cfg.get("split", "dev"),
+            frames_per_episode=int(cfg.get("frames_per_episode", 10)),
+            frame_stride=int(cfg.get("frame_stride", 5)),
+            max_episodes=max_ep,
+        )
+        print(f"[{camera}] Wrote {len(eps)} episodes to {sub}")
+        total += len(eps)
+        if len(eps) < max_ep:
+            print(f"  Note: only {len(eps)} episodes (mini cap) for {camera}")
+
+    print(f"Total episodes: {total} across {len(cameras)} camera(s)")
 
 
 if __name__ == "__main__":

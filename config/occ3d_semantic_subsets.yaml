@@ -1,0 +1,89 @@
+# Occ3D-nuScenes semantic subsets -> OVDeploy episodic |V| (detection GT proxy)
+# Occ3D paper 17-class semantics mapped to nuScenes pilot cat_ids (1..23).
+# NOT full voxel Occ3D occupancy eval — vocabulary-constrained deployment audit.
+
+version: occ3d-subset-v1
+camera: CAM_FRONT
+frames_per_episode: 10
+frame_stride: 5
+seed: 42
+
+# Reuse mini scenes with existing B0 cache overlap (DriveVLM / nuScenes pilot pool)
+scene_pool:
+  - scene-0061
+  - scene-0103
+  - scene-0553
+  - scene-0655
+  - scene-0757
+  - scene-0796
+  - scene-0916
+  - scene-1077
+  - scene-1094
+  - scene-1100
+
+subsets:
+  - id: dynamic_agents
+    description: "Occ3D dynamic traffic participants (detection proxy)"
+    occ3d_labels:
+      - car
+      - truck
+      - bus
+      - trailer
+      - construction_vehicle
+      - pedestrian
+      - motorcycle
+      - bicycle
+    cat_ids: [1, 2, 3, 4, 5, 6, 7, 8]
+    require_gt_overlap: true
+
+  - id: traffic_obstacles
+    description: "Occ3D static / movable obstacles (cone, barrier, debris)"
+    occ3d_labels:
+      - traffic_cone
+      - barrier
+      - trailer
+      - pushable_pullable
+      - debris
+      - construction_vehicle
+    cat_ids: [9, 10, 4, 20, 21, 5]
+    require_gt_overlap: true
+
+  - id: scene_layout
+    description: "Occ3D scene geometry classes (sparse in box GT; OOV audit still valid)"
+    occ3d_labels:
+      - driveable_surface
+      - other_flat
+      - sidewalk
+      - terrain
+      - manmade
+      - vegetation
+    cat_ids: [11, 12, 13, 14, 15, 16]
+    require_gt_overlap: false
+
+  - id: occ3d_full_proxy
+    description: "Occ3D-aligned full semantic set on nuScenes detection taxonomy"
+    occ3d_labels:
+      - car
+      - truck
+      - bus
+      - trailer
+      - construction_vehicle
+      - pedestrian
+      - motorcycle
+      - bicycle
+      - traffic_cone
+      - barrier
+      - driveable_surface
+      - other_flat
+      - sidewalk
+      - terrain
+      - manmade
+      - vegetation
+      - ambulance
+      - police
+      - pushable_pullable
+      - debris
+      - bicycle_rack
+      - animal
+    cat_ids: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23]
+    require_gt_overlap: false

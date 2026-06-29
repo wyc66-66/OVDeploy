@@ -1,0 +1,147 @@
+{
+  "episode_id": "occ3d_occ3d_full_proxy_0916_s42_none",
+  "image_ids": [
+    432532361,
+    501508455,
+    826002714,
+    897415367,
+    327945870,
+    951322346,
+    307025236,
+    781091937,
+    872124123,
+    205637766
+  ],
+  "vocab": {
+    "cat_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "prompts": {
+      "1": [
+        "car",
+        "automobile"
+      ],
+      "2": [
+        "truck"
+      ],
+      "3": [
+        "bus"
+      ],
+      "4": [
+        "trailer"
+      ],
+      "5": [
+        "construction vehicle"
+      ],
+      "6": [
+        "pedestrian"
+      ],
+      "7": [
+        "motorcycle"
+      ],
+      "8": [
+        "bicycle"
+      ],
+      "9": [
+        "traffic cone"
+      ],
+      "10": [
+        "barrier"
+      ],
+      "11": [
+        "driveable surface"
+      ],
+      "12": [
+        "flat surface"
+      ],
+      "13": [
+        "sidewalk"
+      ],
+      "14": [
+        "terrain"
+      ],
+      "15": [
+        "building"
+      ],
+      "16": [
+        "vegetation"
+      ],
+      "18": [
+        "ambulance"
+      ],
+      "19": [
+        "police car"
+      ],
+      "20": [
+        "pushable object"
+      ],
+      "21": [
+        "debris"
+      ],
+      "22": [
+        "bicycle rack"
+      ],
+      "23": [
+        "animal"
+      ]
+    }
+  },
+  "vocab_size": 22,
+  "noise": "none",
+  "split": "dev",
+  "baseline": "",
+  "seed": 42,
+  "meta": {
+    "n_images": 10,
+    "scene": "scene-0916",
+    "sample_tokens": [
+      "b5989651183643369174912bc5641d3b",
+      "0bb62a68055249e381b039bf54b0ccf8",
+      "07fad91090c746ccaa1b2bdb55329e20",
+      "ae5004bf4ebb4db0a84cb3c27bd398d1",
+      "ac8b4d49731d43289579f014cb7c97ef",
+      "c1eed31234b94e9f8e22fbf3428b0ac2",
+      "edba7d0cf1c64d2a9c8a5ebddab507a9",
+      "a5afebb0aa5e4d7c95665788ce51ec58",
+      "5b7cb170eee6468aa1fdbd3abcf63c5a",
+      "d8251bbc2105497ab8ec80827d4429aa"
+    ],
+    "file_paths": [
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984233512470.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984234012472.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984234512460.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984234912460.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984235412460.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984235912460.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984236412460.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984236912460.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984237412460.jpg",
+      "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984237912460.jpg"
+    ],
+    "camera": "CAM_FRONT",
+    "occ3d_subset": "occ3d_full_proxy",
+    "occ3d_description": "Occ3D-aligned full semantic set on nuScenes detection taxonomy",
+    "prototype": "occ3d_semantic_subset"
+  }
+}
