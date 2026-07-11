@@ -9,6 +9,8 @@ project_root_wsl: "/path/to/ovdeploy"
 
 yolo_root: "/path/to/YOLO-World"
 yolo_root_wsl: "/mnt/d/path/to/YOLO-World"
+# WSL native copy of stratified-1k val2017 (see scripts/wsl_stage_val2017_cache.sh)
+val2017_cache_wsl: "/home/a/data/coco/val2017"
 paper1_project: "/path/to/optional/assets"
 
 data:
@@ -62,6 +64,16 @@ owlvit:
   local_dir: "weights/owlvit-base-patch32"
   chunk_size: 40
   score_thresh: 0.05
+
+gdino_base:
+  chunk_size: 100
+  max_text_tokens: 288
+  b0_short_captions: true
+  b0_image_short_edge: 640
+  score_thresh: 0.05
+
+# WSL native B0 cache (avoid /mnt/d/ JSON writes)
+b0_cache_wsl: "/home/a/data/b0_cache"
 
 second_backbone:
   name: "owlvit"

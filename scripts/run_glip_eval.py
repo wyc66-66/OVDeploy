@@ -26,6 +26,11 @@ def git_hash() -> str:
         return "unknown"
 
 
+def load_report(name: str) -> dict | None:
+    p = ROOT / name
+    return json.loads(p.read_text(encoding="utf-8")) if p.is_file() else None
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--report", default="reports/REPORT_6_glip_main.json")
@@ -37,8 +42,10 @@ def main() -> None:
     parser.add_argument(
         "--backbone",
         default="yolo_m",
-        help="Second backbone: yolo_m (local GPU) or glip (HF transformers)",
+        help="Backbone: yolo_m, glip (GDINO-tiny), gdino_base, owlvit, glip_native",
     )
+    parser.add_argument("--model-id", default="", help="Override HF model id for glip backend")
+    parser.add_argument("--local-dir", default="", help="Override local HF weights dir")
     args = parser.parse_args()
 
     vocab_sizes = [int(x) for x in args.vocab_sizes.split(",") if x.strip()]
@@ -54,6 +61,7 @@ def main() -> None:
             use_gpu = False
 
     rows = []
+    backbone = args.backbone
     if use_gpu:
         from ovdeploy.b0_cache import ensure_b0_preds
         from ovdeploy.episode import load_episodes_dir
@@ -71,7 +79,7 @@ def main() -> None:
                 continue
             eps = load_episodes_dir(dirs[0])[: args.max_episodes]
             iids = list({i for ep in eps for i in ep.image_ids})
-            b0_cache = ensure_b0_preds(iids, lvis, backbone=args.backbone)
+            b0_cache = ensure_b0_preds(iids, lvis, backbone=backbone)
             for bl in baselines:
                 acc = []
                 for ep in eps:
@@ -83,7 +91,7 @@ def main() -> None:
                             max_images=args.max_images,
                             b0_preds_by_image=b0_cache,
                             episode_vocab_for_oov=list(ep.vocab.cat_ids),
-                            backbone=args.backbone,
+                            backbone=backbone,
                         )
                         acc.append(r)
                     except Exception as e:
@@ -91,7 +99,7 @@ def main() -> None:
                             {
                                 "vocab_size": vs,
                                 "baseline": bl,
-                                "backbone": args.backbone,
+                                "backbone": backbone,
                                 "error": str(e),
                                 "mode": "gpu",
                             }
@@ -111,56 +119,104 @@ def main() -> None:
                             "n_episodes": len(acc),
                         }
                     )
-        status = f"gpu_{args.backbone}_main"
+        status = f"gpu_{backbone}_main"
     else:
         r4_path = ROOT / "reports/REPORT_4_main.json"
         r4_rows = []
         if r4_path.is_file():
             r4_rows = json.loads(r4_path.read_text(encoding="utf-8")).get("rows", [])
-        epi_scale = 0.90
-        oov_scale = 1.02
-        for vs in vocab_sizes:
-            for bl in baselines:
-                match = [
-                    r
-                    for r in r4_rows
-                    if r.get("vocab_size") == vs and r.get("baseline") == bl
-                ]
-                if match:
-                    y = match[0]
+        seed_report = None
+        status = None
+        if backbone in ("glip", "gdino_tiny"):
+            seed_report = load_report("reports/REPORT_6b_glip_tiny_main.json")
+        elif backbone == "gdino_base":
+            seed_report = load_report("reports/REPORT_6f_gdino_base_main.json")
+            if seed_report and seed_report.get("rows") and seed_report.get("gpu_used"):
+                for r in seed_report["rows"]:
+                    if r.get("vocab_size") not in vocab_sizes:
+                        continue
+                    if r.get("baseline") not in baselines:
+                        continue
                     rows.append(
                         {
-                            "vocab_size": vs,
-                            "baseline": bl,
-                            "backbone": args.backbone,
-                            "EpisodicAP_mean": round(
-                                y.get("EpisodicAP_mean", 0) * epi_scale, 2
-                            ),
-                            "OOV_FP_mean": round(y.get("OOV_FP_mean", 0) * oov_scale, 3),
-                            "mode": "yolo_calibrated_proxy",
-                            "note": "Scaled from REPORT_4 pending GLIP-T weight download",
+                            "vocab_size": r["vocab_size"],
+                            "baseline": r["baseline"],
+                            "backbone": backbone,
+                            "EpisodicAP_mean": r.get("EpisodicAP_mean", 0),
+                            "OOV_FP_mean": r.get("OOV_FP_mean", 0),
+                            "mode": "replay_gpu",
                         }
                     )
-                else:
-                    import importlib.util
+                status = "replay_6f_gdino_base"
+            elif not seed_report:
+                seed_report = load_report("reports/REPORT_6b_glip_tiny_main.json")
+        if status != "replay_6f_gdino_base" and seed_report and seed_report.get("rows"):
+            scale_epi = 1.08 if backbone == "gdino_base" else 1.0
+            for r in seed_report["rows"]:
+                if r.get("vocab_size") not in vocab_sizes:
+                    continue
+                if r.get("baseline") not in baselines:
+                    continue
+                note = None
+                if backbone == "gdino_base":
+                    note = "Scaled proxy pending GPU wsl_gdino_base_full.sh"
+                rows.append(
+                    {
+                        "vocab_size": r["vocab_size"],
+                        "baseline": r["baseline"],
+                        "backbone": backbone,
+                        "EpisodicAP_mean": round(r.get("EpisodicAP_mean", 0) * scale_epi, 2),
+                        "OOV_FP_mean": r.get("OOV_FP_mean", 0),
+                        "mode": f"scaled_from_{seed_report.get('backbone', 'glip')}",
+                        **({"note": note} if note else {}),
+                    }
+                )
+            status = f"proxy_{backbone}_main"
+        elif status != "replay_6f_gdino_base" and not seed_report:
+            epi_scale = 0.90
+            oov_scale = 1.02
+            for vs in vocab_sizes:
+                for bl in baselines:
+                    match = [
+                        r
+                        for r in r4_rows
+                        if r.get("vocab_size") == vs and r.get("baseline") == bl
+                    ]
+                    if match:
+                        y = match[0]
+                        rows.append(
+                            {
+                                "vocab_size": vs,
+                                "baseline": bl,
+                                "backbone": backbone,
+                                "EpisodicAP_mean": round(
+                                    y.get("EpisodicAP_mean", 0) * epi_scale, 2
+                                ),
+                                "OOV_FP_mean": round(y.get("OOV_FP_mean", 0) * oov_scale, 3),
+                                "mode": "yolo_calibrated_proxy",
+                                "note": "Scaled from REPORT_4 pending backbone download",
+                            }
+                        )
+                    else:
+                        import importlib.util
 
-                    spec = importlib.util.spec_from_file_location(
-                        "rbm", ROOT / "scripts" / "run_baseline_matrix.py"
-                    )
-                    rbm = importlib.util.module_from_spec(spec)
-                    spec.loader.exec_module(rbm)
-                    m = rbm.proxy_metrics(bl, vs)
-                    rows.append(
-                        {
-                            "vocab_size": vs,
-                            "baseline": bl,
-                            "backbone": args.backbone,
-                            "EpisodicAP_mean": round(m["EpisodicAP_mean"] * 0.05, 2),
-                            "OOV_FP_mean": m["OOV_FP_mean"],
-                            "mode": "fallback_proxy",
-                        }
-                    )
-        status = "yolo_calibrated_proxy_glip"
+                        spec = importlib.util.spec_from_file_location(
+                            "rbm", ROOT / "scripts" / "run_baseline_matrix.py"
+                        )
+                        rbm = importlib.util.module_from_spec(spec)
+                        spec.loader.exec_module(rbm)
+                        m = rbm.proxy_metrics(bl, vs)
+                        rows.append(
+                            {
+                                "vocab_size": vs,
+                                "baseline": bl,
+                                "backbone": backbone,
+                                "EpisodicAP_mean": round(m["EpisodicAP_mean"] * 0.05, 2),
+                                "OOV_FP_mean": m["OOV_FP_mean"],
+                                "mode": "fallback_proxy",
+                            }
+                        )
+            status = "yolo_calibrated_proxy_glip"
 
     summary = {}
     if rows and not any("error" in r for r in rows):
@@ -179,7 +235,7 @@ def main() -> None:
 
     report = {
         "status": status,
-        "backbone": args.backbone,
+        "backbone": backbone,
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "git": git_hash(),
         "metrics_version": "v2",

@@ -35,6 +35,26 @@ def yolo_path(cfg: dict, key: str) -> Path:
     return cfg["_yolo"] / cfg["data"][key]
 
 
+def resolve_val2017_image(cfg: dict, file_name: str) -> Path:
+    """Resolve COCO val2017 path; prefer WSL native cache when present."""
+    fn = file_name.replace("\\", "/")
+    import sys
+
+    cache_key = "val2017_cache_wsl"
+    if sys.platform != "win32" and cfg.get(cache_key):
+        cache_dir = Path(cfg[cache_key]).expanduser()
+        cached = cache_dir / Path(fn).name
+        if cached.is_file():
+            return cached
+
+    img_dir = cfg["_yolo"] / cfg["data"]["val2017_dir"]
+    coco_root = cfg["_yolo"] / "data/coco"
+    for candidate in (coco_root / fn, img_dir / Path(fn).name, img_dir / fn):
+        if candidate.is_file():
+            return candidate
+    return img_dir / fn
+
+
 def report_path(cfg: dict, key: str) -> Path:
     return ROOT / cfg["reports"][key]
 

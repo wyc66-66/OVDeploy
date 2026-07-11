@@ -1,21 +1,21 @@
 {
   "criteria": {
     "C1_epi_ge_b5_and_oov_le_40pct_b0": true,
-    "C2_missing_class_rel_gain_ge_15pct": true,
+    "C2_missing_class_rel_gain_ge_15pct": false,
     "C3_m2_calib_gt_5ap": true
   },
   "metrics": {
-    "B5_agg_EpisodicAP": 29.83,
-    "VG_full_agg_EpisodicAP": 31.33,
-    "B0_OOV_FP": 0.5545,
-    "VG_full_OOV_FP": 0.1941,
-    "missing_class_rel_gain": 0.1801,
-    "C2_v10_only_rel_gain": 0.496,
-    "M2_calib_agg_EpisodicAP": 33.83
+    "B5_agg_EpisodicAP": 27.81,
+    "VG_full_agg_EpisodicAP": 28.44,
+    "B0_OOV_FP": 0.5656,
+    "VG_full_OOV_FP": 0.0017,
+    "missing_class_rel_gain": 0.0315,
+    "C2_v10_only_rel_gain": 0.0141,
+    "M2_calib_agg_EpisodicAP": 23.43
   },
-  "gpu_used": false,
+  "gpu_used": true,
   "go_primary": true,
-  "go": true,
-  "timestamp": "2026-06-17T17:47:23.284602+00:00",
+  "go": false,
+  "timestamp": "2026-07-10T03:17:47.443654+00:00",
   "git": "unknown"
 }

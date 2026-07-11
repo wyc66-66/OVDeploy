@@ -1,0 +1,142 @@
+{
+  "status": "drivevlm_vocab_smoke",
+  "dataset": "nuscenes-mini",
+  "prototype": "drivevlm_scene_vocabulary",
+  "camera": "CAM_FRONT",
+  "timestamp": "2026-06-18T11:46:28.674135+00:00",
+  "git": "unknown",
+  "metrics_version": "v2",
+  "episodes_dir": "D:\\ccfa\\outreach-mars\\pilot\\data\\episodes_drivevlm_vocab\\dev",
+  "rows": [
+    {
+      "baseline": "B0_full",
+      "EpisodicAP_mean": 28.221700472691072,
+      "OOV_FP_mean": 0.27988300248847203,
+      "n_episodes": 15,
+      "mode": "b0_cache"
+    }
+  ],
+  "episodes": [
+    {
+      "episode_id": "drivevlm_dv_barrier_corridor_s42_none",
+      "drivevlm_prompt": "Narrow corridor: barriers channeling traffic, cones, construction",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 4.733333333333333,
+      "B0_OOV_FP": 0.4958333333333333,
+      "scene": "scene-0553"
+    },
+    {
+      "episode_id": "drivevlm_dv_bus_stop_s42_none",
+      "drivevlm_prompt": "Bus stop: bus, pedestrians boarding, cars passing, traffic cones",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 56.666666666666664,
+      "B0_OOV_FP": 0.33063103563103563,
+      "scene": "scene-0757"
+    },
+    {
+      "episode_id": "drivevlm_dv_construction_zone_s42_none",
+      "drivevlm_prompt": "Construction zone: construction vehicles, barriers, traffic cones, workers",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 3.307692307692308,
+      "B0_OOV_FP": 0.4958333333333333,
+      "scene": "scene-0553"
+    },
+    {
+      "episode_id": "drivevlm_dv_cyclist_heavy_s42_none",
+      "drivevlm_prompt": "Cyclist-heavy scene: bicycles, bicycle racks, pedestrians, cars",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 18.54838048661578,
+      "B0_OOV_FP": 0.4087666281087333,
+      "scene": "scene-0655"
+    },
+    {
+      "episode_id": "drivevlm_dv_debris_hazard_s42_none",
+      "drivevlm_prompt": "Road hazard: debris on driveable surface, cars avoiding obstacles",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 29.190476190476193,
+      "B0_OOV_FP": 0.5409100529100529,
+      "scene": "scene-1094"
+    },
+    {
+      "episode_id": "drivevlm_dv_emergency_lane_s42_none",
+      "drivevlm_prompt": "Road with emergency vehicles: police or ambulance, cars yielding, barriers",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 27.70959595959596,
+      "B0_OOV_FP": 0.018218623481781375,
+      "scene": "scene-1077"
+    },
+    {
+      "episode_id": "drivevlm_dv_highway_merge_s42_none",
+      "drivevlm_prompt": "Highway merge: multiple lanes, cars and trucks ahead, traffic cones near construction",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 5.721656829179517,
+      "B0_OOV_FP": 0.17860347985347985,
+      "scene": "scene-0061"
+    },
+    {
+      "episode_id": "drivevlm_dv_highway_trailer_s42_none",
+      "drivevlm_prompt": "Highway with large vehicles: trucks, trailers, construction vehicles",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 7.620384185706767,
+      "B0_OOV_FP": 0.2279258241758242,
+      "scene": "scene-0061"
+    },
+    {
+      "episode_id": "drivevlm_dv_multi_vehicle_s42_none",
+      "drivevlm_prompt": "Dense traffic: cars, trucks, trailers, buses in mixed flow",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 60.691908302395916,
+      "B0_OOV_FP": 0.07305145404990607,
+      "scene": "scene-1100"
+    },
+    {
+      "episode_id": "drivevlm_dv_night_urban_s42_none",
+      "drivevlm_prompt": "Night urban drive: cars and trucks, street barriers, pedestrians near curb",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 42.77301587301587,
+      "B0_OOV_FP": 0.1421103896103896,
+      "scene": "scene-0796"
+    },
+    {
+      "episode_id": "drivevlm_dv_parking_lot_s42_none",
+      "drivevlm_prompt": "Parking area: parked cars, pedestrians, bicycles, pushable objects",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 18.54838048661578,
+      "B0_OOV_FP": 0.4087666281087333,
+      "scene": "scene-0655"
+    },
+    {
+      "episode_id": "drivevlm_dv_ped_crossing_s42_none",
+      "drivevlm_prompt": "Pedestrian crossing: many pedestrians, cars stopped, traffic cones",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 39.864412668119236,
+      "B0_OOV_FP": 0.14919249996649378,
+      "scene": "scene-0103"
+    },
+    {
+      "episode_id": "drivevlm_dv_residential_s42_none",
+      "drivevlm_prompt": "Residential street: cars, pedestrians, bicycles, vegetation and buildings",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 33.35342247168227,
+      "B0_OOV_FP": 0.2781327659268836,
+      "scene": "scene-0916"
+    },
+    {
+      "episode_id": "drivevlm_dv_sidewalk_activity_s42_none",
+      "drivevlm_prompt": "Sidewalk activity: pedestrians, strollers, bicycles, parked cars",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 33.35342247168227,
+      "B0_OOV_FP": 0.2781327659268836,
+      "scene": "scene-0916"
+    },
+    {
+      "episode_id": "drivevlm_dv_urban_intersection_s42_none",
+      "drivevlm_prompt": "Urban intersection: pedestrians crossing, cars waiting, bicycles and motorcycles",
+      "vocab_size": 7,
+      "B0_EpisodicAP": 41.242758857588214,
+      "B0_OOV_FP": 0.1721362229102167,
+      "scene": "scene-0103"
+    }
+  ],
+  "note": "Prototype smoke eval; mentor-defined vocab extension for trial Option A."
+}

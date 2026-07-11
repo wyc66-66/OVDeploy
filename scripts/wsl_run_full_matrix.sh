@@ -104,11 +104,23 @@ $PYTHON scripts/run_odinw_vocabguard.py --gpu --max-images 100 --force-b0-cache
 echo "== 5/9 Stratified held-out (1000 images) =="
 $PYTHON scripts/run_stratified_vocabguard.py --gpu --max-images 1000
 
-echo "== 6/9 OWL-ViT cross-backbone (${EP} ep) =="
-$PYTHON scripts/run_vocabguard_eval.py --gpu \
-  --backbone owlvit --config-key dev_v30_s42_none --max-episodes "$EP" \
-  --methods "$GLIP_METHODS" \
-  --report reports/REPORT_VG_owlvit.json
+echo "== 6/9 OWL-ViT cross-backbone (${EP} ep, v10/30/100) =="
+for VS in 10 30 100; do
+  echo "--- owlvit v${VS} ---"
+  $PYTHON scripts/run_vocabguard_eval.py --gpu \
+    --backbone owlvit --config-key "dev_v${VS}_s42_none" --max-episodes "$EP" \
+    --methods "$GLIP_METHODS" \
+    --report "reports/REPORT_VG_owlvit_v${VS}_none.json"
+done
+
+echo "== 6b/9 Native GLIP VG (v10/v30, CLIP-routed Router) =="
+for VS in 10 30; do
+  echo "--- glip_native v${VS} ---"
+  $PYTHON scripts/run_vocabguard_eval.py --gpu \
+    --backbone glip_native --config-key "dev_v${VS}_s42_none" --max-episodes "$EP" \
+    --methods "$GLIP_METHODS" \
+    --report "reports/REPORT_VG_glip_native_v${VS}_none.json" || true
+done
 
 echo "== 7/9 Ablation (3 ep) =="
 $PYTHON scripts/run_ablation_eval.py --gpu --max-episodes 3

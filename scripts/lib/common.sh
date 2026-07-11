@@ -2,21 +2,27 @@
 # VocabGuard shared WSL paths (Paper 4 + Paper 1 YOLO-World).
 set -euo pipefail
 
-export PROJ="${PROJ:-/mnt/d/ccfa/submission-b}"
-export OVPROJ="${OVPROJ:-/mnt/d/ccfa/submission-a}"
-export YOLO="${YOLO:-/mnt/d/ccfa/论文1/YOLO-World}"
-if [[ ! -d "$PROJ" ]]; then
-  export PROJ="/mnt/c/Users/34186/yolo_eval/submission-b"
-fi
-if [[ ! -d "$OVPROJ" ]]; then
-  export OVPROJ="/mnt/c/Users/34186/yolo_eval/submission-a"
-fi
-if [[ ! -d "$YOLO" ]]; then
-  export YOLO="/mnt/d/ccfa/论文1/YOLO-World"
+if [[ -n "${CCFA_ROOT:-}" ]]; then
+  export PROJ="${PROJ:-$CCFA_ROOT/submission-b}"
+  export OVPROJ="${OVPROJ:-$CCFA_ROOT/submission-a}"
+  export YOLO="${YOLO:-$CCFA_ROOT/submission-a}"
+else
+  export PROJ="${PROJ:-/mnt/d/ccfa/submission-b}"
+  export OVPROJ="${OVPROJ:-/mnt/d/ccfa/submission-a}"
+  export YOLO="${YOLO:-/mnt/d/ccfa/论文1/YOLO-World}"
+  if [[ ! -d "$PROJ" ]]; then
+    export PROJ="/mnt/c/Users/34186/yolo_eval/submission-b"
+  fi
+  if [[ ! -d "$OVPROJ" ]]; then
+    export OVPROJ="/mnt/c/Users/34186/yolo_eval/submission-a"
+  fi
+  if [[ ! -d "$YOLO" ]]; then
+    export YOLO="/mnt/d/ccfa/论文1/YOLO-World"
+  fi
 fi
 export ENV_NAME="${ENV_NAME:-yoloworld5070}"
 export LOG_DIR="${LOG_DIR:-/tmp/vocabguard_logs}"
-export HF_HOME="${HF_HOME:-/mnt/c/Users/34186/.cache/huggingface}"
+export HF_HOME="${HF_HOME:-${HOME}/.cache/huggingface}"
 export TRANSFORMERS_CACHE="${TRANSFORMERS_CACHE:-$HF_HOME}"
 export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
 

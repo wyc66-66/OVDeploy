@@ -29,8 +29,12 @@ REPORT_FILES = [
     "REPORT_6_glip_main.json",
     "REPORT_6c_yolo_m_main.json",
     "REPORT_6e_native_glip_main.json",
+    "REPORT_6f_gdino_base_main.json",
+    "REPORT_4b_gdino_base_stratified_1k.json",
     "REPORT_leakage_check.json",
     "REPORT_nuscenes_main.json",
+    "REPORT_nuscenes_multicam.json",
+    "REPORT_drivevlm_vocab_smoke.json",
 ]
 
 EXCLUDED_REPORTS = {
@@ -54,6 +58,7 @@ SCRIPTS = [
     "generate_paper_tables.py",
     "make_paper_figures.py",
     "plot_oov_qualitative.py",
+    "plot_metric_necessity.py",
     "generate_episodes.py",
     "make_dev_subset.py",
     "make_stratified_1k.py",
@@ -76,6 +81,7 @@ SCRIPTS = [
     "wsl_setup_native_glip.sh",
     "wsl_owlvit_full.sh",
     "wsl_glip_tiny_full.sh",
+    "wsl_gdino_base_full.sh",
     "wsl_run_full_matrix.sh",
     "wsl_run_full_matrix_owl.sh",
     "wsl_odinw_full13.sh",
@@ -86,6 +92,7 @@ SCRIPTS = [
     "build_nuscenes_episodes.py",
     "run_nuscenes_eval.py",
     "plot_nuscenes_pilot.py",
+    "make_deployment_gap_figure.py",
     "push_nuscenes_pilot.py",
     "wsl_run_nuscenes_pilot.sh",
     "wsl_run_nuscenes_sweep.sh",
@@ -229,10 +236,13 @@ Benchmark and protocol for deployment-style open-vocabulary object detection (OV
 |---------|--------------------------|
 | Federated LVIS minival AP (all 1203 classes) | **22.7** |
 | EpisodicAP aggregate, B0 (full-vocab inference) | **~13** |
-| EpisodicAP aggregate, B5 (subset-prompt deployment) | **~28** |
-| OOV-FP @ \\|V\\|=10, stratified 1k held-out | **68%** |
+| EpisodicAP aggregate, B5 (subset-prompt deployment) | **~24.8** |
+| OOV-FP @ \\|V\\|=10, dev (GT-aligned) | **~66%** |
+| OOV-FP @ \\|V\\|=10, stratified 1k held-out | **~68%** |
 
-Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `docs/EXPERIMENT_TABLE.md` and `reports/`).
+**Six frozen OVD families** on identical episodes (YOLO-S/M, OWL-ViT, GLIP-T, GDINO-T/base); GDINO-base: `REPORT_6f_gdino_base_main.json`, `REPORT_4b_gdino_base_stratified_1k.json`.
+
+Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T, GDINO-base (see `docs/EXPERIMENT_TABLE.md` and `reports/`).
 
 ## VocabGuard (Submission B, same repo)
 
@@ -524,6 +534,22 @@ def package_nuscenes(out: Path) -> None:
     )
     if src_report:
         _copy_file(src_report, out / "reports" / "REPORT_nuscenes_main.json", out)
+    for extra in ("REPORT_nuscenes_multicam.json", "REPORT_drivevlm_vocab_smoke.json"):
+        src_extra = _resolve_src(
+            [
+                ROOT / "reports" / extra,
+                PUBLIC_STAGING / "reports" / extra,
+            ]
+        )
+        if src_extra:
+            _copy_file(src_extra, out / "reports" / extra, out)
+    assets_src = ROOT / "ovdeploy-public" / "docs" / "assets" / "deployment_gap_portability.png"
+    if assets_src.is_file():
+        _copy_file(
+            assets_src,
+            out / "docs" / "assets" / "deployment_gap_portability.png",
+            out,
+        )
 
 
 def package_vocabguard(out: Path) -> None:
@@ -715,6 +741,8 @@ def validate(out: Path) -> None:
         out / "docs" / "EXPERIMENT_TABLE.md",
         out / "reports" / "REPORT_4_main.json",
         out / "reports" / "REPORT_6e_native_glip_main.json",
+        out / "reports" / "REPORT_6f_gdino_base_main.json",
+        out / "reports" / "REPORT_4b_gdino_base_stratified_1k.json",
         out / "reports" / "REPORT_VG_gonogo.json",
         out / "reports" / "REPORT_RV_gonogo.json",
         out / "scripts" / "run_vocabguard_eval.py",

@@ -60,14 +60,9 @@ class YoloWorldBackend:
         return model, test_pipeline
 
     def image_path(self, file_name: str) -> Path:
-        fn = file_name.replace("\\", "/")
-        cfg = self.cfg
-        img_dir = self.yolo / cfg["data"]["val2017_dir"]
-        coco_root = self.yolo / "data/coco"
-        for candidate in (coco_root / fn, img_dir / Path(fn).name, img_dir / fn):
-            if candidate.is_file():
-                return candidate
-        return img_dir / fn
+        from ovdeploy.paths_util import resolve_val2017_image
+
+        return resolve_val2017_image(self.cfg, file_name)
 
     def predict(
         self,

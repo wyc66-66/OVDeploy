@@ -10,22 +10,25 @@
 
 同一冻结模型：**AP=22.7**，但用户词表 |V|=10 时 **EpisodicAP ~13**，且 **66–98%** 的高置信检测落在 V 外（OOV-FP）。该「部署鸿沟」在 YOLO / OWL-ViT / GLIP-T 上均存在。
 
-## 3. 主证据（YOLO-S + 三骨干）
+## 3. 主证据（YOLO-S + 多骨干）
 
-| 维度 | YOLO-S | OWL-ViT | GLIP-T | 解读 |
-|------|--------|---------|--------|------|
-| 官方 LVIS AP | 22.7 | — | — | 全 1203 类，论文常用 |
-| B0 EpisodicAP 聚合 | ~13 | ~17 | ~17 | 用户词表下真实精度 |
-| B5 EpisodicAP 聚合 | ~28 | ~36 | ~35 | 已知 V 时的子集部署 |
-| OOV-FP @ \|V\|=10 (stratified 1k) | 68% | 30% | 98.5% | 全词表推理的隐蔽误检 |
+| 维度 | YOLO-S | OWL-ViT | GLIP-T | GDINO-base | 解读 |
+|------|--------|---------|--------|------------|------|
+| 官方 LVIS AP | 22.7 | — | — | — | 全 1203 类，论文常用 |
+| B0 EpisodicAP 聚合 | 13.9 | ~17 | ~17 | ~14 | 用户词表下真实精度 |
+| B5 EpisodicAP 聚合 | 24.8 | ~36 | ~35 | — | 已知 V 时的子集部署 |
+| OOV-FP @ \|V\|=10 dev | **66.4%** | ~25% | ~97% | ~66% | GT-aligned dev（`REPORT_4` / `REPORT_6f`） |
+| OOV-FP @ \|V\|=10 stratified 1k | 68% | 30% | 98.5% | 69% | freq-top-\|V\| held-out（`REPORT_4b*`） |
 
-聚合 EpisodicAP：|V| ∈ {10, 30, 100} 的 dev 配置平均。
+**口径**：dev 与 stratified 的 EpisodicAP 勿横比；stratified 主看 OOV 确认泄漏趋势。
+
+聚合 EpisodicAP：dev 全 episode 聚合（|V| ∈ {10, 30, 100}，noise=none；`REPORT_2` summary）。
 
 ## 4. 贡献（3 条）
 
 1. 发现并量化 **federated AP 与用户词表部署** 之间的鸿沟（非单一架构偶然）。
 2. 发布 **OVDeploy-Bench**：EpisodicAP v2 + OOV-FP，1,220 episodes，dev / stratified 1k 无泄漏。
-3. **六基线 × 三骨干** GPU 矩阵 + ODinW-13 + 可复现脚本（`scripts/wsl_rerun_v2.sh`）。
+3. **六基线 × 六 frozen OVD 系统** GPU 矩阵 + ODinW-13 + 可复现脚本（`scripts/wsl_rerun_v2.sh`）。
 
 ## 5. 这是什么 / 不是什么
 

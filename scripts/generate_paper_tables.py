@@ -178,6 +178,56 @@ def write_merged_tables(
     (TABLES / "odinw_merged.tex").write_text("\n".join(od_m) + "\n", encoding="utf-8")
 
 
+def write_cross_backbone_main_table() -> None:
+    """YOLO / OWL / GDINO VG_full summary for advisor narrative."""
+
+    def vg_row_file(prefix: str, vs: int) -> str:
+        if prefix == "glip":
+            return f"REPORT_VG_glip_v{vs}_none.json"
+        if prefix == "glip_native":
+            return f"REPORT_VG_glip_native_v{vs}_none.json"
+        return f"REPORT_VG_{prefix}_v{vs}_none.json"
+
+    def vg_epi(prefix: str, vs: int) -> float:
+        d = load(vg_row_file(prefix, vs))
+        for r in d.get("rows", []):
+            if r.get("method") == "VG_full":
+                return float(r["EpisodicAP_mean"])
+        return 0.0
+
+    def vg_oov(prefix: str) -> float:
+        d = load(vg_row_file(prefix, 10))
+        for r in d.get("rows", []):
+            if r.get("method") == "VG_full":
+                return float(r["OOV_FP_mean"]) * 100
+        return 0.0
+
+    yolo_d = load("REPORT_VG_dev_main.json")
+    yolo_vg10 = yolo_vg30 = yolo_oov = 0.0
+    for r in yolo_d.get("rows", []):
+        if r.get("method") != "VG_full":
+            continue
+        if r.get("config") == "dev_v10_s42_none":
+            yolo_vg10 = float(r["EpisodicAP_mean"])
+            yolo_oov = float(r["OOV_FP_mean"]) * 100
+        if r.get("config") == "dev_v30_s42_none":
+            yolo_vg30 = float(r["EpisodicAP_mean"])
+
+    lines = [
+        r"\begin{tabular}{lccc}",
+        r"\toprule",
+        r"Backbone & $|V|{=}10$ EpiAP & $|V|{=}30$ EpiAP & OOV @10 (VG\_full) \\",
+        r"\midrule",
+        f"YOLO-S & {yolo_vg10:.1f} & {yolo_vg30:.1f} & {yolo_oov:.1f}\\% \\\\",
+        f"OWL-ViT & {vg_epi('owlvit', 10):.1f} & {vg_epi('owlvit', 30):.1f} & {vg_oov('owlvit'):.1f}\\% \\\\",
+        f"GDINO-T & {vg_epi('glip', 10):.1f} & {vg_epi('glip', 30):.1f} & {vg_oov('glip'):.1f}\\% \\\\",
+        f"GLIP-T (native) & {vg_epi('glip_native', 10):.1f} & {vg_epi('glip_native', 30):.1f} & {vg_oov('glip_native'):.1f}\\% \\\\",
+        r"\bottomrule",
+        r"\end{tabular}",
+    ]
+    (TABLES / "main_cross_backbone.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     main_r = load("REPORT_VG_dev_main.json")
 
@@ -407,6 +457,8 @@ def main() -> None:
 
     (TABLES / "glip_crossbackbone.tex").write_text("\n".join(glip_lines) + "\n", encoding="utf-8")
 
+    write_cross_backbone_main_table()
+
     rv_path = RV_REPORTS / "REPORT_RV_dev_main.json"
     rv_main = (
         json.loads(rv_path.read_text(encoding="utf-8")) if rv_path.is_file() else {"rows": []}
@@ -425,8 +477,9 @@ def main() -> None:
                 r"\midrule",
             ]
             for r in abl_rows:
+                variant = str(r["variant"]).replace("_", "\\_")
                 abl_lines.append(
-                    f"{r['variant']} & {float(r['EpisodicAP_mean']):.1f} & {float(r['OOV_FP_mean']):.3f} \\\\"
+                    f"{variant} & {float(r['EpisodicAP_mean']):.1f} & {float(r['OOV_FP_mean']):.3f} \\\\"
                 )
             abl_lines.extend([r"\bottomrule", r"\end{tabular}"])
             (TABLES / "ablation_rv.tex").write_text("\n".join(abl_lines) + "\n", encoding="utf-8")

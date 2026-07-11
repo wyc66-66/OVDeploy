@@ -133,68 +133,86 @@ def run_episode_infer(
     t0 = time.perf_counter()
     text_ms = 0.0
 
-    for im in images:
+    from concurrent.futures import ThreadPoolExecutor
+
+    def _load_image(im: dict) -> tuple[int, np.ndarray | None]:
         iid = im["id"]
         path = backend.image_path(im["file_name"])
         image = cv2.imread(str(path))
         if image is None:
-            continue
-        image_rgb = image[:, :, [2, 1, 0]]
+            return iid, None
+        return iid, image[:, :, [2, 1, 0]]
 
-        vocab_ids = (
-            _vocab_for_image(
-                baseline,
-                episode,
-                iid,
-                img_cats,
-                all_cat_ids,
-                freq_cats,
-                prompts_map,
-                image_rgb,
-                vs,
-            )
-            if per_image
-            else global_vocab or list(episode.vocab.cat_ids)
-        )
-
-        t_text = time.perf_counter()
-        if (
-            baseline == "B0_full"
-            and b0_preds_by_image is not None
-            and not save_records
-            and iid in b0_preds_by_image
-        ):
-            preds = list(b0_preds_by_image[iid])
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        if images:
+            next_future = pool.submit(_load_image, images[0])
         else:
-            preds = backend.predict(
-                image_rgb,
-                [],
-                vocab_ids,
-                iid,
-                class_names=class_names,
-                class_texts_raw=class_texts_raw,
-                cid2idx=cid2idx,
+            next_future = None
+
+        for idx, im in enumerate(images):
+            iid, image_rgb = next_future.result() if next_future else (im["id"], None)
+            if idx + 1 < len(images):
+                next_future = pool.submit(_load_image, images[idx + 1])
+            else:
+                next_future = None
+
+            if image_rgb is None:
+                continue
+
+            vocab_ids = (
+                _vocab_for_image(
+                    baseline,
+                    episode,
+                    iid,
+                    img_cats,
+                    all_cat_ids,
+                    freq_cats,
+                    prompts_map,
+                    image_rgb,
+                    vs,
+                )
+                if per_image
+                else global_vocab or list(episode.vocab.cat_ids)
             )
-        text_ms += (time.perf_counter() - t_text) * 1000
 
-        if adapter_bias is not None:
-            for p in preds:
-                li = p.get("label_idx", 0)
-                if li < len(adapter_bias):
-                    p["score"] = p["score"] + float(adapter_bias[li])
+            t_text = time.perf_counter()
+            if (
+                baseline == "B0_full"
+                and b0_preds_by_image is not None
+                and not save_records
+                and iid in b0_preds_by_image
+            ):
+                preds = list(b0_preds_by_image[iid])
+            else:
+                preds = backend.predict(
+                    image_rgb,
+                    [],
+                    vocab_ids,
+                    iid,
+                    class_names=class_names,
+                    class_texts_raw=class_texts_raw,
+                    cid2idx=cid2idx,
+                )
+            text_ms += (time.perf_counter() - t_text) * 1000
 
-        gt = gt_by_img.get(iid, {"boxes": [], "cat_ids": []})
-        ap_list.append(
-            episodic_ap_per_image(preds, gt["boxes"], gt["cat_ids"], vocab_ids)
-        )
-        fp_list.append(fp_non_gt_rate(preds, vocab_ids))
-        if b0_preds_by_image is not None and episode_vocab_for_oov is not None:
-            b0p = b0_preds_by_image.get(iid, [])
-            oov_list.append(oov_fp_rate(b0p, episode_vocab_for_oov))
-        rec = {"image_id": iid, "n_preds": len(preds)}
-        if save_records:
-            rec["predictions"] = preds
-        records.append(rec)
+            if adapter_bias is not None:
+                for p in preds:
+                    li = p.get("label_idx", 0)
+                    if li < len(adapter_bias):
+                        p["score"] = p["score"] + float(adapter_bias[li])
+
+            gt = gt_by_img.get(iid, {"boxes": [], "cat_ids": []})
+            ap_list.append(
+                episodic_ap_per_image(preds, gt["boxes"], gt["cat_ids"], vocab_ids)
+            )
+            fp_list.append(fp_non_gt_rate(preds, vocab_ids))
+            if b0_preds_by_image is not None and episode_vocab_for_oov is not None:
+                b0p = b0_preds_by_image.get(iid, [])
+                oov_list.append(oov_fp_rate(b0p, episode_vocab_for_oov))
+            rec = {"image_id": iid, "n_preds": len(preds)}
+            if save_records:
+                rec["predictions"] = preds
+            records.append(rec)
 
     elapsed = time.perf_counter() - t0
     return {

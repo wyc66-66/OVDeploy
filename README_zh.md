@@ -12,7 +12,7 @@
 
 - 发现 **部署鸿沟**：LVIS AP=22.7，但用户只部署 10 个类时 EpisodicAP ~13，且 OOV 误检可达 68%+
 - 提供 **EpisodicAP v2**（词表内精度）与 **OOV-FP**（词表外误检率）
-- 发布 **1,220 个 episode**、六基线 B0–B5、三骨干 GPU 报告
+- 发布 **1,220 个 episode**、六基线 B0–B5、**六 frozen OVD 系统** GPU 报告（含 GDINO-base）
 
 同仓库另含 **VocabGuard**（B 侧）：在 OVDeploy 尺子上用 Router+Guard 压 OOV。英文说明见 [README.md](README.md)。
 
@@ -39,10 +39,11 @@ docs/5MIN_SUMMARY_zh  →  docs/PROTOCOL  →  docs/EXPERIMENT_TABLE  →  repor
 |------|------|
 | Federated LVIS AP | **22.7** |
 | B0 EpisodicAP 聚合 | **~13** |
-| B5 EpisodicAP 聚合 | **~28** |
-| OOV-FP @ \|V\|=10 (held-out 1k) | **68%** |
+| B5 EpisodicAP 聚合 | **~24.8** |
+| OOV-FP @ \|V\|=10 dev（GT-aligned） | **~66%** |
+| OOV-FP @ \|V\|=10 stratified held-out 1k | **~68%** |
 
-三骨干（OWL-ViT、GLIP-T）见 [docs/EXPERIMENT_TABLE.md](docs/EXPERIMENT_TABLE.md)。
+六系统（YOLO-S/M、OWL、GLIP-T、GDINO-T/base）见 [docs/EXPERIMENT_TABLE.md](docs/EXPERIMENT_TABLE.md)；GDINO-base：`REPORT_6f_gdino_base_main.json`、`REPORT_4b_gdino_base_stratified_1k.json`。
 
 ---
 
@@ -99,7 +100,7 @@ python scripts/check_episode_leakage.py
 > https://github.com/wyc66-66/OVDeploy  
 >  
 > 中文 5 分钟摘要：[docs/5MIN_SUMMARY_zh.md](docs/5MIN_SUMMARY_zh.md)  
-> 核心结论：LVIS AP=22.7，但用户只部署 10 类时 EpisodicAP ~13，全词表部署 OOV ~68%。  
+> 核心结论：LVIS AP=22.7，但用户只部署 10 类时 EpisodicAP ~13；dev OOV ~66%，stratified held-out ~68%。  
 > 工作是 benchmark/部署鸿沟分析，不是新检测器。恳请帮忙看看问题定义和证据是否够硬。
 
 ---

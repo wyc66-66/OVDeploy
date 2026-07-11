@@ -14,10 +14,13 @@ Benchmark and protocol for deployment-style open-vocabulary object detection (OV
 |---------|--------------------------|
 | Federated LVIS minival AP (all 1203 classes) | **22.7** |
 | EpisodicAP aggregate, B0 (full-vocab inference) | **~13** |
-| EpisodicAP aggregate, B5 (subset-prompt deployment) | **~28** |
-| OOV-FP @ \|V\|=10, stratified 1k held-out | **68%** |
+| EpisodicAP aggregate, B5 (subset-prompt deployment) | **~24.8** |
+| OOV-FP @ \|V\|=10, dev (GT-aligned) | **~66%** |
+| OOV-FP @ \|V\|=10, stratified 1k held-out | **~68%** |
 
-Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T (see `docs/EXPERIMENT_TABLE.md` and `reports/`).
+**Six frozen OVD families** on identical episodes (YOLO-S/M, OWL-ViT, GLIP-T, GDINO-T/base); GDINO-base: `REPORT_6f_gdino_base_main.json`, `REPORT_4b_gdino_base_stratified_1k.json`.
+
+Cross-backbone validation: OWL-ViT-B/32, native Microsoft GLIP-T, GDINO-base (see `docs/EXPERIMENT_TABLE.md` and `reports/`).
 
 ## VocabGuard (Submission B, same repo)
 
