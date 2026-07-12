@@ -66,4 +66,8 @@ def get_backend(name: str = "yolo", device: str = "cuda:0") -> DetectorBackend:
         from ovdeploy.backends.glip_native import NativeGlipBackend
 
         return NativeGlipBackend(device=device)
+    if key in ("detclip_v2", "detclipv2", "detclip", "detclip_v2_t"):
+        from ovdeploy.backends.detclip import DetclipV2Backend
+
+        return DetclipV2Backend(device=device)
     raise ValueError(f"Unknown backbone: {name}")

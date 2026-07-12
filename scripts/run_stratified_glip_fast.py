@@ -116,6 +116,30 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    if args.backbone in ("detclip_v2", "detclipv2", "detclip"):
+        from ovdeploy.backends.detclip import checkpoint_ready
+        from ovdeploy.paths_util import load_paths
+
+        ok, msg = checkpoint_ready(load_paths())
+        if not ok:
+            report = {
+                "status": "checkpoint_blocked",
+                "split": "stratified_1k",
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "git": git_hash(),
+                "gpu_used": False,
+                "backbone": "detclip_v2",
+                "metrics_version": "v2",
+                "note": msg,
+                "hunt_log": "reports/detclip_v2_hunt_log.json",
+                "rows": [],
+            }
+            out = ROOT / args.report
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+            print(f"DetCLIPv2 blocked: {msg}", file=sys.stderr)
+            sys.exit(2)
+
     from ovdeploy.b0_cache import ensure_b0_preds
     from ovdeploy.paths_util import load_lvis_minival, load_paths
 

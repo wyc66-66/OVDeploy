@@ -1,0 +1,19 @@
+{
+  "status": "checkpoint_blocked",
+  "backbone": "detclip_v2",
+  "timestamp": "2026-07-11T08:47:14.504083+00:00",
+  "git": "unknown",
+  "metrics_version": "v2",
+  "gpu_used": false,
+  "note": "No public DetCLIPv2-T weights; see docs/DETCLIP_V2_CHECKPOINT_HUNT.md",
+  "hunt_log": "reports/detclip_v2_hunt_log.json",
+  "author_contact": "docs/templates/detclip_author_request_en.md",
+  "rows": [],
+  "summary": {},
+  "split": "stratified_1k",
+  "hunt_summary": {
+    "verdict": "NOT_FOUND",
+    "reason": "no public checkpoint; author contact recommended",
+    "timestamp": "2026-07-11T08:47:13.030777+00:00"
+  }
+}

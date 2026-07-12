@@ -42,7 +42,7 @@ def main() -> None:
     parser.add_argument(
         "--backbone",
         default="yolo_m",
-        help="Backbone: yolo_m, glip (GDINO-tiny), gdino_base, owlvit, glip_native",
+        help="Backbone: yolo_m, glip (GDINO-tiny), gdino_base, detclip_v2, owlvit, glip_native",
     )
     parser.add_argument("--model-id", default="", help="Override HF model id for glip backend")
     parser.add_argument("--local-dir", default="", help="Override local HF weights dir")
@@ -62,6 +62,27 @@ def main() -> None:
 
     rows = []
     backbone = args.backbone
+    if backbone in ("detclip_v2", "detclipv2", "detclip"):
+        from ovdeploy.backends.detclip import checkpoint_ready
+        from ovdeploy.paths_util import load_paths
+
+        ok, msg = checkpoint_ready(load_paths())
+        if not ok and use_gpu:
+            report = {
+                "status": "checkpoint_blocked",
+                "backbone": "detclip_v2",
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "git": git_hash(),
+                "metrics_version": "v2",
+                "note": msg,
+                "rows": [],
+                "summary": {},
+            }
+            out = ROOT / args.report
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+            print(f"Wrote {out} (checkpoint_blocked)")
+            return
     if use_gpu:
         from ovdeploy.b0_cache import ensure_b0_preds
         from ovdeploy.episode import load_episodes_dir

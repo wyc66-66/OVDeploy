@@ -24,6 +24,7 @@ REPORT_FILES = [
     "REPORT_4b_stratified_1k.json",
     "REPORT_4b_owlvit_stratified_1k.json",
     "REPORT_4b_native_glip_stratified_1k.json",
+    "REPORT_4b_yolo_m_stratified_1k.json",
     "REPORT_4c_noise.json",
     "REPORT_5_odinw.json",
     "REPORT_6_glip_main.json",
@@ -31,6 +32,9 @@ REPORT_FILES = [
     "REPORT_6e_native_glip_main.json",
     "REPORT_6f_gdino_base_main.json",
     "REPORT_4b_gdino_base_stratified_1k.json",
+    "REPORT_4b_gdino_stratified_1k.json",
+    "REPORT_6g_detclip_v2_main.json",
+    "REPORT_4b_detclip_v2_stratified_1k.json",
     "REPORT_leakage_check.json",
     "REPORT_nuscenes_main.json",
     "REPORT_nuscenes_multicam.json",
@@ -42,7 +46,6 @@ EXCLUDED_REPORTS = {
     "REPORT_6b_glip_smoke.json",
     "REPORT_6d_native_glip_smoke.json",
     "REPORT_6e_native_glip_smoke.json",
-    "REPORT_4b_gdino_stratified_1k.json",
     "REPORT_5_odinw_stub.json",
 }
 
@@ -82,6 +85,18 @@ SCRIPTS = [
     "wsl_owlvit_full.sh",
     "wsl_glip_tiny_full.sh",
     "wsl_gdino_base_full.sh",
+    "wsl_detclip_v2_full.sh",
+    "hunt_detclip_v2_checkpoint.py",
+    "wsl_stratified_yolo_m.sh",
+    "wsl_gdino_t_stratified_1k.sh",
+    "wsl_gdino_stratified_only.sh",
+    "wsl_stratified_shard.sh",
+    "plot_stratified_oov_multibackbone.py",
+    "wsl_evidence_chain_gpu.sh",
+    "download_yolo_m_weights.py",
+    "download_detclip_v2.py",
+    "verify_detclip_v2_setup.py",
+    "write_detclip_blocked_reports.py",
     "wsl_run_full_matrix.sh",
     "wsl_run_full_matrix_owl.sh",
     "wsl_odinw_full13.sh",
@@ -666,6 +681,21 @@ def package(out: Path, clean: bool) -> None:
         _copy_file(ROOT / "reports" / name, out / "reports" / name, out)
 
     copy_protocol_docs(out)
+    hunt = ROOT / "docs" / "DETCLIP_V2_CHECKPOINT_HUNT.md"
+    if hunt.is_file():
+        _copy_file(hunt, out / "docs" / "DETCLIP_V2_CHECKPOINT_HUNT.md", out)
+    evidence = ROOT.parent / "docs" / "EVIDENCE_CHAIN_AB_zh.md"
+    if evidence.is_file():
+        _copy_file(evidence, out / "docs" / "EVIDENCE_CHAIN_AB_zh.md", out)
+    tpl_dir = ROOT / "docs" / "templates"
+    if tpl_dir.is_dir():
+        out_tpl = out / "docs" / "templates"
+        out_tpl.mkdir(parents=True, exist_ok=True)
+        for p in tpl_dir.glob("detclip_author_request*.md"):
+            _copy_file(p, out_tpl / p.name, out)
+    hunt_log = ROOT / "reports" / "detclip_v2_hunt_log.json"
+    if hunt_log.is_file():
+        _copy_file(hunt_log, out / "reports" / "detclip_v2_hunt_log.json", out)
 
     _merge_requirements(out)
     package_vocabguard(out)
@@ -742,7 +772,8 @@ def validate(out: Path) -> None:
         out / "reports" / "REPORT_4_main.json",
         out / "reports" / "REPORT_6e_native_glip_main.json",
         out / "reports" / "REPORT_6f_gdino_base_main.json",
-        out / "reports" / "REPORT_4b_gdino_base_stratified_1k.json",
+        out / "ovdeploy" / "backends" / "detclip.py",
+        out / "reports" / "REPORT_6g_detclip_v2_main.json",
         out / "reports" / "REPORT_VG_gonogo.json",
         out / "reports" / "REPORT_RV_gonogo.json",
         out / "scripts" / "run_vocabguard_eval.py",

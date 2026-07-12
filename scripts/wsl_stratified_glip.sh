@@ -45,8 +45,8 @@ else
   echo "=== val2017 cache OK: $VAL2017_CACHE ($n_val jpgs) ==="
 fi
 
-SRC_B0="/mnt/d/ccfa/submission-a/data/b0_cache/gdino_base"
-DST_B0="${HOME}/data/b0_cache/gdino_base"
+SRC_B0="/mnt/d/ccfa/submission-a/data/b0_cache/${BACKBONE}"
+DST_B0="${HOME}/data/b0_cache/${BACKBONE}"
 if [ -d "$SRC_B0" ]; then
   n_src="$(find "$SRC_B0" -maxdepth 1 -name '*.json' 2>/dev/null | wc -l | tr -d ' ')"
   n_dst=0
@@ -55,7 +55,7 @@ if [ -d "$SRC_B0" ]; then
   fi
   if [ "${n_src:-0}" -gt "${n_dst:-0}" ]; then
     echo "=== B0 cache: migrating $n_src files from /mnt/d to WSL native ==="
-    bash scripts/wsl_migrate_b0_cache.sh
+    BACKBONE="$BACKBONE" bash scripts/wsl_migrate_b0_cache.sh
   fi
 fi
 if [ -d "$DST_B0" ]; then
@@ -65,32 +65,46 @@ fi
 
 echo "TIP: use tmux and avoid killing this job — warm + resume saves hours."
 
-if [ "$BACKBONE" = "gdino_base" ]; then
+NEEDS_GDINO=1
+case "$BACKBONE" in
+  yolo|yolo_m|yoloworld_m|owlvit|owl|glip_native|native_glip|detclip_v2|detclipv2|detclip)
+    NEEDS_GDINO=0
+    ;;
+esac
+
+if [ "$BACKBONE" = "detclip_v2" ] || [ "$BACKBONE" = "detclipv2" ] || [ "$BACKBONE" = "detclip" ]; then
+  echo "=== DetCLIPv2: skip HF download; verify checkpoint ==="
+  python scripts/download_detclip_v2.py --verify-only || exit 2
+elif [ "$BACKBONE" = "gdino_base" ]; then
   MODEL_ID="IDEA-Research/grounding-dino-base"
   LOCAL_DIR="weights/grounding-dino-base"
-else
+elif [ "$NEEDS_GDINO" -eq 1 ]; then
   MODEL_ID="IDEA-Research/grounding-dino-tiny"
   LOCAL_DIR="weights/grounding-dino-tiny"
 fi
 
-if [ ! -f "$LOCAL_DIR/config.json" ]; then
-  python scripts/download_hf_model.py \
-    --model-id "$MODEL_ID" \
-    --local-dir "$LOCAL_DIR" \
-    --endpoint "$HF_ENDPOINT"
+if [ "$NEEDS_GDINO" -eq 1 ] && [ "$BACKBONE" != "detclip_v2" ]; then
+  if [ ! -f "$LOCAL_DIR/config.json" ]; then
+    python scripts/download_hf_model.py \
+      --model-id "$MODEL_ID" \
+      --local-dir "$LOCAL_DIR" \
+      --endpoint "$HF_ENDPOINT"
+  fi
 fi
 
 MSDA_SO="${HOME}/.cache/torch_extensions/py310_cu128/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so"
-if [ ! -f "$MSDA_SO" ]; then
-  bash scripts/wsl_fix_msda_kernel.sh 2>&1 | tee -a "reports/wsl_msda_fix.log" || true
-else
-  echo "MSDeformAttn kernel cached at $MSDA_SO (skip smoke compile)"
+if [ "$NEEDS_GDINO" -eq 1 ]; then
+  if [ ! -f "$MSDA_SO" ]; then
+    bash scripts/wsl_fix_msda_kernel.sh 2>&1 | tee -a "reports/wsl_msda_fix.log" || true
+  else
+    echo "MSDeformAttn kernel cached at $MSDA_SO (skip smoke compile)"
+  fi
+  python scripts/verify_msda_gpu.py || {
+    echo "MSDA verify failed; attempting rebuild..."
+    bash scripts/wsl_fix_msda_kernel.sh 2>&1 | tee -a "reports/wsl_msda_fix.log" || true
+    python scripts/verify_msda_gpu.py
+  }
 fi
-python scripts/verify_msda_gpu.py || {
-  echo "MSDA verify failed; attempting rebuild..."
-  bash scripts/wsl_fix_msda_kernel.sh 2>&1 | tee -a "reports/wsl_msda_fix.log" || true
-  python scripts/verify_msda_gpu.py
-}
 
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
 export PYTHONUNBUFFERED=1

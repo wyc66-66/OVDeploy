@@ -75,6 +75,14 @@ gdino_base:
 # WSL native B0 cache (avoid /mnt/d/ JSON writes)
 b0_cache_wsl: "/home/a/data/b0_cache"
 
+detclip_v2:
+  config: "third_party/DetCLIPv2/configs/detclipv2_swin_t_lvis.py"
+  checkpoint: "weights/detclipv2_swin_t/detclipv2_swin_t.pth"
+  chunk_size: 120
+  score_thresh: 0.05
+  max_text_tokens: 16
+  b0_image_short_edge: 800
+
 second_backbone:
   name: "owlvit"
   label: "OWL-ViT-B/32"

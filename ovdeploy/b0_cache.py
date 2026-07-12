@@ -98,7 +98,9 @@ def ensure_b0_preds(
     all_cat_ids = [c["id"] for c in lvis["categories"]]
     id_to_im = {im["id"]: im for im in lvis["images"]}
 
-    if hasattr(backend, "warm_gdino_full_vocab"):
+    if hasattr(backend, "warm_full_vocab"):
+        backend.warm_full_vocab(class_names, class_texts_raw, all_cat_ids, cid2idx)
+    elif hasattr(backend, "warm_gdino_full_vocab"):
         backend.warm_gdino_full_vocab(class_names, class_texts_raw, all_cat_ids, cid2idx)
 
     print(

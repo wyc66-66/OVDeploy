@@ -230,7 +230,32 @@
 | 100 | B0_full | 13.41 | 0.480 | 17.55 | 0.171 | 16.75 | 0.755 |
 | 100 | B1_oracle | 28.17 | 0.480 | 36.57 | 0.171 | 32.62 | 0.755 |
 | 100 | B5_subset | 26.74 | 0.480 | 37.20 | 0.171 | 32.36 | 0.755 |
-## Five-system B0 @ |V|=10 (dev, seed 42)
+## Stratified 1k B0 OOV-FP (six-system held-out audit)
+
+Frequency-top-|V| on held-out 1k; primary signal is **OOV-FP** (not cross-split EpisodicAP).
+
+| System | |V| | B0 OOV-FP | n |
+|--------|-----|-----------|---|
+| YOLO-S | 10 | 0.682 | 1000 |
+| YOLO-S | 30 | 0.660 | 1000 |
+| YOLO-S | 100 | 0.553 | 1000 |
+| YOLO-M | 10 | 0.799 | 1000 |
+| YOLO-M | 30 | 0.776 | 1000 |
+| YOLO-M | 100 | 0.642 | 1000 |
+| OWL-ViT | 10 | 0.302 | 1000 |
+| OWL-ViT | 30 | 0.287 | 1000 |
+| OWL-ViT | 100 | 0.251 | 1000 |
+| GLIP-T | 10 | 0.985 | 1000 |
+| GLIP-T | 30 | 0.960 | 1000 |
+| GLIP-T | 100 | 0.815 | 1000 |
+| GDINO-base | 10 | 0.689 | 1000 |
+| GDINO-base | 30 | 0.675 | 1000 |
+| GDINO-base | 100 | 0.563 | 1000 |
+| DetCLIPv2-T | 10 | blocked | 1000 |
+| DetCLIPv2-T | 30 | blocked | 1000 |
+| DetCLIPv2-T | 100 | blocked | 1000 |
+
+## 6-system B0 @ |V|=10 (dev, seed 42)
 
 | System | B0 EpisodicAP | B0 OOV-FP |
 |--------|---------------|----------|
