@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/wyc66-66/OVDeploy/schemas/ovdeploy_submission_row.schema.json",
+  "title": "OVDeploy optional leaderboard row",
+  "description": "One submitted evaluation row under the frozen OVDeploy protocol. Intended for community comparisons that must cite PROTOCOL.md.",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "system_name",
+    "backbone_family",
+    "split",
+    "vocab_size",
+    "baseline",
+    "EpisodicAP_mean",
+    "OOV_FP_mean",
+    "gpu_used",
+    "n_episodes",
+    "git_or_release"
+  ],
+  "properties": {
+    "protocol_version": {
+      "type": "string",
+      "const": "v2",
+      "description": "Must match docs/PROTOCOL.md metrics_version."
+    },
+    "system_name": {
+      "type": "string",
+      "description": "Human-readable system id, e.g. yolo_world_v2_s_frozen."
+    },
+    "backbone_family": {
+      "type": "string",
+      "enum": [
+        "yolo_world",
+        "owl_vit",
+        "owlv2",
+        "glip",
+        "grounding_dino",
+        "florence2",
+        "detclip",
+        "other"
+      ]
+    },
+    "split": {
+      "type": "string",
+      "enum": ["dev", "stratified_1k", "dsp", "odinw", "nuscenes_pilot"]
+    },
+    "pack_id": {
+      "type": "string",
+      "description": "Optional DSP pack id when split=dsp."
+    },
+    "vocab_size": { "type": "integer", "minimum": 1 },
+    "baseline": {
+      "type": "string",
+      "description": "B0_full / B5_subset / B1_oracle / ..."
+    },
+    "EpisodicAP_mean": { "type": "number", "minimum": 0, "maximum": 100 },
+    "OOV_FP_mean": { "type": "number", "minimum": 0, "maximum": 1 },
+    "gpu_used": { "type": "boolean" },
+    "n_episodes": { "type": "integer", "minimum": 1 },
+    "n_images": { "type": "integer", "minimum": 0 },
+    "metrics_version": { "type": "string", "const": "v2" },
+    "git_or_release": {
+      "type": "string",
+      "description": "git short hash or release tag of the evaluating code."
+    },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

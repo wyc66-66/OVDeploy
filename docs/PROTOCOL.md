@@ -62,3 +62,15 @@ EpisodeAdapter (M1) is **not** a main-paper baseline (supplementary code only).
 ## Reproducibility
 
 Seeds 42/43/44; frozen YOLO-World v2-S checkpoint `55b943ea`.
+
+## Protocol freeze (adoption)
+
+| Field | Value |
+|-------|--------|
+| **Protocol id** | `OVDeploy-PROTOCOL-v2` |
+| **metrics_version** | `v2` (written into every `REPORT_*.json`) |
+| **Primary claims** | Deployment acceptance under fixed `(I_e, V_e)`: EpisodicAP + OOV-FP; not LVIS leaderboard SOTA |
+| **Community row schema** | [`schemas/ovdeploy_submission_row.schema.json`](../schemas/ovdeploy_submission_row.schema.json) |
+| **One-click table regen** | `bash scripts/reproduce_main_table.sh` |
+
+Any public comparison that cites OVDeploy numbers must declare `protocol_version: v2` and the split (dev / stratified_1k / dsp / odinw).
