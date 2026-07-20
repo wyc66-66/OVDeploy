@@ -72,12 +72,20 @@ def _init_demo(device: str, weight: str, config_file: str):
 class NativeGlipBackend:
     name = "glip_native"
 
-    def __init__(self, device: str = "cuda:0") -> None:
+    def __init__(self, device: str = "cuda:0", variant: str = "tiny") -> None:
         self.device = device
         self.cfg = load_paths()
         glip_cfg = self.cfg.get("glip", {})
         root = Path(self.cfg.get("_root", Path(__file__).resolve().parents[2]))
-        native_w = glip_cfg.get("native_weight", "weights/glip-native/glip_tiny_model_o365_goldg.pth")
+        if variant == "large":
+            self.name = "glip_l"
+            native_w = glip_cfg.get(
+                "native_weight_large", "weights/glip-native/glip_large_model.pth"
+            )
+            default_cfg = "third_party/GLIP/configs/pretrain/glip_Swin_L.yaml"
+        else:
+            native_w = glip_cfg.get("native_weight", "weights/glip-native/glip_tiny_model_o365_goldg.pth")
+            default_cfg = "third_party/GLIP/configs/pretrain/glip_Swin_T_O365_GoldG.yaml"
         wp = Path(native_w)
         if not wp.is_absolute():
             wp = root / wp
@@ -85,8 +93,8 @@ class NativeGlipBackend:
             raise FileNotFoundError(f"Native GLIP weight missing: {wp}")
         self.native_weight = str(wp)
 
-        native_cfg = glip_cfg.get("native_config")
-        cp = root / "third_party/GLIP/configs/pretrain/glip_Swin_T_O365_GoldG.yaml"
+        native_cfg = glip_cfg.get("native_config_large" if variant == "large" else "native_config")
+        cp = root / default_cfg
         if native_cfg:
             alt = Path(native_cfg)
             if not alt.is_absolute():

@@ -19,4 +19,5 @@ python scripts/plot_metric_necessity.py
 python scripts/plot_stratified_oov_multibackbone.py
 python scripts/make_paper_figures.py
 python scripts/patch_ovd_ppt_math.py
+python scripts/patch_ovd_ppt_a_only.py
 echo "=== Evidence-chain GPU supplement done ==="

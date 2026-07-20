@@ -22,10 +22,14 @@ data:
 weights:
   yolo_world_v2_s: "weights/yolo_world_v2_s_obj365v1_goldg_pretrain-55b943ea.pth"
   yolo_world_v2_m: "weights/yolo_world_v2_m_obj365v1_goldg_pretrain-c6237d5b.pth"
+  yolo_world_v2_l: "weights/yolo_world_v2_l_obj365v1_goldg_pretrain-a82b1fe3.pth"
+  yolo_world_v2_x: "weights/yolo_world_v2_x_obj365v1_goldg_cc3mlite_pretrain-8698fbfa.pth"
 
 config:
   eval_8gb: "configs/pretrain/yolo_world_v2_s_lvis_minival_8gb.py"
   eval_8gb_m: "configs/pretrain/yolo_world_v2_m_lvis_minival_8gb.py"
+  eval_8gb_l: "configs/pretrain/yolo_world_v2_l_lvis_minival_8gb.py"
+  eval_8gb_x: "configs/pretrain/yolo_world_v2_x_lvis_minival_8gb.py"
 
 reference_ap:
   AP: 22.7
@@ -56,18 +60,60 @@ glip:
   glip_tiny_local_dir: "weights/grounding-dino-tiny"
   native_weight: "weights/glip-native/glip_tiny_model_o365_goldg.pth"
   native_config: "third_party/GLIP/configs/pretrain/glip_Swin_T_O365_GoldG.yaml"
-  chunk_size: 40
+  native_weight_large: "weights/glip-native/glip_large_model.pth"
+  native_config_large: "third_party/GLIP/configs/pretrain/glip_Swin_L.yaml"
+  chunk_size: 96
   score_thresh: 0.05
 
 owlvit:
   model_id: "google/owlvit-base-patch32"
   local_dir: "weights/owlvit-base-patch32"
+  chunk_size: 96
+  score_thresh: 0.05
+
+owlvit_b16:
+  model_id: "google/owlvit-base-patch16"
+  local_dir: "weights/owlvit-base-patch16"
+  chunk_size: 96
+  score_thresh: 0.05
+
+owlvit_l:
+  model_id: "google/owlvit-large-patch14"
+  local_dir: "weights/owlvit-large-patch14"
+  chunk_size: 64
+  score_thresh: 0.05
+
+owlv2:
+  model_id: "google/owlv2-base-patch16-ensemble"
+  model_id_base_ne: "google/owlv2-base-patch16"
+  model_id_large: "google/owlv2-large-patch14-ensemble"
+  local_dir: "weights/owlv2-base-patch16-ensemble"
+  local_dir_base_ne: "weights/owlv2-base-patch16"
+  local_dir_large: "weights/owlv2-large-patch14-ensemble"
+  chunk_size: 96
+  score_thresh: 0.05
+
+ultralytics_world:
+  score_thresh: 0.05
+  imgsz: 640
+
+omdet_turbo:
+  model_id: "omlab/omdet-turbo-swin-tiny-hf"
+  local_dir: "weights/omdet-turbo-swin-tiny-hf"
   chunk_size: 40
+  score_thresh: 0.05
+  task: "Detect."
+
+florence2:
+  model_id_base: "microsoft/Florence-2-base"
+  model_id_large: "microsoft/Florence-2-large"
+  local_dir_base: "weights/florence-2-base"
+  local_dir_large: "weights/florence-2-large"
   score_thresh: 0.05
 
 gdino_base:
-  chunk_size: 100
-  max_text_tokens: 288
+  chunk_size: 192
+  max_text_tokens: 256
   b0_short_captions: true
   b0_image_short_edge: 640
   score_thresh: 0.05

@@ -266,3 +266,271 @@ Frequency-top-|V| on held-out 1k; primary signal is **OOV-FP** (not cross-split 
 | GDINO-T | 4.53 | 0.963 |
 | GDINO-base | 14.43 | 0.656 |
 
+## nuScenes pilot (CAM_FRONT, measurement tool — not SOTA)
+
+Frozen YOLO-World v2-S; |V|∈{5,10,23}; 69 episodes. Gate signal: B0 OOV-FP + B5 EpisodicAP.
+
+| |V| | Baseline | EpisodicAP | OOV-FP | n_ep |
+|-----|----------|------------|--------|------|
+| 5 | B0_full | 30.08 | 0.229 | 69 |
+| 5 | B5_subset | 31.87 | 0.229 | 69 |
+| 10 | B0_full | 30.08 | 0.148 | 69 |
+| 10 | B5_subset | 30.96 | 0.148 | 69 |
+| 23 | B0_full | 30.08 | 0.000 | 69 |
+| 23 | B5_subset | 30.08 | 0.000 | 69 |
+
+## DSP-11 vignette agreement (human ↔ OOV)
+
+**Protocol ready; dual human labels pending.** Current report is not publishable (bootstrap / `pending_human`). See [`docs/VIGNETTE_LABELING_GUIDE_zh.md`](../docs/VIGNETTE_LABELING_GUIDE_zh.md). status=`pending_human` note=`Real dual human annotations required. bootstrap=15 missing=0. See docs/VIGNETTE_`
+
+## Deployment Scenario Packs (v4.2)
+
+| Pack | Backbone | B0 OOV | B5 EpiAP | n |
+|------|----------|--------|----------|---|
+| DSP-00 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-00 | florence_l | 0.297 | 0.0 | 1 |
+| DSP-00 | gdino_base | 0.380 | 35.8 | 10 |
+| DSP-00 | gdino_tiny | 0.834 | 25.4 | 4 |
+| DSP-00 | owlv2 | 1.000 | 0.0 | 1 |
+| DSP-00 | owlv2_large | 0.500 | 0.0 | 1 |
+| DSP-00 | owlvit | 0.140 | 34.8 | 5 |
+| DSP-00 | yolo | 0.410 | 31.3 | 20 |
+| DSP-00 | yolo_l | 0.496 | 34.7 | 10 |
+| DSP-00 | yolo_m | 0.526 | 35.2 | 5 |
+| DSP-01 | florence_b | 0.000 | 5.6 | 1 |
+| DSP-01 | florence_l | 0.000 | 5.6 | 1 |
+| DSP-01 | gdino_base | 0.000 | 5.6 | 1 |
+| DSP-01 | gdino_tiny | 0.000 | 5.6 | 1 |
+| DSP-01 | owlv2 | 0.000 | 5.6 | 1 |
+| DSP-01 | owlv2_large | 0.000 | 5.6 | 1 |
+| DSP-01 | owlvit | 0.000 | 5.6 | 1 |
+| DSP-01 | yolo | 0.000 | 5.6 | 1 |
+| DSP-01 | yolo_l | 0.000 | 5.6 | 1 |
+| DSP-01 | yolo_m | 0.000 | 5.6 | 1 |
+| DSP-02 | florence_b | 0.000 | 0.0 | 1 |
+| DSP-02 | florence_l | 0.000 | 0.0 | 1 |
+| DSP-02 | gdino_base | 0.000 | 0.0 | 1 |
+| DSP-02 | gdino_tiny | 0.000 | 0.0 | 1 |
+| DSP-02 | owlv2 | 0.000 | 0.0 | 1 |
+| DSP-02 | owlv2_large | 0.000 | 0.0 | 1 |
+| DSP-02 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-02 | yolo | 0.000 | 0.0 | 1 |
+| DSP-02 | yolo_l | 0.000 | 0.0 | 1 |
+| DSP-02 | yolo_m | 0.000 | 0.0 | 1 |
+| DSP-03 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-03 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-03 | gdino_base | 1.000 | 100.0 | 1 |
+| DSP-03 | gdino_tiny | 1.000 | 100.0 | 1 |
+| DSP-03 | owlv2 | 1.000 | 0.0 | 1 |
+| DSP-03 | owlv2_large | 1.000 | 0.0 | 1 |
+| DSP-03 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-03 | yolo | 1.000 | 0.0 | 1 |
+| DSP-03 | yolo_l | 1.000 | 0.0 | 1 |
+| DSP-03 | yolo_m | 1.000 | 0.0 | 1 |
+| DSP-04 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-04 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-04 | gdino_base | 1.000 | 0.0 | 1 |
+| DSP-04 | gdino_tiny | 0.900 | 7.1 | 1 |
+| DSP-04 | owlv2 | 1.000 | 0.0 | 1 |
+| DSP-04 | owlv2_large | 1.000 | 0.0 | 1 |
+| DSP-04 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-04 | yolo | 0.750 | 0.0 | 1 |
+| DSP-04 | yolo_l | 1.000 | 0.0 | 1 |
+| DSP-04 | yolo_m | 1.000 | 0.0 | 1 |
+| DSP-05 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-05 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-05 | gdino_base | 0.000 | 100.0 | 1 |
+| DSP-05 | gdino_tiny | 0.000 | 0.0 | 1 |
+| DSP-05 | owlv2 | 1.000 | 0.0 | 1 |
+| DSP-05 | owlv2_large | 1.000 | 0.0 | 1 |
+| DSP-05 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-05 | yolo | 0.000 | 0.0 | 1 |
+| DSP-05 | yolo_l | 0.000 | 0.0 | 1 |
+| DSP-05 | yolo_m | 0.000 | 0.0 | 1 |
+| DSP-06 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-06 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-06 | gdino_base | 1.000 | 0.0 | 1 |
+| DSP-06 | gdino_tiny | 1.000 | 100.0 | 1 |
+| DSP-06 | owlv2 | 1.000 | 0.0 | 1 |
+| DSP-06 | owlv2_large | 1.000 | 0.0 | 1 |
+| DSP-06 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-06 | yolo | 0.000 | 0.0 | 1 |
+| DSP-06 | yolo_l | 0.000 | 0.0 | 1 |
+| DSP-06 | yolo_m | 0.000 | 0.0 | 1 |
+| DSP-07 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-07 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-07 | gdino_base | 1.000 | 33.3 | 1 |
+| DSP-07 | gdino_tiny | 1.000 | 0.0 | 1 |
+| DSP-07 | owlv2 | 1.000 | 0.0 | 1 |
+| DSP-07 | owlv2_large | 1.000 | 0.0 | 1 |
+| DSP-07 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-07 | yolo | 0.220 | 0.0 | 50 |
+| DSP-07 | yolo_l | 0.000 | 0.0 | 1 |
+| DSP-07 | yolo_m | 1.000 | 0.0 | 1 |
+| DSP-08 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-08 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-08 | gdino_base | 0.000 | 100.0 | 1 |
+| DSP-08 | gdino_tiny | 0.000 | 100.0 | 1 |
+| DSP-08 | owlv2 | 0.000 | 0.0 | 1 |
+| DSP-08 | owlv2_large | 0.000 | 0.0 | 1 |
+| DSP-08 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-08 | yolo | 0.000 | 100.0 | 1 |
+| DSP-08 | yolo_l | 0.000 | 50.0 | 1 |
+| DSP-08 | yolo_m | 0.000 | 50.0 | 1 |
+| DSP-09 | florence_b | 0.000 | 5.6 | 1 |
+| DSP-09 | florence_l | 0.000 | 5.6 | 1 |
+| DSP-09 | gdino_base | 0.000 | 5.6 | 1 |
+| DSP-09 | gdino_tiny | 0.000 | 5.6 | 1 |
+| DSP-09 | owlv2 | 0.000 | 5.6 | 1 |
+| DSP-09 | owlv2_large | 0.000 | 5.6 | 1 |
+| DSP-09 | owlvit | 0.000 | 5.6 | 1 |
+| DSP-09 | yolo | 0.000 | 5.6 | 1 |
+| DSP-09 | yolo_l | 0.000 | 5.6 | 1 |
+| DSP-09 | yolo_m | 0.000 | 5.6 | 1 |
+| DSP-10 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-10 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-10 | gdino_base | 1.000 | 100.0 | 1 |
+| DSP-10 | gdino_tiny | 1.000 | 100.0 | 1 |
+| DSP-10 | owlv2 | 1.000 | 0.0 | 1 |
+| DSP-10 | owlv2_large | 1.000 | 0.0 | 1 |
+| DSP-10 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-10 | yolo | 0.000 | 0.0 | 1 |
+| DSP-10 | yolo_l | 1.000 | 0.0 | 1 |
+| DSP-10 | yolo_m | 0.000 | 0.0 | 1 |
+| DSP-11 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-11 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-11 | gdino_base | 0.000 | 100.0 | 1 |
+| DSP-11 | gdino_tiny | 0.000 | 100.0 | 1 |
+| DSP-11 | owlv2 | 0.000 | 0.0 | 1 |
+| DSP-11 | owlv2_large | 0.000 | 0.0 | 1 |
+| DSP-11 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-11 | yolo | 0.000 | 0.0 | 1 |
+| DSP-11 | yolo_l | 0.000 | 0.0 | 1 |
+| DSP-11 | yolo_m | 0.000 | 0.0 | 1 |
+| DSP-12 | florence_b | 1.000 | 0.0 | 1 |
+| DSP-12 | florence_l | 1.000 | 0.0 | 1 |
+| DSP-12 | gdino_base | 1.000 | 100.0 | 1 |
+| DSP-12 | gdino_tiny | 1.000 | 100.0 | 1 |
+| DSP-12 | owlv2 | 1.000 | 0.0 | 1 |
+| DSP-12 | owlv2_large | 1.000 | 0.0 | 1 |
+| DSP-12 | owlvit | 0.000 | 0.0 | 1 |
+| DSP-12 | yolo | 1.000 | 0.0 | 1 |
+| DSP-12 | yolo_l | 1.000 | 0.0 | 1 |
+| DSP-12 | yolo_m | 1.000 | 0.0 | 1 |
+
+Manifest: complete=True ok=130 blocked=26
+
+## Seed×|V| main (DOAT-dense, from REPORT_2)
+
+| Baseline | 10-Epi± | 10-OOV | 30-Epi± | 30-OOV | 100-Epi± | 100-OOV |
+|---|---|---|---|---|---|---|
+| B0-full | 13.3±0.9 | 66.4% | 12.7±1.3 | 55.3% | 14.9±1.8 | 48% |
+| B5-subset | 20.8±0.5 | 66.4% | 33.9±1.5 | 55.3% | 29.6±2.1 | 48% |
+| B1-oracle | 39.9±1.1 | 66.4% | 36.1±1.5 | 55.3% | 29.9±1.3 | 48% |
+| B2-freq | 5.1±1.5 | 66.4% | 7.0±1.5 | 55.3% | 15.0±1.7 | 48% |
+| B3-random | 1.8±0.8 | 66.4% | 4.0±1.0 | 55.3% | 7.4±1.6 | 48% |
+| B4-clip | 5.1±1.5 | 66.4% | 7.0±1.5 | 55.3% | 15.0±1.7 | 48% |
+
+_dev·noise=none·seeds{42,43,44} Epi mean±std；OOV=seed42；claim 聚合 B5 24.8 vs B0 13.9_
+
+## Seed-block main (Task×Method, DOAT-dense)
+
+| Task | Method | Epi | OOV | Epi | OOV | Epi | OOV |
+|---|---|---|---|---|---|---|---|
+| s42 | B0-full | 12.7 | 66.4% | 13.4 | 55.3% | 13.4 | 48% |
+| s42 | B5-subset | 20.7 | 66.4% | 36.0 | 55.3% | 26.7 | 48% |
+| s42 | B1-oracle | 40.9 | 66.4% | 37.9 | 55.3% | 28.2 | 48% |
+| s42 | B2-freq | 3.4 | 66.4% | 8.9 | 55.3% | 14.7 | 48% |
+| s42 | B3-random | 0.8 | 66.4% | 3.0 | 55.3% | 5.7 | 48% |
+| s42 | B4-clip | 3.4 | 66.4% | 8.9 | 55.3% | 14.7 | 48% |
+| s43 | B0-full | 14.6 | 63.8% | 13.9 | 56.1% | 17.4 | 43.9% |
+| s43 | B5-subset | 20.3 | 63.8% | 33.6 | 56.1% | 31.7 | 43.9% |
+| s43 | B1-oracle | 38.4 | 63.8% | 36.1 | 56.1% | 31.4 | 43.9% |
+| s43 | B2-freq | 4.9 | 63.8% | 6.9 | 56.1% | 17.2 | 43.9% |
+| s43 | B3-random | 2.1 | 63.8% | 5.3 | 56.1% | 6.8 | 43.9% |
+| s43 | B4-clip | 4.9 | 63.8% | 6.9 | 56.1% | 17.2 | 43.9% |
+| s44 | B0-full | 12.7 | 65.5% | 10.9 | 53.6% | 13.8 | 43.3% |
+| s44 | B5-subset | 21.5 | 65.5% | 32.3 | 53.6% | 30.3 | 43.3% |
+| s44 | B1-oracle | 40.3 | 65.5% | 34.3 | 53.6% | 30.2 | 43.3% |
+| s44 | B2-freq | 7.0 | 65.5% | 5.2 | 53.6% | 13.1 | 43.3% |
+| s44 | B3-random | 2.6 | 65.5% | 3.7 | 53.6% | 9.6 | 43.3% |
+| s44 | B4-clip | 7.0 | 65.5% | 5.2 | 53.6% | 13.1 | 43.3% |
+
+_Task=seed · Method=baseline · |V|∈{10,30,100}；口播钉聚合 B5 24.8 vs B0 13.9；|V|=10 OOV 66.4%_
+
+## 六系统 B0 |V| 扫描 (DOAT-dense)
+
+| 系统 | 10-Epi | 10-OOV | 30-Epi | 30-OOV | 100-Epi | 100-OOV |
+|---|---|---|---|---|---|---|
+| YOLO-S | 12.7 | 66.4% | 13.4 | 55.3% | 13.4 | 48% |
+| YOLO-M | 3.0 | 77.8% | 4.2 | 62.5% | 4.2 | 51.4% |
+| OWL-ViT | 17.5 | 25.1% | 17.0 | 22.1% | 17.6 | 17.1% |
+| GLIP-T | 16.4 | 96.8% | 17.5 | 88.5% | 16.8 | 75.5% |
+| GDINO-T | 4.5 | 96.3% | 4.0 | 91.5% | 2.1 | 86.2% |
+| GDINO-base | 14.4 | 65.6% | 12.4 | 61% | 14.4 | 47.2% |
+
+_dev B0 · |V| 扫描；YOLO-S=REPORT_2 s42；YOLO-M/GDINO/GLIP=REPORT_6*_
+
+## DSP 24×13 (B5 EpiAP)
+
+| BB | 00 | 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 | 10 | 11 | 12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| YS | 26.7 | 5.6 | — | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 100.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| YM | 27.9 | 5.6 | — | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 50.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| uS | 24.9 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 93.8 | 5.6 | 0.0 | 0.0 | 0.0 |
+| OWL | 34.8 | 5.6 | — | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| Ob | 35.1 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| Ov2 | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| OvB | 0.0 | 5.6 | 0.0 | 100.0 | 0.0 | 0.0 | 0.0 | 0.0 | 100.0 | 5.6 | 100.0 | 100.0 | 100.0 |
+| OmT | 30.3 | 5.6 | 0.0 | 100.0 | 0.0 | 0.0 | 14.3 | 100.0 | 55.8 | 5.6 | 100.0 | 100.0 | 100.0 |
+| GL | blk | blk | blk | blk | blk | blk | blk | blk | blk | blk | blk | blk | blk |
+| GDt | 16.7 | 5.6 | 0.0 | 100.0 | 7.1 | 0.0 | 100.0 | 0.0 | 100.0 | 5.6 | 100.0 | 100.0 | 100.0 |
+| GDb | 33.7 | 5.6 | 0.0 | 100.0 | 0.0 | 100.0 | 0.0 | 33.3 | 100.0 | 5.6 | 100.0 | 100.0 | 100.0 |
+| YL | 31.2 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 50.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| YX | — | — | — | — | — | — | — | — | — | — | — | — | — |
+| OvL | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| uM | 26.9 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 50.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| uL | 31.6 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 50.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| FlB | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| FlL | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| OL | 40.5 | 5.6 | 0.0 | 100.0 | 0.0 | 100.0 | 0.0 | 0.0 | 100.0 | 5.6 | 100.0 | 100.0 | 100.0 |
+| uX | 31.1 | 5.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 75.0 | 5.6 | 0.0 | 0.0 | 0.0 |
+| GLl | — | — | — | — | — | — | — | — | — | — | — | — | — |
+| Det | blk | blk | — | blk | — | blk | — | — | blk | — | blk | — | — |
+| OS | blk | blk | — | blk | — | blk | — | — | blk | — | blk | — | — |
+| DC2 | blk | blk | blk | blk | blk | blk | blk | blk | blk | blk | blk | blk | blk |
+
+_B5 EpiAP · 24×13；ok=234 blocked=38 missing=40 / 312_
+
+## ODinW Task×Method (DOAT-dense)
+
+| Task | Method | Epi | OOV | Epi | OOV |
+|---|---|---|---|---|---|
+| Aquarium | B0 | 27.4 | 0% | 27.4 | 0% |
+| Aquarium | B5 | 27.4 | 0% | 27.4 | 0% |
+| AerialMaritimeDrone | B0 | 4.2 | 0% | 4.2 | 0% |
+| AerialMaritimeDrone | B5 | 4.2 | 0% | 4.2 | 0% |
+| CottontailRabbits | B0 | 49.0 | 0% | 49.0 | 0% |
+| CottontailRabbits | B5 | 49.0 | 0% | 49.0 | 0% |
+| EgoHands | B0 | 49.6 | 0% | 49.6 | 0% |
+| EgoHands | B5 | 49.6 | 0% | 49.6 | 0% |
+| NorthAmericaMushrooms | B0 | 0.2 | 0% | 0.2 | 0% |
+| NorthAmericaMushrooms | B5 | 0.2 | 0% | 0.2 | 0% |
+| Packages | B0 | 4.2 | 0% | 4.2 | 0% |
+| Packages | B5 | 4.2 | 0% | 4.2 | 0% |
+| PascalVOC | B0 | 32.7 | 69.4% | 75.9 | 0% |
+| PascalVOC | B5 | 32.1 | 69.4% | 75.9 | 0% |
+| pistols | B0 | 0.0 | 0% | 0.0 | 0% |
+| pistols | B5 | 0.0 | 0% | 0.0 | 0% |
+| Raccoon | B0 | 72.8 | 0% | 72.8 | 0% |
+| Raccoon | B5 | 72.8 | 0% | 72.8 | 0% |
+| ThermalDogsAndPeople | B0 | 30.8 | 0% | 30.8 | 0% |
+| ThermalDogsAndPeople | B5 | 30.8 | 0% | 30.8 | 0% |
+| Pothole | B0 | 0.0 | 0% | 0.0 | 0% |
+| Pothole | B5 | 0.0 | 0% | 0.0 | 0% |
+| ShellfishOpenImages | B0 | 1.0 | 0% | 1.0 | 0% |
+| ShellfishOpenImages | B5 | 1.0 | 0% | 1.0 | 0% |
+| VehiclesOpenImages | B0 | 68.6 | 0% | 68.6 | 0% |
+| VehiclesOpenImages | B5 | 68.6 | 0% | 68.6 | 0% |
+
+_Task=domain · Method=B0/B5 · 26 行覆盖 52 格；非跨域 SOTA_

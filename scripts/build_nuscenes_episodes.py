@@ -8,7 +8,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-ROOT_PAPER2 = Path(__file__).resolve().parents[3].parent / "submission-a"
+ROOT_PAPER2 = Path(__file__).resolve().parents[1]
 if str(ROOT_PAPER2) not in sys.path:
     sys.path.insert(0, str(ROOT_PAPER2))
 

@@ -1,7 +1,8 @@
 # A + B 证据链索引（师兄答辩一页表）
 
-**更新：** 2026-07-11  
-**用途：** 将「实验不够 / 找不到 report」类质疑映射到 **一句话答法 + JSON 证据 + 复现命令**。
+**更新：** 2026-07-15  
+**用途：** 将「实验不够 / 找不到 report」类质疑映射到 **一句话答法 + JSON 证据 + 复现命令**。  
+**定位（学长口径）：** 眼前一亮 = **部署验收尺子**（EpisodicAP + OOV-FP under `(I,V)`），不是又一个检测器；覆盖要全面且真跑；工业认验收闸门，学界认可复现协议。
 
 ---
 
@@ -97,3 +98,20 @@ bash scripts/wsl_evidence_chain_gpu.sh
 - Beat LVIS / ODinW federated SOTA
 - DetCLIPv2 真实 B0 数字（无 checkpoint）
 - stratified 与 dev 的 EpisodicAP 直接横比
+
+---
+
+## v4.2 部署场景包证据链（DSP-00~12）
+
+| 组件 | 证据 | 复现 |
+|------|------|------|
+| 12 DSP YAML + episode | `config/deployment_scenario_packs/`、`data/episodes_scenarios/` | `python scripts/build_all_deployment_packs.py` |
+| VisDrone / SKU-110K 零 LVIS | `data/visdrone/`、`data/sku110k/` | `python scripts/setup_visdrone_coco.py` + `setup_sku110k_coco.py` |
+| DSP-11 人标 vignette | `reports/REPORT_vignette_dsp11.json` | `python scripts/run_vignette_scoring.py --gpu` |
+| 满矩阵 GPU 主表 | `reports/REPORT_dsp_*.json` | `bash scripts/wsl_run_full_matrix_v4.sh` |
+| 完整性 manifest | `reports/REPORT_scenario_manifest.json` `complete: true` | `python scripts/check_scenario_completeness.py --require-gpu --write-manifest` |
+| ODinW dual B0 | `reports/REPORT_5_odinw_{backbone}_{mode}.json` | `bash scripts/wsl_odinw_multibackbone.sh` |
+| 案例图库 | `paper/figures/scenario_gallery/` | `python scripts/plot_deployment_case_studies.py --all-packs` |
+| PPT 场景章 | `paper/ppt_table_constants.json` | `python scripts/patch_ovd_ppt_a_only.py` |
+
+**GPU 门禁：** 主表凡 `gpu_used: false` → `check_scenario_completeness --require-gpu` FAIL；proxy 不进答辩表。

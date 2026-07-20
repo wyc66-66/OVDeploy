@@ -27,12 +27,20 @@ def _box_iou_xyxy(a: np.ndarray, b: np.ndarray) -> float:
 class OwlvitBackend:
     name = "owlvit"
 
-    def __init__(self, device: str = "cuda:0") -> None:
+    def __init__(
+        self,
+        device: str = "cuda:0",
+        model_id: str | None = None,
+        local_dir: str | None = None,
+        name: str | None = None,
+    ) -> None:
         self.device = device
         self.cfg = load_paths()
         owlvit_cfg = self.cfg.get("owlvit") or self.cfg.get("glip", {})
-        self.model_id = owlvit_cfg.get("model_id", "google/owlvit-base-patch32")
-        local = owlvit_cfg.get("local_dir")
+        self.model_id = model_id or owlvit_cfg.get("model_id", "google/owlvit-base-patch32")
+        if name:
+            self.name = name
+        local = local_dir if local_dir is not None else owlvit_cfg.get("local_dir")
         self.local_dir = None
         if local:
             p = Path(local)

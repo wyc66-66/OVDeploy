@@ -90,7 +90,7 @@ def run_metrics_phase(
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--max-images", type=int, default=100)
-    parser.add_argument("--device", default="cpu")
+    parser.add_argument("--device", default="cuda:0")
     parser.add_argument(
         "--report",
         default="reports/REPORT_4b_gdino_stratified_1k.json",

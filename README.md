@@ -77,10 +77,7 @@ cp config/paths.yaml.example config/paths.yaml
 # 2. Leakage check (CPU)
 python scripts/check_episode_leakage.py
 
-# 3. Regenerate main tables from frozen reports (fast)
-bash scripts/reproduce_main_table.sh
-
-# 4. Full GPU matrix (WSL + CUDA, hours — see docs/SETUP.md)
+# 3. Full GPU matrix (WSL + CUDA, see docs/SETUP.md)
 bash scripts/wsl_rerun_v2.sh
 ```
 
@@ -89,9 +86,6 @@ bash scripts/wsl_rerun_v2.sh
 - **Episode**: 10 images + user vocabulary `V` (|V| in {{10, 30, 100, 1203}}).
 - **EpisodicAP v2**: AP on GT in `V` with greedy IoU@0.5 (predictions in `V`, score >= 0.05).
 - **OOV-FP**: Fraction of B0 full-vocab detections (score >= 0.5) whose class is **not** in `V`.
-- **Freeze id**: `OVDeploy-PROTOCOL-v2` (`metrics_version: v2` in reports).
-- **Optional community row schema**: [`schemas/ovdeploy_submission_row.schema.json`](schemas/ovdeploy_submission_row.schema.json)
-- **Adoption notes**: [`docs/ADOPTION_HOOKS.md`](docs/ADOPTION_HOOKS.md)
 
 Details: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 

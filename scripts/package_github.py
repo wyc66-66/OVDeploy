@@ -59,6 +59,7 @@ SCRIPTS = [
     "run_odinw_episodic.py",
     "run_glip_eval.py",
     "generate_paper_tables.py",
+    "build_doat_dense_tables.py",
     "make_paper_figures.py",
     "plot_oov_qualitative.py",
     "plot_metric_necessity.py",
@@ -681,6 +682,10 @@ def package(out: Path, clean: bool) -> None:
         _copy_file(ROOT / "reports" / name, out / "reports" / name, out)
 
     copy_protocol_docs(out)
+    # DOAT-dense table payload (JSON); LaTeX tables stay private
+    doat_json = ROOT / "paper" / "doat_dense_tables.json"
+    if doat_json.is_file():
+        _copy_file(doat_json, out / "docs" / "doat_dense_tables.json", out)
     hunt = ROOT / "docs" / "DETCLIP_V2_CHECKPOINT_HUNT.md"
     if hunt.is_file():
         _copy_file(hunt, out / "docs" / "DETCLIP_V2_CHECKPOINT_HUNT.md", out)

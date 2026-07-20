@@ -22,8 +22,32 @@ class YoloWorldBackend:
         self.variant = variant.lower()
         self.cfg = load_paths()
         self.yolo: Path = self.cfg["_yolo"]
+        self.name = {
+            "s": "yolo",
+            "m": "yolo_m",
+            "l": "yolo_l",
+            "x": "yolo_x",
+        }.get(self.variant, f"yolo_{self.variant}")
 
     def _variant_cfg(self) -> tuple[str, str]:
+        if self.variant in ("x", "yolo_x", "v2_x"):
+            w = self.cfg["weights"].get(
+                "yolo_world_v2_x",
+                "weights/yolo_world_v2_x_obj365v1_goldg_cc3mlite_pretrain-8698fbfa.pth",
+            )
+            mcfg = self.cfg["config"].get(
+                "eval_8gb_x", "configs/pretrain/yolo_world_v2_x_lvis_minival_8gb.py"
+            )
+            return (mcfg, w)
+        if self.variant in ("l", "yolo_l", "v2_l"):
+            w = self.cfg["weights"].get(
+                "yolo_world_v2_l",
+                "weights/yolo_world_v2_l_obj365v1_goldg_pretrain-a82b1fe3.pth",
+            )
+            mcfg = self.cfg["config"].get(
+                "eval_8gb_l", "configs/pretrain/yolo_world_v2_l_lvis_minival_8gb.py"
+            )
+            return (mcfg, w)
         if self.variant in ("m", "yolo_m", "v2_m"):
             return (
                 self.cfg["config"].get(

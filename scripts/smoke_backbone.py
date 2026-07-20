@@ -31,10 +31,12 @@ def main() -> None:
             import torch
 
             if not torch.cuda.is_available():
-                device = "cpu"
+                print("WARN: --gpu set but CUDA unavailable; use WSL bash scripts/wsl_preflight_gpu.sh")
+                sys.exit(1)
         except ImportError:
-            device = "cpu"
+            sys.exit(1)
     else:
+        print("WARN: running without --gpu is for smoke only; not valid for main reports")
         device = "cpu"
     r = run_episode_infer(
         ep, "B5_subset", lvis, max_images=args.max_images, device=device, backbone=args.backbone

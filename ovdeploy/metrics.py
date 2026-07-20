@@ -4,6 +4,15 @@ from __future__ import annotations
 from typing import Iterable
 
 
+def _pred_category_id(p: dict) -> int:
+    """YOLO/GDINO use category_id; some VLM backends historically used cat_id."""
+    if "category_id" in p:
+        return int(p["category_id"])
+    if "cat_id" in p:
+        return int(p["cat_id"])
+    return -1
+
+
 def iou_box(a: list[float], b: list[float]) -> float:
     ax1, ay1, aw, ah = a
     bx1, by1, bw, bh = b
@@ -46,7 +55,7 @@ def episodic_ap_per_image_v2(
         return 0.0
 
     sorted_preds = sorted(
-        [p for p in preds if p["score"] >= score_thr and p.get("category_id", -1) in vocab_set],
+        [p for p in preds if p["score"] >= score_thr and _pred_category_id(p) in vocab_set],
         key=lambda p: -p["score"],
     )
     if not sorted_preds:
@@ -56,7 +65,7 @@ def episodic_ap_per_image_v2(
     tp_flags: list[bool] = []
 
     for p in sorted_preds:
-        pc = p.get("category_id", -1)
+        pc = _pred_category_id(p)
         best_iou, best_j = 0.0, -1
         for j, (box, gcat) in enumerate(gt_pairs):
             if matched_gt[j] or gcat != pc:
@@ -105,7 +114,7 @@ def oov_fp_rate(
     high = [p for p in b0_preds if p["score"] >= score_thr]
     if not high:
         return 0.0
-    oov = sum(1 for p in high if p.get("category_id", -1) not in vocab_set)
+    oov = sum(1 for p in high if _pred_category_id(p) not in vocab_set)
     return oov / len(high)
 
 
@@ -118,7 +127,7 @@ def fp_non_gt_rate(
     high = [p for p in preds if p["score"] >= score_thr]
     if not high:
         return 0.0
-    bad = sum(1 for p in high if p.get("category_id", -1) not in vocab_set)
+    bad = sum(1 for p in high if _pred_category_id(p) not in vocab_set)
     return bad / len(high)
 
 
