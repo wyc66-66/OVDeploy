@@ -2,7 +2,11 @@
 
 **开放词汇检测在用户词表约束下的 realistic 评估**
 
+**作者：** 王岳纯（Yuechun Wang），华侨大学 · `341861408@qq.com`  
 仓库地址：https://github.com/wyc66-66/OVDeploy
+
+**24 骨干统一大矩阵 KPI（2026-07-23）：** ok=17 · blocked=5 · missing=2 · ep≥20 · strat n=1000  
+口播钉：B5 **24.8** vs B0 **13.9**；|V|=10 OOV **66.4%**（dev）。
 
 ---
 

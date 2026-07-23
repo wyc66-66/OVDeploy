@@ -103,21 +103,35 @@ Details: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 ## Citation
 
 ```bibtex
-@inproceedings{{ovdeploy2026,
-  title={{OVDeploy: Realistic Evaluation of Open-Vocabulary Detection under User Vocabulary Constraints}},
-  author={{Anonymous}},
-  booktitle={{CVPR}},
-  year={{2026}}
-}}
-@inproceedings{{vocabguard2026,
-  title={{VocabGuard: Deployment-Oriented Vocabulary Audit for Constrained Open-Vocabulary Detection}},
-  author={{Anonymous}},
-  booktitle={{CVPR}},
-  year={{2026}}
-}}
+@misc{wang2026ovdeploy,
+  title={OVDeploy: Realistic Evaluation of Open-Vocabulary Detection under User Vocabulary Constraints},
+  author={Wang, Yuechun},
+  year={2026},
+  eprint={TBD},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  howpublished={\url{https://github.com/wyc66-66/OVDeploy}},
+  note={Huaqiao University; contact: 341861408@qq.com}
+}
 ```
 
-Update author fields when de-anonymized.
+**Author:** Yuechun Wang (王岳纯), Huaqiao University · `341861408@qq.com`  
+**Code:** https://github.com/wyc66-66/OVDeploy
+
+## LVIS 24-backbone unified matrix (KPI)
+
+Source: `docs/doat_dense_tables.json` → `lvis_exp12_unified` (synced 2026-07-23).
+
+| KPI | Value |
+|-----|-------|
+| ok | 17 |
+| blocked | 5 |
+| missing | 2 |
+| total seats | 24 |
+| min episodes | 20 |
+| min strat n | 1000 |
+
+口播钉：B5 **24.8** vs B0 **13.9**；\|V\|=10 OOV **66.4%**（dev）。
 
 ## Regenerate this folder
 
